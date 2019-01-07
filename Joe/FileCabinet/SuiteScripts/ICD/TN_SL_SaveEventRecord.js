@@ -299,6 +299,15 @@ function saveEventRecord(request, response) {
 									'fileID ' + fileID);
 						}
 					}
+					
+					//新增上传字段wellPrepared 190107
+//					var wellPrepared = request.getParameter('custevent_well_prepared');
+					var wellPrepared = request.getParameter('wellPrepared');
+					if (wellPrepared) {
+						caseRcrd.setFieldValue('custevent_well_prepared',
+								wellPrepared);
+					}
+					
 					// 通过API更新RPM add by joe 181205
 				} else if (isCase == 'F') {
 					var fArrivalDate = request.getParameter('fArrivalDate');

@@ -29,7 +29,7 @@ function(search, format) {
             var sublistName = context.sublistId;
             var sublistFieldName = context.fieldId;
             if (sublistName === 'item') {
-                if (sublistFieldName === 'custcol_including_tax_unit_price') { // å«ç¨Žå•ä»·è®¡ç®—å‡ºä¸å«ç¨Žå•ä»·
+                if (sublistFieldName === 'custcol_including_tax_unit_price') { // º¬Ë°µ¥¼Û¼ÆËã³ö²»º¬Ë°µ¥¼Û
                     var item = currentRecord.getCurrentSublistValue({
                         sublistId: sublistName,
                         fieldId: 'item'
@@ -41,40 +41,40 @@ function(search, format) {
                         sublistId: sublistName,
                         fieldId: sublistFieldName
                     });
-                    if (currentRecord.type=='purchaseorder') {
-                    	  var priceAndCode = getTaxPriceAndCode(currentRecord, format, search, item, vendor);
-                          if (priceAndCode.length == 0) {
-                              priceAndCode[0] = 0;
-                          }
-                          if (priceAndCode[0] != taxPrice) {
-                              // å½“å«ç¨Žå•ä»·æ”¹å˜ï¼Œå†åˆ¤æ–­æ˜¯å¦å¯è®®ä»·
-                              var isBargain = search.lookupFields({
-                                  type: search.Type.VENDOR,
-                                  id: vendor,
-                                  columns: ['custentity1']
-                              });
-                              // alert(isBargain.custentity1);
-                              if (!isBargain.custentity1) {
-                                  isBargain = search.lookupFields({
-                                      type: search.Type.ITEM,
-                                      id: item,
-                                      columns: ['custitem1']
-                                  });
-                                  if (!isBargain.custitem1) {
-                                      alert('è¯¥ç‰©æ–™ä¸å¯è®®ä»·ï¼');
-                                      taxPrice = priceAndCode[0];
-                                      currentRecord.setCurrentSublistValue({
-                                          sublistId: sublistName,
-                                          fieldId: sublistFieldName,
-                                          value: taxPrice,
-                                          ignoreFieldChange: true
-                                      });
-                                      return;
-                                  }
-                              }
-                          }
-					}
-                  
+                    if (currentRecord.type == 'purchaseorder') {
+                        var priceAndCode = getTaxPriceAndCode(currentRecord, format, search, item, vendor);
+                        if (priceAndCode.length == 0) {
+                            priceAndCode[0] = 0;
+                        }
+                        if (priceAndCode[0] != taxPrice) {
+                            // µ±º¬Ë°µ¥¼Û¸Ä±ä£¬ÔÙÅÐ¶ÏÊÇ·ñ¿ÉÒé¼Û
+                            var isBargain = search.lookupFields({
+                                type: search.Type.VENDOR,
+                                id: vendor,
+                                columns: ['custentity1']
+                            });
+                            // alert(isBargain.custentity1);
+                            if (!isBargain.custentity1) {
+                                isBargain = search.lookupFields({
+                                    type: search.Type.ITEM,
+                                    id: item,
+                                    columns: ['custitem1']
+                                });
+                                if (!isBargain.custitem1) {
+                                    alert('¸ÃÎïÁÏ²»¿ÉÒé¼Û£¡');
+                                    taxPrice = priceAndCode[0];
+                                    currentRecord.setCurrentSublistValue({
+                                        sublistId: sublistName,
+                                        fieldId: sublistFieldName,
+                                        value: taxPrice,
+                                        ignoreFieldChange: true
+                                    });
+                                    return;
+                                }
+                            }
+                        }
+                    }
+
                     var taxRate = currentRecord.getCurrentSublistValue({
                         sublistId: sublistName,
                         fieldId: 'taxrate1'
@@ -90,33 +90,49 @@ function(search, format) {
                 }
             }
             if (sublistFieldName === 'subsidiary') {
-            	if (currentRecord.type=='salesorder') {
-            		var subsidiary = currentRecord.getValue({
-                		fieldId: 'subsidiary'
-                	});
-                	var vendor;
-                	 search.create({
-                         type: 'customrecord_merchants_configuration',
-                         filters: ['custrecord_corporation','anyof',subsidiary],
-                         columns: ['custrecord_vendor_num']
-                     }).run().each(function(result) {
-                    	 vendor = result.getValue(result.columns[0]);
-                         return true;
-                     });
-    // alert(JSON.stringify(subArea.custrecord2));
-                	if (vendor) {
-                		currentRecord.setValue({
-                			fieldId: 'custbody_el_vendorinner',
-                			value: vendor
-                		});
-                	}
-// return;
-				}
-                var area = currentRecord.getValue({
-                    fieldId: 'custbody_el_area'
-                });
                 var subsidiary = currentRecord.getValue({
                     fieldId: 'subsidiary'
+                });
+                if (currentRecord.type == 'salesorder') {
+                    var vendor;
+                    search.create({
+                        type: 'customrecord_merchants_configuration',
+                        filters: ['custrecord_corporation', 'anyof', subsidiary],
+                        columns: ['custrecord_vendor_num']
+                    }).run().each(function(result) {
+                        vendor = result.getValue(result.columns[0]);
+                        return true;
+                    });
+                    // alert(JSON.stringify(subArea.custrecord2));
+                    if (vendor) {
+                        currentRecord.setValue({
+                            fieldId: 'custbody_el_vendorinner',
+                            value: vendor
+                        });
+                    }
+                    // return;
+                } else { //Èç¹ûÊÇPOÔòÉèÖÃ¿Í»§£¨ÄÚ²¿½»Ò××Ö¶Î£©
+                    var vendor = currentRecord.getValue({
+                        fieldId: 'entity'
+                    });
+                    var customerInner;
+                    search.create({
+                        type: 'customrecord_merchants_configuration',
+                        filters: [['custrecord_vendor_num', 'anyof', vendor], 'AND', ['custrecord_corporation', 'anyof', subsidiary]],
+                        columns: ['custrecord_customer_num']
+                    }).run().each(function(result) {
+                        customerInner = result.getValue(result.columns[0]);
+                        return true;
+                    });
+                    if (customerInner) {
+                        currentRecord.setValue({
+                            fieldId: 'custbody_el_customerinner',
+                            value: customerInner
+                        });
+                    }
+                }
+                var area = currentRecord.getValue({
+                    fieldId: 'custbody_el_area'
                 });
                 if (area || !subsidiary) {
                     return;
@@ -126,8 +142,8 @@ function(search, format) {
                     id: subsidiary,
                     columns: ['custrecord2']
                 });
-// alert(JSON.stringify(subArea.custrecord2));
-                if (subArea.custrecord2.length>0) {
+                // alert(JSON.stringify(subArea.custrecord2));
+                if (subArea.custrecord2.length > 0) {
                     subArea = subArea.custrecord2[0].value;
                     currentRecord.setValue({
                         fieldId: 'custbody_el_area',
@@ -135,27 +151,27 @@ function(search, format) {
                     });
                 }
             }
-            // åˆ¤æ–­æ˜¯å¦å†…éƒ¨äº¤æ˜“
-            if (currentRecord.type=='salesorder'&&sublistFieldName === 'entity') {
-            	var customer = currentRecord.getValue({
-            		fieldId: 'entity'
-            	});
-            	var subsidiary;
-            	 search.create({
-                     type: 'customrecord_merchants_configuration',
-                     filters: ['custrecord_customer_num','anyof',customer],
-                     columns: ['custrecord_corporation']
-                 }).run().each(function(result) {
-                     subsidiary = result.getValue(result.columns[0]);
-                     return true;
-                 });
-// alert(JSON.stringify(subArea.custrecord2));
-            	if (subsidiary) {
-            		currentRecord.setValue({
-            			fieldId: 'custbody_el_subsidiaryinner',
-            			value: subsidiary
-            		});
-            	}
+            // ÅÐ¶ÏÊÇ·ñÄÚ²¿½»Ò×
+            if (currentRecord.type == 'salesorder' && sublistFieldName === 'entity') {
+                var customer = currentRecord.getValue({
+                    fieldId: 'entity'
+                });
+                var subsidiary;
+                search.create({
+                    type: 'customrecord_merchants_configuration',
+                    filters: ['custrecord_customer_num', 'anyof', customer],
+                    columns: ['custrecord_corporation']
+                }).run().each(function(result) {
+                    subsidiary = result.getValue(result.columns[0]);
+                    return true;
+                });
+                // alert(JSON.stringify(subArea.custrecord2));
+                if (subsidiary) {
+                    currentRecord.setValue({
+                        fieldId: 'custbody_el_subsidiaryinner',
+                        value: subsidiary
+                    });
+                }
             }
         } catch(e) {
             alert(e);
@@ -180,33 +196,33 @@ function(search, format) {
         var currentRecord = context.currentRecord;
         var sublistName = context.sublistId;
         var sublistFieldName = context.fieldId;
-        if (sublistName === 'item' && sublistFieldName === 'item') { // é€‰æ‹©itemå¸¦å‡ºå¯¹åº”ä»·æ ¼
+        if (sublistName === 'item' && sublistFieldName === 'item') { // Ñ¡Ôñitem´ø³ö¶ÔÓ¦¼Û¸ñ
             var item = currentRecord.getCurrentSublistValue({
                 sublistId: sublistName,
                 fieldId: sublistFieldName
             });
             var vendor;
-            if (currentRecord.type=='salesorder') {
-            	vendor = currentRecord.getValue({
-            		fieldId: 'custbody_el_vendorinner'
-            	});
-    		}else {
-    			vendor = currentRecord.getValue({
-            		fieldId: 'entity'
-            	});
-    		}
+            if (currentRecord.type == 'salesorder') {
+                vendor = currentRecord.getValue({
+                    fieldId: 'custbody_el_vendorinner'
+                });
+            } else {
+                vendor = currentRecord.getValue({
+                    fieldId: 'entity'
+                });
+            }
             var subInner = currentRecord.getValue({
-            	fieldId: 'custbody_el_subsidiaryinner'
+                fieldId: 'custbody_el_subsidiaryinner'
             });
             if (!item || !vendor) {
                 return;
             }
-            // å¦‚æžœæ˜¯SOï¼Œåˆ™ç‰¹æ®Šå¤„ç†
-            if (currentRecord.type=='salesorder'&&(!subInner||!vendor)) {
-				return;
-			}
+            // Èç¹ûÊÇSO£¬ÔòÌØÊâ´¦Àí
+            if (currentRecord.type == 'salesorder' && (!subInner || !vendor)) {
+                return;
+            }
             var priceAndCode = getTaxPriceAndCode(currentRecord, format, search, item, vendor);
-            if (priceAndCode.length > 0) { // å¦‚æžœæœ‰ç»“æžœ
+            if (priceAndCode.length > 0) { // Èç¹ûÓÐ½á¹û
                 currentRecord.setCurrentSublistValue({
                     sublistId: sublistName,
                     fieldId: 'taxcode',
@@ -257,15 +273,15 @@ function(search, format) {
             fieldId: 'custbody_el_area'
         });
         var subsidiary;
-        if (currentRecord.type=='salesorder') {
-        	subsidiary = currentRecord.getValue({
-        		fieldId: 'custbody_el_subsidiaryinner'
-        	});
-		}else {
-			subsidiary = currentRecord.getValue({
-        		fieldId: 'subsidiary'
-        	});
-		}
+        if (currentRecord.type == 'salesorder') {
+            subsidiary = currentRecord.getValue({
+                fieldId: 'custbody_el_subsidiaryinner'
+            });
+        } else {
+            subsidiary = currentRecord.getValue({
+                fieldId: 'subsidiary'
+            });
+        }
         var store = currentRecord.getValue({
             fieldId: 'cseg_the_store'
         });
