@@ -6,7 +6,7 @@
 define([], function() {
 	function beforeLoad(context) {
 		try {
-//			var newRecord = context.newRecord;
+			var newRecord = context.newRecord;
 			context.form.getSublist('item').getField('rate').updateDisplayType(
 					{
 						displayType : 'disabled'
