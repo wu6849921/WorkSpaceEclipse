@@ -1,0 +1,202 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+	<head>
+<link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+		<style>
+			.borderedCellT {border: 0.5pt solid black;
+			padding:4pt;valign:middle; letter-spacing:0px;}
+			.borderedCell {border:
+			0.5pt solid black; padding:4pt;valign:middle;
+			letter-spacing:0px;font-size:12pt;}
+			.borderedCellSign {border:
+			0.5pt solid black; padding:4pt;valign:middle;
+			letter-spacing:0px;font-size:12pt; height:60px}
+			.borderedCellLine {border: 0.5pt
+			solid
+			black;padding:5pt;letter-spacing:0px;font-size:12pt;min-height:200px;}
+			.borderedCellLine1 {padding:5pt;letter-spacing:0px;font-size:12pt;}
+		</style>
+		<!--<macrolist>
+			<macro id="rptfooter">
+				<p align="right" font-size="8pt">
+					第
+					<pagenumber />
+					頁，共
+					<totalpages />
+					頁
+				</p>
+			</macro>
+		</macrolist>-->
+	</head>
+	<!--<body size="A4" footer="rptfooter" footer-height="20mm"
+		font-family="NotoSansCJKsc">-->
+              <body size="A4" footer="rptfooter" footer-height="20mm"
+		font-family="NotoSansCJKsc, sans-serif;">
+		<table style="width: 100%;">
+			<tr>
+				<th align="center" colspan="7">
+					<span style="font-size:20px;">
+						<strong>MEDAL SPORTS</strong>
+					</span>
+				</th>
+			</tr>
+			<tr>
+				<th align="center" colspan="7">
+					<br />
+				</th>
+			</tr>
+			<tr>
+				<th align="center" colspan="7">
+					<u>支出申請單</u>
+				</th>
+			</tr>
+			<tr>
+				<th align="right" colspan="7">
+					Bill No. ${renderData.transactionnumber}
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCellT">
+					<strong>Vendor</strong>
+				</th>
+				<th style="word-wrap:break-word;word-break:break-all;" class="borderedCell" colspan="3">
+					${renderData.vendor}
+				</th>
+				<th class="borderedCellT">
+					<strong>Date</strong>
+				</th>
+				<th class="borderedCell" colspan="2">
+					${renderData.date}
+				</th>
+			</tr>
+			<tr>
+				<td class="borderedCellT">
+					<strong>Customer</strong>
+				</td>
+				<td class="borderedCell" colspan="3">
+					<p>${renderData.customer}</p>
+				</td>
+				<td class="borderedCellT">
+					<strong>Department</strong>
+				</td>
+				<td style="word-wrap:break-word;word-break:break-all;" class="borderedCell" colspan="2">
+					<p>${renderData.department}</p>
+				</td>
+			</tr>
+			<tr>
+				<th class="borderedCellT">
+					<strong>MEMO</strong>
+				</th>
+				<th style="word-wrap:break-word;word-break:break-all;" class="borderedCell" colspan="3">
+					<p>${renderData.memo}</p>
+				</th>
+				<th class="borderedCellT">
+					<strong>Reference No.</strong>
+				</th>
+				<th style="word-wrap:break-word;word-break:break-all;" class="borderedCell" colspan="2">
+					<p>${renderData.tranid}</p>
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCellLine" colspan="7">
+					<table style="width: 100%;">
+						<#list renderData.lines as line>
+						<tr>
+							<th width="20%" class="borderedCellLine1">
+								<p>${line.category}</p>
+							</th>
+							<th width="40%" class="borderedCellLine1">
+								<p>${line.memo}</p>
+							</th>
+							<th width="20%" class="borderedCellLine1">
+								<p>${line.amount}</p>
+							</th>
+							<th width="20%" class="borderedCellLine1">
+								<p>${line.taxAmount}</p>
+							</th>
+						</tr>
+						</#list>
+					</table>
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCellT" rowspan="3">
+					<strong>BANK INFO</strong>
+				</th>
+				<th class="borderedCell" rowspan="3" colspan="3">
+					<p>${renderData.bankInfo}</p>
+				</th>
+
+				<th class="borderedCellT" colspan="3">
+					<strong>Amount(Total)</strong>
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCell" colspan="3">
+					<p>${renderData.currency} ${renderData.amount}</p>
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCellT">
+					<strong>Due Date</strong>
+				</th>
+				<th class="borderedCell" colspan="2">
+					<p>${renderData.duedate}</p>
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCellT">
+					<strong>GM</strong>
+				</th>
+				<th class="borderedCellT">
+					<strong>VP of Operation</strong>
+				</th>
+				<th class="borderedCellT">
+					<strong>Finance</strong>
+				</th>
+				<th class="borderedCellT">
+					<strong>Accounting</strong>
+				</th>
+				<th class="borderedCellT">
+					<strong>Supervisor</strong>
+				</th>
+				<th class="borderedCellT">
+					<strong>payee</strong>
+				</th>
+				<th class="borderedCellT">
+					<strong>Name</strong>
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCellSign">
+					<p>${renderData.supervisorW}&nbsp;${renderData.supervisorDate}
+					</p>
+				</th>
+				<th class="borderedCellSign">
+					<p>${renderData.supervisorW}&nbsp;${renderData.supervisorDate}
+					</p>
+				</th>
+				<th class="borderedCellSign">
+					<p>${renderData.supervisorW}&nbsp;${renderData.supervisorDate}
+					</p>
+				</th>
+				<th class="borderedCellSign">
+					<p>${renderData.supervisorW}&nbsp;${renderData.supervisorDate}
+					</p>
+				</th>
+				<th class="borderedCellSign">
+					<p>${renderData.supervisorW}&nbsp;${renderData.supervisorDate}
+					</p>
+				</th>
+				<th class="borderedCellSign">
+					<p>${renderData.supervisorW}&nbsp;${renderData.supervisorDate}
+					</p>
+				</th>
+				<th class="borderedCellSign">
+					<p>${renderData.supervisorW}&nbsp;${renderData.supervisorDate}
+					</p>
+				</th>
+			</tr>
+		</table>
+	</body>
+</pdf>

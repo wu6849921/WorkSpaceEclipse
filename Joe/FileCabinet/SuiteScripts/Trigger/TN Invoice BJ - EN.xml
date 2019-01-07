@@ -1,0 +1,336 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+	<head>
+		<link name="NotoSans" type="font" subtype="truetype"
+			src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}"
+			src-italic="${nsfont.NotoSans_Italic}"
+			src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+		<#if .locale == "zh_CN">
+		<link name="NotoSansCJKsc" type="font" subtype="opentype"
+			src="${nsfont.NotoSansCJKsc_Regular}"
+			src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+		<#elseif .locale == "zh_TW">
+		<link name="NotoSansCJKtc" type="font" subtype="opentype"
+			src="${nsfont.NotoSansCJKtc_Regular}"
+			src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+		<#elseif .locale == "ja_JP">
+		<link name="NotoSansCJKjp" type="font" subtype="opentype"
+			src="${nsfont.NotoSansCJKjp_Regular}"
+			src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+		<#elseif .locale == "ko_KR">
+		<link name="NotoSansCJKkr" type="font" subtype="opentype"
+			src="${nsfont.NotoSansCJKkr_Regular}"
+			src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+		<#elseif .locale == "th_TH">
+		<link name="NotoSansThai" type="font" subtype="opentype"
+			src="${nsfont.NotoSansThai_Regular}"
+			src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+		</#if>
+		<macrolist>
+			<macro id="nlheader">
+				<table class="header" style="width: 100%;">
+					<tr>
+						<td style="width: 60%;">
+							<img src="${companyInformation.logoUrl}"
+								style="float: left; margin: 7px; width: 220px; height: 110px;" />
+						</td>
+						<td align="left" colspan="2" style="font-size: 20pt;"
+							valign="bottom">Invoice</td>
+					</tr>
+					<tr>
+						<td font-size="10.5" style="font-weight: bold;">Trigger Networks Technology
+							(Beijing) Ltd.</td>
+						<td style="width: 15%;">&nbsp;
+						</td>
+						<td style="width: 25%;">&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td font-size="9.5" rowspan="5">
+							Room 2908, Building 1
+							<br />
+							Wanda Plaza,No.93 JianGuo Road
+							<br />
+							Chaoyang District, Beijing 100026
+							<br />
+							www.triggerasia.com
+						</td>
+						<td align="left" font-size="9.5" style="font-weight: bold;">Date</td>
+						<td align="left" font-size="9.5">${record.trandate}</td>
+					</tr>
+					<tr>
+						<td align="left" font-size="9.5" style="font-weight: bold;">Invoice #</td>
+						<td align="left" font-size="9.5">${record.tranid}</td>
+					</tr>
+					<tr>
+						<td align="left" font-size="9.5" style="font-weight: bold;">Due Date</td>
+						<td align="left" font-size="9.5">${record.duedate}</td>
+					</tr>
+					<tr>
+						<td align="left" font-size="9.5" style="font-weight: bold;">Sales Rep</td>
+						<td align="left" font-size="9.5">${record.salesrep}</td>
+					</tr>
+					<tr>
+						<td align="left" font-size="9.5" style="font-weight: bold;">Currency</td>
+						<td align="left" font-size="9.5">${record.currency}</td>
+					</tr>
+					<tr>
+						<td align="left" font-size="9.5" style="font-weight: bold;">Bill To</td>
+						<td align="left" font-size="9.5" style="font-weight: bold;">&nbsp;
+						</td>
+						<td align="left" font-size="9.5">&nbsp;
+						</td>
+					</tr>
+				</table>
+
+				<table class="header" style="width: 100%;">
+					<tr>
+						<td align="left" font-size="9"
+							style="word-wrap: break-word; width: 50%;">${record.billaddress}</td>
+						<td>&nbsp;
+						</td>
+					</tr>
+				</table>
+			</macro>
+			<macro id="nlfooter">
+				<table class="footer" style="width: 100%;">
+					<tr>
+						<td>&nbsp;
+						</td>
+						<td align="right">
+							<pagenumber />
+							of
+							<totalpages />
+						</td>
+					</tr>
+				</table>
+			</macro>
+		</macrolist>
+		<style type="text/css">table {
+			<#if .locale == "zh_CN">
+			font-family: stsong,
+			sans-serif;
+			<#elseif .locale == "zh_TW">
+			font-family: msung,
+			sans-serif;
+			<#elseif .locale == "ja_JP">
+			font-family: heiseimin,
+			sans-serif;
+			<#elseif .locale == "ko_KR">
+			font-family: hygothic,
+			sans-serif;
+			<#elseif .locale == "ru_RU">
+			font-family: verdana;
+			<#else>
+			font-family: sans-serif;
+			</#if>
+			font-size: 9pt;
+			table-layout: fixed;
+			}
+			th
+			{
+			font-weight: bold;
+			font-size: 8pt;
+			vertical-align: middle;
+			padding: 5px
+			6px 3px;
+
+			}
+			td {
+			padding: 4px 6px;
+			}
+			b {
+			font-weight: bold;
+
+			}
+			table.header td
+			{
+			padding: 0px;
+			font-size: 10pt;
+			}
+			table.footer td {
+			padding: 0px;
+			font-size: 8pt;
+			}
+			table.itemtable th {
+			padding-bottom: 10px;
+			padding-top: 10px;
+			}
+			table.body td {
+			padding-top: 2px;
+			}
+			table.total {
+			page-break-inside: avoid;
+			}
+			tr.totalrow {
+			background-color: #C4E1FF;
+			line-height: 200%;
+			}
+			td.totalboxtop {
+			font-size: 12pt;
+			background-color:
+			#C4E1FF;
+			}
+			td.addressheader {
+			font-size: 8pt;
+			padding-top: 6px;
+			padding-bottom: 2px;
+			}
+			td.address {
+			padding-top: 0px;
+			}
+			td.totalboxmid {
+			font-size: 24pt;
+			padding-top: 20px;
+			background-color: #C4E1FF;
+			}
+			td.totalboxbot {
+			background-color: #C4E1FF;
+			font-weight: bold;
+			}
+			span.title {
+			font-size: 28pt;
+			}
+			span.number {
+			font-size: 16pt;
+			}
+			span.itemname {
+			font-weight: bold;
+			line-height: 150%;
+			}
+			hr {
+			width: 100%;
+			height: 1px;
+			}
+		</style>
+	</head>
+	<body header="nlheader" header-height="29%" footer="nlfooter"
+		footer-height="20pt" padding="0.5in 0.5in 0.5in 0.5in" size="A4">
+    &nbsp;
+		<#if record.item?has_content>
+		<table style="width: 100%; margin-top: 1px;"><!-- start items -->
+			<#list record.item as item><#if item_index==0>
+			<thead>
+				<tr
+					style="border-top: 1px solid #333; border-bottom: 1px solid #333;">
+					<th align="center" colspan="5"
+						style="border-left: 1px solid #333; border-right: 1px solid #333;width:88px;">${item.item@label}</th>
+					<th align="center" colspan="14"
+						style="border-right: 1px solid #333;">${item.description@label}</th>
+					<th align="center" colspan="3"
+						style="border-right: 1px solid #333;">${item.quantity@label}</th>
+					<th align="center" colspan="3"
+						style="border-right: 1px solid #333;">${item.rate@label}</th>
+					<th align="center" colspan="3"
+						style="border-right: 1px solid #333;">${item.amount@label}</th>
+				</tr>
+			</thead>
+			</#if>
+			<tr style="border-bottom: 1px solid #333;">
+				<td align="left" colspan="5" line-height="150%"
+					style="border-left: 1px solid #333; border-right: 1px solid #333;">
+					${item.item}
+				</td>
+				<td align="left" colspan="14"
+					style="border-right: 1px solid #333;">
+					${item.description}
+				</td>q
+				<td align="right" colspan="3"
+					style="border-right: 1px solid #333;"><#if item.quantity!=0>${item.quantity}</#if></td>
+				<td align="right" colspan="3"
+					style="border-right: 1px solid #333;">${item.rate}</td>
+				<td align="right" colspan="3"
+					style="border-right: 1px solid #333;">${item.amount}</td>
+			</tr>
+			</#list><!-- end items -->
+		</table>
+		</#if>
+
+		<table style="width: 100%;">
+			<tr>
+				<td colspan="4">&nbsp;
+				</td>
+				<td align="right">
+					<b>${record.subtotal@label}</b>
+				</td>
+				<td align="right">${record.subtotal}</td>
+			</tr>
+			<#if record.discounttotal!=0>
+			<tr>
+				<td colspan="4">&nbsp;
+				</td>
+				<td align="right">
+					<b>${record.discounttotal@label}</b>
+				</td>
+				<td align="right">${record.discounttotal}</td>
+			</tr>
+			</#if>
+			<tr>
+				<td colspan="4">&nbsp;
+				</td>
+				<td align="right">
+					<b>${record.taxtotal@label}</b>
+				</td>
+				<td align="right">${record.taxtotal}</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;
+				</td>
+				<td align="right">
+					<b>${record.total@label}</b>
+				</td>
+				<td align="right">${record.total}</td>
+			</tr>
+		</table>
+
+		<table>
+			<tr style="height:40px">
+				<td>&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>For all wire payments, please use the following bank details:</td>
+			</tr>
+			<tr>
+				<td>&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td align="left" style="font-family: sans-serif, stsong;">
+					<span>
+						Beneficiary:
+						<br />
+						Trigger Networks Technology(Beijing) Ltd.
+						<br />
+						特瑞格网络技术（北京）有限公司
+						<br />
+						Account Number: 501510906532
+						<br />
+						Bank Name:
+						<br />
+						Standard Chartered Bank (China) Limited Beijing Branch
+						<br />
+						渣打银行（中国）有限公司北京分行
+						<br />
+						Bank Address: 北京市朝阳区东三环中路1号环球金融中心12层
+						<br />
+						Swift number: SCBLCNSXBJG
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td align="left" style="font-family: sans-serif, stsong;">If you have any questions regarding your
+					account, please contact us by writing to finance@triggerasia.com,
+					or calling (8610) 58205385 x 8001</td>
+			</tr>
+		</table>
+	</body>
+</pdf>

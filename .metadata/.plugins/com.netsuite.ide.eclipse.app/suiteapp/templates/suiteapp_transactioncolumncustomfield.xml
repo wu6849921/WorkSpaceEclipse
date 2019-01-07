@@ -1,0 +1,7 @@
+<transactioncolumncustomfield scriptid="custcol_">
+    <accesslevel>2</accesslevel>
+    <fieldtype>TEXT</fieldtype>
+    <displaytype>NORMAL</displaytype>
+    <label></label>
+    <storevalue>T</storevalue>
+</transactioncolumncustomfield>

@@ -1,0 +1,10 @@
+{
+    "ACCOUNT": "账户",
+    "ENVIRONMENT": "环境",
+    "DATE_TIME": "日期和时间",
+    "USERNAME": "用户名",
+    "VOUCHER_REPORT_SUCCESS": "凭证打印报表通知【成功】",
+    "VOUCHER_REPORT_SUCCESS_MESSAGE": "凭证打印报表已成功生成。点击下载",
+    "VOUCHER_REPORT_FAILURE": "凭证打印报表通知【失败】",
+    "VOUCHER_REPORT_FAILURE_MESSAGE": "报表生成失败。请重新运行."
+}

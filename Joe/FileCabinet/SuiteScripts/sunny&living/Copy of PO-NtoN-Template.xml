@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf lang="zh-CN" xml:lang="zh-CN">
+    <head>
+        <style>
+            .borderedCell {border: 0.1pt solid black; padding:2pt; align: center;vertical-align:middle;}
+            .specialCell {height:2pt;width:100%;border: 0.1pt solid black;text-align:center;}
+            .specialTd {border: 0.1pt solid black; padding:0; margin:0; align: center;}
+        </style>
+        <macrolist>
+            <macro id="rptfooter">
+                <p align="right" font-size="8pt">
+                    第<pagenumber/>页，共<totalpages/>页
+                </p>
+            </macro>
+        </macrolist>
+    </head>
+
+    <body size="A4" footer="rptfooter" footer-height="20mm">
+        <table border="0" id="reportLayout" font-size="8pt" width="100%" cellmargin="0" border-collapse="collapse" align="center">
+            <thead>
+                <tr>
+                    <td colspan="10">
+                        <table id="reportTopInfo" text-align="center" width="100%">
+                            <tr>
+                                <td width="25%" align="right">
+                                    <img src="/core/media/media.nl?id=12&amp;c=4810841&amp;h=572d92bd248d70d2a746" width="80" height="38"></img>
+                                </td>
+                                <td colspan="2" width="35%" align="center">
+                                    <p font-weight="bold" font-size="20pt" margin="0" padding="0">怡家家居用品有限公司</p>
+                                    <p font-weight="bold" margin="0" padding="0">SUNNY LIVING HOME PRODUCTS CO., LIMITED<br/> 23/F,Yihai Center,shatou Courner,Yantian
+                                        distric,.<br/> Shenzhen City Guangdong Province,China. 518002<br/> Tel#:0755-82686892
+                                        Fax#:0755-82689658
+                                    </p>
+                                    <p font-weight="bold" font-size="14pt" margin="0" margin-bottom="10pt" margin-top="5pt" padding="0">Purchase Order(订购合同)</p>
+                                </td>
+                                <td vertical-align="bottom" width="40%" padding-bottom="20">
+                                    <p></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p>Vendor(供应商) : ${renderData.vender}</p>
+                                </td>
+                                <td colspan="2">
+                                    <p>Customer Name(客户名称) : ${renderData.customerName}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p>Vendor Address(供应商地址) : ${renderData.venderAdd}</p>
+                                </td>
+                                <td colspan="2">
+                                    <p>Print Date(打印日期) : ${renderData.printDate}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p>Contact Person(联系人): ${renderData.contactPerson}</p>
+                                </td>
+                                <td colspan="2">
+                                    <p>Delivery Place(交货地点): ${renderData.deliveryPort}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p>Phone(联系电话): ${renderData.contactPhone}</p>
+                                </td>
+                                <td colspan="2">
+                                    <p>Delivery Term(交货方式): ${renderData.deliveryTerm}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p>Fax(传真号码): ${renderData.fax}</p>
+                                </td>
+                                <td colspan="2">
+                                    <p>Payment Terms(付款方式): ${renderData.termsOfPayment}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    备注：${renderData.remarks}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borderedCell">
+                        <p>SID</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>Ordr Information</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>Specific</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>CTN QTY</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>PACK QTY</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>QTY</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>Unit Price</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>Total</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>Delivery date</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>Note</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borderedCell">
+                        <p>序号</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>订单信息</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>产品规格</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>总箱数</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>装箱数</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>总数量</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>单价</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>总金额</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>工厂交期</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>备注</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <#list renderData.lines as line>
+                <tr>
+                    <td class="borderedCell">
+                        <p>${line.sid}</p>
+                    </td>
+                    <td class="borderedCell" align="left">
+                        客户订单号：${line.soNo}<br/>
+                        子客户订单号：${line.subCustSoNo}<br/>
+                        客户产品编码：${line.custItemNo}<br/>
+                        子客户产品编码：${line.subCustItemNo}<br/>
+                        公司产品货号：${line.itemProductNo}
+                    </td>
+                    <td class="borderedCell" align="left">
+                        <p>${line.itemCnName}</p>
+                        <p align="left">${line.description}</p>
+                        <p>${line.UPC}</p>
+                        <p>${line.outUPC}</p>
+                    </td>
+                    <td class="specialTd">
+                        <p margin-top="19pt">${line.ctnQty}</p>
+                    </td>
+                    <td class="specialTd">
+                        <p margin-top="19pt">${line.packQty}</p>
+                    </td>
+                    <td class="specialTd">
+                        <p class="specialCell">${line.units}</p>
+                        <p margin-top="10pt">${line.qty}</p>
+                    </td>
+                    <td class="specialTd">
+                        <p class="specialCell">${line.currency}</p>
+                        <p margin-top="10pt">${line.unitPrice}</p>
+                    </td>
+                    <td class="specialTd">
+                        <p class="specialCell">${line.currency}</p>
+                        <p margin-top="10pt">${line.total}</p>
+                    </td>
+                    <td class="specialTd">
+                        <p margin-top="19pt">${line.deliveryDate}</p>
+                    </td>
+                    <td class="borderedCell">
+                        <p>${line.note}</p>
+                    </td>
+                </tr>
+                </#list>
+                <tr>
+                    <td class="borderedCell">
+                        合计
+                    </td>
+                    <td class="borderedCell" colspan="2">
+                    
+                    </td>
+                    <td class="borderedCell">
+                        ${renderData.totalCtnQty}
+                    </td>
+                    <td class="borderedCell">
+                    
+                    </td>
+                    <td class="borderedCell">
+                        ${renderData.totalQty}
+                    </td>
+                    <td class="borderedCell">
+                    
+                    </td>
+                    <td class="borderedCell">
+                        ${renderData.totalAmt}
+                    </td>
+                    <td class="borderedCell">
+                    
+                    </td>
+                    <td class="borderedCell">
+                    
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="borderedCell" colspan="10" align="left">
+                        <p>交易条件: ${renderData.notice}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borderedCell" colspan="10">
+                        <p>
+                            1).供应商必须在收到此订单24小时之内签回,并且要有本司盖章签名,否则此订单无效.<br/>
+                            2).供应商必须严格依订购单要求控制品质,如有验货不通过,翻验过程中所产生费用一律归供应商承担,如翻验还不通过,供应商必须承担我司客人所扣之相对应的金额.<br/>
+                            3).供应商必须对交货期严格控制,大货必须在客验前一天到位,否则罚款USD5000，所有货品必须在结重之前2天还柜，任何因贵厂延迟而产生的损失由贵厂承担。若不能按所确认的交货期交货而产生客人索赔或空运,供应商将承担所有费用,同时,供应商必须承担我司商誉损失USD10000.<br/>
+                            4).订单所列的包装明细,必须严格遵守,若发生订单货物在出货时外箱尺寸和重量变动,而引我司在海运或空运所产生的额外支出,供应商需补偿差额.<br/>
+                            5).供应商必须对订单货物单价按照协定执行,如因有特殊情况而引起单价上涨,供应商必须在30天之内书面通知我司协商作调整.<br/>
+                            6).供应商对我司订单在(订单号码,交货期,数量,价格,规格)上,有任何质疑,请与业务员联系，不得在我司订单上直接修改，双方协商之后再出合同签名盖章回传.
+                        </p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <p>
+                            Buyer's Authorized Signature<br/>
+                            买家授权签字<br/>
+                            <#if renderData.status == "Approved">
+                                <img src="/core/media/media.nl?id=381&amp;c=4810841&amp;h=92272d0a11f7f8e92dd2" width="200" height="85"></img>
+                            <#else>
+                                ______________________________
+                            </#if>
+                        </p>
+                    </td>
+                    <td colspan="6">
+                        <p>
+                            Seller's Authorized Signature<br/>
+                            卖家授权签字<br/>
+                            ______________________________
+                        </p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</pdf>

@@ -1,0 +1,7 @@
+<transactionbodycustomfield scriptid="custbody_">
+    <accesslevel>2</accesslevel>
+    <displaytype>NORMAL</displaytype>
+    <fieldtype>TEXT</fieldtype>
+    <label></label>
+    <storevalue>T</storevalue>
+</transactionbodycustomfield>

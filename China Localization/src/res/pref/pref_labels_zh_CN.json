@@ -1,0 +1,14 @@
+{
+    "Save":"保存",
+    "Cancel":"取消",
+    "Reset":"重置",
+    "EnableFeatures":"启用功能",
+    "Notes":"附注",
+    "ChinaCashFlowStatement":"中国现金流量表",
+    "ChinaCashFlowStatementAbstract": "启用中国现金流量表。该报表以中国式布局列示影响公司现金余额的各项活动。",
+    "ChinaCashFlowStatementHelp": "<span style='line-height:22px;'><p style='padding: 0;'>该功能在安装<b>中国本地化套件</b>后自动启用。</p><p style='padding: 0;'>勾选<b>中国现金流量表</b>可启用该功能。该报表以中国式布局列示影响公司现金余额的各项活动。该功能会在事务处理上增加中国现金流量项目字段。更多详情，请参考<a target='_blank' href='https://NETSUITE_WEBSITE_DOMAIN/app/help/helpcenter.nl?fid=section_1524052340.html'>China Cash Flow Statement Report</a>。</p><p style='padding: 0;'>取消勾选<b>中国现金流量表</b>可停用该功能。停用功能将从事务处理和其他相关记录上移除<b>中国现金流量项目</b>字段和其他相关自定义字段，包括：实体记录、货品记录和科目表。中国现金流量报表将不会在菜单出现和生成数据。您系统内已有事务处理上的中国现金流量项目数据不会被删除。</span>",
+    "ChinaVatIntegration":"中国增值税接口",
+    "ChinaVatIntegrationAbstract": "启用增值税发票到金税系统的导入和导出。",
+    "ChinaVatIntegrationHelp": "<span style='line-height:22px;'>该功能在安装<b>中国本地化套件</b>后自动启用。</p><p style='padding: 0;'>勾选<b>中国增值税接口</b>可启用中国增值税发票导入、导出到金税系统的功能。您可以通过该功能从NetSuite导出增值税发票到金税系统，您也可以从金税系统将事务处理数据导入到NetSuite。更多详情，请参考<a target='_blank' href='https://NETSUITE_WEBSITE_DOMAIN/app/help/helpcenter.nl?fid=section_1524045813.html'>Generating China VAT Transactions</a>。</p><p style='padding: 0;'>取消勾选<b>中国增值税接口</b>可停用该功能。事务处理、实体记录和货品记录上的相关自定义字段将被隐藏。<b>生成中国增值税事务处理</b>也会在导航菜单隐藏。</p><p style='padding: 0;'>中国增值税接口可在停用后再次启用。</p><p style='padding: 0;'>注意：该功能停用后，已经合并或导出的事务处理将可被编辑。</span>",
+    "Title": "配置"
+}

@@ -1,0 +1,9 @@
+<othercustomfield scriptid="custrecord_">
+    <accesslevel>2</accesslevel>
+    <displaytype>NORMAL</displaytype>
+    <fieldtype>TEXT</fieldtype>
+    <label></label>
+    <rectype></rectype>
+    <searchlevel>2</searchlevel>
+    <storevalue>T</storevalue>
+</othercustomfield>

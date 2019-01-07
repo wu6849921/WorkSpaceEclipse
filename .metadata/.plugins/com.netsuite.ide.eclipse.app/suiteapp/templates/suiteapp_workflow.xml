@@ -1,0 +1,12 @@
+<workflow scriptid="customworkflow_">
+    <name></name>
+    <recordtypes></recordtypes>
+    <releasestatus>NOTRUNNING</releasestatus>
+    <workflowstates>
+        <workflowstate scriptid="workflowstate_">
+            <name></name>
+            <positionx>50</positionx>
+            <positiony>110</positiony>
+        </workflowstate>
+    </workflowstates>
+</workflow>

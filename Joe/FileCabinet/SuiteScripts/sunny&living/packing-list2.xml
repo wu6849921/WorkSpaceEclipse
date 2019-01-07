@@ -1,0 +1,814 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"
+	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+	<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+		<Author>NetSuite</Author>
+		<LastAuthor>NetSuite</LastAuthor>
+		<Company>NetSuite</Company>
+		<Version>15.00</Version>
+	</DocumentProperties>
+	<OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+		<AllowPNG />
+	</OfficeDocumentSettings>
+	<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+		<WindowHeight>12435</WindowHeight>
+		<WindowWidth>-27136</WindowWidth>
+		<WindowTopX>0</WindowTopX>
+		<WindowTopY>0</WindowTopY>
+		<ProtectStructure>False</ProtectStructure>
+		<ProtectWindows>False</ProtectWindows>
+	</ExcelWorkbook>
+	<Styles>
+		<Style ss:ID="Default" ss:Name="Normal">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" ss:Size="8" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="s63" ss:Name="常规 2 2 10">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Calibri" x:CharSet="134" x:Family="Swiss"
+				ss:Size="11" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="[$-409]General" />
+			<Protection />
+		</Style>
+		<Style ss:ID="s64" ss:Name="常规 4 2">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Calibri" x:CharSet="134" x:Family="Modern"
+				ss:Size="11" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="[$-409]General" />
+			<Protection />
+		</Style>
+		<Style ss:ID="m292015132" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="m292015152" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="m292015172" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0_);[Red]\(0\)" />
+		</Style>
+		<Style ss:ID="m292015192" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s65">
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s68" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Font ss:FontName="Rockwell Extra Bold" x:Family="Roman"
+				ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s70">
+			<Alignment ss:Vertical="Center" />
+			<Font ss:FontName="宋体" x:CharSet="134" x:Family="Modern"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s71" ss:Parent="s62">
+			<Alignment ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" x:Family="Modern"
+				ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s72" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s73" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0_);[Red]\(0\)" />
+		</Style>
+		<Style ss:ID="s74" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s75" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s76" ss:Parent="s62">
+			<Alignment ss:Vertical="Center" />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s77" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s78" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="0_);[Red]\(0\)" />
+		</Style>
+		<Style ss:ID="s79" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s80" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s83" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s84" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s85" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="0_);[Red]\(0\)" />
+		</Style>
+		<Style ss:ID="s86" ss:Parent="s62">
+			<Alignment ss:Horizontal="Right" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="\$#,##0.00_);[Red]\(\$#,##0.00\)" />
+		</Style>
+		<Style ss:ID="s87" ss:Parent="s62">
+			<Alignment ss:Horizontal="Right" ss:Vertical="Center" />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s88" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0_);[Red]\(0\)" />
+		</Style>
+		<Style ss:ID="s89" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="Short Date" />
+		</Style>
+		<Style ss:ID="s90" ss:Parent="s62">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s91" ss:Parent="s62">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s93" ss:Parent="s62">
+			<Alignment ss:Vertical="Center" />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s94" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s105" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s106" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s112" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s113" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s114" ss:Parent="s62">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s115">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s116">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="0_);[Red]\(0\)" />
+		</Style>
+		<Style ss:ID="s117">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s118">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="[$-409]General" />
+		</Style>
+		<Style ss:ID="s119" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="\$#,##0.00_);[Red]\(\$#,##0.00\)" />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s120" ss:Parent="s62">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s122" ss:Parent="s64">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s123">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="0.00_);[Red]\(0.00\)" />
+		</Style>
+		<Style ss:ID="s124" ss:Parent="s64">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s125" ss:Parent="s64">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s127" ss:Parent="s63">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial Unicode MS" x:CharSet="134" x:Family="Swiss"
+				ss:Size="9" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="[$-409]General" />
+		</Style>
+		<Style ss:ID="s128" ss:Parent="s63">
+			<Alignment ss:Vertical="Top" />
+			<Borders />
+			<Font ss:FontName="Arial Unicode MS" x:CharSet="134" x:Family="Swiss"
+				ss:Size="9" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat ss:Format="[$-409]General" />
+		</Style>
+		<Style ss:ID="s129" ss:Parent="s64">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s130" ss:Parent="s64">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s131">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0_);[Red]\(0\)" />
+		</Style>
+		<Style ss:ID="s132" ss:Parent="s62">
+			<Alignment ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s133" ss:Parent="s62">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s134" ss:Parent="s64">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s135">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0_);[Red]\(0\)" />
+		</Style>
+		<Style ss:ID="s136">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0.00_);[Red]\(0.00\)" />
+		</Style>
+		<Style ss:ID="s137" ss:Parent="s62">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s138" ss:Parent="s62">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s139">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0.00_);[Red]\(0.00\)" />
+		</Style>
+		<Style ss:ID="s140" ss:Parent="s62">
+			<Alignment ss:Horizontal="Right" ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Size="16"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s141">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0.00_);[Red]\(0.00\)" />
+		</Style>
+		<Style ss:ID="s142" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior />
+			<NumberFormat ss:Format="0.00_);[Red]\(0.00\)" />
+		</Style>
+	</Styles>
+	<Worksheet ss:Name="Packing List">
+		<Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="9999"
+			x:FullColumns="1" x:FullRows="1" ss:StyleID="s65"
+			ss:DefaultColumnWidth="42" ss:DefaultRowHeight="11.25">
+			<Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="123" />
+			<Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="102.75" />
+			<Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="117.75" />
+			<Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="108"
+				ss:Span="1" />
+			<Column ss:Index="6" ss:StyleID="s65" ss:AutoFitWidth="0"
+				ss:Width="81.75" />
+			<Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="101.25" />
+			<Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="44.25" />
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:MergeAcross="6" ss:StyleID="s68">
+					<Data ss:Type="String">SUNNY LIVING HOME PRODUCTS CO., LIMITED</Data>
+				</Cell>
+				<Cell ss:StyleID="s70" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="14.25">
+				<Cell ss:StyleID="s71" />
+				<Cell ss:StyleID="s72" />
+				<Cell ss:StyleID="s72" />
+				<Cell ss:StyleID="s73" />
+				<Cell ss:StyleID="s74" />
+				<Cell ss:StyleID="s74" />
+				<Cell ss:StyleID="s75" />
+				<Cell ss:StyleID="s70" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s78" />
+				<Cell ss:StyleID="s79" />
+				<Cell ss:StyleID="s79" />
+				<Cell ss:StyleID="s79" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s78" />
+				<Cell ss:MergeAcross="2" ss:StyleID="s80">
+					<Data ss:Type="String">SHENZHEN LIAISON OFFICE</Data>
+				</Cell>
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s78" />
+				<Cell ss:MergeAcross="2" ss:StyleID="s80">
+					<Data ss:Type="String"> Rm 3106, 31/F,&#160;HongCheong Plaza. </Data>
+				</Cell>
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s78" />
+				<Cell ss:MergeAcross="2" ss:StyleID="s80">
+					<Data ss:Type="String">No 2001, Shennan East Road </Data>
+				</Cell>
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s78" />
+				<Cell ss:MergeAcross="2" ss:StyleID="s80">
+					<Data ss:Type="String">Luohu District. Shenzhen City.</Data>
+				</Cell>
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:MergeAcross="1" ss:StyleID="s83">
+					<Data ss:Type="String"> PACKING LIST</Data>
+				</Cell>
+				<Cell ss:MergeAcross="2" ss:StyleID="s80" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">CONSIGNEE:1</Data>
+				</Cell>
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s78" />
+				<Cell ss:StyleID="s84" />
+				<Cell ss:StyleID="s85" />
+				<Cell ss:StyleID="s85" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">2</Data>
+				</Cell>
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s85" />
+				<Cell ss:StyleID="s86">
+					<Data ss:Type="String">INVOICE NO.:</Data>
+				</Cell>
+				<Cell ss:StyleID="s85">
+					<Data ss:Type="String">3</Data>
+				</Cell>
+				<Cell ss:StyleID="s85" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s88" />
+				<Cell ss:StyleID="s84" />
+				<Cell ss:StyleID="s80" />
+				<Cell ss:StyleID="s80" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">SHIPPED BY:5</Data>
+				</Cell>
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s78" />
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">DATE:</Data>
+				</Cell>
+				<Cell ss:StyleID="s89">
+					<Data ss:Type="String">6</Data>
+				</Cell>
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s90">
+					<Data ss:Type="String"> 7 </Data>
+				</Cell>
+				<Cell ss:StyleID="s90" />
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s85" />
+				<Cell ss:StyleID="s90">
+					<Data ss:Type="String">TERMS OF
+						PAYMENT:8</Data>
+				</Cell>
+				<Cell ss:StyleID="s90" />
+				<Cell ss:StyleID="s91" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:MergeAcross="2" ss:StyleID="s91">
+					<Data ss:Type="String"> 9 </Data>
+				</Cell>
+				<Cell ss:StyleID="s78" />
+				<Cell ss:MergeAcross="2" ss:StyleID="s83" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:MergeAcross="2" ss:StyleID="s91">
+					<Data ss:Type="String"> 10</Data>
+				</Cell>
+				<Cell ss:StyleID="s78" />
+				<Cell ss:StyleID="s79" />
+				<Cell ss:StyleID="s79" />
+				<Cell ss:StyleID="s79" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">11</Data>
+				</Cell>
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s77" />
+				<Cell ss:StyleID="s85" />
+				<Cell ss:StyleID="s79" />
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">TO:12 </Data>
+				</Cell>
+				<Cell ss:StyleID="s79" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:StyleID="s93">
+					<Data ss:Type="String">SAILING ON OR
+						ABOUT:13</Data>
+				</Cell>
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s76" />
+				<Cell ss:StyleID="s88" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s84" />
+				<Cell ss:StyleID="s84" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:MergeAcross="1" ss:MergeDown="1" ss:StyleID="m292015132">
+					<Data ss:Type="String">MARKS&amp;NUMBERS</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="m292015152">
+					<Data ss:Type="String">DESCRIPTION OF GOODS</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="m292015172">
+					<Data ss:Type="String">QUANTITY</Data>
+				</Cell>
+				<Cell ss:StyleID="s105">
+					<Data ss:Type="String">N.WT.</Data>
+				</Cell>
+				<Cell ss:StyleID="s106">
+					<Data ss:Type="String">G.WT.</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="m292015192">
+					<Data ss:Type="String">MEASUREMENT</Data>
+				</Cell>
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="12.75">
+				<Cell ss:Index="5" ss:StyleID="s112">
+					<Data ss:Type="String">KGS</Data>
+				</Cell>
+				<Cell ss:StyleID="s113">
+					<Data ss:Type="String">KGS</Data>
+				</Cell>
+				<Cell ss:Index="8" ss:StyleID="s76" />
+			</Row>
+
+
+			<Row ss:AutoFitHeight="0" ss:Height="15.75">
+				<Cell ss:StyleID="s137" />
+				<Cell ss:StyleID="s138" />
+				<Cell ss:StyleID="s137" />
+				<Cell ss:StyleID="s131" />
+				<Cell ss:StyleID="s139" />
+				<Cell ss:StyleID="s139" />
+				<Cell ss:StyleID="s139" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="20.25">
+				<Cell ss:StyleID="s90" />
+				<Cell ss:StyleID="s120" />
+				<Cell ss:StyleID="s140">
+					<Data ss:Type="String">TTL:</Data>
+				</Cell>
+				<Cell ss:StyleID="s131">
+					<Data ss:Type="String">13</Data>
+				</Cell>
+				<Cell ss:StyleID="s141" />
+				<Cell ss:StyleID="s142" />
+				<Cell ss:StyleID="s141" />
+				<Cell ss:StyleID="s76" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="15.75">
+				<Cell ss:StyleID="s90" />
+				<Cell ss:StyleID="s120" />
+				<Cell ss:StyleID="s137" />
+				<Cell ss:StyleID="s131">
+					<Data ss:Type="String">14</Data>
+				</Cell>
+				<Cell ss:StyleID="s139">
+					<Data ss:Type="String">15</Data>
+				</Cell>
+				<Cell ss:StyleID="s139">
+					<Data ss:Type="String">16</Data>
+				</Cell>
+				<Cell ss:StyleID="s139">
+					<Data ss:Type="String">17</Data>
+				</Cell>
+				<Cell ss:StyleID="s76" />
+			</Row>
+		</Table>
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<Unsynced />
+			<Print>
+				<ValidPrinterInfo />
+				<PaperSizeIndex>9</PaperSizeIndex>
+				<VerticalResolution>0</VerticalResolution>
+			</Print>
+			<Selected />
+			<TopRowVisible>15</TopRowVisible>
+			<Panes>
+				<Pane>
+					<Number>3</Number>
+					<ActiveRow>51</ActiveRow>
+					<ActiveCol>11</ActiveCol>
+				</Pane>
+			</Panes>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+	</Worksheet>
+</Workbook>

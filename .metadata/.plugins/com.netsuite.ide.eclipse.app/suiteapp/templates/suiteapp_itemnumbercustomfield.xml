@@ -1,0 +1,9 @@
+<itemnumbercustomfield scriptid="custitemnumber_">
+    <accesslevel>2</accesslevel>
+    <appliestoallitems>F</appliestoallitems>
+    <displaytype>NORMAL</displaytype>
+    <fieldtype>TEXT</fieldtype>
+    <label></label>
+    <searchlevel>2</searchlevel>
+    <storevalue>T</storevalue>
+</itemnumbercustomfield>

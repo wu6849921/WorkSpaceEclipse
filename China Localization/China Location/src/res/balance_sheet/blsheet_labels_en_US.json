@@ -1,0 +1,66 @@
+{
+"fieldLabel" : {
+"company" : "COMPANY",
+"subsidiary" : "SUBSIDIARY",
+"accountingbook":"ACCOUNTING BOOK",
+"asof" : "AS OF",
+"templatename":"BALANCE SHEET NAME",
+"unit":"UNIT",
+"refresh" : "Refresh",
+"exportexcel":"Export Excel",
+"exportpdf":"Export PDF",
+"location" : "Location",
+"department" : "Department",
+"class" : "Class"
+},
+"header" : {
+"pageTitle" : "China Balance Sheet",
+"title" : "Balance Sheet",
+"date" : "As of",
+"preparedBy" : "Prepared by",
+"formName" : "Form 01",
+"currencyCode":"Currency",
+"currencyUnit" : "Unit",
+"unit":"Unit",
+"thousand":"Thousand",
+"tenThousand":"Ten Thousand",
+"location" : "Location",
+"department" : "Department",
+"class" : "Class"
+},
+"tableHeader" : {
+"assets" : "Assets",
+"liab_equity" : "Liabilities and Owner's Equity",
+"lines" : "Lines",
+"openingBalance" : "Opening Balance",
+"closingBalance" : "Closing Balance"
+},
+"errorMessage":{
+"loading":"Loading...",
+"errorTitle":"Error",
+"invalidReportName":"Enter a correct value for Balance Sheet Name.",
+"nullReportName":"Enter a value for Balance Sheet Name.",
+"nullPeriod":"Accounting Period is not defined for this fiscal calendar. Go to Setup > Accounting > Manage Accounting Periods and set up or assign the period you need.",
+"wrongRowName":"The row name of the Balance Sheet is incorrect. The {RowName} are fixed names that you must define in the Balance Sheet using the Report Builder. ",
+"wrongColumnName":"The column name of the Balance Sheet is incorrect. The {ColumnName} are fixed names that you must define in the Balance Sheet using the Report Builder. ",
+"enableAdvancePrint":"The Advanced PDF/HTML Templates feature must be enabled in the account. To enable this feature, go to Setup > Company > Enable Features (SuiteCloud subtab).",
+"errorExportPDF":"Error occurred when exporting PDF file."
+},
+"data" : {
+"totalassets" : {"isBold" : "True", "label" : "Total assets", "center" : "True"},
+"totalliabequity" : {"isBold" : "True", "label" : "Total liabilities and owner's equity", "center" : "True"},
+"currentassets" : {"isBold" : "True", "label" : "Current assets", "center" : "False"},
+"totalcurrentassets" : {"isBold" : "True", "label" : "Total current assets", "center" : "True"},
+"noncurrentassets": {"isBold" : "True", "label" : "Non-current assets", "center" : "False"},
+"totalnoncurrentassets": {"isBold" : "True", "label" : "Total non-current assets", "center" : "True"},
+"currentliabil": {"isBold" : "True", "label" : "Current liabilities", "center" : "False"},
+"totalcurrentliabil": {"isBold" : "True", "label" : "Total current liabilities", "center" : "True"},
+"noncurrentliabil": {"isBold" : "True", "label" : "Non-current liabilities", "center" : "False"},
+"totalnoncurrentliabil": {"isBold" : "True", "label" : "Total non-current liabilities", "center" : "True"},
+"totalliability": {"isBold" : "True", "label" : "Total liabilities", "center" : "True"},
+"liability": {"isBold" : "True", "label" : "Liabilities", "center" : "False"},
+"equity": {"isBold" : "True", "label" : "Equity", "center" : "False"},
+"totalequity": {"isBold" : "True", "label" : "Total owner's equity", "center" : "True"}
+},
+ "exportFileNamePrefix" : "Balance Sheet"
+}

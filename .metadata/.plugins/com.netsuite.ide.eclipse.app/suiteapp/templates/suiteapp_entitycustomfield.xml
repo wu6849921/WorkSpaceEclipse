@@ -1,0 +1,8 @@
+<entitycustomfield scriptid="custentity_">
+    <accesslevel>2</accesslevel>
+    <displaytype>NORMAL</displaytype>
+    <fieldtype>TEXT</fieldtype>
+    <label></label>
+    <searchlevel>2</searchlevel>
+    <storevalue>T</storevalue>
+</entitycustomfield>

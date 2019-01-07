@@ -1,0 +1,14 @@
+{
+  "Save":"Save",
+  "Cancel":"Cancel",
+  "Reset":"Reset",
+  "EnableFeatures":"Enable Features",
+  "Notes":"Notes",
+  "ChinaCashFlowStatement": "CHINA CASH FLOW STATEMENT",
+  "ChinaCashFlowStatementAbstract": "<span style='white-space:nowrap;'>Enable to activate the China Cash Flow Statement Report. This report shows activities that affect a company’s cash balance presented in the Chinese layout.</span>",
+  "ChinaCashFlowStatementHelp": "<span style='line-height:18px;'><p style='padding: 0;'>This feature is automatically activated when installing the <b>China Localization SuiteApp</b>.</p><p style='padding: 0;'>Checking <b>China Cash Flow Statement</b> box enables the China Cash Flow Statement Report feature. This report shows activities that affect a company’s cash balance presented in the Chinese layout. This also adds the field China Cash Flow Item when making your transactions. For more information, see <a target='_blank' href='https://NETSUITE_WEBSITE_DOMAIN/app/help/helpcenter.nl?fid=section_1524052340.html'>China Cash Flow Statement Report</a>.</p><p style='padding: 0;'>Uncheck <b>China Cash Flow Statement</b> box to disable this feature. Deactivating this feature removes the <b>China Cash Flow Item</b> field and its related custom fields in your transactions, entity records, item records and chart of accounts. China Cash Flow report will not generate or show up in menu. China Cash Flow Item data in your existing transactions will not be deleted.</p></span>",
+  "ChinaVatIntegration":"CHINA VAT INTEGRATION",
+  "ChinaVatIntegrationAbstract": "Enables the ability to export and import VAT invoices data to Golden Tax System.",
+  "ChinaVatIntegrationHelp": "<span style='line-height:18px;'><p  style='padding: 0;'>This feature is automatically activated when installing the <b>China Localization SuiteApp</b>.</p><p  style='padding: 0;'>Checking <b>China VAT Integration</b> enables the ability to export and import China VAT Invoices to the Golden Tax System. With this feature, you can export your China VAT Invoice transactions from NetSuite to the Golden Tax System. You can also import your transactions from the Golden Tax System to NetSuite. For more information,see <a  target='_blank' href='https://NETSUITE_WEBSITE_DOMAIN/app/help/helpcenter.nl?fid=section_1524045813.html'>Generating China VAT Transactions</a>.</p><p style='padding: 0;'>Uncheck <b>China VAT Integration</b> to disable this feature. The custom fields in transaction records, entity records, and item records will be hidden. The <b>Generate China VAT Transaction</b> will also be hidden in the navigation.</p><p style='padding: 0;'>China VAT Integration can be re-enabled again in the future.</p><p style='padding: 0;'><b>Note</b>: Merged and exported transactions after generating China VAT Invoices can be edited after this feature is disabled.</p></span>",
+  "Title":"Configuration"
+}

@@ -1,0 +1,5770 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"
+	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+	<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+		<Author>Microsoft Office 使用者</Author>
+		<LastAuthor>Joe</LastAuthor>
+		<LastPrinted>2016-10-14T11:10:49Z</LastPrinted>
+		<Created>2015-09-09T06:49:05Z</Created>
+		<LastSaved>2018-03-15T06:43:48Z</LastSaved>
+		<Version>15.00</Version>
+	</DocumentProperties>
+	<OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+		<AllowPNG />
+	</OfficeDocumentSettings>
+	<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+		<WindowHeight>7215</WindowHeight>
+		<WindowWidth>20490</WindowWidth>
+		<WindowTopX>0</WindowTopX>
+		<WindowTopY>0</WindowTopY>
+		<TabRatio>500</TabRatio>
+		<ActiveSheet>2</ActiveSheet>
+		<ProtectStructure>False</ProtectStructure>
+		<ProtectWindows>False</ProtectWindows>
+		<DisplayInkNotes>False</DisplayInkNotes>
+	</ExcelWorkbook>
+	<Styles>
+		<Style ss:ID="Default" ss:Name="Normal">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="s21" ss:Name="常规 2">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="s20" ss:Name="一般 2">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="s22" ss:Name="一般 3">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="新細明體" x:CharSet="136" x:Family="Roman"
+				ss:Size="12" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="m2366887681776" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="m2366887679504">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="m2366887679544">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#BFBFBF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="m2366887679624">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#F8CBAD" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s23" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom" />
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s24">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom"
+				ss:WrapText="1" />
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s25">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+			<Interior ss:Color="#C6E0B4" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s26" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s27" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s28" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s29" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s30">
+			<Interior ss:Color="#FFD966" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s31">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s32">
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#9BC2E6" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s33">
+			<Alignment ss:Vertical="Center" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#9BC2E6" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s34">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#9BC2E6" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s35">
+			<Alignment ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#9BC2E6" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s36">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom"
+				ss:WrapText="1" />
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+			<Interior ss:Color="#C65911" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s37">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#F8CBAD" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s38">
+			<Alignment ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#F8CBAD" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s39">
+			<Alignment ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#FFFF00" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s40">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#FFFF00" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s41">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#BF8F00" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s42">
+			<Interior ss:Color="#FFC000" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s43">
+			<Alignment ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s44">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#C6E0B4" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s45">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#9BC2E6" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s47">
+			<Interior ss:Color="#FFFF00" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s49" ss:Parent="s21">
+			<Interior ss:Color="#FFC000" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s50" ss:Parent="s22">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s51" ss:Parent="s22">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s52" ss:Parent="s22">
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16"
+				ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s53" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center" />
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s55" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center" />
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16"
+				ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s56" ss:Parent="s22">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16"
+				ss:Color="#0000FF" ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s57" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Bottom" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s60" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s61" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s62" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s63" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s64" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s65" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s66" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s67" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s68" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s69" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s70" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s71" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s72" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s73" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s74" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s75" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s76" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s77" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="新細明體" x:CharSet="136" x:Family="Roman"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s78" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s79" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s80" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s81" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s82" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="新細明體" x:CharSet="136" x:Family="Roman"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s83" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+			<Interior ss:Color="#C6E0B4" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s84" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="新細明體" x:CharSet="136" x:Family="Roman"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s85" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s86" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8"
+				ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s87" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8"
+				ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s88" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8"
+				ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s89" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s90" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s91" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s92" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s93" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s94" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s95" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s96" ss:Parent="s21">
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s97" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s98" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s99" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#FF0000" />
+		</Style>
+		<Style ss:ID="s100" ss:Parent="s21">
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s101" ss:Parent="s21">
+			<Borders>
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s102" ss:Parent="s21">
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+		</Style>
+		<Style ss:ID="s103" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s104" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12"
+				ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s105" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="2" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous" />
+			</Borders>
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#0000FF" />
+		</Style>
+		<Style ss:ID="s106" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders />
+			<Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#0000FF" />
+		</Style>
+		<Style ss:ID="s107" ss:Parent="s21">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Top"
+				ss:WrapText="1" />
+			<Borders />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s108" ss:Parent="s20">
+			<Alignment ss:Horizontal="Left" ss:Vertical="Center" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="16" ss:Color="#000000" />
+			<Interior />
+		</Style>
+		<Style ss:ID="s109" ss:Parent="s21">
+			<Alignment ss:Vertical="Center" ss:WrapText="1" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s110">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#9BC2E6" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s129">
+			<Alignment ss:Vertical="Center" />
+			<Borders />
+		</Style>
+		<Style ss:ID="s145">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#C6E0B4" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s146">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#C6E0B4" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s147">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"
+				ss:Bold="1" />
+			<Interior ss:Color="#FFC000" ss:Pattern="Solid" />
+		</Style>
+	</Styles>
+	<Worksheet ss:Name="Package Information &amp; Pallet">
+		<Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="42"
+			x:FullColumns="1" x:FullRows="1" ss:StyleID="s60"
+			ss:DefaultColumnWidth="53.25" ss:DefaultRowHeight="15.75">
+			<Column ss:StyleID="s60" ss:AutoFitWidth="0" ss:Width="138" />
+			<Column ss:StyleID="s60" ss:AutoFitWidth="0" ss:Width="141.75" />
+			<Column ss:StyleID="s60" ss:AutoFitWidth="0" ss:Width="143.25"
+				ss:Span="4" />
+			<Column ss:Index="8" ss:StyleID="s60" ss:AutoFitWidth="0"
+				ss:Width="164.25" ss:Span="1" />
+			<Row ss:Height="16.5" />
+			<Row>
+				<Cell ss:MergeAcross="1" ss:MergeDown="1" ss:StyleID="m2366887681776">
+					<Data ss:Type="String">Package Information</Data>
+				</Cell>
+				<Cell ss:StyleID="s61">
+					<Data ss:Type="String">Example A</Data>
+				</Cell>
+				<Cell ss:StyleID="s61">
+					<Data ss:Type="String">Example B</Data>
+				</Cell>
+				<Cell ss:StyleID="s61">
+					<Data ss:Type="String">Example C</Data>
+				</Cell>
+				<Cell ss:StyleID="s61">
+					<Data ss:Type="String">Example D</Data>
+				</Cell>
+				<Cell ss:StyleID="s62">
+					<Data ss:Type="String">Example E</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="45.5625">
+				<Cell ss:Index="3" ss:StyleID="s63">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">48&quot;</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">空枱</Font>
+						<Font html:Color="#000000">, </Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">每組入一全彩天蓋</Font>
+						<Font html:Color="#000000">+</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">棕盒地蓋</Font>
+						<Font html:Color="#000000">. </Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">無運輸外箱</Font>
+						<Font html:Color="#000000">, floor loading</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">48&quot;</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">空枱</Font>
+						<Font html:Color="#000000">, </Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">每組入一全彩天蓋</Font>
+						<Font html:Color="#000000">+</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">棕盒地蓋</Font>
+						<Font html:Color="#000000">. 10</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">組入一</Font>
+						<Font html:Color="#000000">PDQ+</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">棧板</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">90&quot;</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">空枱</Font>
+						<Font html:Color="#000000">, </Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">每組入一天地蓋加彩貼</Font>
+						<Font html:Color="#000000">. 6</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">組入一棧板</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s63">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">5</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">合</Font>
+						<Font html:Color="#000000">1</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">組</Font>
+						<Font html:Color="#000000">. </Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">每組入一彩盒</Font>
+						<Font html:Color="#000000">, 2</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">組入一外箱包裝</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s64">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">6pcs</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">乒乓球</Font>
+						<Font html:Color="#000000">. </Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">每組入一泡殼</Font>
+						<Font html:Color="#000000">, 6</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">組入一內盒</Font>
+						<Font html:Color="#000000">, 20</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">個內盒入一外箱包裝</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="32.25">
+				<Cell ss:StyleID="s65">
+					<Data ss:Type="String">Retail packaging type</Data>
+				</Cell>
+				<Cell ss:StyleID="s66">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">產品本身個別的包裝方式</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s67">
+					<Data ss:Type="String">Printed Cover with Bottom Tray</Data>
+				</Cell>
+				<Cell ss:StyleID="s67">
+					<Data ss:Type="String">Printed Cover with Bottom Tray</Data>
+				</Cell>
+				<Cell ss:StyleID="s67">
+					<Data ss:Type="String">Brown Cover &amp; Bottom Tray, w/color label
+					</Data>
+				</Cell>
+				<Cell ss:StyleID="s67">
+					<Data ss:Type="String">Color Box</Data>
+				</Cell>
+				<Cell ss:StyleID="s68">
+					<Data ss:Type="String">Blister Card</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="31.5">
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Retail packaging dimensions</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">產品本身個別的包裝尺寸</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">49&quot;L x 24&quot;W x 5&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">49&quot;L x 24&quot;W x 5&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">91&quot;L x 33&quot;W x 5&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">25&quot;L x 8&quot;W x 3&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s72">
+					<Data ss:Type="String">8&quot;L x 4&quot;W x 1&quot;H</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Retail packaging weight</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">單組產品含包裝的重量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">22 Kgs</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">22 Kgs</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">50 Kgs</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">4 Kgs</Data>
+				</Cell>
+				<Cell ss:StyleID="s74">
+					<Data ss:Type="String">0.3 kgs</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Outer pack type</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">產品運輸</Font>
+						<Font html:Color="#000000">/</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">展示的包裝方式</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">Floor-Retail package</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">PDQ with Pallet</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">Pallet pack</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">Master Carton</Data>
+				</Cell>
+				<Cell ss:StyleID="s74">
+					<Data ss:Type="String">Master Carton</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">Inner pack size</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">幾組產品裝入一內盒</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s74">
+					<Data ss:Type="Number">6</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Inner pack dimensions</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">內盒尺寸</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">NA</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">NA</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">NA</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">NA</Data>
+				</Cell>
+				<Cell ss:StyleID="s74">
+					<Data ss:Type="String">9&quot;x5&quot;x6.5&quot;</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">PDQ pack size</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">幾組產品裝入一展示盒</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">10</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+				<Cell ss:StyleID="s74">
+					<Data ss:Type="Number">0</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">PDQ pack dimensions</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">PDQ</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">尺寸</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">NA</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">49&quot;L x 24&quot;W x 50&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">NA</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="String">NA</Data>
+				</Cell>
+				<Cell ss:StyleID="s74">
+					<Data ss:Type="String">NA</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">Outer pack size</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">幾組產品裝入一運輸外箱</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">1</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">10</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">6</Data>
+				</Cell>
+				<Cell ss:StyleID="s73">
+					<Data ss:Type="Number">2</Data>
+				</Cell>
+				<Cell ss:StyleID="s74">
+					<Data ss:Type="Number">120</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Outer pack dimensions</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">外箱尺寸</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">49&quot;L x 24&quot;W x 5&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">49&quot;L x 24&quot;W x 55&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">91&quot;L x 33&quot;W x 35&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">25.5&quot;L x 9&quot;W x 7&quot;H</Data>
+				</Cell>
+				<Cell ss:StyleID="s72">
+					<Data ss:Type="String">10&quot;L x 6&quot;W x 30&quot;H</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="16.5">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Outer pack weight</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">外箱包裝的重量</Data>
+				</Cell>
+				<Cell ss:StyleID="s78">
+					<Data ss:Type="String">22 Kgs</Data>
+				</Cell>
+				<Cell ss:StyleID="s78">
+					<Data ss:Type="String">230 Kgs</Data>
+				</Cell>
+				<Cell ss:StyleID="s78">
+					<Data ss:Type="String">310 kgs</Data>
+				</Cell>
+				<Cell ss:StyleID="s78">
+					<Data ss:Type="String">8.5 kgs</Data>
+				</Cell>
+				<Cell ss:StyleID="s79">
+					<Data ss:Type="String">36 kgs</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="42">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Outer pack cuft</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">外箱包裝的材積(立方英吋)</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">3.40'&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法: </Font>
+						<Font html:Size="10" html:Color="#0000FF">49x24x5/1728 (</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以1728)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">37.43'&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 49x24x55/1728 (</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">1728)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">60.82'&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 91x33x35/1728 (</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">1728)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">0.92'&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 25.5x9x7/1728 (</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">1728)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">1.04'&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 10x6x30/1728 (</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">1728)</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="53.25">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Outer pack CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">外箱包裝的CBM(立方公尺)</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">0.0964 CBM&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 49x24x5/1728/35.315 (
+						</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以1728除以35.315)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">1.0599 CBM&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 49x24x55/1728/35.315 (
+						</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以1728除以35.315)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">1.7223 CBM&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 91x33x35/1728/35.315 (
+						</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以1728除以35.315)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">0.0263 CBM&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 25.5x9x7/1728/35.315 (
+						</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以1728除以35.315)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">0.0295 CBM&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 10x6x30/1728/35.315 (
+						</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">外箱尺寸長乘寬乘高除以1728除以35.315)</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="16.5">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Loading Qty-20'</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">20'櫃的裝櫃量</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">291 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">260 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">96 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">2128 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">114000 sets</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="73.125">
+				<Cell ss:StyleID="s81">
+					<Data ss:Type="String">Ttl cuft-20' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s82">
+					<Data ss:Type="String">20'櫃的裝櫃總材積</Data>
+				</Cell>
+				<Cell ss:StyleID="s83">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">989.4' &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 291/1x3.4 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cuft)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s83">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">973.18' &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 260/10x37.43 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cuft)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s83">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">973.12' &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 96/6x60.82 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cuft)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s83">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">978.88' &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 2128/2x0.92 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cuft)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s83">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">988' &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 114000/120x1.04 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cuft)</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="73.125">
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Ttl CBM-20' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s84">
+					<Data ss:Type="String">20'櫃的裝櫃總CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s85">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">28.0524 CBM &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 291/1x0.0964 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cbm)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s85">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">27.5574 CBM&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 260/10x1.0599 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cbm)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s85">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">27.5568 CBM&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 96/6x1.7223 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cbm)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s85">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">27.9832 CBM &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 2128/2x0.0263 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cbm)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s85">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">28.025 CBM &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 114000/120x0.0295 (20'
+						</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack cbm)</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="73.125">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Ttl weight-20' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">20'櫃的裝櫃總重</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">6402 kgs &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 291/1x22 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack weight)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">5980 kgs&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 260/10x230 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack weight)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">4960 kgs&#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 96/6x310 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack weight)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">9044 kgs &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 2128/2x8.5 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack weight)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">34200 kgs &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 114000/120x36 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">outer pack weight)</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="16.5">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Loading Qty-40' </Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">40'櫃的裝櫃量</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">582 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">520 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">192 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">4256 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">228000 sets</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s81">
+					<Data ss:Type="String">Ttl cuft-40' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s82">
+					<Data ss:Type="String">40'櫃的裝櫃總材積</Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Ttl CBM-40' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s84">
+					<Data ss:Type="String">40'櫃的裝櫃總CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Ttl weight-40' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">40'櫃的裝櫃總重</Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="16.5">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Loading Qty-40' HQ</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">40'HQ櫃的裝櫃量</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">610 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">600 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">210 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">5100 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">270000 sets</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s81">
+					<Data ss:Type="String">Ttl cuft-40' HQ loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s82">
+					<Data ss:Type="String">40'HQ櫃的裝櫃總材積</Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Ttl CBM-40' HQ loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s84">
+					<Data ss:Type="String">40'HQ櫃的裝櫃總CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Ttl weight-40' HQ loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">40'HQ櫃的裝櫃總重</Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">40'HQ</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="16.5">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Loading Qty-45' </Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">45'櫃的裝櫃量</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">652 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">643 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">232 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">6000 sets</Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<Data ss:Type="String">320000 sets</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s81">
+					<Data ss:Type="String">Ttl cuft-45' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s82">
+					<Data ss:Type="String">45'櫃的裝櫃總材積</Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s86">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl cuft-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">Ttl CBM-45' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s84">
+					<Data ss:Type="String">45'櫃的裝櫃總CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s87">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl CBM-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.4375">
+				<Cell ss:StyleID="s76">
+					<Data ss:Type="String">Ttl weight-45' loading qty</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">45'櫃的裝櫃總重</Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s88">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">算法同上列</Font>
+						<Font html:Color="#FF0000">Ttl weight-20' loading qyt,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">但將</Font>
+						<Font html:Color="#FF0000">20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃改為為</Font>
+						<Font html:Color="#FF0000">45'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">裝櫃量</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="16.5" />
+			<Row ss:Height="73.5">
+				<Cell ss:StyleID="s89">
+					<Data ss:Type="String">If Pallet is required? (Y/N)</Data>
+				</Cell>
+				<Cell ss:StyleID="s90">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">Retail package </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">如有不符合下列其中的一點</Font>
+						<Font html:Color="#000000">, </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">從倉庫出貨給消費者</Font>
+						<Font html:Color="#000000">,</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">需要走</Font>
+						<Font html:Color="#000000">LTL, LTL</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">要求貨品需要裝在</Font>
+						<Font html:Color="#000000">Pallet</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">上才能寄送</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s91">
+					<Data ss:Type="String">N</Data>
+				</Cell>
+				<Cell ss:StyleID="s91">
+					<Data ss:Type="String">N</Data>
+				</Cell>
+				<Cell ss:StyleID="s91">
+					<Data ss:Type="String">Y</Data>
+				</Cell>
+				<Cell ss:StyleID="s91">
+					<Data ss:Type="String">N</Data>
+				</Cell>
+				<Cell ss:StyleID="s92">
+					<Data ss:Type="String">N</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s93" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s95" />
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s93" />
+				<Cell ss:StyleID="s96">
+					<Data ss:Type="String">1. Max Weight: 150LBS(Item Gross Weight)</Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">重量</Font>
+						<Font html:Color="#000000">22kgs (48.5LBs) </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">重量</Font>
+						<Font html:Color="#000000">22kgs (48.5LBs) </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">重量</Font>
+						<Font html:Color="#000000">50kgs (110.23 LBs) </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">重量</Font>
+						<Font html:Color="#000000">4kgs (8.81 LBs) </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s98">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">重量</Font>
+						<Font html:Color="#000000">0.3kgs (0.66 LBs) </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s96">
+					<Data ss:Type="String">Girth Calucation</Data>
+				</Cell>
+				<Cell ss:StyleID="s96">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">2. Max Girth: 150&quot;(retail</Font>
+						<Font html:Face="宋体" x:CharSet="134" html:Color="#000000">长宽高</Font>
+						<Font html:Color="#000000">
+						</Font>
+						<Font html:Face="宋体" x:CharSet="134" html:Color="#000000">公式参照右边单元格
+						</Font>
+						<Font html:Color="#000000">)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">Girth (24+5)*2+49=107 </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">Girth (24+5)*2+49=107 </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s99">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#FF0000">Girth (33+5)*2+91=167 </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#FF0000">超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">Girth (8+3)*2+25=49 </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s98">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">Girth (4+1)*2+8=18 </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s100">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">((</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">最短邊</Font>
+						<Font html:Color="#000000">+</Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">中長邊</Font>
+						<Font html:Color="#000000">)*2) + </Font>
+						<Font html:Face="新細明體" x:CharSet="136" x:Family="Roman"
+							html:Color="#000000">最長邊</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s96">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">3. Longest side; 108&quot;</Font>
+						<Font html:Face="宋体" x:CharSet="134" html:Color="#000000">（retail 长宽高
+							取最大做比较）</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">最長</Font>
+						<Font html:Color="#000000">49&quot; </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">最長</Font>
+						<Font html:Color="#000000">49&quot; </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">最長</Font>
+						<Font html:Color="#000000">91&quot; </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s97">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">最長</Font>
+						<Font html:Color="#000000">25&quot; </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s98">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">最長</Font>
+						<Font html:Color="#000000">8&quot; </Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#000000">沒超標</Font>
+					</ss:Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s101" />
+				<Cell ss:Index="3" ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s95" />
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s101" />
+				<Cell ss:Index="3" ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s94" />
+				<Cell ss:StyleID="s95" />
+			</Row>
+			<Row ss:Height="16.5">
+				<Cell ss:StyleID="s102" />
+				<Cell ss:StyleID="s103" />
+				<Cell ss:StyleID="s103" />
+				<Cell ss:StyleID="s103" />
+				<Cell ss:StyleID="s103" />
+				<Cell ss:StyleID="s103" />
+				<Cell ss:StyleID="s104" />
+			</Row>
+			<Row ss:Height="48">
+				<Cell ss:StyleID="s21" />
+				<Cell ss:StyleID="s109">
+					<Data ss:Type="String">计算规则从retail package info 计算出来</Data>
+				</Cell>
+			</Row>
+		</Table>
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<PageSetup>
+				<Header x:Margin="0.3" />
+				<Footer x:Margin="0.3" />
+				<PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7"
+					x:Top="0.75" />
+			</PageSetup>
+			<Print>
+				<ValidPrinterInfo />
+				<PaperSizeIndex>9</PaperSizeIndex>
+				<HorizontalResolution>600</HorizontalResolution>
+				<VerticalResolution>0</VerticalResolution>
+			</Print>
+			<TopRowVisible>32</TopRowVisible>
+			<Panes>
+				<Pane>
+					<Number>3</Number>
+					<ActiveRow>43</ActiveRow>
+					<ActiveCol>3</ActiveCol>
+				</Pane>
+			</Panes>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+	</Worksheet>
+	<Worksheet ss:Name="是否需pallet">
+		<Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="16"
+			x:FullColumns="1" x:FullRows="1" ss:StyleID="s21"
+			ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+			<Column ss:StyleID="s21" ss:Width="576" />
+			<Row>
+				<Cell>
+					<Data ss:Type="String">下列情形, 如果有一項不符合, 從倉庫出貨給消費者, 需要走LTL,
+						LTL要求貨品需要裝在pallet上</Data>
+				</Cell>
+			</Row>
+			<Row ss:Index="3">
+				<Cell>
+					<Data ss:Type="String">1. Max Weight: 150LBS  </Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell>
+					<Data ss:Type="String">2. Max Girth: 150&quot;</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell>
+					<Data ss:Type="String">3. Longest side; 108&quot;</Data>
+				</Cell>
+			</Row>
+			<Row ss:Index="7">
+				<Cell>
+					<Data ss:Type="String">Girth Calucation</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell>
+					<Data ss:Type="String">((最短邊+中長邊)*2) + 最長邊</Data>
+				</Cell>
+			</Row>
+			<Row ss:Index="10">
+				<Cell>
+					<Data ss:Type="String">Example</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell>
+					<Data ss:Type="String">the master carton size is
+						62&quot;x32&quot;x4&quot;, the girth is (32+4)*2+62=194</Data>
+				</Cell>
+			</Row>
+			<Row ss:Index="16">
+				<Cell ss:StyleID="s49">
+					<Data ss:Type="String">If 1 or 2 or 3， then need pallet</Data>
+				</Cell>
+			</Row>
+		</Table>
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<PageSetup>
+				<Header x:Margin="0.3" />
+				<Footer x:Margin="0.3" />
+				<PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7"
+					x:Top="0.75" />
+			</PageSetup>
+			<Panes>
+				<Pane>
+					<Number>3</Number>
+					<ActiveRow>22</ActiveRow>
+					<ActiveCol>1</ActiveCol>
+					<RangeSelection>R23C2:R24C2</RangeSelection>
+				</Pane>
+			</Panes>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+	</Worksheet>
+	<Worksheet ss:Name="Item Record">
+		<Table ss:ExpandedColumnCount="77" ss:ExpandedRowCount="39"
+			x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="54"
+			ss:DefaultRowHeight="15.75">
+			<Column ss:StyleID="s23" ss:Width="263.25" />
+			<Column ss:Width="69.75" />
+			<Column ss:Width="129.75" />
+			<Column ss:Width="69.75" />
+			<Column ss:Width="94.5" />
+			<Column ss:Width="44.25" />
+			<Column ss:Width="72" />
+			<Column ss:Width="79.5" />
+			<Column ss:Width="102" />
+			<Column ss:Width="79.5" ss:Span="1" />
+			<Column ss:Index="12" ss:Width="64.5" />
+			<Column ss:Width="136.5" />
+			<Column ss:Width="123" />
+			<Column ss:Width="154.5" />
+			<Column ss:Width="132" />
+			<Column ss:Width="270" />
+			<Column ss:Width="123" ss:Span="2" />
+			<Column ss:Index="21" ss:Width="163.5" />
+			<Column ss:Width="123" ss:Span="1" />
+			<Column ss:Index="24" ss:Width="449.25" />
+			<Column ss:Width="136.5" ss:Span="3" />
+			<Column ss:Index="29" ss:Width="143.25" ss:Span="1" />
+			<Column ss:Index="31" ss:AutoFitWidth="0" ss:Width="123" />
+			<Column ss:Width="184.5" ss:Span="2" />
+			<Column ss:Index="35" ss:Width="129.75" />
+			<Column ss:Width="132" ss:Span="2" />
+			<Column ss:Index="39" ss:Width="177" />
+			<Column ss:Width="129.75" ss:Span="3" />
+			<Column ss:Index="44" ss:Width="190.5" />
+			<Column ss:Width="251.25" />
+			<Column ss:Width="163.5" />
+			<Column ss:Width="147" ss:Span="2" />
+			<Column ss:Index="50" ss:Width="129.75" />
+			<Column ss:Width="168" ss:Span="1" />
+			<Column ss:Index="53" ss:Width="129.75" />
+			<Column ss:Width="116.25" />
+			<Column ss:Width="154.5" />
+			<Column ss:Width="129.75" />
+			<Column ss:Width="143.25" />
+			<Column ss:Width="154.5" />
+			<Column ss:Width="129.75" />
+			<Column ss:Width="143.25" />
+			<Column ss:Width="169.5" />
+			<Column ss:Width="129.75" />
+			<Column ss:Width="143.25" ss:Span="1" />
+			<Column ss:Index="65" ss:Width="109.5" />
+			<Column ss:Width="276" />
+			<Column ss:Width="127.5" />
+			<Column ss:Width="129.75" />
+			<Column ss:Width="203.25" />
+			<Column ss:AutoFitWidth="0" ss:Width="354.75" />
+			<Row>
+				<Cell ss:StyleID="s24">
+					<Data ss:Type="String">Inventory item/ Bill of material</Data>
+				</Cell>
+				<Cell ss:Index="26">
+					<Data ss:Type="String">？</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">？</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">？</Data>
+				</Cell>
+				<Cell ss:Index="32">
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell ss:Index="53">
+					<Data ss:Type="String">Loading Qty</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell ss:StyleID="s24" />
+				<Cell ss:Index="3">
+					<Data ss:Type="String">No need，Class 替代</Data>
+				</Cell>
+				<Cell ss:Index="21">
+					<Data ss:Type="String">Only %5 &amp; 0</Data>
+				</Cell>
+				<Cell ss:Index="24">
+					<Data ss:Type="String">MD Estimate Cost</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Factory History Cost</Data>
+				</Cell>
+				<Cell ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+				<Cell ss:Index="32">
+					<Data ss:Type="String">Color Box Size</Data>
+				</Cell>
+				<Cell ss:Index="36">
+					<Data ss:Type="String">Inner Box Size</Data>
+				</Cell>
+				<Cell ss:Index="40">
+					<Data ss:Type="String">CTN/Pallet Size</Data>
+				</Cell>
+				<Cell ss:Index="53" ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s30">
+					<Data ss:Type="String">no need， in another single custom record</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell ss:StyleID="s36">
+					<Data ss:Type="String">Medal Sport field label</Data>
+				</Cell>
+				<Cell ss:Index="5">
+					<Data ss:Type="String">Description</Data>
+				</Cell>
+				<Cell ss:Index="11">
+					<Data ss:Type="String">No need</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">no need</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">要求用户宣导最底一层</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">目前MD 用average</Data>
+				</Cell>
+				<Cell ss:Index="17">
+					<Data ss:Type="String">only available for bill of material item</Data>
+				</Cell>
+				<Cell ss:Index="21">
+					<Data ss:Type="String">Provide all VAT category</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">brief Spec， detail 的通过附件</Data>
+				</Cell>
+				<Cell ss:Index="26" ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+				<Cell>
+					<Data ss:Type="String">单个产品净重</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">单个产品加包装weight</Data>
+				</Cell>
+				<Cell ss:Index="44">
+					<Data ss:Type="String">CARTON+产品重量</Data>
+				</Cell>
+				<Cell ss:Index="46">
+					<Data ss:Type="String">产品数量</Data>
+				</Cell>
+				<Cell ss:Index="51">
+					<Data ss:Type="String">单个pallet weight（6kg）</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">一个pallet 的毛重</Data>
+				</Cell>
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s42" />
+				<Cell ss:StyleID="s30" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s31">
+				<Cell ss:MergeDown="1" ss:StyleID="m2366887679504">
+					<Data ss:Type="String">字段名称</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s37">
+					<Data ss:Type="String">Item #</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="m2366887679544">
+					<Data ss:Type="String">Item Type</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s37">
+					<Data ss:Type="String">UPC Code</Data>
+				</Cell>
+				<Cell ss:StyleID="s37" />
+				<Cell ss:MergeDown="1" ss:StyleID="s37">
+					<Data ss:Type="String">Image</Data>
+				</Cell>
+				<Cell ss:MergeAcross="3" ss:StyleID="m2366887679624">
+					<Data ss:Type="String">Unit </Data>
+				</Cell>
+				<Cell ss:StyleID="s37" />
+				<Cell ss:StyleID="s37" />
+				<Cell ss:StyleID="s37">
+					<Data ss:Type="String">产品分类</Data>
+				</Cell>
+				<Cell ss:StyleID="s34" />
+				<Cell ss:StyleID="s34" />
+				<Cell ss:StyleID="s34" />
+				<Cell ss:StyleID="s35" />
+				<Cell ss:MergeAcross="2" ss:StyleID="s34">
+					<Data ss:Type="String">科目信息</Data>
+				</Cell>
+				<Cell ss:StyleID="s35" />
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Spec</Data>
+				</Cell>
+				<Cell ss:StyleID="s45" />
+				<Cell ss:MergeDown="1" ss:StyleID="s145">
+					<Data ss:Type="String">MD Estimate Factory Cost</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s146">
+					<Data ss:Type="String">Factory</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s146">
+					<Data ss:Type="String">Valid from</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s146">
+					<Data ss:Type="String">Cost</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s146">
+					<Data ss:Type="String">Currency</Data>
+				</Cell>
+				<Cell ss:MergeAcross="1" ss:StyleID="s45" />
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Retail packaging type</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Retail packaging-L(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Retail packaging-W(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Retail packaging-H(Inch)</Data>
+				</Cell>
+				<Cell ss:StyleID="s32" />
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">inner box-L(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">inner box-W(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">inner box-H(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Pack Size-Master Carton</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">CTN-L(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">CTN-W(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">CTN-H(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">CTN-Cuft(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Gross Weight（CTN）</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Loading Type</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Loading pack size</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Loading DIM-L(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Loading DIM-W(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Loading DIM-H(Inch)</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Loading DIM-Cuft</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Pallet Weight</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Pallet weight（loading）</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">20'</Data>
+				</Cell>
+				<Cell ss:StyleID="s45" />
+				<Cell ss:StyleID="s45" />
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">40'GP</Data>
+				</Cell>
+				<Cell ss:StyleID="s45" />
+				<Cell ss:StyleID="s45" />
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">40'HQ</Data>
+				</Cell>
+				<Cell ss:StyleID="s45" />
+				<Cell ss:StyleID="s45" />
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">45'</Data>
+				</Cell>
+				<Cell ss:StyleID="s45" />
+				<Cell ss:StyleID="s45" />
+				<Cell ss:StyleID="s45" />
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">From Port</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Brand</Data>
+					<Comment ss:Author="Gary">
+						<ss:Data xmlns="http://www.w3.org/TR/REC-html40">
+							<B>
+								<Font html:Size="9">Gary:</Font>
+							</B>
+							<Font html:Size="9">&#10;custome sgment or class</Font>
+						</ss:Data>
+					</Comment>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s45">
+					<Data ss:Type="String">Product team</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s147">
+					<Data ss:Type="String">Pallet（Y/N）</Data>
+				</Cell>
+				<Cell ss:MergeDown="1" ss:StyleID="s147">
+					<Data ss:Type="String">Last time of test result</Data>
+				</Cell>
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="28.5" ss:StyleID="s31">
+				<Cell ss:Index="5" ss:StyleID="s37">
+					<Data ss:Type="String">Display name</Data>
+				</Cell>
+				<Cell ss:Index="7" ss:StyleID="s37">
+					<Data ss:Type="String">Unit type</Data>
+				</Cell>
+				<Cell ss:StyleID="s38">
+					<Data ss:Type="String">Sales unit</Data>
+				</Cell>
+				<Cell ss:StyleID="s37">
+					<Data ss:Type="String">Purchase unit</Data>
+				</Cell>
+				<Cell ss:StyleID="s37">
+					<Data ss:Type="String">Stock unit</Data>
+				</Cell>
+				<Cell ss:StyleID="s34">
+					<Data ss:Type="String">department</Data>
+				</Cell>
+				<Cell ss:StyleID="s34">
+					<Data ss:Type="String">location</Data>
+				</Cell>
+				<Cell ss:StyleID="s34">
+					<Data ss:Type="String">Class</Data>
+				</Cell>
+				<Cell ss:StyleID="s35">
+					<Data ss:Type="String">Costing Method</Data>
+				</Cell>
+				<Cell ss:StyleID="s39">
+					<Data ss:Type="String">Purchase Description</Data>
+				</Cell>
+				<Cell ss:StyleID="s40">
+					<Data ss:Type="String">Sales Description</Data>
+				</Cell>
+				<Cell ss:StyleID="s41">
+					<Data ss:Type="String">Bom Components</Data>
+				</Cell>
+				<Cell ss:StyleID="s34">
+					<Data ss:Type="String">库存科目</Data>
+				</Cell>
+				<Cell ss:StyleID="s34">
+					<Data ss:Type="String">营收科目</Data>
+				</Cell>
+				<Cell ss:StyleID="s34">
+					<Data ss:Type="String">成本科目</Data>
+				</Cell>
+				<Cell ss:StyleID="s35">
+					<Data ss:Type="String">Tax Schedule </Data>
+				</Cell>
+				<Cell ss:Index="23" ss:StyleID="s45">
+					<Data ss:Type="String">Customer Item number</Data>
+				</Cell>
+				<Cell ss:Index="29" ss:StyleID="s33">
+					<Data ss:Type="String">Item Net weight</Data>
+				</Cell>
+				<Cell ss:StyleID="s33">
+					<Data ss:Type="String">Item Gross Weight</Data>
+				</Cell>
+				<Cell ss:Index="35" ss:StyleID="s32">
+					<Data ss:Type="String">Pack Size-Inner</Data>
+				</Cell>
+				<Cell ss:Index="54" ss:StyleID="s45">
+					<Data ss:Type="String">20' Total CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s45">
+					<Data ss:Type="String">20' Container weight</Data>
+				</Cell>
+				<Cell ss:Index="57" ss:StyleID="s45">
+					<Data ss:Type="String">40' Total CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s45">
+					<Data ss:Type="String">40' Container weight</Data>
+				</Cell>
+				<Cell ss:Index="60" ss:StyleID="s45">
+					<Data ss:Type="String">40'HQ Total CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s45">
+					<Data ss:Type="String">40'HQ Container weight</Data>
+				</Cell>
+				<Cell ss:Index="63" ss:StyleID="s110">
+					<Data ss:Type="String">45' Total CBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s110">
+					<Data ss:Type="String">45' Container weight</Data>
+				</Cell>
+				<Cell ss:StyleID="s45">
+					<Data ss:Type="String">Loading Weight</Data>
+				</Cell>
+				<Cell ss:Index="71" ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+				<Cell ss:StyleID="Default" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="15">
+				<Cell ss:StyleID="s29">
+					<Data ss:Type="String">样例数据</Data>
+				</Cell>
+				<Cell ss:Index="17">
+					<Data ss:Type="String">多选</Data>
+				</Cell>
+				<Cell ss:Index="35">
+					<Data ss:Type="Number">2</Data>
+				</Cell>
+				<Cell ss:Index="39">
+					<Data ss:Type="Number">12</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="15">
+				<Cell ss:StyleID="s29">
+					<Data ss:Type="String">字段form 位置：</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Main</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">Main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Purchase/inventory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Factory History Cost</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Factory History Cost</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Factory History Cost</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Factory History Cost</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Factory History Cost</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Factory History Cost</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">shipping properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell ss:Index="62">
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">main</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Shipping Properties</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="24.75">
+				<Cell ss:StyleID="s28">
+					<Data ss:Type="String">If standard field in opportunity（Y/N）</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">NO</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">NO</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">YES</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">no</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell ss:Index="62">
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">No</Data>
+				</Cell>
+				<Cell ss:Index="70">
+					<Data ss:Type="String">N</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="16.5">
+				<Cell ss:StyleID="s26">
+					<Data ss:Type="String">字段类型</Data>
+				</Cell>
+				<Cell ss:Index="22">
+					<Data ss:Type="String">Long-text</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">text</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Vendor price</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">list</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">date</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">currency</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">list</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell ss:StyleID="s30">
+					<Data ss:Type="String">calculated rules？</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell ss:StyleID="s30">
+					<Data ss:Type="String">calculated rules？</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">numner</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">list</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Number</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">number</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">list</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">list</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">list</Data>
+				</Cell>
+				<Cell ss:StyleID="s30">
+					<Data ss:Type="String">checkbox</Data>
+				</Cell>
+				<Cell ss:StyleID="s30">
+					<Data ss:Type="String">Text</Data>
+				</Cell>
+				<Cell ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+				<Cell ss:StyleID="s30" />
+			</Row>
+			<Row ss:Height="14.25">
+				<Cell ss:StyleID="s26">
+					<Data ss:Type="String">字段来源</Data>
+				</Cell>
+				<Cell ss:Index="22">
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">subrecord field</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">subrecord field</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">subrecord field</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">subrecord field</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">subrecord field</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:Index="32">
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:Index="36">
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:Index="40">
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">自动计算：</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:Index="46">
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">自动计算：</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">计算规则：pallet+Gross weight（ctn)*Loading pack size
+					</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">默认0</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">自动计算</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">自动计算</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">自动计算</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">自动计算</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">default 0</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">自动计算</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">自动计算</Data>
+				</Cell>
+				<Cell ss:Index="68">
+					<Data ss:Type="String">employee</Data>
+				</Cell>
+				<Cell ss:Index="70">
+					<Data ss:Type="String">自动从最新的compliance record</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s27">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">Internal ID(</Font>
+						<Font html:Face="宋体" x:CharSet="134" html:Color="#000000">统一命名规则</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:Index="22" ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_spec</Data>
+				</Cell>
+				<Cell ss:StyleID="s129" />
+				<Cell ss:Index="25" ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_factory</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_validfrom</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_cost</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_currency</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_nw</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_gw</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_packtype</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_colorboxl</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_colorboxw</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_colorboxh</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_inner</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_innerboxl</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_innerboxw</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_innerboxh</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_mastercarton</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_ctnl</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_ctnw</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_ctnh</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_ctncuft</Data>
+				</Cell>
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_outer</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_loadingpacksize</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_ctnl</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_ctnw</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_ctnh</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_ctncuft</Data>
+				</Cell>
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_20</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_totalCBM</Data>
+				</Cell>
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_40gp</Data>
+				</Cell>
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_40hq</Data>
+				</Cell>
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_45</Data>
+				</Cell>
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43" />
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_fromport</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_brand</Data>
+				</Cell>
+				<Cell ss:StyleID="s43">
+					<Data ss:Type="String">_tn_item_producteam</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s27">
+					<Data ss:Type="String">Applied to record</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s27">
+					<Data ss:Type="String">If Mandatory</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Yes</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell ss:Index="13">
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell ss:Index="18">
+					<Data ss:Type="String">Yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">yes</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Yes</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">Y</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">Y</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s44">
+					<Data ss:Type="String">ROLE&amp;rights</Data>
+				</Cell>
+				<Cell ss:Index="68">
+					<Data ss:Type="String">Edit</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s25">
+					<Data ss:Type="String">VP of Sales</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s25">
+					<Data ss:Type="String">product</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">first time edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="24">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="45">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="47">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="52">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="62">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s25">
+					<Data ss:Type="String">Merchandise</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="24">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="45">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="47">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="53">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="62">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Ceate/edit</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s25">
+					<Data ss:Type="String">Accountant</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="24">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="45">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="47">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="53">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="62">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s25">
+					<Data ss:Type="String">Shipping</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="24">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="45">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="47">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="53">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="62">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s25">
+					<Data ss:Type="String">QC</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="24">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="45">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="47">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="53">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="62">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell ss:StyleID="s25">
+					<Data ss:Type="String">Compliance</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="4">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="24">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="45">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="47">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="53">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="56">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="59">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="62">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">read</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="67.5">
+				<Cell ss:StyleID="s26">
+					<Data ss:Type="String">开发和配置逻辑</Data>
+				</Cell>
+				<Cell ss:Index="22">
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:Index="24" ss:StyleID="s47">
+					<Data ss:Type="String">创建sub record：History FOB price，
+						只带出该item关联的history price</Data>
+				</Cell>
+				<Cell ss:StyleID="s47" />
+				<Cell ss:StyleID="s47" />
+				<Cell ss:StyleID="s47" />
+				<Cell ss:StyleID="s47" />
+				<Cell>
+					<Data ss:Type="String"> 计算字段： 规则等LVY</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String"> 计算字段： 规则等LVY</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:StyleID="s47">
+					<Data ss:Type="String">JS：等待Lvy 规则</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:StyleID="s47" />
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:StyleID="s105">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#0000FF">算法: </Font>
+						<Font html:Color="#0000FF">49x24x5/1728 (</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#0000FF">外箱尺寸長乘寬乘高除以1728)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s106" />
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:StyleID="s107">
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:StyleID="s105">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#0000FF">算法: </Font>
+						<Font html:Color="#0000FF">49x24x5/1728 (</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Color="#0000FF">外箱尺寸長乘寬乘高除以1728)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s106" />
+				<Cell ss:StyleID="s106" />
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell ss:StyleID="s85">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">28.0524 CBM &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 291/1x0.0964 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">loading pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以loading</Font>
+						<Font html:Size="10" html:Color="#0000FF"> pack cbm)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell ss:StyleID="s80">
+					<ss:Data ss:Type="String" xmlns="http://www.w3.org/TR/REC-html40">
+						<Font html:Color="#000000">6402 kgs &#10;</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">算法</Font>
+						<Font html:Size="10" html:Color="#0000FF">: 291/1x22 (20'</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">裝櫃量除以</Font>
+						<Font html:Size="10" html:Color="#0000FF">loading pack size</Font>
+						<Font html:Face="細明體" x:CharSet="136" x:Family="Modern"
+							html:Size="10" html:Color="#0000FF">乘以</Font>
+						<Font html:Size="10" html:Color="#0000FF">loading pack weight)</Font>
+					</ss:Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String"> 计算字段： 规则等LVY</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String"> 计算字段： 规则等LVY</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String"> 计算字段： 规则等LVY</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String"> 计算字段： 规则等LVY</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String"> 计算字段： 规则等LVY</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String"> 计算字段： 规则等LVY</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">manual import</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">manual input</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">计算规则参照“是否需要pallet”</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">from subrecord： compliance
+						最近的一条记录(什么类型的？产中检测)带过来</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:StyleID="s27">
+					<Data ss:Type="String">value of dropdown list</Data>
+				</Cell>
+				<Cell ss:Index="31" ss:StyleID="s52">
+					<Data ss:Type="String">Unit Type</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s52">
+					<Data ss:Type="String">Outer Type</Data>
+				</Cell>
+				<Cell ss:Index="66">
+					<Data ss:Type="String">port list:</Data>
+				</Cell>
+				<Cell ss:StyleID="s56">
+					<Data ss:Type="String">Brand</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Full Color Display Box</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53">
+					<Data ss:Type="String">None</Data>
+				</Cell>
+				<Cell ss:Index="66" ss:StyleID="s50">
+					<Data ss:Type="String">SHA</Data>
+				</Cell>
+				<Cell ss:StyleID="s57">
+					<Data ss:Type="String">MD Sports</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Printed Cover with Bottom Tray</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53">
+					<Data ss:Type="String">Master Carton</Data>
+				</Cell>
+				<Cell ss:Index="66" ss:StyleID="s51">
+					<Data ss:Type="String">YAN</Data>
+				</Cell>
+				<Cell ss:StyleID="s57">
+					<Data ss:Type="String">Barrington</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Brown Cover &amp; Bottom Tray, w/color label
+					</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53">
+					<Data ss:Type="String">Pallet</Data>
+				</Cell>
+				<Cell ss:Index="66" ss:StyleID="s51">
+					<Data ss:Type="String">NBO</Data>
+				</Cell>
+				<Cell ss:StyleID="s57">
+					<Data ss:Type="String">Dunlop</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Mail Pack</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53">
+					<Data ss:Type="String">Slip Sheet</Data>
+				</Cell>
+				<Cell ss:Index="66" ss:StyleID="s51">
+					<Data ss:Type="String">XIM</Data>
+				</Cell>
+				<Cell ss:StyleID="s57">
+					<Data ss:Type="String">Slaenger</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Bulk Pack</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53" />
+				<Cell ss:Index="66" ss:StyleID="s51">
+					<Data ss:Type="String">YAN</Data>
+				</Cell>
+				<Cell ss:StyleID="s57">
+					<Data ss:Type="String">EA Sports</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Carry Bag with Color Sleeve</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53" />
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">CGD</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String" x:Ticked="1">Blister</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53" />
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">ESPN</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Clamshell</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s108">
+					<Data ss:Type="String">从sample list-kevin version</Data>
+				</Cell>
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">Big Sky Company</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Header Card</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53" />
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">Prince</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">Bulk Pack</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53" />
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String" x:Ticked="1">Sportcraft</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">UPC Label</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53" />
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">Crane</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s108">
+					<Data ss:Type="String">从sample list-kevin version</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s55" />
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">Life Max</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s55" />
+				<Cell ss:Index="45" ss:StyleID="s55" />
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">Rally and Roar</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="31" ss:StyleID="s53">
+					<Data ss:Type="String">………………….</Data>
+				</Cell>
+				<Cell ss:Index="45" ss:StyleID="s53">
+					<Data ss:Type="String">………………….</Data>
+				</Cell>
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">Thorton</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">Private Label</Data>
+				</Cell>
+			</Row>
+			<Row ss:Height="21">
+				<Cell ss:Index="67" ss:StyleID="s57">
+					<Data ss:Type="String">………………</Data>
+				</Cell>
+			</Row>
+		</Table>
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<PageSetup>
+				<Header x:Margin="0.3" />
+				<Footer x:Margin="0.3" />
+				<PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7"
+					x:Top="0.75" />
+			</PageSetup>
+			<Print>
+				<ValidPrinterInfo />
+				<PaperSizeIndex>9</PaperSizeIndex>
+				<VerticalResolution>0</VerticalResolution>
+			</Print>
+			<TabColorIndex>10</TabColorIndex>
+			<Selected />
+			<FreezePanes />
+			<FrozenNoSplit />
+			<SplitHorizontal>5</SplitHorizontal>
+			<TopRowBottomPane>5</TopRowBottomPane>
+			<SplitVertical>1</SplitVertical>
+			<LeftColumnRightPane>43</LeftColumnRightPane>
+			<ActivePane>0</ActivePane>
+			<Panes>
+				<Pane>
+					<Number>3</Number>
+				</Pane>
+				<Pane>
+					<Number>1</Number>
+					<ActiveCol>1</ActiveCol>
+				</Pane>
+				<Pane>
+					<Number>2</Number>
+					<ActiveRow>3</ActiveRow>
+				</Pane>
+				<Pane>
+					<Number>0</Number>
+					<ActiveRow>10</ActiveRow>
+					<ActiveCol>45</ActiveCol>
+				</Pane>
+			</Panes>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+		<DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+			<Range>R24C66:R28C66</Range>
+			<Type>List</Type>
+			<CellRangeList />
+			<Value>&quot;SHA,YAN,NBO,XIM&quot;</Value>
+		</DataValidation>
+	</Worksheet>
+	<Worksheet ss:Name="Sublist">
+		<Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="1"
+			x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="54"
+			ss:DefaultRowHeight="14.25">
+			<Column ss:Index="2" ss:Width="69.75" />
+			<Row>
+				<Cell>
+					<Data ss:Type="String">UOM</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Department</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">location</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="String">Class</Data>
+				</Cell>
+			</Row>
+		</Table>
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<PageSetup>
+				<Header x:Margin="0.3" />
+				<Footer x:Margin="0.3" />
+				<PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7"
+					x:Top="0.75" />
+			</PageSetup>
+			<Print>
+				<ValidPrinterInfo />
+				<PaperSizeIndex>9</PaperSizeIndex>
+				<VerticalResolution>0</VerticalResolution>
+			</Print>
+			<Panes>
+				<Pane>
+					<Number>3</Number>
+					<ActiveRow>23</ActiveRow>
+					<ActiveCol>3</ActiveCol>
+				</Pane>
+			</Panes>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+	</Worksheet>
+</Workbook>

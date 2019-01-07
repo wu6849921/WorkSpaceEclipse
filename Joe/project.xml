@@ -1,0 +1,6 @@
+<project info="SuiteCloud IDE generated file, do not edit." setAttributesOnUpdate="false">
+  <folder name="Joe" bundleable="false" exclude="false">
+    <file name="TN_CS_J_default_value.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="TN_UE_J_disable_matrix.js" bundleable="false" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+  </folder>
+</project>

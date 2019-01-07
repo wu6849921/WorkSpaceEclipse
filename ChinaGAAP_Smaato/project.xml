@@ -1,0 +1,28 @@
+<project info="SuiteCloud IDE generated file, do not edit." setAttributesOnUpdate="false">
+  <folder name="ChinaGAAP_Smaato" bundleable="false">
+    <file name="COA Mapping Varification.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="TN_CS_CN_COA_MappingForm.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="TN_MappingForm_Common.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="TN_SL_CN_COA_MappingForm.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="TN_SL_UserManual.js" bundleable="false" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="TRIGGER_NAMESAPCE.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_BalanceSheet.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_CN_Mapping.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_Common.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_DiaryLedger.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_Employees.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_Entity.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_GenrealLedger.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_Hashtable.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_Language.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_PrintForm.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_ProfitLoss.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_Reports.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_Rule.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_SubLedger.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_TrialBalance.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_Voucher.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_WriteToPDF.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+    <file name="Trigger_Local_XML_Template.js" bundleable="true" hideInBundle="false" isOnline="false" textFileEncoding="_utf8"/>
+  </folder>
+</project>

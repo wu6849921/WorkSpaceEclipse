@@ -1,0 +1,5 @@
+{
+    "INVALID_TRANS_ID": "非法的Id",
+    "Alert": "提示",
+    "InvalidDateRange": "请输入一个有效的日期范围。起始日期必须在截止日期前。"
+}

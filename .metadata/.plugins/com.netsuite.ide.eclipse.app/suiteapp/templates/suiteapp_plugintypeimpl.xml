@@ -1,0 +1,11 @@
+<pluginimplementation scriptid="customscript_">
+    <customplugintype>[]</customplugintype>
+    <isinactive>F</isinactive>
+    <loglevel>DEBUG</loglevel>
+    <name></name>
+    <notifyadmins>F</notifyadmins>
+    <notifyowner>T</notifyowner>
+    <notifyuser>F</notifyuser>
+    <scriptfile>[]</scriptfile>
+    <status>TESTING</status>
+</pluginimplementation>

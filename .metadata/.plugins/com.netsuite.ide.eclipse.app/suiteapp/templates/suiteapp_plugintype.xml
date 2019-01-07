@@ -1,0 +1,8 @@
+<plugintype scriptid="customscript_">
+    <class></class>
+    <deploymentmodel>ALLOW_MULTIPLE</deploymentmodel>
+    <loglevel>DEBUG</loglevel>
+    <name></name>
+    <scriptfile>[]</scriptfile>
+    <status>TESTING</status>
+</plugintype>

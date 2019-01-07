@@ -1,0 +1,284 @@
+{
+	"CashFlowStatement": "中国现金流量表",
+	"ReportTitle": "现金流量表",
+	"Subsidiary": "子公司",
+	"Refresh": "刷新",
+	"ExportPDF": "导出PDF",
+	"ExportExcel": "导出Excel",
+	"Company": "公司",
+	"Period": "期间",
+	"Preparedby": "编制单位",
+	"Formname": "会企03表",
+	"CurrencyCode": "币种",
+	"Unit": "单位",
+	"ReportUnit": "单位",
+	"UnitContent": "元",
+	"ThousandUnit": "千元",
+	"TenThousandUnit": "万元",
+	"Items": "项目",
+	"Lines": "行次",
+	"CurrentPeriod": "本期金额",
+	"PriorPeriod": "上期金额",
+	"Period_From": "期间  自",
+	"Period_To": "至",
+	"exportName": "现金流量表",
+	"location": "地点",
+	"department": "部门",
+	"class": "类别",
+	"errorTitle": "错误",
+	"errorExportPDF": "PDF文件导出失败。",
+	"nullPeriod": "未对此财政日历定义期间。请依次转到“设置>会计>管理会计期间”，然后设置或指定所需期间。",
+	"PeriodRangeCrossFiscalYear": "请输入一个有效的期间范围。不允许跨财政年度。",
+	"data": {
+		"CashflowFromOperatingActivities": {
+			"isBold": "True",
+			"label": "一、经营活动产生的现金流量：",
+			"center": "False",
+			"padding": "False"
+		},
+		"CashReceivedFromSalesAndServices": {
+			"isBold": "False",
+			"label": "销售商品、提供劳务收到的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "1"
+		},
+		"TaxesAndSurchargesRefunds": {
+			"isBold": "False",
+			"label": "收到的税费返还",
+			"center": "False",
+			"padding": "True",
+			"id": "2"
+		},
+		"OtherCashReceiptsRelatedToOperatingActivities": {
+			"isBold": "False",
+			"label": "收到其他与经营活动有关的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "3"
+		},
+		"TotalCashInflowsFromOperatingActivities": {
+			"isBold": "True",
+			"label": "经营活动现金流入小计",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashPaidForGoodsAndServices": {
+			"isBold": "False",
+			"label": "购买商品、接受劳务支付的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "4"
+		},
+		"CashPaidToAndForeEmployees": {
+			"isBold": "False",
+			"label": "支付给职工以及为职工支付的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "5"
+		},
+		"TaxesAndSurchargesCashPayments": {
+			"isBold": "False",
+			"label": "支付的各项税费",
+			"center": "False",
+			"padding": "True",
+			"id": "6"
+		},
+		"OtherCashPaymentsRelatedToOperatingActivities": {
+			"isBold": "False",
+			"label": "支付其他与经营活动有关的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "7"
+		},
+		"TotalCashOutflowsFromOperatingActivities": {
+			"isBold": "True",
+			"label": "经营活动现金流出小计",
+			"center": "True",
+			"padding": "False"
+		},
+		"NetCashFlowsFromOperatingActivities": {
+			"isBold": "True",
+			"label": "经营活动产生的现金流量净额",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashFlowsFromInvestingActivities": {
+			"isBold": "True",
+			"label": "二、投资活动产生的现金流量：",
+			"center": "False",
+			"padding": "False"
+		},
+		"CashReceivedFromWithdrawOfInvestments": {
+			"isBold": "False",
+			"label": "收回投资收到的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "8"
+		},
+		"CashReceivedFromInvestmentIncome": {
+			"isBold": "False",
+			"label": "取得投资收益收到的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "9"
+		},
+		"NetCashReceivedFromDisposalOfFixedAssets": {
+			"isBold": "False",
+			"label": "处置固定资产、无形资产和其他长期资产收回的现金净额",
+			"center": "False",
+			"padding": "True",
+			"id": "10"
+		},
+		"NetCashReceivedFromDisposalOfSubsidiariesAndOtherBusinessUnits": {
+			"isBold": "False",
+			"label": "处置子公司及其他营业单位收到的现金净额",
+			"center": "False",
+			"padding": "True",
+			"id": "11"
+		},
+		"OtherCashReceiptsRelatedToInvestingActivities": {
+			"isBold": "False",
+			"label": "收到其他与投资活动有关的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "12"
+		},
+		"TotalCashInflowsFromInvestingActivities": {
+			"isBold": "True",
+			"label": "投资活动现金流入小计",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashPaidForFixedAssets": {
+			"isBold": "False",
+			"label": "购建固定资产、无形资产和其他长期资产支付的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "13"
+		},
+		"CashPaymentsForInvestments": {
+			"isBold": "False",
+			"label": "投资支付的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "14"
+		},
+		"NetCashPaidForAcquiringSubsidiariesAndOtherBusinessUnits": {
+			"isBold": "False",
+			"label": "取得子公司及其他营业单位支付的现金净额",
+			"center": "False",
+			"padding": "True",
+			"id": "15"
+		},
+		"OtherCashPaymentsRelatedToInvestingActivities": {
+			"isBold": "False",
+			"label": "支付其他与投资活动有关的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "16"
+		},
+		"TotalCashOutflowsFromInvestingActivities": {
+			"isBold": "True",
+			"label": "投资活动现金流出小计",
+			"center": "True",
+			"padding": "False"
+		},
+		"NetCashFlowsFromInvestingActivities": {
+			"isBold": "True",
+			"label": "投资活动产生的现金流量净额",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashFlowsFromFinancingActivities": {
+			"isBold": "True",
+			"label": "三、筹资活动产生的现金流量：",
+			"center": "False",
+			"padding": "False"
+		},
+		"CashReceivedFromInvestmentsByOthers": {
+			"isBold": "False",
+			"label": "吸收投资收到的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "17"
+		},
+		"CashReceivedFromBorrowings": {
+			"isBold": "False",
+			"label": "取得借款收到的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "18"
+		},
+		"OtherCashReceiptsRelatedToOtherFinancingActivities": {
+			"isBold": "False",
+			"label": "收到其他与筹资活动有关的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "19"
+		},
+		"TotalCashInflowsFromFinancingActivities": {
+			"isBold": "True",
+			"label": "筹资活动现金流入小计",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashRepaymentsForDebts": {
+			"isBold": "False",
+			"label": "偿还债务支付的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "20"
+		},
+		"CashPaymentsForDistributionOfDividends": {
+			"isBold": "False",
+			"label": "分配股利、利润或偿付利息支付的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "21"
+		},
+		"OtherCashPaymentsRelatedToFinancingActivities": {
+			"isBold": "False",
+			"label": "支付其他与筹资活动有关的现金",
+			"center": "False",
+			"padding": "True",
+			"id": "22"
+		},
+		"TotalCashOutflowsFromFinancingActivities": {
+			"isBold": "True",
+			"label": "筹资活动现金流出小计",
+			"center": "True",
+			"padding": "False"
+		},
+		"NetCashFlowsFromFinancingActivities": {
+			"isBold": "True",
+			"label": "筹资活动产生的现金流量净额",
+			"center": "True",
+			"padding": "False"
+		},
+		"EffectOfForeignExchangeRateChangesOnCashAndCashEquivalents": {
+			"isBold": "True",
+			"label": "四、汇率变动对现金及现金等价物的影响",
+			"center": "False",
+			"padding": "False"
+		},
+		"NetIncreaseInCashAndCashEquivalents": {
+			"isBold": "True",
+			"label": "五、现金及现金等价物净增加额",
+			"center": "False",
+			"padding": "False"
+		},
+		"Add": {
+			"isBold": "False",
+			"label": "加：期初现金及现金等价物余额",
+			"center": "False",
+			"padding": "True"
+		},
+		"EndingBalanceOfCashAndCashEquivalents": {
+			"isBold": "True",
+			"label": "六、期末现金及现金等价物余额",
+			"center": "False",
+			"padding": "False"
+		}
+	}
+}

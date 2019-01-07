@@ -1,0 +1,15 @@
+<portlet scriptid="customscript_">
+    <defaultfunction></defaultfunction>
+    <name></name>
+    <notifyowner>T</notifyowner>
+    <portlettype></portlettype>
+    <scriptfile>[]</scriptfile>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_">
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <status>TESTING</status>
+            <title></title>
+        </scriptdeployment>
+    </scriptdeployments>
+</portlet>

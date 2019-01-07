@@ -1,0 +1,22 @@
+{
+    "IncomeStatement": "中国利润表",
+    "ReportTitle": "利　润　表",
+    "templatename": "利润表名称",
+    "Subsidiary": "子公司",
+    "PreparedBy": "编制单位",
+    "Refresh": "刷新",
+    "Period": "期间",
+    "Unit": "单位",
+    "UnitContent": "元",
+    "ThousandUnit": "千元",
+    "TenThousandUnit": "万元",
+    "Category": "会企02表",
+    "Items": "项目",
+    "Lines": "行次",
+    "exportexcel": "导出Excel",
+    "exportpdf": "导出PDF",
+    "Location" : "地点",
+    "Department" : "部门",
+    "Clasz" : "类别",
+    "Colon": "："
+}

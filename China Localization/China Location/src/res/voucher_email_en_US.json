@@ -1,0 +1,10 @@
+{
+    "ACCOUNT": "Account",
+    "ENVIRONMENT": "Environment",
+    "DATE_TIME": "Date & Time",
+    "USERNAME": "Username",
+    "VOUCHER_REPORT_SUCCESS": "Voucher Printing Report Notification [Successful]",
+    "VOUCHER_REPORT_SUCCESS_MESSAGE": "The Voucher Printing Report was successfully generated. Click here to download.",
+    "VOUCHER_REPORT_FAILURE": "Voucher Printing Report Notification [Failed]",
+    "VOUCHER_REPORT_FAILURE_MESSAGE": "Report generation failed. Rerun the report."
+}

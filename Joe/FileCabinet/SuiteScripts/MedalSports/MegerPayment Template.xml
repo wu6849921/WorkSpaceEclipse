@@ -1,0 +1,107 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf lang="zh-CN" xml:lang="zh-CN">
+	<head>
+		<style>
+			.borderedCell {border: 0.1pt solid black; padding:2pt;align:
+			center;vertical-align:middle; letter-spacing:0;}
+
+		</style>
+		<macrolist>
+			<macro id="rptfooter">
+				<p align="right" font-size="8pt">
+					第
+					<pagenumber />
+					頁，共
+					<totalpages />
+					頁
+				</p>
+			</macro>
+		</macrolist>
+	</head>
+	<body size="A4" footer="rptfooter" footer-height="20mm"
+		font-family="stsong">
+		<!-- <div style="align: center;"><span style="font-size:24px;"><strong>记账凭证</strong></span></div> 
+			<div style="align: center;"><br />${renderData.date}</div> <div style="align: 
+			right;"><br />记账编号：${renderData.glNum}</div> -->
+		<table  style="width: 100%;">
+			<tr>
+				<th align="center" colspan="12">
+					<span style="font-size:20px;">
+						<strong>轉賬傳票</strong>
+					</span>
+				</th>
+			</tr>
+			<tr>
+				<th align="center" colspan="12">${renderData.date}</th>
+			</tr>
+			<#list renderData.mpRec as mpRec>
+			<tr>
+				<th align="right" colspan="12">傳票編號：${mpRec.mpNum}</th>
+			</tr>
+			<tr>
+				<th class="borderedCell">
+					<strong>Account</strong>
+				</th>
+				<th class="borderedCell">
+					<strong>Memo</strong>
+				</th>
+				<th class="borderedCell">
+					<strong>Name</strong>
+				</th>
+				<th class="borderedCell">
+					<strong>currency</strong>
+				</th>
+				<th class="borderedCell">
+					<strong>foreign currency</strong>
+				</th>
+				<th class="borderedCell">
+					<strong>debit</strong>
+				</th>
+				<th class="borderedCell">
+					<strong>credit</strong>
+				</th>
+			</tr>
+			<#list mpRec.lines as line>
+			<tr>
+				<td class="borderedCell">
+					<p>${line.account}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.memo}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.name}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.currency}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.fCurrencyAmount}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.debitAmount}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.creditAmount}</p>
+				</td>
+			</tr>
+			</#list>
+			<tr>
+				<th class="borderedCell">
+					<strong>Total</strong>
+				</th>
+				<th class="borderedCell"></th>
+				<th class="borderedCell"></th>
+				<th class="borderedCell"></th>
+				<th class="borderedCell"></th>
+				<th class="borderedCell">
+					<p>${mpRec.debitAmt}</p>
+				</th>
+				<th class="borderedCell">
+					<p>${mpRec.creditAmt}</p>
+				</th>
+			</tr>
+			</#list>
+		</table>
+	</body>
+</pdf>

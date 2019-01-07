@@ -1,0 +1,66 @@
+{
+ "fieldLabel" : {
+"company" : "公司",
+"subsidiary" : "子公司",
+"accountingbook":"会计账簿",
+"asof" : "于",
+"templatename":"资产负债表名称",
+"unit":"单位",
+"refresh" : "刷新",
+"exportexcel":"导出Excel",
+"exportpdf":"导出PDF",
+"location" : "地点",
+"department" : "部门",
+"class" : "类别"
+ },
+"header" : {
+"pageTitle" : "中国资产负债表",
+"title" : "资产负债表",
+"date" : "日期",
+"preparedBy" : "编制单位",
+"formName" : "会企01表",
+"currencyCode":"币种",
+"currencyUnit" : "单位",
+"unit":"元",
+"thousand":"千元",
+"tenThousand":"万元",
+"location" : "地点",
+"department" : "部门",
+"class" : "类别"
+},
+ "tableHeader" : {
+"assets" : "资产",
+"liab_equity" : "负债和所有者权益（或股东权益）",
+"lines" : "行次",
+"openingBalance" : "期初余额",
+"closingBalance" : "期末余额"
+ },
+"errorMessage":{
+"loading":"数据加载中...",
+"errorTitle":"错误",
+"invalidReportName":"请输入正确的资产负债表名称。",
+"nullReportName":"请输入值：资产负债表名称。",
+"nullPeriod":"未对此财政日历定义期间。 请依次转到“设置>会计>管理会计期间”，然后设置或指定所需期间。",
+"wrongRowName":"资产负债表固定行名不正确。请将报表固定行命名为{RowName}。",
+"wrongColumnName":"资产负债表列名不正确。请将报表固定列命名为{ColumnName}。",
+"enableAdvancePrint":"高级 PDF/HTML 模板功能没有启用。 请访问 “设置 > 公司 > 启用功能 > SuiteCloud” 开启该功能。",
+"errorExportPDF":"PDF文件导出失败。"
+},
+ "data" : {
+"totalassets"  : {"isBold" : "True", "label" : "资产总计", "center" : "True"},
+"totalliabequity"  : {"isBold" : "True", "label" : "负债和所有者权益（或股东权益）总计"},
+"currentassets"  : {"isBold" : "True", "label" : "流动资产", "center" : "False"},
+"totalcurrentassets"  : {"isBold" : "True", "label" : "流动资产合计", "center" : "True"},
+"noncurrentassets": {"isBold" : "True", "label" : "非流动资产", "center" : "False"},
+"totalnoncurrentassets": {"isBold" : "True", "label" : "非流动资产合计", "center" : "True"},
+"currentliabil": {"isBold" : "True", "label" : "流动负债", "center" : "False"},
+"totalcurrentliabil": {"isBold" : "True", "label" : "流动负债合计", "center" : "True"},
+"noncurrentliabil":  {"isBold" : "True", "label" : "非流动负债", "center" : "False"},
+"totalnoncurrentliabil":  {"isBold" : "True", "label" : "非流动负债合计", "center" : "True"},
+"totalliability":  {"isBold" : "True", "label" : "负债合计", "center" : "True"},
+"liability":  {"isBold" : "True", "label" : "负债", "center" : "False"},
+"equity":  {"isBold" : "True", "label" : "所有者权益（或股东权益）", "center" : "False"},
+"totalequity":  {"isBold" : "True", "label" : "所有者权益（或股东权益）合计", "center" : "True"}
+ },
+ "exportFileNamePrefix" : "资产负债表"
+}

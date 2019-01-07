@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toplevel xmlns="http://www.netsuite.com/ide/core/platform/sdk"><molecules><molecule url="system.netsuite.com" description="Production" UUID="db4347d8-9c14-4ac4-9610-9402414b130c"/><molecule url="system.sandbox.netsuite.com" description="Sandbox" UUID="a39b89da-aa56-43ea-8b76-ec5035e45560"/><molecule url="system.beta.netsuite.com" description="Release Preview" UUID="b1a5d550-cc5c-40c4-9198-6c1af93a850b"/></molecules></toplevel>

@@ -1,0 +1,6 @@
+{
+    "INVALID_TRANS_ID": "Invalid Id",
+    "Alert": "Alert",
+    "InvalidDateRange": "Please enter a valid date range. The From date must precede the To date."
+}
+

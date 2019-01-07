@@ -1,0 +1,22 @@
+{
+    "IncomeStatement": "China Income Statement",
+    "ReportTitle": "Income Statement",
+    "templatename": "Income Statement Name",
+    "Subsidiary": "Subsidiary",
+    "PreparedBy": "Prepared by",
+    "Refresh": "Refresh",
+    "Period": "Period",
+    "Unit": "Unit",
+    "UnitContent": "Unit",
+    "ThousandUnit": "Thousand",
+    "TenThousandUnit": "Ten Thousand",
+    "Category": "Form 02",
+    "Items": "Items",
+    "Lines": "Lines",
+    "exportexcel": "Export Excel",
+    "exportpdf": "Export PDF",
+    "Location": "Location",
+    "Department" : "Department",
+    "Clasz" : "Class",
+    "Colon": ": "
+}

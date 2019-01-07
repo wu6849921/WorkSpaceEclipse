@@ -1,0 +1,6 @@
+<crmcustomfield scriptid="custevent_">
+    <accesslevel>2</accesslevel>
+    <fieldtype>TEXT</fieldtype>
+    <label></label>
+    <storevalue>T</storevalue>
+</crmcustomfield>

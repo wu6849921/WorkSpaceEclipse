@@ -1,0 +1,7 @@
+<promotionsplugin scriptid="customscript_">
+    <loglevel>DEBUG</loglevel>
+    <name></name>
+    <notifyowner>T</notifyowner>
+    <scriptfile>[]</scriptfile>
+    <status>TESTING</status>
+</promotionsplugin>

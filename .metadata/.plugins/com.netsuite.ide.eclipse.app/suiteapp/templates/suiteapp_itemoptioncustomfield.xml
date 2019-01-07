@@ -1,0 +1,6 @@
+<itemoptioncustomfield scriptid="custcol_">
+    <accesslevel>2</accesslevel>
+    <fieldtype>TEXT</fieldtype>
+    <label></label>
+    <storevalue>T</storevalue>
+</itemoptioncustomfield>

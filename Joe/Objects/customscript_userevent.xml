@@ -1,0 +1,13 @@
+<usereventscript scriptid="customscript_userevent">
+    <name>SDF Tutorial User Event</name>
+    <notifyowner>T</notifyowner>
+    <scriptfile>[/SuiteScripts/UserEventScript.js]</scriptfile>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_">
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <recordtype>[customrecord_tutorial]</recordtype>
+            <status>TESTING</status>
+        </scriptdeployment>
+    </scriptdeployments>
+</usereventscript>

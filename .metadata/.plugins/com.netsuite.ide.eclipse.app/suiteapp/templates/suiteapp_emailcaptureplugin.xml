@@ -1,0 +1,8 @@
+<emailcaptureplugin scriptid="customscript_">
+    <loglevel>DEBUG</loglevel>
+    <name></name>
+    <notifyowner>T</notifyowner>
+    <runasrole></runasrole>
+    <scriptfile>[]</scriptfile>
+    <status>TESTING</status>
+</emailcaptureplugin>

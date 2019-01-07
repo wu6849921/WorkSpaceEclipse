@@ -1,0 +1,126 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf lang='zh-CN' xml:lang='zh-CN'>
+	<head>
+		<style>
+			.borderedCellT {border: 0.1pt solid black; padding:2pt;align:
+			center;valign:middle; letter-spacing:0px;font-size:8pt;}
+			.currency {border: 0.1pt solid black; padding:2pt;align:
+			right;valign:middle; letter-spacing:0px;font-size:8pt;}
+			.borderedCell {border: 0.1pt solid black;
+			padding:2pt;vertical-align:middle; font-size:8pt;}
+			.borderedCell1
+			{padding:8pt;}
+			.alltbl{page-break-after:always;}
+		</style>
+		<macrolist>
+			<macro id="rptfooter">
+				<p align="right" font-size="8pt">
+					第
+					<pagenumber />
+					頁，共
+					<totalpages />
+					頁
+				</p>
+			</macro>
+		</macrolist>
+	</head>
+	<body size="A4" footer="rptfooter" footer-height="20mm"
+		font-family="stsong">
+		<#list renderData.infos as info>
+		<table style="width: 100%;" class="alltbl">
+			<tr>
+				<th align="center" colspan="7">
+					<span style="font-size:20px;">
+						<strong>轉賬傳票</strong>
+					</span>
+				</th>
+			</tr>
+			<tr>
+				<th align="center" colspan="7">${info.date}</th>
+			</tr>
+			<tr>
+				<th align="right" colspan="7">傳票編號：${info.glNum}</th>
+			</tr>
+			<tr>
+				<th class="borderedCellT" width="20%">
+					<strong>Account</strong>
+				</th>
+				<th class="borderedCellT" width="30%">
+					<strong>Memo</strong>
+				</th>
+				<th class="borderedCellT" width="10%">
+					<strong>Name</strong>
+				</th>
+				<th class="borderedCellT" width="5%">
+					<strong>currency</strong>
+				</th>
+				<th class="borderedCellT" width="15%">
+					<strong>foreign currency</strong>
+				</th>
+				<th class="borderedCellT" width="10%">
+					<strong>debit</strong>
+				</th>
+				<th class="borderedCellT" width="10%">
+					<strong>credit</strong>
+				</th>
+			</tr>
+			<#list info.lines as line>
+			<tr>
+				<td class="borderedCell">
+					<p>${line.account}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.memo}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.name}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.currency}</p>
+				</td>
+				<td class="currency">
+					<p>${line.fCurrencyAmount}</p>
+				</td>
+				<td class="currency">
+					<p>${line.debitAmount}</p>
+				</td>
+				<td class="currency">
+					<p>${line.creditAmount}</p>
+				</td>
+			</tr>
+			</#list>
+			<tr>
+				<th class="borderedCell" colspan="5">
+					<strong>合 計</strong>
+				</th>
+				<th class="borderedCell">
+					<p>${info.debit}</p>
+				</th>
+				<th class="borderedCell">
+					<p>${info.crebit}</p>
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCellLine" colspan="7">
+					<table width="100%">
+						<tr>
+							<th class="borderedCell1" width="25%">
+								<p>核准：</p>
+							</th>
+							<th class="borderedCell1" width="25%">
+								<p>覆核：</p>
+							</th>
+							<th class="borderedCell1" width="25%">
+								<p>會計：</p>
+							</th>
+							<th class="borderedCell1" width="25%">
+								<p>制單：</p>
+							</th>
+						</tr>
+					</table>
+				</th>
+			</tr>
+		</table>
+		</#list>
+	</body>
+</pdf>

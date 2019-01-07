@@ -1,0 +1,124 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf lang='zh-CN' xml:lang='zh-CN'>
+	<head>
+		<style>
+			.borderedCellT {border: 0.1pt solid black; padding:2pt;align:
+			center;valign:middle; letter-spacing:0px;font-size:8pt;}
+			.borderedCell {border: 0.1pt solid black;
+			padding:2pt;vertical-align:middle; font-size:8pt;}
+			.borderedCell1
+			{padding:8pt;}
+			.alltbl{page-break-after:always;}
+		</style>
+		<macrolist>
+			<macro id="rptfooter">
+				<p align="right" font-size="8pt">
+					第
+					<pagenumber />
+					页，共
+					<totalpages />
+					页
+				</p>
+			</macro>
+		</macrolist>
+	</head>
+	<body size="A4" footer="rptfooter" footer-height="20mm"
+		font-family="stsong">
+		<#list renderData.infos as info>
+		<table style="width: 100%;" class="alltbl">
+			<tr>
+				<th align="center" colspan="8">
+					<span style="font-size:20px;">
+						<strong>记账凭证</strong>
+					</span>
+				</th>
+			</tr>
+			<tr>
+				<th align="center" colspan="8">${info.date}</th>
+			</tr>
+			<tr>
+				<th align="right" colspan="8">凭证号：${info.tranId}</th>
+			</tr>
+			<tr>
+				<th class="borderedCellT" width="30%">
+					<strong>摘要</strong>
+				</th>
+				<th class="borderedCellT" width="15%">
+					<strong>一级科目</strong>
+				</th>
+				<th class="borderedCellT" width="15%">
+					<strong>明细科目</strong>
+				</th>
+				<th class="borderedCellT" width="20%">
+					<strong>原币金额</strong>
+				</th>
+				<th class="borderedCellT" width="5%">
+					<strong>币别</strong>
+				</th>
+				<th class="borderedCellT" width="5%">
+					<strong>汇率</strong>
+				</th>
+				<th class="borderedCellT" width="5%">
+					<strong>借方</strong>
+				</th>
+				<th class="borderedCellT" width="5%">
+					<strong>贷方</strong>
+				</th>
+			</tr>
+			<#list info.lines as line>
+			<tr>
+				<td class="borderedCell">
+					<p>${line.memo}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.account}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.name}</p>
+				</td>
+					<td class="borderedCell">
+					<p>${line.fCurrencyAmount}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.currency}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.exchangeRate}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.debitAmount}</p>
+				</td>
+				<td class="borderedCell">
+					<p>${line.creditAmount}</p>
+				</td>
+			</tr>
+			</#list>
+			<tr>
+				<th class="borderedCell" colspan="6">
+					<strong>合 计</strong>
+				</th>
+				<th class="borderedCell">
+					<p>${info.debit}</p>
+				</th>
+				<th class="borderedCell">
+					<p>${info.crebit}</p>
+				</th>
+			</tr>
+			<tr>
+				<th class="borderedCellLine" colspan="8">
+					<table width="100%">
+						<tr>
+							<th class="borderedCell1" width="50%">
+								<p>制单：</p>
+							</th>
+							<th class="borderedCell1" width="50%">
+								<p>审核：</p>
+							</th>
+						</tr>
+					</table>
+				</th>
+			</tr>
+		</table>
+		</#list>
+	</body>
+</pdf>

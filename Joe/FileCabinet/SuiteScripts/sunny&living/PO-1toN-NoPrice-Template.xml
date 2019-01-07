@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf lang="zh-CN" xml:lang="zh-CN">
+	<head>
+		<style>
+			.borderedCell {border: 0.1pt solid black; padding:2pt;align:
+			center;vertical-align:middle; letter-spacing:0;}
+		</style>
+		<macrolist>
+			<macro id="rptfooter">
+				<p align="right" font-size="8pt">
+					第
+					<pagenumber />
+					页，共
+					<totalpages />
+					页
+				</p>
+			</macro>
+		</macrolist>
+	</head>
+
+	<body size="A4" footer="rptfooter" footer-height="20mm"
+		font-family="stsong">
+		<table border="0" id="reportLayout" font-size="8pt" width="100%"
+			cellmargin="0" border-collapse="collapse" align="center">
+			<thead>
+				<tr>
+					<td colspan="11">
+						<table id="reportTopInfo" width="100%" align="left">
+							<tr>
+								<td width="25%" align="right">
+									<img
+										src="/core/media/media.nl?id=12&amp;c=4810841&amp;h=572d92bd248d70d2a746"
+										width="80" height="38"></img>
+								</td>
+								<td colspan="2" width="35%" align="center">
+									<p font-size="20pt" font-weight="bold" margin="0" padding="0">怡家家居用品有限公司</p>
+									<p font-weight="bold" margin="0" padding="0">
+										SUNNY LIVING HOME PRODUCTS CO., LIMITED
+										<br />
+										23/F,Yihai Center,shatou Courner,Yantian
+										distric,.
+										<br />
+										Shenzhen City Guangdong Province,China. 518002
+										<br />
+										Tel#:0755-82686892
+										Fax#:0755-82689658
+									</p>
+									<p font-size="14pt" margin="0" margin-bottom="10pt"
+										margin-top="5pt" padding="0">Purchase Order(订购合同)</p>
+								</td>
+								<td vertical-align="bottom" width="40%" padding-bottom="20">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Vendor(供应工厂) : ${renderData.vender}
+								</td>
+								<td colspan="2">
+									Print Date(打印日期): ${renderData.printDate}
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Vendor Add(供应工厂地址) : ${renderData.venderAdd}
+								</td>
+								<td colspan="2">
+									Delivery Term(交货方式) : ${renderData.deliveryTerm}
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Contact Person(联系人) : ${renderData.contactPerson}
+								</td>
+								<td colspan="2">
+									Delivery Port(交货地点) : ${renderData.deliveryPort}
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Contact(联系方法) : ${renderData.contactPhone}
+								</td>
+								<td colspan="2">
+									Terms of Payment(付款方式) :
+									${renderData.termsOfPayment}
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									Fax(传真号码) : ${renderData.fax}
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									备注 : ${renderData.remarks}
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="borderedCell" colspan="2">
+						<p>Cust.Item NO.</p>
+					</td>
+					<td class="borderedCell">
+						<p>Sub Cust. item No</p>
+					</td>
+					<td class="borderedCell" colspan="5">
+						<p>DESCRIPTION</p>
+					</td>
+					<td class="borderedCell">
+						<p>UPC#</p>
+					</td>
+					<td class="borderedCell" colspan="2">
+						<p></p>
+					</td>
+				</tr>
+				<tr>
+					<td class="borderedCell" colspan="2">
+						<p>客户产品编码</p>
+					</td>
+					<td class="borderedCell">
+						<p>客户产品货号</p>
+					</td>
+					<td class="borderedCell" colspan="5">
+						<p>产品描述</p>
+					</td>
+					<td class="borderedCell">
+						<p>UPC#</p>
+					</td>
+					<td class="borderedCell" colspan="2">
+						<p>外箱尺寸</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="borderedCell" colspan="2">
+						<p>${renderData.custItemNo}</p>
+					</td>
+					<td class="borderedCell">
+						<p>${renderData.subCustItemNo}</p>
+					</td>
+					<td class="borderedCell" colspan="5" align="left">
+						<p>${renderData.description}</p>
+					</td>
+					<td class="borderedCell">
+						<p>${renderData.upc}</p>
+					</td>
+					<td class="borderedCell" colspan="2">
+						<p>${renderData.boxsize}</p>
+					</td>
+				</tr>
+				<tr class="reportHeaders">
+					<td class="borderedCell">
+						<p>SID</p>
+					</td>
+					<td class="borderedCell">
+						<p>Delivery date</p>
+					</td>
+					<td class="borderedCell">
+						<p>Estimate Inspection</p>
+					</td>
+					<td class="borderedCell">
+						<p>SO No.</p>
+					</td>
+					<td class="borderedCell">
+						<p>Destination Port</p>
+					</td>
+					<td class="borderedCell">
+						<p>CTN QTY</p>
+					</td>
+					<td class="borderedCell">
+						<p>PACK QTY</p>
+					</td>
+					<td class="borderedCell">
+						<p>QTY</p>
+					</td>
+					<!-- <td class="borderedCell">
+						<p>Unit Price</p>
+					</td>
+					<td class="borderedCell">
+						<p>Total</p>
+					</td> -->
+					<td class="borderedCell" colspan="3">
+						<p>Note</p>
+					</td>
+				</tr>
+				<tr class="reportHeaders">
+					<td class="borderedCell">
+						<p>序号</p>
+					</td>
+					<td class="borderedCell">
+						<p>工厂交期</p>
+					</td>
+					<td class="borderedCell">
+						<p>预订客验</p>
+					</td>
+					<td class="borderedCell">
+						<p>客户订单号</p>
+					</td>
+					<td class="borderedCell">
+						<p>目的港口</p>
+					</td>
+					<td class="borderedCell">
+						<p>箱数</p>
+					</td>
+					<td class="borderedCell">
+						<p>装箱数</p>
+					</td>
+					<td class="borderedCell">
+						<p>数量</p>
+					</td>
+					<!-- <td class="borderedCell">
+						<p>单价</p>
+					</td>
+					<td class="borderedCell">
+						<p>总金额</p>
+					</td> -->
+					<td class="borderedCell" colspan="3">
+						<p>备注</p>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<#list renderData.lines as line>
+				<tr>
+					<td class="borderedCell" rowspan="2">
+						<p>${line.sid}</p>
+					</td>
+					<td class="borderedCell" rowspan="2">
+						<p>${line.deliveryDate}</p>
+					</td>
+					<td class="borderedCell" rowspan="2">
+						<p>${line.estimateInspection}</p>
+					</td>
+					<td class="borderedCell" rowspan="2">
+						<p>${line.soNo}</p>
+					</td>
+					<td class="borderedCell" rowspan="2">
+						<p>${line.destinationPort}</p>
+					</td>
+					<td class="borderedCell" rowspan="2">
+						<p>${line.ctnQty}</p>
+					</td>
+					<td class="borderedCell" rowspan="2">
+						<p>${line.packQty}</p>
+					</td>
+					<td class="borderedCell">
+						<p>${line.units}</p>
+					</td>
+					<!-- <td class="borderedCell">
+						<p>${line.currency}</p>
+					</td>
+					<td class="borderedCell">
+						<p>${line.currency}</p>
+					</td> -->
+					<td class="borderedCell" rowspan="2" colspan="3">
+						<p>${line.note}</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="borderedCell">
+						<p>${line.qty}</p>
+					</td>
+					<!-- <td class="borderedCell">
+						<p>${line.unitPrice}</p>
+					</td>
+					<td class="borderedCell">
+						<p>${line.total}</p>
+					</td> -->
+				</tr>
+				</#list>
+				<!-- <tr>
+					<td class="borderedCell">
+						合计
+					</td>
+					<td class="borderedCell" colspan="4">
+
+					</td>
+					<td class="borderedCell">
+						${renderData.totalCtnQty}
+					</td>
+					<td class="borderedCell">
+
+					</td>
+					<td class="borderedCell">
+						${renderData.totalQty}
+					</td>
+					<td class="borderedCell">
+
+					</td>
+					<td class="borderedCell">
+						${renderData.totalAmt}
+					</td>
+					<td class="borderedCell">
+
+					</td>
+				</tr> -->
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="borderedCell" colspan="11" align="left">
+						<p>订单注意事项：${renderData.notice}</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="borderedCell" colspan="11" align="left">
+						<p>
+							1).供应商必须在收到此订单24小时之内签回,并且要有本司盖章签名,否则此订单无效.
+							<br />
+							2).供应商必须严格依订购单要求控制品质,如有验货不通过,翻验过程中所产生费用一律归供应商承担,
+							如翻验还不通过,供应商必须承担我司客人所扣之相对应的金额.
+							<br />
+							3).供应商必须对交货期严格控制,大货必须在客验前一天到位,否则罚款USD5000，所有货品必须在结重之前2天还柜，任何因贵厂延迟而产生的损失由贵厂承担。若不能按所确认的交货期交货而产生客人索赔或空运,供应商将承担所有费用,同时,供应商必须承担我司商誉损失USD10000.
+							<br />
+							4).订单所列的包装明细,必须严格遵守,若发生订单货物在出货时外箱尺寸和重量变动,而引我司在海运或空运所产生的额外支出,供应商需补偿差额.
+							<br />
+							5).供应商必须对订单货物单价按照协定执行,如因有特殊情况而引起单价上涨,供应商必须在30天之内书面通知我司协商作调整.
+							<br />
+							6).供应商对我司订单在(订单号码,交货期,数量,价格,规格)上,有任何质疑,请与业务员联系，不得在我司订单上直接修改，双方协商之后再出合同签名盖章回传.
+						</p>
+
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6" align="left">
+						<p>
+							Buyer's Authorized Signature
+							<br />
+							买家授权签字
+							<br />
+							<#if renderData.status == "Approved">
+							<img
+								src="/core/media/media.nl?id=381&amp;c=4810841&amp;h=92272d0a11f7f8e92dd2"
+								width="200" height="85"></img>
+							<#else>
+							______________________________
+							</#if>
+						</p>
+					</td>
+					<td colspan="5" align="right">
+						<p>
+							Seller's Authorized Signature
+							<br />
+							卖家授权签字
+							<br />
+							______________________________
+						</p>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</pdf>

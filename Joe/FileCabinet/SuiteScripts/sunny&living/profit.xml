@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:x="urn:schemas-microsoft-com:office:excel"
+	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:html="http://www.w3.org/TR/REC-html40">
+	<DocumentProperties
+		xmlns="urn:schemas-microsoft-com:office:office">
+		<Author>NetSuite</Author>
+		<LastAuthor>charles</LastAuthor>
+		<LastSaved>2017-12-08T08:43:55Z</LastSaved>
+		<Company>NetSuite</Company>
+		<Version>15.00</Version>
+	</DocumentProperties>
+	<OfficeDocumentSettings
+		xmlns="urn:schemas-microsoft-com:office:office">
+		<AllowPNG />
+	</OfficeDocumentSettings>
+	<ExcelWorkbook
+		xmlns="urn:schemas-microsoft-com:office:excel">
+		<WindowHeight>12135</WindowHeight>
+		<WindowWidth>-27136</WindowWidth>
+		<WindowTopX>0</WindowTopX>
+		<WindowTopY>0</WindowTopY>
+		<ProtectStructure>False</ProtectStructure>
+		<ProtectWindows>False</ProtectWindows>
+	</ExcelWorkbook>
+	<Styles>
+		<Style ss:ID="Default" ss:Name="Normal">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="Arial" ss:Size="8" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="s20" ss:Name="Percent">
+			<NumberFormat ss:Format="0%" />
+		</Style>
+		<Style ss:ID="s62" ss:Name="百分比 2">
+			<NumberFormat ss:Format="0%" />
+		</Style>
+		<Style ss:ID="s63" ss:Name="常规 2 4 2 2 2">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="宋体" x:CharSet="134" x:Family="Modern"
+				ss:Size="12" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="s65" ss:Parent="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s66" ss:Parent="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s67" ss:Parent="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<NumberFormat />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s68" ss:Parent="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<NumberFormat ss:Format="@" />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s69" ss:Parent="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<NumberFormat ss:Format="0.0000_ " />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s70" ss:Parent="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center"
+				ss:WrapText="1" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<NumberFormat ss:Format="#,##0.00;[Red]\-#,##0.00" />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s71" ss:Parent="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<NumberFormat ss:Format="0.00_ " />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s72" ss:Parent="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<NumberFormat ss:Format="#,##0.00;[Red]\-#,##0.00" />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s74" ss:Parent="s62">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" ss:Bold="1" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+			<NumberFormat ss:Format="Percent" />
+			<Protection ss:Protected="0" />
+		</Style>
+		<Style ss:ID="s75">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s77" ss:Parent="s20">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Left" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Right" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+				<Border ss:Position="Top" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Color="#000000" />
+			<Interior ss:Color="#FFFFFF" ss:Pattern="Solid" />
+		</Style>
+		<Style ss:ID="s83">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Size="14" ss:Color="#000000" ss:Bold="1" />
+		</Style>
+		<Style ss:ID="s84">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+			<Borders>
+				<Border ss:Position="Bottom" ss:LineStyle="Continuous"
+					ss:Weight="1" />
+			</Borders>
+			<Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"
+				ss:Size="14" ss:Color="#000000" ss:Bold="1" />
+		</Style>
+	</Styles>
+	<Worksheet ss:Name="利润分析表">
+		<Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="9999"
+			x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="42"
+			ss:DefaultRowHeight="11.25">
+			<Column ss:AutoFitWidth="0" ss:Width="78.75" />
+			<Column ss:AutoFitWidth="0" ss:Width="79.5" />
+			<Column ss:AutoFitWidth="0" ss:Width="91.5" />
+			<Column ss:AutoFitWidth="0" ss:Width="93" />
+			<Column ss:AutoFitWidth="0" ss:Width="81" />
+			<Column ss:AutoFitWidth="0" ss:Width="90" />
+			<Column ss:AutoFitWidth="0" ss:Width="79.5" />
+			<Column ss:AutoFitWidth="0" ss:Width="73.5" />
+			<Column ss:AutoFitWidth="0" ss:Width="60" />
+			<Column ss:AutoFitWidth="0" ss:Width="59.25" />
+			<Column ss:AutoFitWidth="0" ss:Width="48.75" />
+			<Column ss:AutoFitWidth="0" ss:Width="48" />
+			<Row ss:AutoFitHeight="0" ss:Height="35.25">
+				<Cell ss:MergeAcross="11" ss:StyleID="s84">
+					<Data ss:Type="String">利润分析表 </Data>
+				</Cell>
+				<Cell ss:StyleID="s83" />
+				<Cell ss:StyleID="s83" />
+				<Cell ss:StyleID="s83" />
+			</Row>
+			<Row ss:AutoFitHeight="0" ss:Height="26.25">
+				<Cell ss:StyleID="s65">
+					<Data ss:Type="String">Vender Bin</Data>
+				</Cell>
+				<Cell ss:StyleID="s66">
+					<Data ss:Type="String">客户</Data>
+				</Cell>
+				<Cell ss:StyleID="s67">
+					<Data ss:Type="String">客人订单号</Data>
+				</Cell>
+				<Cell ss:StyleID="s67">
+					<Data ss:Type="String">产成品品编号</Data>
+				</Cell>
+				<Cell ss:StyleID="s67">
+					<Data ss:Type="String">客户产品编码</Data>
+				</Cell>
+				<Cell ss:StyleID="s68">
+					<Data ss:Type="String">SO数量PC</Data>
+				</Cell>
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">采购平均单价</Data>
+				</Cell>
+				<Cell ss:StyleID="s69">
+					<Data ss:Type="String">销售单价$</Data>
+				</Cell>
+				<Cell ss:StyleID="s70">
+					<Data ss:Type="String">销售成本$</Data>
+				</Cell>
+				<Cell ss:StyleID="s71">
+					<Data ss:Type="String">销售收入$</Data>
+				</Cell>
+				<Cell ss:StyleID="s72">
+					<Data ss:Type="String">利润额</Data>
+				</Cell>
+				<Cell ss:StyleID="s74">
+					<Data ss:Type="String">利润率</Data>
+				</Cell>
+			</Row>
+			<#list renderData.lines as line>
+			<Row ss:AutoFitHeight="0" ss:Height="16.5">
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.bin}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.customer}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.custOrderNo}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.itemId}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.custItemCode}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.salesQty}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.purAvgRate}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.salesRate}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.purCost}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.salesAmt}</Data>
+				</Cell>
+				<Cell ss:StyleID="s75">
+					<Data ss:Type="String">${line.margin}</Data>
+				</Cell>
+				<Cell ss:StyleID="s77">
+					<Data ss:Type="String">${line.marginRate}</Data>
+				</Cell>
+			</Row>
+			</#list>
+		</Table>
+		<WorksheetOptions
+			xmlns="urn:schemas-microsoft-com:office:excel">
+			<Unsynced />
+			<Selected />
+			<Panes>
+				<Pane>
+					<Number>3</Number>
+					<ActiveRow>16</ActiveRow>
+					<ActiveCol>8</ActiveCol>
+				</Pane>
+			</Panes>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+	</Worksheet>
+</Workbook>
