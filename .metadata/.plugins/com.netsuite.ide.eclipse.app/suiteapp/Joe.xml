@@ -25,6 +25,7 @@
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_PurchasePrice.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_SetRateDisabled.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_SetTaxRate.js"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/EL_UE_AutoCreateSO.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_UE_PurchasePrice.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_UE_SetRateDisabled.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/唐宫Netsuite系统 功能设计_采购价格方案_V2.0.xlsx"/>
@@ -51,6 +52,7 @@
     <file name="FileCabinet/SuiteScripts/ICD/TN_SL_SaveEventRecord0929.js"/>
     <file name="FileCabinet/SuiteScripts/ICD/TN_SL_SaveEventRecord1204.js"/>
     <file name="FileCabinet/SuiteScripts/ICD/TN_SL_SaveEventRecord1219.js"/>
+    <file name="FileCabinet/SuiteScripts/ICD/TN_SL_SaveEventRecord190107.js"/>
     <file name="FileCabinet/SuiteScripts/ICD/TN_SL_SaveEventRecordINIT.js"/>
     <file name="FileCabinet/SuiteScripts/ICD/TN_UE_Estimate.js"/>
     <file name="FileCabinet/SuiteScripts/ICD/icd_customer.js"/>

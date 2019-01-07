@@ -21,3 +21,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-01-07 11:10:44.092
 !MESSAGE No repository found at http://system.netsuite.com/download/ide/update_e4.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-01-07 14:53:59.497
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-01-07 14:53:59.500
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

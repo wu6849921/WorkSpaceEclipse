@@ -1,0 +1,32 @@
+/**
+ * @NApiVersion 2.x
+ * @NScriptType UserEventScript
+ * @NModuleScope SameAccount
+ */
+define([], function() {
+	function afterSubmit(context) {
+		try {
+			if (context.type == context.UserEventType.CREATE
+					|| context.type == context.UserEventType.EDIT) {
+				var newRecord = context.newRecord;
+				var customerInner = newRecord.getValue({
+					fieldId : 'custbody_el_customerinner'
+				});
+				var lineCount = newRecord.getLineCount({
+					sublistId : 'item'
+				});
+			}
+		} catch (e) {
+			log.debug({
+				title : 'beforeLoad',
+				details : e
+			});
+		}
+
+	}
+
+	return {
+		beforeLoad : beforeLoad
+	};
+
+});

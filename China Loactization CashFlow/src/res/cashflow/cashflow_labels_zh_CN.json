@@ -79,7 +79,7 @@
 		},
 		"Donate": {
 			"isBold": "False",
-			"label": "捐赠 ",
+			"label": "捐赠",
 			"center": "False",
 			"padding": "True",
 			"id": "6"
@@ -93,7 +93,7 @@
 		},
 		"InsuranceClaims": {
 			"isBold": "False",
-			"label": "保险理赔 ",
+			"label": "保险理赔",
 			"center": "False",
 			"padding": "True",
 			"id": "8"
@@ -107,7 +107,7 @@
 		},
 		"ReceivedOtherCashRelatedToBusinessActivitiesEMECT": {
 			"isBold": "False",
-			"label": "收到其他与经营活动有关的现金（外部客商往来）：外部公司往来 ",
+			"label": "收到其他与经营活动有关的现金（外部客商往来）：外部公司往来",
 			"center": "False",
 			"padding": "True",
 			"id": "10"
@@ -155,14 +155,14 @@
 		},
 		"ReceivedOtherCashRelatedToBusinessActivitiesICCFO": {
 			"isBold": "False",
-			"label": "收到其他与经营活动有关的现金（内部客商往来）：资金归集形成 ",
+			"label": "收到其他与经营活动有关的现金（内部客商往来）：资金归集形成",
 			"center": "False",
 			"padding": "True",
 			"id": "16"
 		},
 		"ReceivedOtherCashRelatedToBusinessActivitiesICCITF": {
 			"isBold": "False",
-			"label": "收到其他与经营活动有关的现金（内部客商往来）：内部交易形成 ",
+			"label": "收到其他与经营活动有关的现金（内部客商往来）：内部交易形成",
 			"center": "False",
 			"padding": "True",
 			"id": "17"
@@ -215,7 +215,7 @@
 		},
 		"CorporateIncomeTax": {
 			"isBold": "False",
-			"label": "企业所得税 ",
+			"label": "企业所得税",
 			"center": "False",
 			"padding": "True",
 			"id": "22"
@@ -236,7 +236,7 @@
 		},
 		"PropertyTax": {
 			"isBold": "False",
-			"label": "房产税 ",
+			"label": "房产税",
 			"center": "False",
 			"padding": "True",
 			"id": "25"
@@ -250,21 +250,21 @@
 		},
 		"PersonalIncomeTax": {
 			"isBold": "False",
-			"label": "个人所得税 ",
+			"label": "个人所得税",
 			"center": "False",
 			"padding": "True",
 			"id": "27"
 		},
 		"surtax": {
 			"isBold": "False",
-			"label": "附加税 ",
+			"label": "附加税",
 			"center": "False",
 			"padding": "True",
 			"id": "28"
 		},
 		"OtherTaxes": {
 			"isBold": "False",
-			"label": "其他税费 ",
+			"label": "其他税费",
 			"center": "False",
 			"padding": "True",
 			"id": "29"
@@ -277,14 +277,14 @@
 		},
 		"PayForSales ": {
 			"isBold": "False",
-			"label": "支付销售费用 ",
+			"label": "支付销售费用",
 			"center": "False",
 			"padding": "True",
 			"id": "30"
 		},
 		"PaymentManagementFee": {
 			"isBold": "False",
-			"label": "支付管理费用 ",
+			"label": "支付管理费用",
 			"center": "False",
 			"padding": "True",
 			"id": "31"
@@ -298,28 +298,28 @@
 		},
 		"PayFinancialExpenses": {
 			"isBold": "False",
-			"label": "支付财务费用 ",
+			"label": "支付财务费用",
 			"center": "False",
 			"padding": "True",
 			"id": "33"
 		},
 		"ExternalDonation": {
 			"isBold": "False",
-			"label": "对外捐赠 ",
+			"label": "对外捐赠",
 			"center": "False",
 			"padding": "True",
 			"id": "34"
 		},
 		"PayDepositDeposit": {
 			"isBold": "False",
-			"label": "支付押金保证金 ",
+			"label": "支付押金保证金",
 			"center": "False",
 			"padding": "True",
 			"id": "35"
 		},
 		"FineExpenditure": {
 			"isBold": "False",
-			"label": "罚款支出 ",
+			"label": "罚款支出",
 			"center": "False",
 			"padding": "True",
 			"id": "36"
@@ -333,14 +333,14 @@
 		},
 		"PayOtherCashRelatedToBusinessActivitiesEMO": {
 			"isBold": "False",
-			"label": "支付其他与经营活动有关的现金（外部客商往来）：其他 ",
+			"label": "支付其他与经营活动有关的现金（外部客商往来）：其他",
 			"center": "False",
 			"padding": "True",
 			"id": "38"
 		},
 		"ParentCompanyStockPurchasePayment": {
 			"isBold": "False",
-			"label": "母公司股票购买支付 ",
+			"label": "母公司股票购买支付",
 			"center": "False",
 			"padding": "True",
 			"id": "39"
@@ -353,14 +353,14 @@
 		},
 		"PayOtherCashRelatedToBusinessActivitiesIMFC": {
 			"isBold": "False",
-			"label": "支付其他与经营活动有关的现金（内部客商往来）：资金归集形成 ",
+			"label": "支付其他与经营活动有关的现金（内部客商往来）：资金归集形成",
 			"center": "False",
 			"padding": "True",
 			"id": "40"
 		},
 		"PayOtherCashRelatedToBusinessActivitiesIMITF": {
 			"isBold": "False",
-			"label": "支付其他与经营活动有关的现金（内部客商往来）：内部交易形成 ",
+			"label": "支付其他与经营活动有关的现金（内部客商往来）：内部交易形成",
 			"center": "False",
 			"padding": "True",
 			"id": "41"
@@ -405,7 +405,7 @@
 		},
 		"AvailableForSaleFinancialAssetsI": {
 			"isBold": "False",
-			"label": "可供出售金融资产-收益 ",
+			"label": "可供出售金融资产-收益",
 			"center": "False",
 			"padding": "True",
 			"id": "44"
@@ -439,7 +439,7 @@
 		},
 		"LongTermDebtInvestmentI": {
 			"isBold": "False",
-			"label": "长期债权投资-收益 ",
+			"label": "长期债权投资-收益",
 			"center": "False",
 			"padding": "True",
 			"id": "48"
@@ -453,7 +453,7 @@
 		},
 		"NetCashReceivedFromDisposalOfSubsidiariesAndOtherBusinessUnits ": {
 			"isBold": "False",
-			"label": "处置子公司及其他营业单位收到的现金净额 ",
+			"label": "处置子公司及其他营业单位收到的现金净额",
 			"center": "False",
 			"padding": "True",
 			"id": "50"
@@ -486,7 +486,7 @@
 		},
 		"PurchaseOfIntangibleAssets": {
 			"isBold": "False",
-			"label": "购置无形资产 ",
+			"label": "购置无形资产",
 			"center": "False",
 			"padding": "True",
 			"id": "53"
@@ -520,7 +520,7 @@
 		},
 		"DebtInvestment": {
 			"isBold": "False",
-			"label": "债权性投资 ",
+			"label": "债权性投资",
 			"center": "False",
 			"padding": "True",
 			"id": "57"
@@ -606,7 +606,7 @@
 		},
 		"CashReceivedFromBorrowingsFL": {
 			"isBold": "False",
-			"label": "取得借款收到的现金：融资租赁 ",
+			"label": "取得借款收到的现金：融资租赁",
 			"center": "False",
 			"padding": "True",
 			"id": "65"
@@ -639,7 +639,7 @@
 		},
 		"CashRepaymentsForDebtsBL": {
 			"isBold": "False",
-			"label": "偿还债务支付的现金：银行借款 ",
+			"label": "偿还债务支付的现金：银行借款",
 			"center": "False",
 			"padding": "True",
 			"id": "68"
@@ -673,7 +673,7 @@
 		},
 		"CashPaymentsForDistributionOfDividendsO": {
 			"isBold": "False",
-			"label": "分配股利、利润或偿付利息支付的现金：其他 ",
+			"label": "分配股利、利润或偿付利息支付的现金：其他",
 			"center": "False",
 			"padding": "True",
 			"id": "72"

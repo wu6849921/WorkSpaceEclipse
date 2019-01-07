@@ -63,7 +63,7 @@
 			"center": "True",
 			"padding": "False"
 		},
-		"GovernmentSubsidyCollection ": {
+		"GovernmentSubsidyCollection": {
 			"isBold": "False",
 			"label": "Government subsidy collection",
 			"center": "False",
@@ -451,14 +451,14 @@
 			"padding": "True",
 			"id": "49"
 		},
-		"NetCashReceivedFromDisposalOfSubsidiariesAndOtherBusinessUnits ": {
+		"NetCashReceivedFromDisposalOfSubsidiariesAndOtherBusinessUnits": {
 			"isBold": "False",
 			"label": "Net cash received from disposal of subsidiaries and other business units",
 			"center": "False",
 			"padding": "True",
 			"id": "50"
 		},
-		"OtherCashReceivedRelatingToInvestingActivities ": {
+		"OtherCashReceivedRelatingToInvestingActivities": {
 			"isBold": "False",
 			"label": "Other cash received relating to investing activities",
 			"center": "False",
@@ -477,7 +477,7 @@
 			"center": "True",
 			"padding": "False"
 		},
-		"PurchaseAndConstructionOfFixedAssets ": {
+		"PurchaseAndConstructionOfFixedAssets": {
 			"isBold": "False",
 			"label": "Purchase and construction of fixed assets",
 			"center": "False",
@@ -491,7 +491,7 @@
 			"padding": "True",
 			"id": "53"
 		},
-		"OtherLongTermAssets ": {
+		"OtherLongTermAssets": {
 			"isBold": "False",
 			"label": "Other long-term assets",
 			"center": "False",
@@ -639,7 +639,7 @@
 		},
 		"CashRepaymentsForDebtsBL": {
 			"isBold": "False",
-			"label": "Cash paid for debt repayment: bank loans ",
+			"label": "Cash paid for debt repayment: bank loans",
 			"center": "False",
 			"padding": "True",
 			"id": "68"
@@ -673,7 +673,7 @@
 		},
 		"CashPaymentsForDistributionOfDividendsO": {
 			"isBold": "False",
-			"label": "Cash paid for dividends, profits or interest payments: other ",
+			"label": "Cash paid for dividends, profits or interest payments: other",
 			"center": "False",
 			"padding": "True",
 			"id": "72"

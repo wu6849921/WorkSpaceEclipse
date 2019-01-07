@@ -1,0 +1,726 @@
+{
+	"CashFlowStatement": "China Cash Flow Statement",
+	"ReportTitle": "Cash Flow Statement",
+	"Subsidiary": "Subsidiary",
+	"Refresh": "Refresh",
+	"ExportPDF": "Export PDF",
+	"ExportExcel": "Export Excel",
+	"Company": "Company",
+	"Period": "Period",
+	"Preparedby": "Prepared by",
+	"Formname": "Form 03",
+	"CurrencyCode": "Currency",
+	"Unit": "Unit",
+	"ReportUnit": "Unit",
+	"UnitContent": "Unit",
+	"ThousandUnit": "Thousand",
+	"TenThousandUnit": "Ten Thousand",
+	"Items": "Items",
+	"Lines": "Lines",
+	"CurrentPeriod": "Current Period",
+	"PriorPeriod": "Prior Period",
+	"Period_From": "Period From",
+	"Period_To": "To",
+	"exportName": "Cash Flow Statement",
+	"location": "Location",
+	"department": "Department",
+	"class": "Class",
+	"errorTitle": "Error",
+	"errorExportPDF": "Error occurred when exporting PDF file.",
+	"nullPeriod": "Accounting Period is not defined for this fiscal calendar. Go to Setup > Accounting > Manage Accounting Periods and set up or assign the period you need.",
+	"PeriodRangeCrossFiscalYear": "Please enter a valid period range. Dates selected should not cross over to another fiscal year.",
+	"data": {
+		"CashflowFromOperatingActivities": {
+			"isBold": "True",
+			"label": "1.Cash flows from operating activities:",
+			"center": "False",
+			"padding": "False"
+		},
+		"CashReceivedForTheSaleOfGoodsAndServicesEM": {
+			"isBold": "False",
+			"label": "Cash received for the sale of goods and services (external merchants)",
+			"center": "False",
+			"padding": "True",
+			"id": "1"
+		},
+		"CashReceivedForTheSaleOfGoodsAndServicesIM": {
+			"isBold": "False",
+			"label": "Cash received for the sale of goods and services (internal merchants)",
+			"center": "False",
+			"padding": "True",
+			"id": "2"
+		},
+		"TaxRefund": {
+			"isBold": "False",
+			"label": "Tax Refund",
+			"center": "False",
+			"padding": "True",
+			"id": "3"
+		},
+		"ReceivedOtherCashRelatedToBusinessActivitiesEM": {
+			"isBold": "True",
+			"label": "Received other cash related to business activities (external merchants)",
+			"center": "True",
+			"padding": "False"
+		},
+		"GovernmentSubsidyCollection": {
+			"isBold": "False",
+			"label": "Government subsidy collection",
+			"center": "False",
+			"padding": "True",
+			"id": "4"
+		},
+		"DepositInterestCollection": {
+			"isBold": "False",
+			"label": "Deposit interest collection",
+			"center": "False",
+			"padding": "True",
+			"id": "5"
+		},
+		"Donate": {
+			"isBold": "False",
+			"label": "Donate",
+			"center": "False",
+			"padding": "True",
+			"id": "6"
+		},
+		"Deposit": {
+			"isBold": "False",
+			"label": "Deposit",
+			"center": "False",
+			"padding": "True",
+			"id": "7"
+		},
+		"InsuranceClaims": {
+			"isBold": "False",
+			"label": "Insurance claims",
+			"center": "False",
+			"padding": "True",
+			"id": "8"
+		},
+		"MaternityBenefits": {
+			"isBold": "False",
+			"label": "Maternity benefits",
+			"center": "False",
+			"padding": "True",
+			"id": "9"
+		},
+		"ReceivedOtherCashRelatedToBusinessActivitiesEMECT": {
+			"isBold": "False",
+			"label": "ReceivedOtherCashRelatedToBusinessActivitiesEMECT",
+			"center": "False",
+			"padding": "True",
+			"id": "10"
+		},
+		"FineIncome": {
+			"isBold": "False",
+			"label": "Fine income",
+			"center": "False",
+			"padding": "True",
+			"id": "11"
+		},
+		"Loan": {
+			"isBold": "False",
+			"label": "Loan",
+			"center": "False",
+			"padding": "True",
+			"id": "12"
+		},
+		"ReceivedOtherCashRelatedToBusinessActivitiesEMCO": {
+			"isBold": "False",
+			"label": "ReceivedOtherCashRelatedToBusinessActivitiesEMCO",
+			"center": "False",
+			"padding": "True",
+			"id": "13"
+		},
+		"CollectionOfValueAddedTax": {
+			"isBold": "False",
+			"label": "Collection of value added tax",
+			"center": "False",
+			"padding": "True",
+			"id": "14"
+		},
+		"CollectionOfParentCompanyStockPurchasePayment": {
+			"isBold": "False",
+			"label": "Collection of parent company stock purchase payment",
+			"center": "False",
+			"padding": "True",
+			"id": "15"
+		},
+		"ReceivedOtherCashRelatedToBusinessActivitiesIM": {
+			"isBold": "True",
+			"label": "Received other cash related to business activities (internal merchants)",
+			"center": "True",
+			"padding": "False"
+		},
+		"ReceivedOtherCashRelatedToBusinessActivitiesICCFO": {
+			"isBold": "False",
+			"label": "ReceivedOtherCashRelatedToBusinessActivitiesICCFO",
+			"center": "False",
+			"padding": "True",
+			"id": "16"
+		},
+		"ReceivedOtherCashRelatedToBusinessActivitiesICCITF": {
+			"isBold": "False",
+			"label": "ReceivedOtherCashRelatedToBusinessActivitiesICCITF",
+			"center": "False",
+			"padding": "True",
+			"id": "17"
+		},
+		"SubtotalOfCashInflowFromOperatingActivities": {
+			"isBold": "True",
+			"label": "Subtotal of cash inflow from operating activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashForThePurchaseOfGoodsAndLaborServicesEMIMCAC": {
+			"isBold": "False",
+			"label": "CashForThePurchaseOfGoodsAndLaborServicesEMIMCAC",
+			"center": "False",
+			"padding": "True",
+			"id": "18"
+		},
+		"CashForThePurchaseOfGoodsAndLaborServicesIM": {
+			"isBold": "False",
+			"label": "Cash for the purchase of goods and labor services (internal merchants)",
+			"center": "False",
+			"padding": "True",
+			"id": "19"
+		},
+		"CashPaidToEmployeesAndPaidForEmployees": {
+			"isBold": "True",
+			"label": "Cash paid to employees and paid to employees",
+			"center": "True",
+			"padding": "False"
+		},
+		"PayTheCurrentYearTFICITCY": {
+			"isBold": "False",
+			"label": "Pay the current year (the fee is charged in the current year)",
+			"center": "False",
+			"padding": "True",
+			"id": "20"
+		},
+		"PreviousPerformanceCWCIPY": {
+			"isBold": "False",
+			"label": "Previous performance (costs were charged in previous years)",
+			"center": "False",
+			"padding": "True",
+			"id": "21"
+		},
+		"VariousTaxesAndFeesPaid": {
+			"isBold": "True",
+			"label": "Various taxes paid",
+			"center": "True",
+			"padding": "False"
+		},
+		"CorporateIncomeTax": {
+			"isBold": "False",
+			"label": "Corporate income tax",
+			"center": "False",
+			"padding": "True",
+			"id": "22"
+		},
+		"VAT": {
+			"isBold": "False",
+			"label": "VAT",
+			"center": "False",
+			"padding": "True",
+			"id": "23"
+		},
+		"StampDuty": {
+			"isBold": "False",
+			"label": "Stamp duty",
+			"center": "False",
+			"padding": "True",
+			"id": "24"
+		},
+		"PropertyTax": {
+			"isBold": "False",
+			"label": "Property tax",
+			"center": "False",
+			"padding": "True",
+			"id": "25"
+		},
+		"LandTax": {
+			"isBold": "False",
+			"label": "Land tax",
+			"center": "False",
+			"padding": "True",
+			"id": "26"
+		},
+		"PersonalIncomeTax": {
+			"isBold": "False",
+			"label": "Personal Income Tax",
+			"center": "False",
+			"padding": "True",
+			"id": "27"
+		},
+		"surtax": {
+			"isBold": "False",
+			"label": "surtax",
+			"center": "False",
+			"padding": "True",
+			"id": "28"
+		},
+		"OtherTaxes": {
+			"isBold": "False",
+			"label": "Other taxes",
+			"center": "False",
+			"padding": "True",
+			"id": "29"
+		},
+		"PayOtherCashRelatedToBusinessActivitiesEM": {
+			"isBold": "True",
+			"label": "Pay other cash related to business activities (external merchants)",
+			"center": "True",
+			"padding": "False"
+		},
+		"PayForSales ": {
+			"isBold": "False",
+			"label": "Pay for sales",
+			"center": "False",
+			"padding": "True",
+			"id": "30"
+		},
+		"PaymentManagementFee": {
+			"isBold": "False",
+			"label": "Payment management fee",
+			"center": "False",
+			"padding": "True",
+			"id": "31"
+		},
+		"AdvancePaymentCFFY": {
+			"isBold": "False",
+			"label": "Advance payment (confirmed for future years)",
+			"center": "False",
+			"padding": "True",
+			"id": "32"
+		},
+		"PayFinancialExpenses": {
+			"isBold": "False",
+			"label": "Pay financial expenses",
+			"center": "False",
+			"padding": "True",
+			"id": "33"
+		},
+		"ExternalDonation": {
+			"isBold": "False",
+			"label": "External donation",
+			"center": "False",
+			"padding": "True",
+			"id": "34"
+		},
+		"PayDepositDeposit": {
+			"isBold": "False",
+			"label": "Pay deposit deposit",
+			"center": "False",
+			"padding": "True",
+			"id": "35"
+		},
+		"FineExpenditure": {
+			"isBold": "False",
+			"label": "Fine expenditure ",
+			"center": "False",
+			"padding": "True",
+			"id": "36"
+		},
+		"PayOtherCashRelatedToBusinessActivitiesEMECT": {
+			"isBold": "False",
+			"label": "Pay other cash related to business activities (external merchants)",
+			"center": "False",
+			"padding": "True",
+			"id": "37"
+		},
+		"PayOtherCashRelatedToBusinessActivitiesEMO": {
+			"isBold": "False",
+			"label": "Pay other cash related to business activities (external merchants): Other",
+			"center": "False",
+			"padding": "True",
+			"id": "38"
+		},
+		"ParentCompanyStockPurchasePayment": {
+			"isBold": "False",
+			"label": "Parent company stock purchase payment",
+			"center": "False",
+			"padding": "True",
+			"id": "39"
+		},
+		"PayOtherCashRelatedToBusinessActivitiesIM": {
+			"isBold": "True",
+			"label": "Pay other cash related to business activities (internal merchants)",
+			"center": "True",
+			"padding": "False"
+		},
+		"PayOtherCashRelatedToBusinessActivitiesIMFC": {
+			"isBold": "False",
+			"label": "PayOtherCashRelatedToBusinessActivitiesIMFC",
+			"center": "False",
+			"padding": "True",
+			"id": "40"
+		},
+		"PayOtherCashRelatedToBusinessActivitiesIMITF": {
+			"isBold": "False",
+			"label": "PayOtherCashRelatedToBusinessActivitiesIMITF",
+			"center": "False",
+			"padding": "True",
+			"id": "41"
+		},
+		"TotalCashOutflowsFromOperatingActivities": {
+			"isBold": "True",
+			"label": "Subtotal of cash outflow from operating activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"NetCashFlowsFromOperatingActivities": {
+			"isBold": "True",
+			"label": "Net cash flow from operating activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashFlowsFromInvestingActivities": {
+			"isBold": "True",
+			"label": "2. Cash flow from investment activities:",
+			"center": "False",
+			"padding": "False"
+		},
+		"CashRecoveredFromInvestment": {
+			"isBold": "True",
+			"label": "Recover the cash received from the investment",
+			"center": "True",
+			"padding": "False"
+		},
+		"StockIPID": {
+			"isBold": "False",
+			"label": "Stock (including principal, income, dividends)",
+			"center": "False",
+			"padding": "True",
+			"id": "42"
+		},
+		"AvailableForSaleFinancialAssetsP": {
+			"isBold": "False",
+			"label": "Available-for-sale financial assets - principal",
+			"center": "False",
+			"padding": "True",
+			"id": "43"
+		},
+		"AvailableForSaleFinancialAssetsI": {
+			"isBold": "False",
+			"label": "Available-for-sale financial assets - income",
+			"center": "False",
+			"padding": "True",
+			"id": "44"
+		},
+		"LongTermDebtInvestmentP ": {
+			"isBold": "False",
+			"label": "Long-term debt investment - principal",
+			"center": "False",
+			"padding": "True",
+			"id": "45"
+		},
+		"CashRecoveredFromInvestmentWMP": {
+			"isBold": "False",
+			"label": "Cash recovered from investment: wealth management products",
+			"center": "False",
+			"padding": "True",
+			"id": "46"
+		},
+		"CashReceivedFromInvestmentIncome": {
+			"isBold": "True",
+			"label": "Cash received from investment income",
+			"center": "True",
+			"padding": "False"
+		},
+		"EquityNatureInvestmentI": {
+			"isBold": "False",
+			"label": "Equity nature investment - income",
+			"center": "False",
+			"padding": "True",
+			"id": "47"
+		},
+		"LongTermDebtInvestmentI": {
+			"isBold": "False",
+			"label": "Long-term debt investment - income",
+			"center": "False",
+			"padding": "True",
+			"id": "48"
+		},
+		"NeCashRecoveredFromDisposalOfFixedAssetsIntangibleAssetsAndOtherLongTermAssets": {
+			"isBold": "False",
+			"label": "NeCashRecoveredFromDisposalOfFixedAssetsIntangibleAssetsAndOtherLongTermAssets",
+			"center": "False",
+			"padding": "True",
+			"id": "49"
+		},
+		"NetCashReceivedFromDisposalOfSubsidiariesAndOtherBusinessUnits": {
+			"isBold": "False",
+			"label": "Net cash received from disposal of subsidiaries and other business units",
+			"center": "False",
+			"padding": "True",
+			"id": "50"
+		},
+		"OtherCashReceivedRelatingToInvestingActivities": {
+			"isBold": "False",
+			"label": "Other cash received relating to investing activities",
+			"center": "False",
+			"padding": "True",
+			"id": "51"
+		},
+		"TotalCashInflowsFromInvestingActivities": {
+			"isBold": "True",
+			"label": "Subtotal of cash inflows from investment activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashPaidForThePurchaseAndConstructionOfFixedAssetsIntangibleAssetsAndOtherLongTermAssets": {
+			"isBold": "True",
+			"label": "Cash paid for the purchase and construction of fixed assets, intangible assets and other long-term assets",
+			"center": "True",
+			"padding": "False"
+		},
+		"PurchaseAndConstructionOfFixedAssets ": {
+			"isBold": "False",
+			"label": "Purchase and construction of fixed assets",
+			"center": "False",
+			"padding": "True",
+			"id": "52"
+		},
+		"PurchaseOfIntangibleAssets": {
+			"isBold": "False",
+			"label": "Purchase of intangible assets",
+			"center": "False",
+			"padding": "True",
+			"id": "53"
+		},
+		"OtherLongTermAssets ": {
+			"isBold": "False",
+			"label": "Other long-term assets",
+			"center": "False",
+			"padding": "True",
+			"id": "54"
+		},
+		"CashInvestment": {
+			"isBold": "True",
+			"label": "Cash Investment",
+			"center": "True",
+			"padding": "False"
+		},
+		"StockInvestmentIHF": {
+			"isBold": "False",
+			"label": "Stock investment (including handling fee)",
+			"center": "False",
+			"padding": "True",
+			"id": "55"
+		},
+		"EquityInvestment": {
+			"isBold": "False",
+			"label": "Equity investment",
+			"center": "False",
+			"padding": "True",
+			"id": "56"
+		},
+		"DebtInvestment": {
+			"isBold": "False",
+			"label": "Debt investment",
+			"center": "False",
+			"padding": "True",
+			"id": "57"
+		},
+		"CashPaidForInvestmentWMP": {
+			"isBold": "False",
+			"label": "Cash paid for investment: wealth management products",
+			"center": "False",
+			"padding": "True",
+			"id": "58"
+		},
+		"NetCashPaidForAcquiringSubsidiariesAndOtherBusinessUnits": {
+			"isBold": "False",
+			"label": "Net cash paid by subsidiaries and other business units",
+			"center": "False",
+			"padding": "True",
+			"id": "59"
+		},
+		"OtherCashPaymentsRelatedToInvestingActivities": {
+			"isBold": "False",
+			"label": "Other cash paid relating to investing activities",
+			"center": "False",
+			"padding": "True",
+			"id": "60"
+		},
+		"TotalCashOutflowsFromInvestingActivities": {
+			"isBold": "True",
+			"label": "Subtotal of cash outflows from investment activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"NetCashFlowsFromInvestingActivities": {
+			"isBold": "True",
+			"label": "Net cash flows from investing activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashFlowsFromFinancingActivities": {
+			"isBold": "True",
+			"label": "3. Cash flow from financing activities:",
+			"center": "False",
+			"padding": "False"
+		},
+		"CashReceivedFromInvestments": {
+			"isBold": "True",
+			"label": "Absorb cash received from investment",
+			"center": "True",
+			"padding": "False"
+		},
+		"SubsidiariesAbsorbCashReceivedFromMinorityShareholdersInvestments": {
+			"isBold": "False",
+			"label": "Subsidiaries absorb cash received from minority shareholders' investments",
+			"center": "False",
+			"padding": "True",
+			"id": "61"
+		},
+		"CashReceivedFromInvestmentO": {
+			"isBold": "False",
+			"label": "Cash received from investment: other",
+			"center": "False",
+			"padding": "True",
+			"id": "62"
+		},
+		"CashReceivedFromBorrowings": {
+			"isBold": "True",
+			"label": "Cash received from the loan",
+			"center": "True",
+			"padding": "True"
+		},
+		"CashReceivedFromBorrowingsBL": {
+			"isBold": "False",
+			"label": "Cash received from borrowing: bank loans",
+			"center": "False",
+			"padding": "True",
+			"id": "63"
+		},
+		"CashReceivedFromBorrowingsMF": {
+			"isBold": "False",
+			"label": "Cash received from borrowing: Margin financing",
+			"center": "False",
+			"padding": "True",
+			"id": "64"
+		},
+		"CashReceivedFromBorrowingsFL": {
+			"isBold": "False",
+			"label": "Cash received from borrowing: Financial leasing",
+			"center": "False",
+			"padding": "True",
+			"id": "65"
+		},
+		"CashReceivedFromTheIssuanceOfBonds": {
+			"isBold": "False",
+			"label": "Cash received from the issuance of bonds",
+			"center": "False",
+			"padding": "True",
+			"id": "66"
+		},
+		"OtherCashReceiptsRelatedToOtherFinancingActivities": {
+			"isBold": "False",
+			"label": "Received other cash related to fundraising activities",
+			"center": "False",
+			"padding": "True",
+			"id": "67"
+		},
+		"TotalCashInflowsFromFinancingActivities": {
+			"isBold": "True",
+			"label": "Subtotal of cash inflows from financing activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashRepaymentsForDebts": {
+			"isBold": "True",
+			"label": "Cash paid for debt repayment",
+			"center": "True",
+			"padding": "False"
+		},
+		"CashRepaymentsForDebtsBL": {
+			"isBold": "False",
+			"label": "Cash paid for debt repayment: bank loans ",
+			"center": "False",
+			"padding": "True",
+			"id": "68"
+		},
+		"CashRepaymentsForDebtsMF": {
+			"isBold": "False",
+			"label": "Cash paid for debt repayment: margin financing",
+			"center": "False",
+			"padding": "True",
+			"id": "69"
+		},
+		"CashRepaymentsForDebtsFL": {
+			"isBold": "False",
+			"label": "Cash paid for debt repayment: financing lease",
+			"center": "False",
+			"padding": "True",
+			"id": "70"
+		},
+		"CashPaymentsForDistributionOfDividends": {
+			"isBold": "True",
+			"label": "Cash paid for dividends, profits or interest payments",
+			"center": "True",
+			"padding": "False"
+		},
+		"DividendsAndProfitsPaidBySubsidiariesToMinorityShareholders": {
+			"isBold": "False",
+			"label": "Dividends and profits paid by subsidiaries to minority shareholders",
+			"center": "False",
+			"padding": "True",
+			"id": "71"
+		},
+		"CashPaymentsForDistributionOfDividendsO": {
+			"isBold": "False",
+			"label": "Cash paid for dividends, profits or interest payments: other ",
+			"center": "False",
+			"padding": "True",
+			"id": "72"
+		},
+		"OtherCashPaymentsRelatedToFinancingActivities": {
+			"isBold": "False",
+			"label": "Pay other cash related to fundraising activities",
+			"center": "False",
+			"padding": "True",
+			"id": "73"
+		},
+		"TotalCashOutflowsFromFinancingActivities": {
+			"isBold": "True",
+			"label": "Subtotal of cash outflows from financing activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"NetCashFlowsFromFinancingActivities": {
+			"isBold": "True",
+			"label": "Net cash flow from financing activities",
+			"center": "True",
+			"padding": "False"
+		},
+		"EffectOfForeignExchangeRateChangesOnCashAndCashEquivalents": {
+			"isBold": "False",
+			"label": "4.the impact of exchange rate changes on cash and cash equivalents",
+			"center": "False",
+			"padding": "True",
+			"id": "74"
+		},
+		"NetIncreaseInCashAndCashEquivalents": {
+			"isBold": "True",
+			"label": "5.Net increase in cash and cash equivalents",
+			"center": "False",
+			"padding": "False"
+		},
+		"Add": {
+			"isBold": "False",
+			"label": "Add: cash and cash equivalents at the beginning of the period",
+			"center": "False",
+			"padding": "True"
+		},
+		"TotalMonetaryFundsAtTheEndOfThePeriod": {
+			"isBold": "True",
+			"label": "6. Total amount of money at the end of the period",
+			"center": "False",
+			"padding": "False"
+		}
+	}
+}

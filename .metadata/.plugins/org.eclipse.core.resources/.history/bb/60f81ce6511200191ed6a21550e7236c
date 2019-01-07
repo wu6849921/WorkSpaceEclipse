@@ -1,0 +1,71 @@
+/**
+ * @NApiVersion 2.x
+ * @NScriptType UserEventScript
+ * @NModuleScope SameAccount
+ */
+define([ 'N/record' ], function(record) {
+	function afterSubmit(context) {
+		try {
+			if (context.type == context.UserEventType.CREATE
+					|| context.type == context.UserEventType.EDIT) {
+				var newRecord = context.newRecord;
+				var customerInner = newRecord.getValue({
+					fieldId : 'custbody_el_customerinner'
+				});
+				var soInner = newRecord.getValue({
+					fieldId : 'custbody_el_salesorderinner'
+				});
+				var lineCount = newRecord.getLineCount({
+					sublistId : 'item'
+				});
+				if (!customerInner && soInner) {
+					return;
+				}
+				// ´´½¨SO
+				var soRecord = record.create({
+					type : record.Type.SALES_ORDER,
+					isDynamic : true,
+					defaultValues : {
+						entity : customerInner
+					}
+				});
+				for (var i = 0; i < lineCount; i++) {
+					var item = newRecord.getSublistText({
+						sublistId : 'item',
+						fieldId : 'item',
+						line : i
+					});
+					var quantity = newRecord.getSublistText({
+						sublistId : 'item',
+						fieldId : 'quantity',
+						line : i
+					});
+					var rate = newRecord.getSublistText({
+						sublistId : 'item',
+						fieldId : 'rate',
+						line : i
+					});
+					soRecord.selectNewLine({
+						sublistId : 'line'
+					});
+					soRecord.setCurrentSublistValue({
+						sublistId : 'line',
+						fieldId : 'entity',
+						value : customer
+					});
+				}
+			}
+		} catch (e) {
+			log.debug({
+				title : 'afterSubmit',
+				details : e
+			});
+		}
+
+	}
+
+	return {
+		afterSubmit : afterSubmit
+	};
+
+});
