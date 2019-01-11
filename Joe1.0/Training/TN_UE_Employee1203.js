@@ -10,6 +10,7 @@ function afterSubmit(type) {
 	// }
 	var newRecordOld = nlapiGetOldRecord();
 	var newRecordNew = nlapiGetNewRecord();
+	nlapiLogExecution('DEBUG', 'afterSubmit', 'afterSubmit');
 
 	// var joeTestOld = newRecordOld.getFieldValue('custentity_tn_emp_joetest');
 	// nlapiLogExecution('DEBUG', 'joeTestbeforeSubmitOld', joeTestOld);
@@ -51,19 +52,19 @@ function afterSubmit(type) {
 	// nlapiSubmitRecord(eventRec);
 
 	// module15 重定向到suitlet
-	var notes = newRecordNew.getFieldValue('comments');
-	var emId = newRecordNew.getId();
-	var params = new Array();
-	params['custparam_tn_note'] = notes;
-	params['custparam_tn_emid'] = emId;
-	nlapiSetRedirectURL('SUITELET', 'customscript562', 'customdeploy1', null,
-			params);
+//	var notes = newRecordNew.getFieldValue('comments');
+//	var emId = newRecordNew.getId();
+//	var params = new Array();
+//	params['custparam_tn_note'] = notes;
+//	params['custparam_tn_emid'] = emId;
+//	nlapiSetRedirectURL('SUITELET', 'customscript562', 'customdeploy1', null,
+//			params);
 }
 function beforeSubmit(type) {
 	var newRecordOld = nlapiGetOldRecord();
 	var newRecordNew = nlapiGetNewRecord();
 	// var joeTestOld = newRecordOld.getFieldValue('custentity_tn_emp_joetest');
-	nlapiLogExecution('DEBUG', 'joeTestbeforeSubmitOld', 1);
+	nlapiLogExecution('DEBUG', 'beforeSubmit', 'beforeSubmit');
 
 	// var joeTestNew = newRecordNew.getFieldValue('custentity_tn_emp_joetest');
 	// nlapiLogExecution('DEBUG', 'joeTestbeforeSubmitNew', joeTestNew);

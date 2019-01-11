@@ -68,24 +68,43 @@
 				</table>
 			</macro>
 		</macrolist>
-		<style type="text/css">* {font-family: HeiseiMin, hygothic, STSong, MSung,
-			MHei,san-serif; font-size: 9pt; table-layout: fixed; } table {
-			font-size: 9pt; table-layout: fixed; } th { font-weight: bold;
-			font-size: 8pt; vertical-align: middle; padding: 5px 6px 3px;
-			background-color: #e3e3e3; color: #333333; } td { padding: 4px 6px; }
-			td p { align:left } b { font-weight: bold; color: #333333; }
-			table.header td { padding: 0; font-size: 10pt; } table.footer td {
-			padding: 0; font-size: 8pt; } table.itemtable th { padding-bottom:
-			10px; padding-top: 10px; } table.body td { padding-top: 2px; }
-			table.total { page-break-inside: avoid; } tr.totalrow {
-			background-color: #e3e3e3; line-height: 200%; } td.totalboxtop {
-			font-size: 12pt; background-color: #e3e3e3; } td.addressheader {
-			font-size: 8pt; padding-top: 6px; padding-bottom: 2px; } td.address {
-			padding-top: 0; } td.totalboxmid { font-size: 28pt; padding-top:
-			20px; background-color: #e3e3e3; } td.totalboxbot { background-color:
-			#e3e3e3; font-weight: bold; } span.title { font-size: 28pt; }
-			span.number { font-size: 16pt; } hr { width: 100%; color: #d3d3d3;
-			background-color: #d3d3d3; height: 1px; } .signatures {
+		<style type="text/css">* {font-family: stsong, sans-serif;font-size:
+			9pt;table-layout: fixed;}
+			table {
+			font-size: 9pt; table-layout: fixed;
+			} th
+			{ font-weight: bold;
+			font-size: 8pt; vertical-align: middle;
+			padding:
+			5px 6px 3px;
+			background-color: #e3e3e3; color: #333333; } td {
+			padding: 4px 6px; }
+			td p { align:left } b { font-weight: bold; color:
+			#333333; }
+			table.header td { padding: 0; font-size: 10pt; }
+			table.footer td {
+			padding: 0; font-size: 8pt; } table.itemtable th {
+			padding-bottom:
+			10px; padding-top: 10px; } table.body td {
+			padding-top: 2px; }
+			table.total { page-break-inside: avoid; }
+			tr.totalrow {
+			background-color: #e3e3e3; line-height: 200%; }
+			td.totalboxtop {
+			font-size: 12pt; background-color: #e3e3e3; }
+			td.addressheader {
+			font-size: 8pt; padding-top: 6px; padding-bottom:
+			2px; } td.address {
+			padding-top: 0; } td.totalboxmid { font-size:
+			28pt; padding-top:
+			20px; background-color: #e3e3e3; } td.totalboxbot {
+			background-color:
+			#e3e3e3; font-weight: bold; } span.title {
+			font-size: 28pt; }
+			span.number { font-size: 16pt; } hr { width: 100%;
+			color: #d3d3d3;
+			background-color: #d3d3d3; height: 1px; } .signatures
+			{
 			page-break-inside: avoid; margin-top: 40px; } .signhere {
 			border-bottom: 1px solid #d3d3d3; height: 15px; }
 		</style>

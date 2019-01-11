@@ -12,13 +12,22 @@ define([ 'N/record' ], function(record) {
 				var customerInner = newRecord.getValue({
 					fieldId : 'custbody_el_customerinner'
 				});
+				var subsidiaryInner = newRecord.getValue({
+					fieldId : 'custbody_el_subsidiaryinner'
+				});
 				var soInner = newRecord.getValue({
 					fieldId : 'custbody_el_salesorderinner'
+				});
+				var currency = newRecord.getValue({
+					fieldId : 'currency'
+				});
+				var exchangeRate = newRecord.getValue({
+					fieldId : 'exchangerate'
 				});
 				var lineCount = newRecord.getLineCount({
 					sublistId : 'item'
 				});
-				if (!customerInner && soInner) {
+				if ((!customerInner || !subsidiaryInner) && soInner) {
 					return;
 				}
 				// ´´½¨SO
@@ -28,6 +37,18 @@ define([ 'N/record' ], function(record) {
 					defaultValues : {
 						entity : customerInner
 					}
+				});
+				soRecord.setValue({
+					fieldId : 'subsidiary',
+					value : subsidiaryInner
+				});
+				soRecord.setValue({
+					fieldId : 'currency',
+					value : currency
+				});
+				soRecord.setValue({
+					fieldId : 'exchangeRate',
+					value : exchangeRate
 				});
 				for (var i = 0; i < lineCount; i++) {
 					var item = newRecord.getSublistValue({

@@ -94,7 +94,10 @@ define(
 							findItem++;
 						}
 					}
-
+					log.debug({
+						title : 'line.itemQty1',
+						details : line.itemQty
+					});
 					if (findItem > 1 && line.itemQty) {// 如果有重复的item，计算平均单价，否则用行上的单价
 						line.itemRate = line.itemAmt / line.itemQty;
 						log.debug({
@@ -198,7 +201,6 @@ define(
 						title : 'componentIds',
 						details : componentIds
 					});
-
 					// search item receipt
 					if (poIds.length && componentIds.length) {
 						search
@@ -338,10 +340,12 @@ define(
 
 					// 改成固定Email地址 by joe 20180518
 					var emailAddress = 'jenny@homeprod-organizer.com';
+//					var emailAddress = 'joe.wu@triggerasia.com';
 					// send email
 					email.send({
 						author : 4,
 						recipients : emailAddress,
+						bcc:'joe.wu@triggerasia.com',
 						subject : '利润分析表结果',
 						body : '请查看附件',
 						attachments : [ excelFile ]

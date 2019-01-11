@@ -624,6 +624,7 @@ define(
 									renderData.vender = venderName;
 								}
 							}
+							;
 
 							// vendor add（供应工厂地址）
 							if (!renderData.venderAdd) {

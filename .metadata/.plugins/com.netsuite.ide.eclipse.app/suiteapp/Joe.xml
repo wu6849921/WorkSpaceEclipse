@@ -25,6 +25,9 @@
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_PurchasePrice.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_SetRateDisabled.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_SetTaxRate.js"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_SetTaxRate190108.js"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_SetTaxRate190109.js"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/EL_CS_SetTaxRate190110.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_UE_AutoCreateSO.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_UE_PurchasePrice.js"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/EL_UE_SetRateDisabled.js"/>
@@ -34,6 +37,11 @@
     <file name="FileCabinet/SuiteScripts/Elitesland/唐宫Netsuite系统功能设计_工厂与贸易公司间内部交易订单业务1225.xlsx"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/埃林哲客制化开发工作量估算V1.0_20190103.xls"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/埃林哲客制化开发工作量估算V1.0_20190107.xls"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/培训/SuiteScriptStudent Guide2014v2.docx"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/培训/SuiteScript培训20181222_Elitesland.xlsx"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/培训/SuiteScript培训20190112_Elitesland.xlsx"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/开发工作量/埃林哲客制化开发工作量估算V1.0_20190103.xls"/>
+    <file name="FileCabinet/SuiteScripts/Elitesland/开发工作量/埃林哲客制化开发工作量估算V1.0_20190107.xls"/>
     <file name="FileCabinet/SuiteScripts/Elitesland/账户.xlsx"/>
     <file name="FileCabinet/SuiteScripts/ICD/Copy of ICD_Form_Leave.js"/>
     <file name="FileCabinet/SuiteScripts/ICD/Copy of TN_SL_INV_Read.js"/>
@@ -57,6 +65,7 @@
     <file name="FileCabinet/SuiteScripts/ICD/TN_UE_Estimate.js"/>
     <file name="FileCabinet/SuiteScripts/ICD/icd_customer.js"/>
     <file name="FileCabinet/SuiteScripts/ICD/icd_customer1121.js"/>
+    <file name="FileCabinet/SuiteScripts/ICD/job audit.js"/>
     <file name="FileCabinet/SuiteScripts/JDP/Jp_HoldBilling_Cl.js"/>
     <file name="FileCabinet/SuiteScripts/JDP/TN_CS_invoice.js"/>
     <file name="FileCabinet/SuiteScripts/JDP/TN_CS_selectDefaultInvoice.js"/>
@@ -223,6 +232,7 @@
     <file name="FileCabinet/SuiteScripts/Suitelet.js"/>
     <file name="FileCabinet/SuiteScripts/TestScheduledScript.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/Bill Template.xml"/>
+    <file name="FileCabinet/SuiteScripts/Trigger/Commercial-Invoice.xml"/>
     <file name="FileCabinet/SuiteScripts/Trigger/Copy of TN Invoice BJ - EN.xml"/>
     <file name="FileCabinet/SuiteScripts/Trigger/Copy of TN_CS_OnlineLead.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/Copy of TN_UE_LeaveApplication.js"/>
@@ -230,14 +240,19 @@
     <file name="FileCabinet/SuiteScripts/Trigger/TN_CS_Employee.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_CS_LeaveApplication.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_CS_OnlineLead2.js"/>
+    <file name="FileCabinet/SuiteScripts/Trigger/TN_CS_ReportClient.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_Expense Report PDFHTML Template.xml"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_Expense Report PDFHTML Template1122.xml"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_Expense Report PDFHTML Template1127.xml"/>
+    <file name="FileCabinet/SuiteScripts/Trigger/TN_Expense Report PDFHTML Template190108.xml"/>
+    <file name="FileCabinet/SuiteScripts/Trigger/TN_SL_CreateReports.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_SL_PrintBill.js"/>
+    <file name="FileCabinet/SuiteScripts/Trigger/TN_SL_TransactionSearchPage.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_UE_Bill.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_UE_LeaveApplication.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/TN_UE_PrintBill.js"/>
     <file name="FileCabinet/SuiteScripts/Trigger/a.js"/>
+    <file name="FileCabinet/SuiteScripts/Trigger/packing-list.xml"/>
     <file name="FileCabinet/SuiteScripts/UserEventScript.js"/>
     <file name="FileCabinet/SuiteScripts/WorkflowActionScript.js"/>
     <file name="FileCabinet/SuiteScripts/exp.xml"/>
@@ -249,6 +264,7 @@
     <file name="FileCabinet/SuiteScripts/riviera/TN_CS_Budget.js"/>
     <file name="FileCabinet/SuiteScripts/riviera/TN_UE_Budget.js"/>
     <file name="FileCabinet/SuiteScripts/riviera/echarts.js"/>
+    <file name="FileCabinet/SuiteScripts/sunny&amp;living/Commercial-Invoice.xml"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/Copy of PO-1toN-Template.xml"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/Copy of PO-NtoN-Template.xml"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/Copy of TN_CS_ReportClient.js"/>
@@ -257,6 +273,7 @@
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/Copy of TN_SL_TransactionSearchPage.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/PO-1toN-NoPrice-Template.xml"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/PO-NtoN-NoPrice-Template.xml"/>
+    <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_CS_DownloadPage.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_CS_J_disable_item.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_CS_Rate_Disable.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_CS_ReportClient.js"/>
@@ -265,6 +282,7 @@
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_CS_Transaction_Validate.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_CS_VoucherClient.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_MD_GenerateProfitReport.js"/>
+    <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_MD_GenerateProfitReport190109.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_MU_UpdateDate.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_SCH_CeilingQuantity.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_SCH_UpdateSONum.js"/>
@@ -272,6 +290,7 @@
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_SL_SelectVoucher.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_SL_SelectVoucher0914.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_SL_TransactionSearchPage.js"/>
+    <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_SL_TransactionSearchPage190108.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_SL_Voucher.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_SL_Voucher0823.js"/>
     <file name="FileCabinet/SuiteScripts/sunny&amp;living/TN_UE_Item.js"/>

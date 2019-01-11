@@ -41,40 +41,6 @@ function(search, format) {
                         sublistId: sublistName,
                         fieldId: sublistFieldName
                     });
-                    if (currentRecord.type == 'purchaseorder') {
-                        var priceAndCode = getTaxPriceAndCode(currentRecord, format, search, item, vendor);
-                        if (priceAndCode.length == 0) {
-                            priceAndCode[0] = 0;
-                        }
-                        if (priceAndCode[0] != taxPrice) {
-                            // 当含税单价改变，再判断是否可议价
-                            var isBargain = search.lookupFields({
-                                type: search.Type.VENDOR,
-                                id: vendor,
-                                columns: ['custentity1']
-                            });
-                            // alert(isBargain.custentity1);
-                            if (!isBargain.custentity1) {
-                                isBargain = search.lookupFields({
-                                    type: search.Type.ITEM,
-                                    id: item,
-                                    columns: ['custitem1']
-                                });
-                                if (!isBargain.custitem1) {
-                                    alert('该物料不可议价！');
-                                    taxPrice = priceAndCode[0];
-                                    currentRecord.setCurrentSublistValue({
-                                        sublistId: sublistName,
-                                        fieldId: sublistFieldName,
-                                        value: taxPrice,
-                                        ignoreFieldChange: true
-                                    });
-                                    return;
-                                }
-                            }
-                        }
-                    }
-
                     var taxRate = currentRecord.getCurrentSublistValue({
                         sublistId: sublistName,
                         fieldId: 'taxrate1'
@@ -88,49 +54,107 @@ function(search, format) {
                         value: taxPrice
                     });
                 }
+                if (sublistFieldName === 'quantity') {
+                	var item = currentRecord.getCurrentSublistValue({
+                        sublistId: sublistName,
+                        fieldId: 'item'
+                    });
+                    var vendor;
+                    if (currentRecord.type == 'salesorder') {
+                        vendor = currentRecord.getValue({
+                            fieldId: 'custbody_el_vendorinner'
+                        });
+                    } else {
+                        vendor = currentRecord.getValue({
+                            fieldId: 'entity'
+                        });
+                    }
+                    var subInner = currentRecord.getValue({
+                        fieldId: 'custbody_el_subsidiaryinner'
+                    });
+                    if (!item) {
+                        return;
+                    }
+                    // 如果是SO，则特殊处理
+                    if (currentRecord.type == 'salesorder' && (!subInner || !vendor)) {
+                   	 currentRecord.setCurrentSublistValue({
+                            sublistId: sublistName,
+                            fieldId: 'taxcode',
+                            value: 5
+                        });
+                        currentRecord.setCurrentSublistValue({
+                            sublistId: sublistName,
+                            fieldId: 'custcol_including_tax_unit_price',
+                            value: 0,
+                            ignoreFieldChange: true
+                        });
+                        currentRecord.setCurrentSublistValue({
+                            sublistId: sublistName,
+                            fieldId: 'rate',
+                            value: 0
+                        });
+                       return;
+                   }
+                    var priceAndCode = getTaxPriceAndCode(currentRecord, format, search, item, vendor);
+//                   alert(priceAndCode);
+                    if (priceAndCode.length > 0) { // 如果有结果
+                        currentRecord.setCurrentSublistValue({
+                            sublistId: sublistName,
+                            fieldId: 'taxcode',
+                            value: priceAndCode[1]
+                        });
+                        currentRecord.setCurrentSublistValue({
+                            sublistId: sublistName,
+                            fieldId: 'custcol_including_tax_unit_price',
+                            value: priceAndCode[0]
+                        });
+                    } else {
+                        currentRecord.setCurrentSublistValue({
+                            sublistId: sublistName,
+                            fieldId: 'taxcode',
+                            value: 5
+                        });
+                        currentRecord.setCurrentSublistValue({
+                            sublistId: sublistName,
+                            fieldId: 'custcol_including_tax_unit_price',
+                            value: 0,
+                            ignoreFieldChange: true
+                        });
+                        currentRecord.setCurrentSublistValue({
+                            sublistId: sublistName,
+                            fieldId: 'rate',
+                            value: 0
+                        });
+                    }
+                }
             }
             if (sublistFieldName === 'subsidiary') {
                 var subsidiary = currentRecord.getValue({
                     fieldId: 'subsidiary'
                 });
-                if (currentRecord.type == 'salesorder') {
-                    var vendor;
+                var conlumnsInit=currentRecord.type == 'salesorder'?['custrecord_vendor_num']:['custrecord_customer_num'];
+                    var entity;
                     search.create({
                         type: 'customrecord_merchants_configuration',
                         filters: ['custrecord_corporation', 'anyof', subsidiary],
-                        columns: ['custrecord_vendor_num']
+                        columns: conlumnsInit
                     }).run().each(function(result) {
-                        vendor = result.getValue(result.columns[0]);
+                    	entity = result.getValue(result.columns[0]);
                         return true;
                     });
                     // alert(JSON.stringify(subArea.custrecord2));
-                    if (vendor) {
+                    var entityFeild=currentRecord.type == 'salesorder'?'custbody_el_vendorinner':'custbody_el_customerinner';
+                    if (entity) {
                         currentRecord.setValue({
-                            fieldId: 'custbody_el_vendorinner',
-                            value: vendor
+                            fieldId: entityFeild,
+                            value: entity
+                        });
+                    }else{
+                    	currentRecord.setValue({
+                            fieldId: entityFeild,
+                            value: ''
                         });
                     }
-                    // return;
-                } else { //如果是PO则设置客户（内部交易字段）
-                    var vendor = currentRecord.getValue({
-                        fieldId: 'entity'
-                    });
-                    var customerInner;
-                    search.create({
-                        type: 'customrecord_merchants_configuration',
-                        filters: [['custrecord_vendor_num', 'anyof', vendor], 'AND', ['custrecord_corporation', 'anyof', subsidiary]],
-                        columns: ['custrecord_customer_num']
-                    }).run().each(function(result) {
-                        customerInner = result.getValue(result.columns[0]);
-                        return true;
-                    });
-                    if (customerInner) {
-                        currentRecord.setValue({
-                            fieldId: 'custbody_el_customerinner',
-                            value: customerInner
-                        });
-                    }
-                }
                 var area = currentRecord.getValue({
                     fieldId: 'custbody_el_area'
                 });
@@ -152,14 +176,15 @@ function(search, format) {
                 }
             }
             // 判断是否内部交易
-            if (currentRecord.type == 'salesorder' && sublistFieldName === 'entity') {
-                var customer = currentRecord.getValue({
-                    fieldId: 'entity'
-                });
+            if (sublistFieldName === 'entity') {
+            	var entity = currentRecord.getValue({
+            		fieldId: 'entity'
+            	});
+            	var filterInit=currentRecord.type == 'salesorder'?['custrecord_customer_num', 'anyof', entity]:['custrecord_vendor_num', 'anyof', entity];
                 var subsidiary;
                 search.create({
                     type: 'customrecord_merchants_configuration',
-                    filters: ['custrecord_customer_num', 'anyof', customer],
+                    filters: filterInit,
                     columns: ['custrecord_corporation']
                 }).run().each(function(result) {
                     subsidiary = result.getValue(result.columns[0]);
@@ -171,7 +196,12 @@ function(search, format) {
                         fieldId: 'custbody_el_subsidiaryinner',
                         value: subsidiary
                     });
-                }
+                }else {
+                	 currentRecord.setValue({
+                         fieldId: 'custbody_el_subsidiaryinner',
+                         value: ''
+                     });
+				}
             }
         } catch(e) {
             alert(e);
@@ -197,7 +227,8 @@ function(search, format) {
         var sublistName = context.sublistId;
         var sublistFieldName = context.fieldId;
         if (sublistName === 'item' && sublistFieldName === 'item') { // 选择item带出对应价格
-            var item = currentRecord.getCurrentSublistValue({
+//           alert(1);
+        	var item = currentRecord.getCurrentSublistValue({
                 sublistId: sublistName,
                 fieldId: sublistFieldName
             });
@@ -214,11 +245,27 @@ function(search, format) {
             var subInner = currentRecord.getValue({
                 fieldId: 'custbody_el_subsidiaryinner'
             });
-            if (!item || !vendor) {
+            if (!item) {
                 return;
             }
             // 如果是SO，则特殊处理
             if (currentRecord.type == 'salesorder' && (!subInner || !vendor)) {
+            	 currentRecord.setCurrentSublistValue({
+                     sublistId: sublistName,
+                     fieldId: 'taxcode',
+                     value: 5
+                 });
+                 currentRecord.setCurrentSublistValue({
+                     sublistId: sublistName,
+                     fieldId: 'custcol_including_tax_unit_price',
+                     value: 0,
+                     ignoreFieldChange: true
+                 });
+                 currentRecord.setCurrentSublistValue({
+                     sublistId: sublistName,
+                     fieldId: 'rate',
+                     value: 0
+                 });
                 return;
             }
             var priceAndCode = getTaxPriceAndCode(currentRecord, format, search, item, vendor);

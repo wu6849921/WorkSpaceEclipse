@@ -99,17 +99,20 @@ define(
 									fieldId : initColumn[7],
 									line : j
 								});
-								var fCurrencyAmount = jeRecord
-										.getSublistValue({
-											sublistId : 'line',
-											fieldId : 'custcol_tn_usaamount',
-											line : j
-										});
+								var baseAmount = jeRecord.getSublistValue({
+									sublistId : 'line',
+									fieldId : 'custcol_tn_usaamount',
+									line : j
+								});
+								var fCurrencyAmount = debitAmount ? debitAmount
+										: creditAmount;
 								if (!debitAmount) {
 									debitAmount = 0;
+									creditAmount = baseAmount;
 								}
 								if (!creditAmount) {
 									creditAmount = 0;
+									debitAmount = baseAmount;
 								}
 								// 对于billPayment memo 进行特殊处理
 								if (mpNum && rectype == 'vendorpayment') {

@@ -201,6 +201,15 @@ function saveEventRecord(request, response) {
 								// SubTab
 							}
 						}
+						
+						//新增上传字段wellPrepared 190107
+						var wellPrepared = request.getParameter('wellPrepared');
+//						 nlapiLogExecution('DEBUG', 'wellPrepared',
+//								 wellPrepared);
+						if (wellPrepared) {
+							eventRec.setFieldValue('custevent_well_prepared',
+									wellPrepared);
+						}
 						var eventRecordID = nlapiSubmitRecord(eventRec, false,
 								true);// check
 						// the
@@ -295,17 +304,9 @@ function saveEventRecord(request, response) {
 										"supportcase", caseID);
 
 							}
-							nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
-									'fileID ' + fileID);
+//							nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
+//									'fileID ' + fileID);
 						}
-					}
-					
-					//新增上传字段wellPrepared 190107
-//					var wellPrepared = request.getParameter('custevent_well_prepared');
-					var wellPrepared = request.getParameter('wellPrepared');
-					if (wellPrepared) {
-						caseRcrd.setFieldValue('custevent_well_prepared',
-								wellPrepared);
 					}
 					
 					// 通过API更新RPM add by joe 181205
@@ -487,7 +488,7 @@ function saveEventRecord(request, response) {
 			var timeTrackDuration = timeTracksArr[i].tcduration;
 			var timeTrackMemo = timeTracksArr[i].tcmemo;
 			var timeTrackClass = timeTracksArr[i].tcclass;
-			nlapiLogExecution('DEBUG', 'timeTrackDate', timeTrackDate);
+//			nlapiLogExecution('DEBUG', 'timeTrackDate', timeTrackDate);
 			if (timeTrackEmployee && timeTrackDate && timeTrackDuration
 					&& timeTrackClass) {
 
@@ -523,6 +524,6 @@ function saveEventRecord(request, response) {
 
 			}
 		}
-		nlapiLogExecution('DEBUG', 'caseRcrd', caseRcrd);
+//		nlapiLogExecution('DEBUG', 'caseRcrd', caseRcrd);
 	}
 }
