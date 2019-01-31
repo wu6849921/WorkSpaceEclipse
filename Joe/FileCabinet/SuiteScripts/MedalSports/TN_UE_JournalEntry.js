@@ -54,7 +54,9 @@ function(record, error, search) {
 					i++;
 					return true;
 				});
-				_record.save();
+				_record.save({
+					ignoreMandatoryFields : true
+				});
 				// var lineCount = newRecord.getLineCount({
 				// sublistId : 'line'
 				// });

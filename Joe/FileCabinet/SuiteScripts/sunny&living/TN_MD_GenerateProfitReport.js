@@ -340,12 +340,12 @@ define(
 
 					// 改成固定Email地址 by joe 20180518
 					var emailAddress = 'jenny@homeprod-organizer.com';
-//					var emailAddress = 'joe.wu@triggerasia.com';
+					// var emailAddress = 'joe.wu@triggerasia.com';
 					// send email
 					email.send({
 						author : 4,
 						recipients : emailAddress,
-						bcc:'joe.wu@triggerasia.com',
+						bcc : [ 'joe.wu@triggerasia.com' ],
 						subject : '利润分析表结果',
 						body : '请查看附件',
 						attachments : [ excelFile ]

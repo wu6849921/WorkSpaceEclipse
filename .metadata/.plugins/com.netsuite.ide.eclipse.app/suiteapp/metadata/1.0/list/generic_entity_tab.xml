@@ -1,8 +1,9 @@
-<list id='generic_entity_tab'>
+<list id="generic_entity_tab">
 	<value>ENTITYACCESS</value>
 	<value>ENTITYACCOUNTING</value>
 	<value>ENTITYBUDGET</value>
 	<value>ENTITYCOMMUNICATION</value>
+	<value>ENTITYCOMPENSATIONTRACKING</value>
 	<value>ENTITYFINANCIAL</value>
 	<value>ENTITYGENERAL</value>
 	<value>ENTITYHUMANRESOURCES</value>
@@ -17,5 +18,6 @@
 	<value>ENTITYSALES</value>
 	<value>ENTITYSUBSCRIPTIONS</value>
 	<value>ENTITYSUPPORT</value>
+	<value>ENTITYTIMEOFF</value>
 	<value>ENTITYTIMETRACKING</value>
 </list>

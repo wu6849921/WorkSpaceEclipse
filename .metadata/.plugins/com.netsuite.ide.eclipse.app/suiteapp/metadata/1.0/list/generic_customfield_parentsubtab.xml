@@ -1,4 +1,4 @@
-<list id='generic_customfield_parentsubtab'>
+<list id="generic_customfield_parentsubtab">
 	<value>CRMBUDGET</value>
 	<value>CRMCONTACTS</value>
 	<value>CRMKEYWORD</value>
@@ -11,6 +11,7 @@
 	<value>ENTITYACCOUNTING</value>
 	<value>ENTITYBUDGET</value>
 	<value>ENTITYCOMMUNICATION</value>
+	<value>ENTITYCOMPENSATIONTRACKING</value>
 	<value>ENTITYFINANCIAL</value>
 	<value>ENTITYGENERAL</value>
 	<value>ENTITYHUMANRESOURCES</value>
@@ -25,6 +26,7 @@
 	<value>ENTITYSALES</value>
 	<value>ENTITYSUBSCRIPTIONS</value>
 	<value>ENTITYSUPPORT</value>
+	<value>ENTITYTIMEOFF</value>
 	<value>ENTITYTIMETRACKING</value>
 	<value>ITEMBASIC</value>
 	<value>ITEMCOMMUNICATION</value>

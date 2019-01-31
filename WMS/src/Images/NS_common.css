@@ -1,0 +1,347 @@
+/**
+ * Script Description
+ * This script is for Common styles
+ */
+/***************************************************************************
+                                 NSWMS SE 
+ ***************************************************************************
+ *
+ *  $Source: /cvs/products/NSWMSSE/Common/NS_common.css,v $
+ *  $Revision: 1.9 $
+ *  $Date: 2015/07/27 13:46:45 $
+ *  $Author: sponnaganti $
+ *  $Name:  $
+ *
+ * DESCRIPTION
+ * 
+ *
+ * REVISION HISTORY
+ *  $Log: NS_common.css,v $
+ *  Revision 1.9  2015/07/27 13:46:45  sponnaganti
+ *  case# 201413682
+ *  Full name not displaying on buttons issue
+ *
+ *  Revision 1.8  2015/07/17 13:15:47  rmukkera
+ *  Case # 201413113,201412997,201412478,201412312,201412291,201412269
+ *
+ *  Revision 1.7  2015/06/03 16:43:45  gkalla
+ *  Case# 201412949
+ *  Style sheet change to increase space and increase font
+ *
+ *  Revision 1.6  2015/05/29 12:23:17  rmukkera
+ *  Case# 201412477,201412478,201412541,201412810,201412269,201412285,201412288,201412291,201412312,201412313,201412330
+ *
+ *  Revision 1.5  2015/04/02 16:32:35  gkalla
+ *  Case# 201411732
+ *  Color change for back and next buttons
+ *
+ *  Revision 1.4  2015/04/01 15:45:57  gkalla
+ *  Case# 201411897,201411896,201411895,201411894,201411893,201411892,201411889,201411647,201411646,201411645,201411643,201411636
+ *  Device issue fixes
+ *
+ *  Revision 1.14  2015/03/31 16:22:07  gkalla
+ *  Case# 201412148,201412065
+ *  To fetch relative path of image or css and error message validation
+ *
+ *  Revision 1.13  2015/03/18 15:43:52  rmukkera
+ *  Case # 201412098
+ *
+ ****************************************************************************/
+/*
+Name                - NS_common.css
+Purpose             - This css file is responsible for: common styles
+All CSS style
+File ID             - 2111
+Company             -
+Client              - 
+Created By          - 
+Created Date        - 05/31/2013
+Last Modify Date    - 05/31/2013
+*/
+body,tr,td {
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+input {
+	font-family: arial, Helvetica, sans-serif, verdana;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.divstyle {
+	margin-left: 300px;
+	width: 700px;
+}
+
+.link {
+	font-weight: normal;
+	color: #0000FF;
+	text-decoration: none;
+}
+
+.whitelink {
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+input[type="button"],input[type="reset"],input[type="submit"],.button,.entry-content .button
+	{
+	/* change these properties to whatever you want */
+	background-color: #008AE6; /*#3b5998;*/
+	color: #fff;
+	border-radius: 5px;
+	width: 75px word-wrap: normal;
+}
+
+input:hover[type="button"],input:hover[type="reset"],input:hover[type="submit"],.button:hover,.entry-content .button:hover
+	{
+	background-color: #0066FF; /*green;*/
+	color: #fff; /*yellow*/;
+}
+
+.textbox {
+	background: white;
+	border: 1px double #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #333;
+	color: #666;
+	outline: none;
+	height: 25px;
+	width: 200px;
+}
+
+.smalltextbox {
+	background: white;
+	border: 1px double #DDD;
+	border-radius: 0px;
+	box-shadow: 0 0 5px #333;
+	color: #666;
+	outline: none;
+	height: 20px;
+	width: 150px;
+}
+
+.outertable {
+	background: white;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.tableheading {
+	background: #607799; /*#778899, #F2F2F2,#6495ED*/
+	font-family: Tahoma; /*sans-serif;*/
+	font-size: 16px;
+	font-weight: normal;
+	color: white;
+	vertical-align: top;
+	text-align: center;
+}
+
+.screenheading {
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-color: white;
+}
+
+.labelmsg {
+	background: white;
+	font-family: Tahoma;
+	font-size: 18px;
+	font-weight: normal;
+	color: black;
+}
+
+.ns-menulabel {
+	/* display: inline-block; 
+    color: #FFFFFF;
+    background-color: transparent;
+    position: static;
+    height: 38px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;  */
+	cursor: pointer;
+	color: #255599;
+	text-decoration: none;
+}
+
+label {
+	background: white;
+	font-family: Tahoma;
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+}
+
+.tdBorder {
+	border: 2px;
+	border-style: solid;
+	width: 100%;
+	border: thin single black collapse;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+tr.line td {
+	border-bottom: 1px solid #B4B5B0;
+	height: 40px;
+}
+
+a.alink:hover {
+	background-color: #0066FF;
+	
+	/*background-color: #FEFEEE;*/
+}
+
+tr.trlink:hover {
+	font-color: #FFFFFF;
+	background-color: #c3d1de !important;
+	border-bottom: 1px solid #B4B5B0;
+}
+
+.uir-list-row-odd>td {
+	background-color: #FFFFFF !important;
+}
+
+.uir-list-row-even>td {
+	background-color: #FAFAFA !important;
+}
+
+tr.uir-list-row-tr:hover td,tr.uir-list-row-tr.uir-active td {
+	background-color: #c3d1de !important;
+}
+
+.uir-list-header-td,.uir-machine-headerrow>td {
+	background: #E5E5E5 none !important;
+	/*text-transform: uppercase;*/
+	padding: 6px 15px !important;
+	border-left: 0 !important;
+	border-bottom: 0 !important;
+}
+
+.menulinks {
+	font-weight: normal;
+	color: #0000FF;
+	text-decoration: none;
+	font-color: #FFFFFF;
+	border-bottom: 1px solid #B4B5B0 !important;
+	height: 40px;
+}
+
+.menulinks:hover {
+	font-color: #FFFFFF;
+	background-color: #c3d1de !important;
+	border-bottom: 1px solid #B4B5B0 !important;
+}
+/* Table align overide */
+.uir-list-row-tr>td {
+	padding: 6px 15px !important;
+	background: white;
+	font-family: Tahoma;
+	font-size: 18px;
+	font-weight: normal;
+	color: black;
+}
+
+td.align-right {
+	text-align: right;
+}
+/* Table align overide ends */
+
+
+.defaultlink {
+	/*  position: absolute; left: -100%;display:none; */
+	
+}
+
+input[name="cmdSend1"] {
+	border: 0px;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: -100%;
+	background-color: white;
+}
+
+input[name="cmdPrevious"] {
+	background-color: gray;
+}
+
+<
+style>body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #FEB41C;
+}
+
+body h1 {
+	color: #363F45;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 3em;
+}
+
+#loader {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	height: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#loading {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	display: block;
+	opacity: 0.7;
+	background-color: #fff;
+	background-color: none;
+}
+
+.centerImage {
+	margin-left: 90px;
+	margin-top: 90px;
+}
+
+#loading-image {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 100;
+}
+
+.status-cl-display {
+	font-family: Tahoma;
+	font-size: 18px;
+	font-weight: normal;
+	color: black;
+	background: white;
+	width: 0.25em;
+	word-wrap: break-word;
+}
+
+.uom-status-display {
+	width: 10px;
+}
+
+.status-rw-display {
+	align: center;
+	white-space: nowrap;
+}
+
+.uomstatus-gridgap {
+	padding-bottom: 3px;
+}
+
+</
+style
+>

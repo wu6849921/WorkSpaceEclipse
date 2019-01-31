@@ -193,11 +193,11 @@ define(
 								'fxamount' ];
 						var line = 0;
 						for (var i = 0; i < transactionIds.length; i++) {
-							var tranId = transactionIds[i];
+							var _tranId = transactionIds[i];
 							if (transactionTypeId == '4') {// 类型为手工JE
 								var jeRecord = _record.load({
 									type : _record.Type.JOURNAL_ENTRY,
-									id : tranId
+									id : _tranId
 								});
 								var recLine = jeRecord.getLineCount({
 									sublistId : 'line'
@@ -243,7 +243,7 @@ define(
 									});
 									var name = jeRecord.getSublistText({
 										sublistId : 'line',
-										fieldId : initColumn[5],
+										fieldId : 'entity',
 										line : j
 									});
 									var department = jeRecord.getSublistValue({
@@ -331,9 +331,13 @@ define(
 										value : recordNum,
 										line : line
 									});
+//									 log.debug({
+//									 title : 'parseInt(_tranId)',
+//									 details : parseInt(_tranId)
+//									 });
 									mergeGLlines.setSublistValue({
 										id : 'custpage_list_transactionname',
-										value : jeRecord.id,
+										value : parseInt(_tranId)+'',
 										line : line
 									});
 									mergeGLlines.setSublistValue({
@@ -429,7 +433,7 @@ define(
 												{
 													type : search.Type.TRANSACTION,
 													filters : [ [ 'internalid',
-															'is', tranId ] ],
+															'is', _tranId ] ],
 													columns : initColumn
 												})
 										.run()

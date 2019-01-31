@@ -12,7 +12,6 @@ without the parts related to edition that are dependent on user login.
 	<value>ADMI_ADP</value>  <!-- ADP Set Up -->
 	<value>ADMI_ADVINVENTORYSETUP</value>  <!-- Inventory Management Preferences -->
 	<value>ADMI_ALLOW_LOGIN</value>  <!-- NetSuite Support Login -->
-	<value>ADMI_ALTERNATIVEPAYMENTS</value>  <!-- Alternative Payments -->
 	<value>ADMI_BACKUP</value>  <!-- Full CSV Export -->
 	<value>ADMI_BASSETUP</value>  <!-- Set Up Business Activity Statement -->
 	<value>ADMI_BILLINGEVENTS</value>  <!-- View Billing Information -->
@@ -144,7 +143,7 @@ without the parts related to edition that are dependent on user login.
 	<value>EDIT_CUSTPROFILE</value>  <!-- Customer Profile -->
 	<value>EDIT_CUSTTASKS</value>  <!-- Center Links -->
 	<value>EDIT_DEPLOYMENTAUDITTRAIL</value>  <!-- Deployment Audit Trail -->
-	<value>EDIT_EDITPROFILE</value>  <!-- Employee Profile -->
+	<value>EDIT_EDITPROFILE</value>  <!-- Edit Profile -->
 	<value>EDIT_IC_ALLOCATION</value>  <!-- Create Intercompany Allocation Schedules -->
 	<value>EDIT_IMPORT_COUPONCODE</value>  <!-- Import Coupon Codes -->
 	<value>EDIT_INBOUNDSHIPMENT</value>
@@ -157,6 +156,7 @@ without the parts related to edition that are dependent on user login.
 	<value>EDIT_PUBLISHERAPP</value>  <!-- New Application -->
 	<value>EDIT_RECLASSJESCHEDULE</value>  <!-- Schedule Reclassification Journal Entries -->
 	<value>EDIT_REVRECJESCHEDULE</value>  <!-- Schedule Revenue Recognition Journal Entries -->
+	<value>EDIT_AMORTJESCHEDULE</value>  <!-- Schedule Amortization Journal Entries -->
 	<value>EDIT_SUBSCRIPTION</value>  <!-- Create Subscriptions -->
 	<value>EDIT_SUITEAPPLIST</value>
 	<value>EDIT_SUPPORTCASE</value>  <!-- New Cases -->
@@ -201,6 +201,7 @@ without the parts related to edition that are dependent on user login.
 	<value>EDIT_TRAN_ORDERPURCHREQ</value>  <!-- Order Requisitions -->
 	<value>EDIT_TRAN_PARTNERCOMMISSN</value>  <!-- Individual Partner Commission -->
 	<value>EDIT_TRAN_PCHKJRNL</value>  <!-- Paycheck Journal -->
+	<value>EDIT_TRAN_PEJRNL</value>  <!-- Make Period End Journal Entries -->
 	<value>EDIT_TRAN_PURCHCON</value>  <!-- Enter Purchase Contracts -->
 	<value>EDIT_TRAN_PURCHORD</value>  <!-- Enter Purchase Orders -->
 	<value>EDIT_TRAN_PURCHREQ</value>  <!-- Enter Requisitions -->
@@ -392,6 +393,7 @@ without the parts related to edition that are dependent on user login.
 	<value>LIST_ITEM_REVISION</value>  <!-- Item Revisions -->
 	<value>LIST_JOB</value>  <!-- Jobs -->
 	<value>LIST_JOBREQUISITION</value>  <!-- Job Requisitions -->
+	<value>LIST_JOBRESOURCEROLE</value>
 	<value>LIST_KBCATEGORY</value>  <!-- Knowledge Base -->
 	<value>LIST_KPIREPORT</value>  <!-- KPI Scorecards -->
 	<value>LIST_KUDOS</value>  <!-- Kudos -->
@@ -404,9 +406,13 @@ without the parts related to edition that are dependent on user login.
 	<value>LIST_MAILTEMPLATE</value>  <!-- Letter Templates -->
 	<value>LIST_MAPREDUCESCRIPTSTATUS</value>  <!-- Map/Reduce Script Status -->
 	<value>LIST_MEDIAITEMFOLDER</value>  <!-- File Cabinet -->
+	<value>LIST_MERCHANDISEHIERARCHYLEVEL</value>
+	<value>LIST_MERCHANDISEHIERARCHYNODE</value>
+	<value>LIST_MERCHANDISEHIERARCHYVERSION</value>
 	<value>LIST_MFGCOSTTEMPLATE</value>  <!-- Manufacturing Cost Templates -->
 	<value>LIST_MFGOPERATIONTASK</value>  <!-- Manufacturing Operation Tasks -->
 	<value>LIST_MFGROUTING</value>  <!-- Manufacturing Routing -->
+	<value>LIST_NEWSITEM</value>
 	<value>LIST_NOTIFICATION</value>  <!-- Notifications -->
 	<value>LIST_ORGANIZATIONVALUE</value>  <!-- Organization Values -->
 	<value>LIST_OTHERGOVERNMENTISSUEDID</value>  <!-- Other Government-Issued IDs -->
@@ -540,7 +546,9 @@ without the parts related to edition that are dependent on user login.
 	<value>LIST_TRAN_JOURNAL</value>  <!-- Journal Entries -->
 	<value>LIST_TRAN_LIABPYMT</value>  <!-- Liability Payments -->
 	<value>LIST_TRAN_OPPRTNTY</value>  <!-- Opportunities -->
+	<value>LIST_TRAN_OWNTRNSF</value>
 	<value>LIST_TRAN_PAYCHECK2</value>
+	<value>LIST_TRAN_PEJRNL</value> <!-- Period End Journal Entries -->
 	<value>LIST_TRAN_PURCHCON</value>  <!-- Purchase Contracts -->
 	<value>LIST_TRAN_PURCHORD</value>  <!-- Purchase Orders -->
 	<value>LIST_TRAN_PURCHORD_REQ</value>  <!-- View Purchase Requests/Orders -->
@@ -649,7 +657,7 @@ without the parts related to edition that are dependent on user login.
 	<value>REPO_240</value>  <!-- Sales Back Order Report -->
 	<value>REPO_241</value>  <!-- Physical Inventory Worksheet -->
 	<value>REPO_242</value>  <!-- Payroll Check Register -->
-	<value>REPO_243</value>  <!-- Current Inventory Status -->
+	<value>REPO_243</value>  <!-- Current Inventory Snapshot -->
 	<value>REPO_246</value>  <!-- Items Pending Fulfillment -->
 	<value>REPO_249</value>  <!-- Estimated Partner Commission -->
 	<value>REPO_250</value>  <!-- Transaction Detail -->
@@ -859,6 +867,8 @@ without the parts related to edition that are dependent on user login.
 	<value>REPO_NEG311</value>
 	<value>REPO_NEG314</value>
 	<value>REPO_NEG316</value>
+	<value>REPO_NEG322</value> <!-- Period End Balance Sheet -->
+	<value>REPO_NEG324</value> <!-- Period End Income Statement -->
 	<value>REPO_REGISTER_ACCTPAY</value>  <!-- Accounts Payable Register -->
 	<value>REPO_REGISTER_ACCTREC</value>  <!-- Accounts Receivable Register -->
 	<value>SRCH_CUSTBAL</value>  <!-- Customers by Open A/R Balance -->
@@ -986,6 +996,7 @@ without the parts related to edition that are dependent on user login.
 	<value>TRAN_TIMEVOID</value>  <!-- Void Time -->
 	<value>TRAN_TRNFRORDAPPRV</value>  <!-- Approve Transfer Orders -->
 	<value>TRAN_UPDATEREVENUERECOGNITIONPLANS</value>  <!-- Edit Revenue Recognition Plans -->
+	<value>TRAN_UPDATEEXPENSEPLANS</value>  <!-- Edit Revenue Recognition Plans -->
 	<value>TRAN_VENDAUTHAPPRV</value>  <!-- Approve Vendor Returns -->
 	<value>TRAN_VENDAUTHCREDIT</value>  <!-- Credit Vendor Returns -->
 	<value>TRAN_VENDAUTHRETURN</value>  <!-- Ship Vendor Returns -->

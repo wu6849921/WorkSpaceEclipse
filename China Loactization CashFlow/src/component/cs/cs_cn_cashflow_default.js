@@ -22,11 +22,25 @@ define([ '../../lib/wrapper/ns_wrapper_search', '../../lib/commons',
 				|| userObj.roleId === 'employee_center') {
 			return;
 		}
+		if (fieldId === 'customer' && currentRecord.type == 'customerpayment') {
+			var entityId = currentRecord.getValue({
+				fieldId : 'customer'
+			});
+			var entityCategory = search.lookupFields({
+				type : search.Type.CUSTOMER,
+				id : entityId,
+				columns : [ 'category' ]
+			});
+			if (!commons.makesure(entityCategory)) {
+				return;
+			}
+			entityCategory = entityCategory.category[0].value;
+			entityChanged(context, entityCategory, 'cus');
+		}
 		if (fieldId === 'entity') {
 			if (currentRecord.type == 'customerrefund'
 					|| currentRecord.type == 'cashsale'
 					|| currentRecord.type == 'cashrefund'
-					|| currentRecord.type == 'customerpayment'
 					|| currentRecord.type == 'customerdeposit') {
 				var entityId = currentRecord.getValue({
 					fieldId : 'entity'
@@ -189,12 +203,31 @@ define([ '../../lib/wrapper/ns_wrapper_search', '../../lib/commons',
 				|| userObj.roleId === 'employee_center') {
 			return;
 		}
-		if (context.mode !== 'create')
+//		alert(context.mode);
+		if (context.mode !== 'create' && context.mode !== 'copy')
 			return;
+		
+		if (currentRecord.type == 'customerpayment') {
+			var entityId = currentRecord.getValue({
+				fieldId : 'customer'
+			});
+			if (!entityId) {
+				return;
+			}
+			var entityCategory = search.lookupFields({
+				type : search.Type.CUSTOMER,
+				id : entityId,
+				columns : [ 'category' ]
+			});
+			if (!commons.makesure(entityCategory)) {
+				return;
+			}
+			entityCategory = entityCategory.category[0].value;
+			entityChanged(context, entityCategory, 'cus');
+		}
 		if (currentRecord.type == 'customerrefund'
 				|| currentRecord.type == 'cashsale'
 				|| currentRecord.type == 'cashrefund'
-				|| currentRecord.type == 'customerpayment'
 				|| currentRecord.type == 'customerdeposit') {
 			var entityId = currentRecord.getValue({
 				fieldId : 'entity'
@@ -204,7 +237,7 @@ define([ '../../lib/wrapper/ns_wrapper_search', '../../lib/commons',
 			}
 			var entityCategory = search.lookupFields({
 				type : search.Type.CUSTOMER,
-				id : vendorId,
+				id : entityId,
 				columns : [ 'category' ]
 			});
 			if (!commons.makesure(entityCategory)) {

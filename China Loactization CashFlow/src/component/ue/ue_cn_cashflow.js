@@ -285,6 +285,25 @@ define(
 						fieldId : 'line',
 						line : i
 					});
+					var account = pymtRecord.getSublistValue({
+						sublistId : 'line',
+						fieldId : 'account',
+						line : i
+					});
+//					var acctType = search.lookupFields({
+//						type : 'account',
+//						id : account,
+//						columns : [ 'accttype' ]
+//					});
+					var accountRec = record.load({
+						type : 'account',
+						id : account
+					});
+					var acctType=accountRec.getValue('accttype');
+//					 log.debug('acctType', acctType);
+					if (acctType !='Bank') {
+						continue;
+					}
 					var item = {};
 					// log.debug('cfi', cfi);
 					if (!cfi) {// 如果cfi不为空则记录line
@@ -318,13 +337,29 @@ define(
 				var period = pymtRecord.getValue('postingperiod');
 				var subsidiary = pymtRecord.getValue('subsidiary');
 				var total = pymtRecord.getValue('total');
+				total = total?total:pymtRecord.getValue('payment');
+//				 log.debug('total', total);
 				var payCfi = pymtRecord.getValue('custbody_cseg_cn_cfi');
 				var account = pymtRecord.getValue('account');
 				var accBokCount = pymtRecord.getLineCount({
 					sublistId : 'accountingbookdetail'
 				});
-				// log.debug('account', account);
-				if (account == '116' || !payCfi) {
+//				 log.debug('account', account);
+//				var acctType = search.lookupFields({
+//					type : 'account',
+//					id : account,
+//					columns : 'accttype'
+//				});
+				if (!account) {
+					return pymAppliedItems;
+				}
+				var accountRec = record.load({
+					type : 'account',
+					id : account
+				});
+				var acctType=accountRec.getValue('accttype');
+//				 log.debug('acctType', acctType);
+				if (acctType !='Bank') {
 					return pymAppliedItems;
 				}
 				var exchangeRate;

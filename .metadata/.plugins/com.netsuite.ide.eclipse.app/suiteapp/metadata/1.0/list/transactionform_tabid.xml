@@ -1,26 +1,26 @@
 <list id="transactionform_tabid">
-	<value>ACCNTINGTAB</value>
-	<value>ADDRESS</value>
 	<value>APPLICATIONS</value>
-	<value>BILLINGTAB</value>
 	<value>CHARGES</value>
-	<value>CMMNCTNTAB</value>
-	<value>CRMSYSTEMINFORMATION</value>
 	<value>CUSTOM</value>
 	<value>GLIMPACTTAB</value>
-	<value>ITEMS</value>
 	<value>LINES</value>
 	<value>MILESTONES</value>
 	<value>MULTIBOOK</value>
 	<value>MULTIPARTNER</value>
-	<value>OUTPUT</value>
-	<value>PAYMENT</value>
 	<value>PROMOTIONSTAB</value>
-	<value>RLRCDSTAB</value>
-	<value>RLTNSHPTAB</value>
-	<value>SHIPPING</value>
 	<value>STOREPICKUP</value>
 	<value>TAXES</value>
 	<value>TEAMSELLING</value>
+	<value>TRANSACTIONACCOUNTING</value>
+	<value>TRANSACTIONADDRESS</value>
+	<value>TRANSACTIONBILLING</value>
+	<value>TRANSACTIONCOMMUNICATION</value>
+	<value>TRANSACTIONITEMS</value>
+	<value>TRANSACTIONOUTPUTOPTIONS</value>
+	<value>TRANSACTIONPAYMENT</value>
+	<value>TRANSACTIONRELATEDRECORDS</value>
+	<value>TRANSACTIONRELATIONSHIPS</value>
+	<value>TRANSACTIONSHIPPING</value>
+	<value>TRANSACTIONSYSTEMINFORMATION</value>
 	<value>WORKFLOW</value>
 </list>

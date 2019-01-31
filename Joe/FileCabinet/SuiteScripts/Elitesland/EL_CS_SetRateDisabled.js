@@ -1,10 +1,16 @@
 function lineInit(type) {
+	if (nlapiGetFieldValue('customform') !='102' && nlapiGetFieldValue('customform') !='103') {
+		return;
+	}
 	if (type == 'item') {
 		this.setDisable();
 	}
 }
 
 function postSourcing(type, name) {
+	if (nlapiGetFieldValue('customform') !='102' && nlapiGetFieldValue('customform') !='103') {
+		return;
+	}
 	if (type == 'item' && name == 'item') {
 		this.setDisable();
 	}

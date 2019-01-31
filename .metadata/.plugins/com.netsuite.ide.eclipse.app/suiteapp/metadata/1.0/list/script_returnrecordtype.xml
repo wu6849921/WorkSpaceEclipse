@@ -250,7 +250,6 @@
 	<value>-337</value>
 	<value>-338</value>
 	<value>-340</value>
-	<value>-341</value>
 	<value>-342</value>
 	<value>-343</value>
 	<value>-344</value>
@@ -328,6 +327,11 @@
 	<value>-428</value>
 	<value>-430</value>
 	<value>-431</value>
+	<value>-434</value>
+	<value>-435</value>
+	<value>-450</value>
+	<value>-451</value>
+	<value>-452</value>
 	<value>-494</value>
 	<value>-505</value>
 	<value>-506</value>
@@ -344,4 +348,5 @@
 	<value>-524</value>
 	<value>-526</value>
 	<value>-528</value>
+	<value>-532</value>
 </list>

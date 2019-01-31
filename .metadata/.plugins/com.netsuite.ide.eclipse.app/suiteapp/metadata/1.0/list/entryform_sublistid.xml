@@ -1,4 +1,6 @@
 <list id="entryform_sublistid">
+	<value>BOMCOMPONENT</value>
+	<value>BOMSYSTEMNOTES</value>
 	<value>ENTITYACCESS</value>
 	<value>ENTITYACCESSHISTORY</value>
 	<value>ENTITYACHACCT</value>
@@ -123,8 +125,10 @@
 	<value>ITEMBINNUMBER</value>
 	<value>ITEMBINNUMBERSEARCH</value>
 	<value>ITEMCORRELATEDITEMS</value>
+	<value>ITEMHIERARCHYVERSIONS</value>
 	<value>ITEMINVENTORYDETAILSRCH</value>
 	<value>ITEMINVENTORYNUMBERSRCH</value>
+	<value>ITEMINVENTORYSTATUSSRCH</value>
 	<value>ITEMITEMVENDOR</value>
 	<value>ITEMLOCATIONS</value>
 	<value>ITEMMEDIAITEM</value>
@@ -147,11 +151,13 @@
 	<value>OTHERCHARGERULE</value>
 	<value>OTHERCHARGES</value>
 	<value>OTHERCOSTDETAIL</value>
+	<value>OTHERCUSTOMERRETURN</value>
 	<value>OTHERDATESFIXEDAMOUNT</value>
 	<value>OTHERDATESPCTFROMTOTAL</value>
 	<value>OTHERDISTRIBUTIONCATEGORY</value>
 	<value>OTHERDISTRIBUTIONSOURCE</value>
 	<value>OTHERFILTERS</value>
+	<value>OTHERFULFILLMENT</value>
 	<value>OTHERHISTORYTAB</value>
 	<value>OTHERINBOUNDSHIPMENTITEMS</value>
 	<value>OTHERITEM</value>
@@ -164,8 +170,8 @@
 	<value>OTHERPARTNERS</value>
 	<value>OTHERPLANNINGMESSAGE</value>
 	<value>OTHERRATECARDPRICING</value>
-	<value>OTHERRATECARDVERSION</value>
 	<value>OTHERRATECARDPRICINGMULTI</value>
+	<value>OTHERRATECARDVERSION</value>
 	<value>OTHERRECURRENCEST</value>
 	<value>OTHERRELATEDSUBSCR</value>
 	<value>OTHERRENEWALHISTORY</value>

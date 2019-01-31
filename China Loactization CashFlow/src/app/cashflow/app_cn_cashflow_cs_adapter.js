@@ -90,6 +90,7 @@ define(
 					message) {
 				disableButtons(form);
 				showLoadingMessage(message);
+				// alert(message);
 				runStandardReports(form, alertfn, httpsGetPromise);
 			}
 
@@ -121,53 +122,65 @@ define(
 				// });
 				// 使用saved search查询期初余额数据
 				// 得到月初日期
-				var periodFromId = form.getValue({
-					fieldId : 'custpage_periodfrom'
-				})
-				var subsidiaryId = form.getValue({
-					fieldId : 'custpage_subsidiary'
-				})
-				var startDate;
-				search.create({
-					type : search.Type.ACCOUNTING_PERIOD,
-					filters : [ 'internalid', 'anyof', periodFromId ],
-					columns : [ 'startdate' ]
-				}).run().each(function(result) {
-					startDate = result.getValue({
-						name : 'startdate'
-					});
-					return true;
-				});
-				var startBalanceAmt = 0;
-				if (startDate && subsidiaryId) {
-					cashBalanceSearch = search.load({
-						id : 'customsearch_tn_cashflow_cashbalance'
-					});
-					cashBalanceSearch.filterExpression = cashBalanceSearch.filterExpression
-							.concat([ 'AND',
-									[ 'trandate', 'before', startDate ], 'AND',
-									[ 'subsidiary', 'anyof', subsidiaryId ] ]);
-					cashBalanceSearch.run().each(function(result) {
-						startBalanceAmt = result.getValue(result.columns[1]);
+
+				// alert(form);
+				try {
+					var periodFromId = form.getValue({
+						fieldId : 'custpage_periodfrom'
+					})
+					var subsidiaryId = form.getValue({
+						fieldId : 'custpage_subsidiary'
+					})
+					var startDate;
+					search.create({
+						type : search.Type.ACCOUNTING_PERIOD,
+						filters : [ 'internalid', 'anyof', periodFromId ],
+						columns : [ 'startdate' ]
+					}).run().each(function(result) {
+						startDate = result.getValue({
+							name : 'startdate'
+						});
 						return true;
 					});
+					var startBalanceAmt = 0;
+					if (startDate && subsidiaryId) {
+						cashBalanceSearch = search.load({
+							id : 'customsearch_tn_cashflow_cashbalance'
+						});
+						cashBalanceSearch.filterExpression = cashBalanceSearch.filterExpression
+								.concat([ 'AND',
+										[ 'trandate', 'before', startDate ],
+										'AND',
+										[ 'subsidiary', 'anyof', subsidiaryId ] ]);
+						cashBalanceSearch.run().each(
+								function(result) {
+									startBalanceAmt = result
+											.getValue(result.columns[1]);
+									return true;
+								});
+					}
+					var params = {
+						format : 'page',
+						reset : false,
+						// line 38, Ending balance of cash and cash equivalents
+						endBalanceCurrent : 0,
+						endBalancePrior : 0,
+						// line 37, Beginning balance of cash and cash
+						// equivalents
+						startBalanceCurrent : startBalanceAmt,
+						startBalancePrior : 0,
+						// line 35, Effective of foreign exchange rate changes
+						// on
+						// cash
+						// and cash equivalents
+						unrealizedGainAndLossCurrent : 0,
+						unrealizedGainAndLossPrior : 0
+					}
+					window.location = suiteletUrl(form, params);
+				} catch (e) {
+					alert(e);
 				}
-				var params = {
-					format : 'page',
-					reset : false,
-					// line 38, Ending balance of cash and cash equivalents
-					endBalanceCurrent : 0,
-					endBalancePrior : 0,
-					// line 37, Beginning balance of cash and cash equivalents
-					startBalanceCurrent : startBalanceAmt,
-					startBalancePrior : 0,
-					// line 35, Effective of foreign exchange rate changes on
-					// cash
-					// and cash equivalents
-					unrealizedGainAndLossCurrent : 0,
-					unrealizedGainAndLossPrior : 0
-				}
-				window.location = suiteletUrl(form, params);
+
 			}
 			function prepareRunStandardReportURL(form) {
 				// log.debug('app_cn_cashflow_adapter.js:

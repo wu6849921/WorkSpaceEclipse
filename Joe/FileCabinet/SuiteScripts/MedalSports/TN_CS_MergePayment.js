@@ -102,8 +102,7 @@ define(
 							if (result.recordType == 'customer') {
 								var cusRecord = record.load({
 									type : record.Type.CUSTOMER,
-									id : result.id,
-									isDynamic : true
+									id : result.id
 								});
 								customerId = entity;
 								vendorId = cusRecord.getValue({
@@ -112,8 +111,7 @@ define(
 							} else if (result.recordType == 'vendor') {
 								var venRecord = record.load({
 									type : record.Type.VENDOR,
-									id : result.id,
-									isDynamic : true
+									id : result.id
 								});
 								vendorId = entity;
 								customerId = venRecord.getValue({
@@ -127,41 +125,41 @@ define(
 						// 删除现有line
 						// ar_invoice
 						var invCount = currentRecord.getLineCount({
-							sublistId : 'custpage_tn_mergepay_invoice'
+							sublistId : 'recmachcustrecord_tn_mpinv_mpid'
 						});
 						for (var i = 0; i < invCount; i++) {
 							currentRecord.removeLine({
-								sublistId : 'custpage_tn_mergepay_invoice',
+								sublistId : 'recmachcustrecord_tn_mpinv_mpid',
 								line : 0
 							});
 						}
 						// ar_credit
 						var creCount = currentRecord.getLineCount({
-							sublistId : 'custpage_tn_mergepay_credit'
+							sublistId : 'recmachcustrecord_tn_mpcre_mpid'
 						});
 						for (var i = 0; i < creCount; i++) {
 							currentRecord.removeLine({
-								sublistId : 'custpage_tn_mergepay_credit',
+								sublistId : 'recmachcustrecord_tn_mpcre_mpid',
 								line : 0
 							});
 						}
 						// ap
 						var apCount = currentRecord.getLineCount({
-							sublistId : 'custpage_tn_mergepay_ap'
+							sublistId : 'recmachcustrecord_tn_mpap_mpid'
 						});
 						for (var i = 0; i < apCount; i++) {
 							currentRecord.removeLine({
-								sublistId : 'custpage_tn_mergepay_ap',
+								sublistId : 'recmachcustrecord_tn_mpap_mpid',
 								line : 0
 							});
 						}
 						// others
 						var apCount = currentRecord.getLineCount({
-							sublistId : 'custpage_tn_mergepay_ot'
+							sublistId : 'recmachcustrecord_tn_mpot_mpid'
 						});
 						for (var i = 0; i < apCount; i++) {
 							currentRecord.removeLine({
-								sublistId : 'custpage_tn_mergepay_ot',
+								sublistId : 'recmachcustrecord_tn_mpot_mpid',
 								line : 0
 							});
 						}
@@ -259,8 +257,8 @@ define(
 					setOthersTab1(currentRecord, search);
 				}
 				// 设置AR选中及baseamount
-				if (sublistName === 'custpage_tn_mergepay_invoice'
-						&& sublistFieldName === 'custpage_inv_amount') {
+				if (sublistName === 'recmachcustrecord_tn_mpinv_mpid'
+						&& sublistFieldName === 'custrecord_inv_amount') {
 					var currency = currentRecord.getValue({
 						fieldId : 'custrecord_tn_payment_currency'
 					});
@@ -272,21 +270,21 @@ define(
 					});
 					var apply = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_inv_apply'
+						fieldId : 'custrecord_inv_apply'
 					});
 					var amount = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_inv_amount'
+						fieldId : 'custrecord_inv_amount'
 					});
 					var currencyLine = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_inv_currency'
+						fieldId : 'custrecord_inv_currency'
 					});
 					if (!apply && amount) {
 						// alert(1);
 						currentRecord.setCurrentSublistValue({
 							sublistId : sublistName,
-							fieldId : 'custpage_inv_apply',
+							fieldId : 'custrecord_inv_apply',
 							value : true
 						});
 					}
@@ -303,13 +301,13 @@ define(
 						}
 						currentRecord.setCurrentSublistValue({
 							sublistId : sublistName,
-							fieldId : 'custpage_inv_amountbase',
+							fieldId : 'custrecord_inv_amountbase',
 							value : amtBase
 						});
 					}
 				}
-				if (sublistName === 'custpage_tn_mergepay_credit'
-						&& sublistFieldName === 'custpage_cre_amount') {
+				if (sublistName === 'recmachcustrecord_tn_mpcre_mpid'
+						&& sublistFieldName === 'custrecord_cre_amount') {
 					var currency = currentRecord.getValue({
 						fieldId : 'custrecord_tn_payment_currency'
 					});
@@ -321,21 +319,21 @@ define(
 					});
 					var apply = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_cre_apply'
+						fieldId : 'custrecord_cre_apply'
 					});
 					var amount = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_cre_amount'
+						fieldId : 'custrecord_cre_amount'
 					});
 					var currencyLine = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_cre_currency'
+						fieldId : 'custrecord_cre_currency'
 					});
 					if (!apply && amount) {
 						// alert(1);
 						currentRecord.setCurrentSublistValue({
 							sublistId : sublistName,
-							fieldId : 'custpage_cre_apply',
+							fieldId : 'custrecord_cre_apply',
 							value : true
 						});
 					}
@@ -352,15 +350,15 @@ define(
 						}
 						currentRecord.setCurrentSublistValue({
 							sublistId : sublistName,
-							fieldId : 'custpage_cre_amountbase',
+							fieldId : 'custrecord_cre_amountbase',
 							value : amtBase
 						});
 					}
 				}
 
 				// 设置ap选中及baseamount
-				if (sublistName === 'custpage_tn_mergepay_ap'
-						&& sublistFieldName === 'custpage_ap_amount') {
+				if (sublistName === 'recmachcustrecord_tn_mpap_mpid'
+						&& sublistFieldName === 'custrecord_ap_amount') {
 					var exchangeRate = currentRecord.getValue({
 						fieldId : 'custrecord_tn_payment_exrate'
 					});
@@ -369,44 +367,44 @@ define(
 					});
 					var apply = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_ap_apply'
+						fieldId : 'custrecord_ap_apply'
 					});
 					var total = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_ap_total'
+						fieldId : 'custrecord_ap_total'
 					});
 					var amount = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_ap_amount'
+						fieldId : 'custrecord_ap_amount'
 					});
 					var currencyLine = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_ap_currency'
+						fieldId : 'custrecord_ap_currency'
 					});
 					if (!apply && amount) {
 						// alert(1);
 						if (total > 0) {
 							currentRecord.setCurrentSublistValue({
 								sublistId : sublistName,
-								fieldId : 'custpage_ap_apply',
+								fieldId : 'custrecord_ap_apply',
 								value : true
 							});
 						} else {
 							if (total != amount) {
 								currentRecord.setCurrentSublistValue({
 									sublistId : sublistName,
-									fieldId : 'custpage_ap_amount',
+									fieldId : 'custrecord_ap_amount',
 									value : 0
 								});
 								currentRecord.setCurrentSublistValue({
 									sublistId : sublistName,
-									fieldId : 'custpage_ap_apply',
+									fieldId : 'custrecord_ap_apply',
 									value : false
 								});
 							} else {
 								currentRecord.setCurrentSublistValue({
 									sublistId : sublistName,
-									fieldId : 'custpage_ap_apply',
+									fieldId : 'custrecord_ap_apply',
 									value : true
 								});
 							}
@@ -420,20 +418,20 @@ define(
 						if (total > 0) {
 							currentRecord.setCurrentSublistValue({
 								sublistId : sublistName,
-								fieldId : 'custpage_ap_amountbase',
+								fieldId : 'custrecord_ap_amountbase',
 								value : amtBase
 							});
 						} else {
 							if (total != amount) {
 								currentRecord.setCurrentSublistValue({
 									sublistId : sublistName,
-									fieldId : 'custpage_ap_amountbase',
+									fieldId : 'custrecord_ap_amountbase',
 									value : 0
 								});
 							} else {
 								currentRecord.setCurrentSublistValue({
 									sublistId : sublistName,
-									fieldId : 'custpage_ap_amountbase',
+									fieldId : 'custrecord_ap_amountbase',
 									value : amtBase
 								});
 							}
@@ -441,8 +439,8 @@ define(
 					}
 				}
 				// 设置others选中及baseamount
-				if (sublistName === 'custpage_tn_mergepay_ot'
-						&& sublistFieldName === 'custpage_ot_amount') {
+				if (sublistName === 'recmachcustrecord_tn_mpot_mpid'
+						&& sublistFieldName === 'custrecord_ot_amount') {
 					var exchangeRate = currentRecord.getValue({
 						fieldId : 'custrecord_tn_payment_exrate'
 					});
@@ -451,21 +449,21 @@ define(
 					});
 					var currencyLine = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_ot_currency'
+						fieldId : 'custrecord_ot_currency'
 					});
 					var apply = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_ot_apply'
+						fieldId : 'custrecord_ot_apply'
 					});
 					var amount = currentRecord.getCurrentSublistValue({
 						sublistId : sublistName,
-						fieldId : 'custpage_ot_amount'
+						fieldId : 'custrecord_ot_amount'
 					});
 					if (!apply && amount) {
 						// alert(1);
 						currentRecord.setCurrentSublistValue({
 							sublistId : sublistName,
-							fieldId : 'custpage_ot_apply',
+							fieldId : 'custrecord_ot_apply',
 							value : true
 						});
 					}
@@ -476,7 +474,7 @@ define(
 						}
 						currentRecord.setCurrentSublistValue({
 							sublistId : sublistName,
-							fieldId : 'custpage_ot_amountbase',
+							fieldId : 'custrecord_ot_amountbase',
 							value : amtBase
 						});
 					}
@@ -694,10 +692,10 @@ define(
 			function print() {
 				// alert(mpPrintURL);
 				var startDate = suiteletPage.getValue({
-					fieldId : 'custpage_startdate'
+					fieldId : 'custrecord_startdate'
 				});
 				var endDate = suiteletPage.getValue({
-					fieldId : 'custpage_enddate'
+					fieldId : 'custrecord_enddate'
 				});
 				// startDate = startDate.getDate() + '/'
 				// + (startDate.getMonth() + 1) + '/'
@@ -735,19 +733,19 @@ define(
 					fieldId : 'custrecord_tn_payment_exrate'
 				});
 				var invNum = currentRecord.getLineCount({
-					sublistId : 'custpage_tn_mergepay_invoice'
+					sublistId : 'recmachcustrecord_tn_mpinv_mpid'
 				});
 				var creNum = currentRecord.getLineCount({
-					sublistId : 'custpage_tn_mergepay_credit'
+					sublistId : 'recmachcustrecord_tn_mpcre_mpid'
 				});
 				var apNum = currentRecord.getLineCount({
-					sublistId : 'custpage_tn_mergepay_ap'
+					sublistId : 'recmachcustrecord_tn_mpap_mpid'
 				});
 				var otNum = currentRecord.getLineCount({
-					sublistId : 'custpage_tn_mergepay_ot'
+					sublistId : 'recmachcustrecord_tn_mpot_mpid'
 				});
 				var npNum = currentRecord.getLineCount({
-					sublistId : 'custpage_tn_mergepay_np'
+					sublistId : 'recmachcustrecord_tn_mpnp_mpid'
 				});
 				var debitAmount = 0;
 				var creditAmount = 0;
@@ -758,18 +756,18 @@ define(
 				// 先查询有几种currency
 				for (var i = 0; i < invNum; i++) {
 					var currency = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_currency',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_currency',
 						line : i
 					});
 					var isSelect = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_apply',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_apply',
 						line : i
 					});
 					var arAccount = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_araccount',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_araccount',
 						line : i
 					});
 					var curAcc = currency + ',' + arAccount;
@@ -784,23 +782,23 @@ define(
 					var invSum = 0;
 					for (var j = 0; j < invNum; j++) {
 						var isSelect = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_invoice',
-							fieldId : 'custpage_inv_apply',
+							sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+							fieldId : 'custrecord_inv_apply',
 							line : j
 						});
 						var payment = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_invoice',
-							fieldId : 'custpage_inv_amount',
+							sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+							fieldId : 'custrecord_inv_amount',
 							line : j
 						});
 						var currencyL = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_invoice',
-							fieldId : 'custpage_inv_currency',
+							sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+							fieldId : 'custrecord_inv_currency',
 							line : j
 						});
 						var arAccountL = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_invoice',
-							fieldId : 'custpage_inv_araccount',
+							sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+							fieldId : 'custrecord_inv_araccount',
 							line : j
 						});
 						if (isSelect && payment && currencyL == currency
@@ -829,18 +827,18 @@ define(
 				var currencysCre = [];
 				for (var i = 0; i < creNum; i++) {
 					var currency = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_currency',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_currency',
 						line : i
 					});
 					var isSelect = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_apply',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_apply',
 						line : i
 					});
 					var arAccount = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_account',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_araccount',
 						line : i
 					});
 					var curAcc = currency + ',' + arAccount;
@@ -855,23 +853,23 @@ define(
 					var creSum = 0;
 					for (var j = 0; j < creNum; j++) {
 						var isSelect = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_credit',
-							fieldId : 'custpage_cre_apply',
+							sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+							fieldId : 'custrecord_cre_apply',
 							line : j
 						});
 						var payment = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_credit',
-							fieldId : 'custpage_cre_amount',
+							sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+							fieldId : 'custrecord_cre_amount',
 							line : j
 						});
 						var currencyL = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_credit',
-							fieldId : 'custpage_cre_currency',
+							sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+							fieldId : 'custrecord_cre_currency',
 							line : j
 						});
 						var arAccountL = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_credit',
-							fieldId : 'custpage_cre_account',
+							sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+							fieldId : 'custrecord_cre_araccount',
 							line : j
 						});
 						if (isSelect && payment && currencyL == currency
@@ -898,18 +896,18 @@ define(
 				var currencysAp = [];
 				for (var i = 0; i < apNum; i++) {
 					var currency = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_currency',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_currency',
 						line : i
 					});
 					var isSelect = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_apply',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_apply',
 						line : i
 					});
 					var apAccount = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_apaccount',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_apaccount',
 						line : i
 					});
 					var curAcc = currency + ',' + apAccount;
@@ -924,28 +922,28 @@ define(
 					var apSum = 0;
 					for (var j = 0; j < apNum; j++) {
 						var isSelect = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_ap',
-							fieldId : 'custpage_ap_apply',
+							sublistId : 'recmachcustrecord_tn_mpap_mpid',
+							fieldId : 'custrecord_ap_apply',
 							line : j
 						});
 						var payment = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_ap',
-							fieldId : 'custpage_ap_amount',
+							sublistId : 'recmachcustrecord_tn_mpap_mpid',
+							fieldId : 'custrecord_ap_amount',
 							line : j
 						});
 						var currencyL = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_ap',
-							fieldId : 'custpage_ap_currency',
+							sublistId : 'recmachcustrecord_tn_mpap_mpid',
+							fieldId : 'custrecord_ap_currency',
 							line : j
 						});
 						var apAccountL = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_ap',
-							fieldId : 'custpage_ap_apaccount',
+							sublistId : 'recmachcustrecord_tn_mpap_mpid',
+							fieldId : 'custrecord_ap_apaccount',
 							line : j
 						});
 						var total = currentRecord.getSublistValue({
-							sublistId : 'custpage_tn_mergepay_ap',
-							fieldId : 'custpage_ap_total',
+							sublistId : 'recmachcustrecord_tn_mpap_mpid',
+							fieldId : 'custrecord_ap_total',
 							line : j
 						});
 						// alert('apSumL:' + apSum);
@@ -977,18 +975,18 @@ define(
 				// 其他
 				for (var i = 0; i < otNum; i++) {
 					var apply = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_ot',
-						fieldId : 'custpage_ot_apply',
+						sublistId : 'recmachcustrecord_tn_mpot_mpid',
+						fieldId : 'custrecord_ot_apply',
 						line : i
 					});
 					var paymentBase = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_ot',
-						fieldId : 'custpage_ot_amountbase',
+						sublistId : 'recmachcustrecord_tn_mpot_mpid',
+						fieldId : 'custrecord_ot_amountbase',
 						line : i
 					});
 					var balance = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_ot',
-						fieldId : 'custpage_ot_balance',
+						sublistId : 'recmachcustrecord_tn_mpot_mpid',
+						fieldId : 'custrecord_ot_balance',
 						line : i
 					});
 					if (apply && paymentBase) {
@@ -1005,13 +1003,13 @@ define(
 				var tmpCreditAmt = 0;
 				for (var i = 0; i < npNum; i++) {
 					var debit = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_np',
-						fieldId : 'custpage_np_debit',
+						sublistId : 'custrecord_tn_mergepay_np',
+						fieldId : 'custrecord_np_debit',
 						line : i
 					});
 					var credit = currentRecord.getSublistValue({
-						sublistId : 'custpage_tn_mergepay_np',
-						fieldId : 'custpage_np_credit',
+						sublistId : 'custrecord_tn_mergepay_np',
+						fieldId : 'custrecord_np_credit',
 						line : i
 					});
 					if (!debit) {
@@ -1047,9 +1045,9 @@ define(
 				var fromyear = currentRecord.getValue({
 					fieldId : 'custrecord_tn_fromyear'
 				});
-				var fromyearT = currentRecord.getText({
-					fieldId : 'custrecord_tn_fromyear'
-				});
+				// var fromyearT = currentRecord.getText({
+				// fieldId : 'custrecord_tn_fromyear'
+				// });
 				var toyear = currentRecord.getValue({
 					fieldId : 'custrecord_tn_toyear'
 				});
@@ -1068,10 +1066,10 @@ define(
 						return;
 					}
 					var years = [];
-					var yearsT = [];
+					// var yearsT = [];
 					for (var i = 0; i < yearNum; i++) {
 						years.push(parseInt(fromyear) + i);
-						yearsT.push(parseInt(fromyearT) + i);
+						// yearsT.push(parseInt(fromyearT) + i);
 					}
 					var accounts = [];
 					// alert(fromyear);
@@ -1104,11 +1102,11 @@ define(
 					// alert(accounts);
 					// 先删除others
 					var apCount = currentRecord.getLineCount({
-						sublistId : 'custpage_tn_mergepay_ot'
+						sublistId : 'recmachcustrecord_tn_mpot_mpid'
 					});
 					for (var i = 0; i < apCount; i++) {
 						currentRecord.removeLine({
-							sublistId : 'custpage_tn_mergepay_ot',
+							sublistId : 'recmachcustrecord_tn_mpot_mpid',
 							line : 0
 						});
 					}
@@ -1127,7 +1125,7 @@ define(
 										currency ]);
 							}
 							var year = years[j];
-							var yearT = yearsT[j];
+							// var yearT = yearsT[j];
 							// alert(yearT);
 							// alert(yearBeginV + '|' + yearEndV);
 							// alert(account);
@@ -1136,17 +1134,17 @@ define(
 									'OR',
 									[ 'custcol_csegtn_year', 'anyof', year ] ]);
 							var lineOtYear = currentRecord.selectNewLine({
-								sublistId : 'custpage_tn_mergepay_ot'
+								sublistId : 'recmachcustrecord_tn_mpot_mpid'
 							});
 							lineOtYear.setCurrentSublistValue({
-								sublistId : 'custpage_tn_mergepay_ot',
-								fieldId : 'custpage_ot_account',
+								sublistId : 'recmachcustrecord_tn_mpot_mpid',
+								fieldId : 'custrecord_ot_account',
 								value : account,
 							});
 							lineOtYear.commitLine({
-								sublistId : 'custpage_tn_mergepay_ot'
+								sublistId : 'recmachcustrecord_tn_mpot_mpid'
 							});
-							setOthersTab(entity, search, initFilterO, yearT,
+							setOthersTab(entity, search, initFilterO, year,
 									currentRecord, exchangeRate);
 						}
 					}
@@ -1164,15 +1162,15 @@ define(
 						.concat([ 'AND', initFilter ]);
 				// alert(otherSearch.filterExpression);
 				var lineOtYear = currentRecord.selectNewLine({
-					sublistId : 'custpage_tn_mergepay_ot'
+					sublistId : 'recmachcustrecord_tn_mpot_mpid'
 				});
 				lineOtYear.setCurrentSublistValue({
-					sublistId : 'custpage_tn_mergepay_ot',
-					fieldId : 'custpage_ot_year',
+					sublistId : 'recmachcustrecord_tn_mpot_mpid',
+					fieldId : 'custrecord_ot_year',
 					value : year,
 				});
 				lineOtYear.commitLine({
-					sublistId : 'custpage_tn_mergepay_ot'
+					sublistId : 'recmachcustrecord_tn_mpot_mpid'
 				});
 				otherSearch.run().each(function(result) {
 					var account = result.getValue(result.columns[0]);
@@ -1194,36 +1192,36 @@ define(
 					}
 					// 填充sublist
 					var lineOt = currentRecord.selectNewLine({
-						sublistId : 'custpage_tn_mergepay_ot'
+						sublistId : 'recmachcustrecord_tn_mpot_mpid'
 					});
 					// alert(account);
 					lineOt.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ot',
-						fieldId : 'custpage_ot_account',
+						sublistId : 'recmachcustrecord_tn_mpot_mpid',
+						fieldId : 'custrecord_ot_account',
 						value : account,
 					});
 					lineOt.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ot',
-						fieldId : 'custpage_ot_currency',
+						sublistId : 'recmachcustrecord_tn_mpot_mpid',
+						fieldId : 'custrecord_ot_currency',
 						value : currency
 					});
 					lineOt.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ot',
-						fieldId : 'custpage_ot_balance',
+						sublistId : 'recmachcustrecord_tn_mpot_mpid',
+						fieldId : 'custrecord_ot_balance',
 						value : fAmount
 					});
 					lineOt.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ot',
-						fieldId : 'custpage_ot_balancebase',
+						sublistId : 'recmachcustrecord_tn_mpot_mpid',
+						fieldId : 'custrecord_ot_balancebase',
 						value : amount
 					});
 					lineOt.setCurrentSublistValue({// 新增year add by joe 1220
-						sublistId : 'custpage_tn_mergepay_ot',
-						fieldId : 'custpage_ot_year',
+						sublistId : 'recmachcustrecord_tn_mpot_mpid',
+						fieldId : 'custrecord_ot_year',
 						value : year
 					});
 					lineOt.commitLine({
-						sublistId : 'custpage_tn_mergepay_ot'
+						sublistId : 'recmachcustrecord_tn_mpot_mpid'
 					});
 					// alert(account);
 					return true;
@@ -1250,66 +1248,70 @@ define(
 					var line = result.getValue(result.columns[10]);
 					// 填充sublist
 					var lineInv = currentRecord.selectNewLine({
-						sublistId : 'custpage_tn_mergepay_invoice'
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid'
 					});
-					// alert(account);
+//					alert('setInvSublist1:'+date);
+					date = format.parse({
+						value : date,
+						type : format.Type.DATE
+					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_date',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_date',
 						value : date,
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_type',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_type',
 						value : result.id
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_refnum',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_refnum',
 						value : tranid
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_currency',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_currency',
 						value : currency
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_araccount',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_araccount',
 						value : account
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_memo',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_memo',
 						value : memo
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_total',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_total',
 						value : amountF
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_due',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_due',
 						value : amountRemF
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_totalbase',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_totalbase',
 						value : amount
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_duebase',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_duebase',
 						value : amountRem
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_invoice',
-						fieldId : 'custpage_inv_line',
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid',
+						fieldId : 'custrecord_inv_line',
 						value : line
 					});
 					lineInv.commitLine({
-						sublistId : 'custpage_tn_mergepay_invoice'
+						sublistId : 'recmachcustrecord_tn_mpinv_mpid'
 					});
 					return true;
 				});
@@ -1335,66 +1337,70 @@ define(
 					var line = result.getValue(result.columns[10]);
 					// 填充sublist
 					var lineInv = currentRecord.selectNewLine({
-						sublistId : 'custpage_tn_mergepay_credit'
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid'
 					});
 					// alert(account);
+					date = format.parse({
+						value : date,
+						type : format.Type.DATE
+					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_date',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_date',
 						value : date,
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_type',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_type',
 						value : result.id
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_refnum',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_refnum',
 						value : tranid
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_currency',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_currency',
 						value : currency
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_account',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_araccount',
 						value : account
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_memo',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_memo',
 						value : memo
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_total',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_total',
 						value : amountF
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_due',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_due',
 						value : amountRemF
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_totalbase',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_totalbase',
 						value : amount
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_duebase',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_duebase',
 						value : amountRem
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_credit',
-						fieldId : 'custpage_cre_line',
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid',
+						fieldId : 'custrecord_cre_line',
 						value : line
 					});
 					lineInv.commitLine({
-						sublistId : 'custpage_tn_mergepay_credit'
+						sublistId : 'recmachcustrecord_tn_mpcre_mpid'
 					});
 					return true;
 				});
@@ -1420,66 +1426,71 @@ define(
 					var line = result.getValue(result.columns[10]);
 					// 填充sublist
 					var lineInv = currentRecord.selectNewLine({
-						sublistId : 'custpage_tn_mergepay_ap'
+						sublistId : 'recmachcustrecord_tn_mpap_mpid'
 					});
 					// alert(account);
+					date = format.parse({
+						value : date,
+						type : format.Type.DATE
+					});
+//					alert('setAPSublist:'+date);
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_date',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_date',
 						value : date,
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_type',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_type',
 						value : result.id
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_refnum',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_refnum',
 						value : tranid
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_currency',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_currency',
 						value : currency
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_apaccount',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_apaccount',
 						value : account
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_memo',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_memo',
 						value : memo
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_total',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_total',
 						value : amountF
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_due',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_due',
 						value : amountRemF
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_totalbase',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_totalbase',
 						value : amount
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_duebase',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_duebase',
 						value : amountRem
 					});
 					lineInv.setCurrentSublistValue({
-						sublistId : 'custpage_tn_mergepay_ap',
-						fieldId : 'custpage_ap_line',
+						sublistId : 'recmachcustrecord_tn_mpap_mpid',
+						fieldId : 'custrecord_ap_line',
 						value : line
 					});
 					lineInv.commitLine({
-						sublistId : 'custpage_tn_mergepay_ap'
+						sublistId : 'recmachcustrecord_tn_mpap_mpid'
 					});
 					return true;
 				});

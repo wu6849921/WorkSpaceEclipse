@@ -301,27 +301,39 @@
 	<value>-420</value>
 	<value>-422</value>
 	<value>-423</value>
-	<value>-424</value>
 	<value>-425</value>
 	<value>-426</value>
 	<value>-427</value>
 	<value>-428</value>
 	<value>-430</value>
 	<value>-431</value>
+	<value>-434</value> <!-- Expense Amortization Rule -->
+	<value>-435</value> <!-- Expense Amortization Plan -->
+	<value>-440</value>
+	<value>-441</value>
+	<value>-450</value>
+	<value>-451</value>
+	<value>-452</value>
 	<value>-494</value>
 	<value>-505</value>
 	<value>-506</value>
 	<value>-507</value>
 	<value>-508</value>
-	<value>-509</value>
-	<value>-510</value>
-	<value>-511</value>
-	<value>-512</value>
 	<value>-513</value>
 	<value>-514</value>
 	<value>-517</value>
 	<value>-520</value>
+	<value>-522</value>
+	<value>-523</value>
 	<value>-524</value>
-	<value>-526</value>
 	<value>-528</value>
+	<value>-532</value>
+	<value>-543</value>
+	<value>-544</value>
+	<value>-546</value>
+	<value>-549</value>
+	<value>-550</value>
+	<value>-861</value>
+	<value>-862</value>
+	<value>-4006</value>
 </list>

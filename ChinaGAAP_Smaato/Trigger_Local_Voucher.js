@@ -14,74 +14,82 @@ trigger.local.voucher = function() {
 }
 trigger.local.voucher.prototype = {
 	constructor : trigger.local.voucher,
-	writeVoucherToPDF : function(subsidiaryid, periodid, accountid, period,// 机构
-	// 周期
-	// 科目
-	// 开始结束日期
-	voucherDateFrom, voucherDateTo, response) {
-		var fromToPeriod = null;
-		var filter = [];
-		var filters = [];
-		if (accountid) {
-			var filterexpression = rule.GetCNCOAFilters(accountid);// 得到条目id 条件
-			var internalids = rule.GetMappingCNCOA(filterexpression);// 1、通过mappingId查询所有ns_account_id（可能重复，机构不同，部门不同）
-			if (internalids.length > 0) {
-				filters[filters.length] = new nlobjSearchFilter('internalid',// 加入条件
-				'account', 'anyof', internalids);
+	writeVoucherToPDF : function(subsidiaryid, periodid, accountid, period,
+			voucherDateFrom, voucherDateTo, response) {
+		try {
+//			nlapiLogExecution('debug', 'period', period);// add by joe
+
+			var fromToPeriod = null;
+			var filter = [];
+			var filters = [];
+			if (accountid) {
+				var filterexpression = rule.GetCNCOAFilters(accountid);// �õ���Ŀid
+				// ����
+				var internalids = rule.GetMappingCNCOA(filterexpression);// 1��ͨ��mappingId��ѯ����ns_account_id�������ظ���������ͬ�����Ų�ͬ��
+				if (internalids.length > 0) {
+					filters[filters.length] = new nlobjSearchFilter(
+							'internalid',// ��������
+							'account', 'anyof', internalids);
+				}
 			}
-		}
-		if (subsidiaryid && subsidiaryid != '-1') {
-			filters[filters.length] = new nlobjSearchFilter('subsidiary', null,
-					'anyof', subsidiaryid);
-			filter[filter.length] = new nlobjSearchFilter('subsidiary', null,
-					'anyof', subsidiaryid);
-		}
-
-		if (voucherDateFrom && voucherDateTo) {
-			filters[filters.length] = new nlobjSearchFilter('trandate', null,
-					'within', voucherDateFrom, voucherDateTo);
-			filter[filter.length] = new nlobjSearchFilter('trandate', null,
-					'within', voucherDateFrom, voucherDateTo);
-			fromToPeriod = voucherDateFrom + '-' + voucherDateTo;
-		} else if (periodid) {
-			filters[filters.length] = new nlobjSearchFilter('postingperiod',
-					null, 'abs', [ periodid ]);
-			filter[filter.length] = new nlobjSearchFilter('postingperiod',
-					null, 'abs', [ periodid ]);
-		}
-
-		var arr = this.GetDistinctNumbersByID(filters);// 2、通过条件查找transaction,Journal明细
-
-		var xml = '';
-		if (arr.length > 0) {
-			filter[filter.length] = new nlobjSearchFilter('internalid', null,
-					'anyof', arr);
-
-			// employee name
-			var subsidiaryrec = rule.GetSubsidiary();// 查询所有机构
-			var subsidiaryid = [];
-			for ( var rs in subsidiaryrec) {
-				var internalid = subsidiaryrec[rs].getValue('internalid', null,
-						null);
-				subsidiaryid.push(internalid);// 得到所有机构id
-			}
-			var map = new trigger.local.employee()
-					.GetEmployeesList(subsidiaryid);
-			if (fromToPeriod) {
-				xml = this.GetVoucherResultXML(filter, fromToPeriod, map);
-			} else {
-				xml = this.GetVoucherResultXML(filter, period, map);// 3、得到xml
+			if (subsidiaryid && subsidiaryid != '-1') {
+				filters[filters.length] = new nlobjSearchFilter('subsidiary',
+						null, 'anyof', subsidiaryid);
+				filter[filter.length] = new nlobjSearchFilter('subsidiary',
+						null, 'anyof', subsidiaryid);
 			}
 
-			if (xml) {
-				xml = template.GetVoucherXMLHead + xml;
-				xml += template.GetPDFClosingTagXML;
+			if (voucherDateFrom && voucherDateTo) {
+				filters[filters.length] = new nlobjSearchFilter('trandate',
+						null, 'within', voucherDateFrom, voucherDateTo);
+				filter[filter.length] = new nlobjSearchFilter('trandate', null,
+						'within', voucherDateFrom, voucherDateTo);
+				fromToPeriod = voucherDateFrom + '-' + voucherDateTo;
+			} else if (periodid) {
+				filters[filters.length] = new nlobjSearchFilter(
+						'postingperiod', null, 'abs', [ periodid ]);
+				filter[filter.length] = new nlobjSearchFilter('postingperiod',
+						null, 'abs', [ periodid ]);
 			}
-		}
-		var filename = com.formatCNDate(new Date(), "YYYYMMDDhhmm");
-		filename = "Voucher-" + filename + ".PDF";
 
-		new trigger.local.write().WriteXMLToPDF(response, xml, filename);
+			var arr = this.GetDistinctNumbersByID(filters);// 2��ͨ����������transaction,Journal��ϸ
+
+			var xml = '';
+			if (arr.length > 0) {
+				filter[filter.length] = new nlobjSearchFilter('internalid',
+						null, 'anyof', arr);
+
+				// employee name
+				var subsidiaryrec = rule.GetSubsidiary();// ��ѯ���л���
+				var subsidiaryid = [];
+				for ( var rs in subsidiaryrec) {
+					var internalid = subsidiaryrec[rs].getValue('internalid',
+							null, null);
+					subsidiaryid.push(internalid);// �õ����л���id
+				}
+				var map = new trigger.local.employee()
+						.GetEmployeesList(subsidiaryid);
+				if (fromToPeriod) {
+					xml = this.GetVoucherResultXML(filter, fromToPeriod, map);
+				} else {
+//					nlapiLogExecution('debug', 'period', period);// add by joe
+
+					xml = this.GetVoucherResultXML(filter, period, map);// 3���õ�xml
+				}
+
+				if (xml) {
+					xml = template.GetVoucherXMLHead + xml;
+					xml += template.GetPDFClosingTagXML;
+				}
+			}
+			var filename = com.formatCNDate(new Date(), "YYYYMMDDhhmm");
+			filename = "Voucher-" + filename + ".PDF";
+
+			new trigger.local.write().WriteXMLToPDF(response, xml, filename);
+		} catch (e) {
+			nlapiLogExecution('debug', 'e', e);// add by joe
+		}
+
 	},
 
 	/**
@@ -142,7 +150,7 @@ trigger.local.voucher.prototype = {
 	 */
 	GetVoucherResultXML : function(filters, period, namemap) {
 		var xml = '';
-		var map = rule.GetCOAAccountList();// 得到ns科目列表
+		var map = rule.GetCOAAccountList();// �õ�ns��Ŀ�б�
 		var date = period;
 
 		var n = 0;
@@ -171,9 +179,9 @@ trigger.local.voucher.prototype = {
 		var totalcredit = 0;
 		var totaldebit = 0;
 		var searchid = 0;
-		var resultslice = this.GetVoucherResults(filters);// 查询transaction
+		var resultslice = this.GetVoucherResults(filters);// ��ѯtransaction
 		// nlapiLogExecution('debug', 'count1', resultslice.length);
-
+		var oneToManyMap = rule.GetIsJoinCostCenter();// �õ�һ�Զ�id
 		for (var i = 0; i < resultslice.length; i++) {
 			number = resultslice[i].getValue('number', null, null);
 			if (i < resultslice.length - 1) {
@@ -204,29 +212,29 @@ trigger.local.voucher.prototype = {
 			if (memo && memo.length > 20) {
 				memo = com.replaceitemwithspace(memo);
 			}
+			// nlapiLogExecution('debug', 'internalid1', internalid);
+			// key���� dept, cls, location edit by joe 20180109
 
-			// key加上 dept, cls, location edit by joe 20180109
-			var oneToManyMap = rule.GetIsJoinCostCenter();// 得到一对多id
-   if(oneToManyMap.GetValue(internalid)){
-    cls = resultslice[i].getValue('class', null, null);
-    dept = resultslice[i].getValue('department', null, null);
-    location = resultslice[i].getValue('location', null, null);
-    if (dept) {
-     internalid += dept;
-    }
-    if (cls) {
-     internalid += cls;
-     // nlapiLogExecution('DEBUG', 'internalid+cls', internalid);
-    }
-    if (location) {
-     internalid += location;
-    }
-   }
-			nlapiLogExecution('debug', 'internalid查询条件', internalid);
+			if (oneToManyMap.GetValue(internalid)) {
+				cls = resultslice[i].getValue('class', null, null);
+				dept = resultslice[i].getValue('department', null, null);
+				location = resultslice[i].getValue('location', null, null);
+				if (dept != null && dept != '') {
+					internalid += dept;
+				}
+				if (cls != null && cls != '') {
+					internalid += cls;
+					// nlapiLogExecution('DEBUG', 'internalid+cls', internalid);
+				}
+				if (location != null && location != '') {
+					internalid += location;
+				}
+			}
 
 			detailname = map.GetValue(internalid).name;
 
-			// nlapiLogExecution('debug', 'internalid查询条件', internalid);// add
+			// nlapiLogExecution('debug', 'internalid��ѯ����', internalid);//
+			// add
 			// by
 			// joe
 			// 180105
@@ -261,7 +269,6 @@ trigger.local.voucher.prototype = {
 					foreign = debit / rate;
 				}
 			}
-
 			var glNumber = com.formatStringValuesInXml(resultslice[i].getValue(
 					'glnumber', null, null));
 
@@ -284,10 +291,23 @@ trigger.local.voucher.prototype = {
 				rowsdetail = 0;
 			}
 
+			memo = this.replaceAnd(memo);
+			levelonename = this.replaceAnd(levelonename + '');
+			detailname = this.replaceAnd(detailname + '');
+			foreign = this.replaceAnd(foreign + '');
+//			debit = this.replaceAnd(debit + '');
+//			credit = this.replaceAnd(credit + '');
+//			totalcredit = this.replaceAnd(totalcredit + '');
+//			totaldebit = this.replaceAnd(totaldebit + '');
+			createby = this.replaceAnd(createby + '');
+			number = this.replaceAnd(number + ''); // 对参数进行去除&符号处理 add by joe
+			// 20180207
 			// head
 			if (isfirst === true) {
 				var temp = template.GetVoucherContentHeadXML(date, number,
 						transtype, transdate, transcurrency, glNumber);
+//				 nlapiLogExecution('DEBUG', 'temp', temp);
+
 				xml += temp;
 				isfirst = false;
 				m = 45;
@@ -300,7 +320,6 @@ trigger.local.voucher.prototype = {
 					mm = Math.ceil(detailname.length / 13);
 				}
 			}
-
 			// content
 			if ((isfirst == false) && (i < resultslice.length - 1)) {
 				if (credit) {
@@ -309,6 +328,7 @@ trigger.local.voucher.prototype = {
 				if (debit) {
 					totaldebit += parseFloat(debit);
 				}
+
 				xml += template.GetVoucherXML(nlapiEscapeXML(memo),
 						levelonename, detailname, com.formatCurrency(foreign),
 						rate, com.formatCurrency(debit), com
@@ -316,6 +336,7 @@ trigger.local.voucher.prototype = {
 				n++;
 				x++;
 			}
+
 			// foot
 			if ((number != nextnumber && isfirst == false || x % m == m - 1)
 					&& (i < resultslice.length - 1)) {
@@ -326,9 +347,13 @@ trigger.local.voucher.prototype = {
 
 				if (number != nextnumber) {// print total on last page of total
 					// transaction number
+
 					xml += template.GetVoucherXMLTotal(com
 							.formatCurrency(totalcredit), com
 							.formatCurrency(totaldebit)); // total
+					// nlapiLogExecution('debug', 'memo|detailname4',
+					// memo+'|'+detailname);//add by joe 180105
+
 					totalcredit = 0;
 					totaldebit = 0;
 				}
@@ -336,7 +361,7 @@ trigger.local.voucher.prototype = {
 				xml += template.GetVoucherXMLFoot(createby); // signature
 				isfirst = true;
 			}
-
+			// nlapiLogExecution('debug', 'internalid2', internalid);
 			// the last one records
 			if (i == resultslice.length - 1) {
 				xml += template.GetVoucherXML(nlapiEscapeXML(memo),
@@ -356,6 +381,8 @@ trigger.local.voucher.prototype = {
 						.formatCurrency(totalcredit), com
 						.formatCurrency(totaldebit)); // total
 				xml += template.GetVoucherXMLFoot(createby);
+				// nlapiLogExecution('debug', 'memo|detailname5',
+				// memo+'|'+detailname);//add by joe 180105
 				totalcredit = 0;
 				totaldebit = 0;
 			}
@@ -365,6 +392,9 @@ trigger.local.voucher.prototype = {
 		return xml;
 	},
 
+	replaceAnd : function(str) {
+		return str.replace(/&/g, 'AND');
+	},
 	GetVoucherResults : function(filters) {
 		var results = [];
 		// for(var f in filters){
@@ -389,6 +419,7 @@ trigger.local.voucher.prototype = {
 				searchid++;
 			}
 		} while (resultslice.length >= 1000);
+		// nlapiLogExecution('debug', 'results', results.length);
 		return results;
 	}
 };

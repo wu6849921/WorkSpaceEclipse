@@ -91,7 +91,7 @@ define(
 								});
 								var name = jeRecord.getSublistText({
 									sublistId : 'line',
-									fieldId : initColumn[5],
+									fieldId : 'entity',
 									line : j
 								});
 								var mpNum = jeRecord.getSublistValue({
@@ -296,6 +296,12 @@ define(
 					});
 					var fileContent = renderer.renderAsString();
 					fileContent = fileContent.replace(/&/g, "&amp;");
+//					fileContent = fileContent.replace(/ => /g, "123");
+//					fileContent = fileContent.replace(/=/g, "_");
+//					 log.debug({
+//					 title : 'fileContent',
+//					 details : fileContent
+//					 });
 					var pdf = render.xmlToPdf({
 						xmlString : fileContent
 					});

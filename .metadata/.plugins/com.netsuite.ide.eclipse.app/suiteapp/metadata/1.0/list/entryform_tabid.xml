@@ -1,4 +1,6 @@
 <list id="entryform_tabid">
+	<value>BOMCOMPONENTS</value>
+	<value>BOMHISTORY</value>
 	<value>BOMMAIN</value>
 	<value>CRMBUDGET</value>
 	<value>CRMKEYWORD</value>
@@ -84,6 +86,7 @@
 	<value>ITEMMANUFACTURING</value>
 	<value>ITEMMATRIX</value>
 	<value>ITEMMEMBERS</value>
+	<value>ITEMMERCHANDISEHIERARCHY</value>
 	<value>ITEMPREFERENCES</value>
 	<value>ITEMPRICEBOOKS</value>
 	<value>ITEMPRICING</value>
@@ -112,8 +115,11 @@
 	<value>OTHERHISTORYTAB</value>
 	<value>OTHERINBOUNDSHIPMENTITEM</value>
 	<value>OTHERINVENTORYCOUNT</value>
+	<value>OTHERINVTLOCCUSTRETURN</value>
+	<value>OTHERINVTLOCFULFILLMENT</value>
 	<value>OTHERITEM</value>
 	<value>OTHERITEMS_TAB</value>
+	<value>OTHERLANDEDCOST_TAB</value>
 	<value>OTHERLINES</value>
 	<value>OTHERLOCATIONSTAB</value>
 	<value>OTHERMAIN</value>
@@ -141,7 +147,7 @@
 	<value>OTHERSYSTEMINFO</value>
 	<value>OTHERS_SYSINFO</value>
 	<value>OTHERUSAGELIMITS</value>
-	<value>OTHERWORKFLOW</value>
 	<value>OTHERVERSION</value>
+	<value>OTHERWORKFLOW</value>
 	<value>TIMEMAIN</value>
 </list>

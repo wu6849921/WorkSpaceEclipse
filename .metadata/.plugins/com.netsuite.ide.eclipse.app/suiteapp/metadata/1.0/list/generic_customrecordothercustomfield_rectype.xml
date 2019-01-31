@@ -58,10 +58,10 @@
 	<value>-355</value>
 	<value>-357</value>	<!-- Revenue Recognition Rule -->
 	<value>-359</value>	<!-- Subscription Change Order -->
+	<value>-362</value>
 	<value>-369</value>	<!-- Location Costing Group -->
 	<value>-376</value>	<!-- Time-Off Request -->
 	<value>-377</value>	<!-- Time-Off Type -->
-	<value>-378</value> <!-- Commerce Category Tree -->
 	<value>-379</value> <!-- Commerce Category -->
 	<value>-381</value>	<!-- Auto Location Assignment Configuration -->
 	<value>-382</value>	<!-- Time-Off Plan -->
@@ -78,16 +78,14 @@
 	<value>-423</value>
 	<value>-424</value>
 	<value>-425</value>
-	<value>-426</value>
 	<value>-427</value>
 	<value>-428</value>
-	<value>-430</value>
-	<value>-431</value>
+	<value>-434</value>
+	<value>-435</value>
 	<value>-506</value>
-	<value>-509</value>
-	<value>-510</value>
-	<value>-511</value>
-	<value>-512</value>
 	<value>-520</value>
-	<value>-526</value>
+	<value>-522</value>
+	<value>-543</value>
+	<value>-550</value>
+	<value>-4006</value>
 </list>

@@ -1,38 +1,31 @@
 /**
-
- * Copyright Trigger Networks, Inc. 2014 All rights reserved. Module Description
-
- * Create the user interface for printing journals entries. Version Date Author
-
- * Remarks 1.00 05 Aug 2014 Winson.Chen
-
  * 
-
+ * Copyright Trigger Networks, Inc. 2014 All rights reserved. Module Description
+ * 
+ * Create the user interface for printing journals entries. Version Date Author
+ * 
+ * Remarks 1.00 05 Aug 2014 Winson.Chen
+ * 
+ * 
+ * 
  */
-
-
 
 triggernamespace("trigger.local");
 
+function clientPageInit() {
 
+	// make the fields voucherDateFrom and voucherDateTo hidden . They will be
+	// available only for voucher type
 
-function clientPageInit(){
+	var dateFromFld = nlapiGetField('voucherdatefrom');
 
-	//make the fields voucherDateFrom and voucherDateTo hidden . They will be available only for voucher type
+	dateFromFld.setDisplayType('hidden');
 
-    var dateFromFld = nlapiGetField('voucherdatefrom');
+	var dateToFld = nlapiGetField('voucherdateto');
 
-    dateFromFld.setDisplayType('hidden');
-
-    
-
-    var dateToFld = nlapiGetField('voucherdateto');
-
-    dateToFld.setDisplayType('hidden');
+	dateToFld.setDisplayType('hidden');
 
 }
-
-
 
 function main_report(request, response)
 
@@ -44,18 +37,15 @@ function main_report(request, response)
 
 }
 
-
-
-trigger.local.printform = function() {}
-
-
+trigger.local.printform = function() {
+}
 
 trigger.local.printform.prototype = {
 
 	/**
-
+	 * 
 	 * Create the form for the page by chart of accounts localization
-
+	 * 
 	 */
 
 	main : function(request, response) {
@@ -70,45 +60,53 @@ trigger.local.printform.prototype = {
 
 		form.setScript('customscript_trigger_localization_form');
 
-
-
 		// 凭证打印
 
-		var btn_voucher = form.addButton('custpage_voucher_button', ren.Voucher, 'new trigger.local.printform().redirectToVoucherPrinting()');
+		var btn_voucher = form.addButton('custpage_voucher_button',
+				ren.Voucher,
+				'new trigger.local.printform().redirectToVoucherPrinting()');
 
 		// 明细账
 
-		form.addButton('custpage_detail_button', ren.Detail, "new trigger.local.printform().redirectToDetailPrinting()");
+		form.addButton('custpage_detail_button', ren.Detail,
+				"new trigger.local.printform().redirectToDetailPrinting()");
 
 		// 日记账
 
-		form.addButton('custpage_jorunal_button', ren.Journal, "new trigger.local.printform().redirectToJournalPrinting()");
+		form.addButton('custpage_jorunal_button', ren.Journal,
+				"new trigger.local.printform().redirectToJournalPrinting()");
 
 		// 总分类账
 
-		form.addButton('custpage_ledger_button', ren.Ledger, "new trigger.local.printform().redirectToLedgerPrinting()");
+		form.addButton('custpage_ledger_button', ren.Ledger,
+				"new trigger.local.printform().redirectToLedgerPrinting()");
 
 		// 汇总式总账
 
-		form.addButton('custpage_summaryledger_button', ren.SummaryLedger, "new trigger.local.printform().redirectToSummaryLedgerPrinting()");
+		form
+				.addButton('custpage_summaryledger_button', ren.SummaryLedger,
+						"new trigger.local.printform().redirectToSummaryLedgerPrinting()");
 
 		// 利润表
 
-		form.addButton('custpage_profit_button', ren.Profit, 'new trigger.local.printform().redirectToProfitPrinting()');
+		form.addButton('custpage_profit_button', ren.Profit,
+				'new trigger.local.printform().redirectToProfitPrinting()');
 
 		// 资产负债表
 
-		form.addButton('custpage_balancesheet_button', ren.BalanceSheet, "new trigger.local.printform().redirectToBalanceSheetPrinting()");
+		form
+				.addButton('custpage_balancesheet_button', ren.BalanceSheet,
+						"new trigger.local.printform().redirectToBalanceSheetPrinting()");
 
-
-
-		var selectgroup = form.addFieldGroup('triggergroup', classlang.GetMsgByType(lang));
+		var selectgroup = form.addFieldGroup('triggergroup', classlang
+				.GetMsgByType(lang));
 
 		selectgroup.setShowBorder(true);
 
 		// type
 
-		var menu = form.addField('custpage_reporttype', 'inlinehtml', null, null, 'triggergroup');
+		var menu = form.addField('custpage_reporttype', 'inlinehtml', null,
+				null, 'triggergroup');
 
 		menu.setLayoutType('normal', 'startcol');
 
@@ -116,13 +114,13 @@ trigger.local.printform.prototype = {
 
 		menu.setDefaultValue(list);
 
-
-
-		var paramtersgroup = form.addFieldGroup('parametersgroup', classlang.GetMsgByParameters(lang));
+		var paramtersgroup = form.addFieldGroup('parametersgroup', classlang
+				.GetMsgByParameters(lang));
 
 		// subsidiary
 
-		var my_subsidiary = form.addField('subsidiary', 'select', ren.Subsidiary, null, 'parametersgroup');
+		var my_subsidiary = form.addField('subsidiary', 'select',
+				ren.Subsidiary, null, 'parametersgroup');
 
 		my_subsidiary.setLayoutType('normal', 'startcol');
 
@@ -138,7 +136,8 @@ trigger.local.printform.prototype = {
 
 		for ( var rs in resultslice) {
 
-			subsidiaryname = resultslice[rs].getValue('formulatext', null, null);
+			subsidiaryname = resultslice[rs]
+					.getValue('formulatext', null, null);
 
 			internalid = resultslice[rs].getValue('internalid', null, null);
 
@@ -148,119 +147,111 @@ trigger.local.printform.prototype = {
 
 		paramtersgroup.setShowBorder(true);
 
-
-
 		// 年
 
 		var yearperiodhtml = this.GetYearPeriodHTML(ren.ReportYear);
 
-		var year = form.addField('reportyear', 'inlinehtml', null, null, 'parametersgroup');
+		var year = form.addField('reportyear', 'inlinehtml', null, null,
+				'parametersgroup');
 
 		year.setLayoutType('normal', 'startcol');
 
 		year.setDefaultValue(yearperiodhtml);
 
-
-
 		// 开始与结束期间
 
 		var allmonthperiodhtml = this.GetAllMonthPeriodHTML();
 
-		var allmonthperiod = form.addField('allreportperiod', 'inlinehtml', null, null, null);
+		var allmonthperiod = form.addField('allreportperiod', 'inlinehtml',
+				null, null, null);
 
 		allmonthperiod.setDefaultValue(allmonthperiodhtml);
 
-
-
 		var monthperiodhtml = this.GetMonthPeriodHTML(ren.BeginMonth);
 
-		var period = form.addField('reportperiod', 'inlinehtml', null, null, 'parametersgroup');
+		var period = form.addField('reportperiod', 'inlinehtml', null, null,
+				'parametersgroup');
 
 		period.setLayoutType('normal', 'startcol');
 
 		period.setDefaultValue(monthperiodhtml);
 
-		
+		// Voucher日期
 
-		//Voucher日期
-
-		var voucherDateFromFld = form.addField('voucherdatefrom', 'date', ren.VoucherDateFromLbl, null, 'parametersgroup');
+		var voucherDateFromFld = form.addField('voucherdatefrom', 'date',
+				ren.VoucherDateFromLbl, null, 'parametersgroup');
 
 		voucherDateFromFld.setLayoutType('normal', 'startcol');
 
 		voucherDateFromFld.setDisplaySize(40);
 
-		
-
-		var voucherDateToFld = form.addField('voucherdateto', 'date', ren.VoucherDateToLbl, null, 'parametersgroup');
+		var voucherDateToFld = form.addField('voucherdateto', 'date',
+				ren.VoucherDateToLbl, null, 'parametersgroup');
 
 		voucherDateToFld.setLayoutType('normal', 'startcol');
 
 		voucherDateToFld.setDisplaySize(30);
 
-
-
-		var accountgroup = form.addFieldGroup('accountgroup', classlang.GetMsgByCOA(lang));
-
-
+		var accountgroup = form.addFieldGroup('accountgroup', classlang
+				.GetMsgByCOA(lang));
 
 		// 科目
 
 		var htmlall = this.HTMLForAllAccountLists();
 
-		var allacc = form.addField('custpage_allaccountlist', 'inlinehtml', null, null, null);
+		var allacc = form.addField('custpage_allaccountlist', 'inlinehtml',
+				null, null, null);
 
 		allacc.setDefaultValue(htmlall);
 
-
-
 		var html = this.HTMLForAccountList();
 
-		var acc = form.addField('custpage_accountlist', 'inlinehtml', null, null, 'accountgroup');
+		var acc = form.addField('custpage_accountlist', 'inlinehtml', null,
+				null, 'accountgroup');
 
 		acc.setLayoutType('outside');
 
 		acc.setDefaultValue(html);
 
-
-
 		var option = this.HTMLForAccountListOption();
 
-		var temp = form.addField('custpage_accountmove', 'inlinehtml', null, null, 'accountgroup');
+		var temp = form.addField('custpage_accountmove', 'inlinehtml', null,
+				null, 'accountgroup');
 
 		temp.setLayoutType('outside');
 
 		temp.setDefaultValue(option);
 
-
-
 		response.writePage(form);
 
 	},
 
-
-
 	/** ************************************资产负债表开始******************************************** */
 
 	/**
-
 	 * 
-
+	 * 
+	 * 
 	 */
 
 	redirectToBalanceSheetPrinting : function() {
 
 		var parameters = this.returnParameters();
 
-		if (!parameters) {return;}
+		if (!parameters) {
+			return;
+		}
 
-		var suiteletUrl = nlapiResolveURL('SUITELET', 'customscript_trigger_localization_report', 'customdeploy_trigger_localization_report');
+		var suiteletUrl = nlapiResolveURL('SUITELET',
+				'customscript_trigger_localization_report',
+				'customdeploy_trigger_localization_report');
 
 		suiteletUrl += parameters;
 
 		suiteletUrl += String.format("&TYPE={0}", 'BALANCESHEET');
 
-		window.open(suiteletUrl, '', 'height=600,width=1000,scrollbars, resizable');
+		window.open(suiteletUrl, '',
+				'height=600,width=1000,scrollbars, resizable');
 
 	},
 
@@ -272,15 +263,20 @@ trigger.local.printform.prototype = {
 
 		var parameters = this.returnParameters();
 
-		if (!parameters) {return;}
+		if (!parameters) {
+			return;
+		}
 
-		var suiteletUrl = nlapiResolveURL('SUITELET', 'customscript_trigger_localization_report', 'customdeploy_trigger_localization_report');
+		var suiteletUrl = nlapiResolveURL('SUITELET',
+				'customscript_trigger_localization_report',
+				'customdeploy_trigger_localization_report');
 
 		suiteletUrl += parameters;
 
 		suiteletUrl += String.format("&TYPE={0}", 'TRIALBALANCE');
 
-		window.open(suiteletUrl, '', 'height=600,width=1000,scrollbars, resizable');
+		window.open(suiteletUrl, '',
+				'height=600,width=1000,scrollbars, resizable');
 
 	},
 
@@ -292,15 +288,20 @@ trigger.local.printform.prototype = {
 
 		var parameters = this.returnParameters();
 
-		if (!parameters) {return;}
+		if (!parameters) {
+			return;
+		}
 
-		var suiteletUrl = nlapiResolveURL('SUITELET', 'customscript_trigger_localization_report', 'customdeploy_trigger_localization_report');
+		var suiteletUrl = nlapiResolveURL('SUITELET',
+				'customscript_trigger_localization_report',
+				'customdeploy_trigger_localization_report');
 
 		suiteletUrl += parameters;
 
 		suiteletUrl += String.format("&TYPE={0}", 'LEDGER');
 
-		window.open(suiteletUrl, '', 'height=600,width=1000,scrollbars, resizable');
+		window.open(suiteletUrl, '',
+				'height=600,width=1000,scrollbars, resizable');
 
 	},
 
@@ -312,15 +313,20 @@ trigger.local.printform.prototype = {
 
 		var parameters = this.returnParameters();
 
-		if (!parameters) {return;}
+		if (!parameters) {
+			return;
+		}
 
-		var suiteletUrl = nlapiResolveURL('SUITELET', 'customscript_trigger_localization_report', 'customdeploy_trigger_localization_report');
+		var suiteletUrl = nlapiResolveURL('SUITELET',
+				'customscript_trigger_localization_report',
+				'customdeploy_trigger_localization_report');
 
 		suiteletUrl += parameters;
 
 		suiteletUrl += String.format("&TYPE={0}", 'DIARYLEDGER');
 
-		window.open(suiteletUrl, '', 'height=600,width=1000,scrollbars, resizable');
+		window.open(suiteletUrl, '',
+				'height=600,width=1000,scrollbars, resizable');
 
 	},
 
@@ -332,15 +338,20 @@ trigger.local.printform.prototype = {
 
 		var parameters = this.returnParameters();
 
-		if (!parameters) {return;}
+		if (!parameters) {
+			return;
+		}
 
-		var suiteletUrl = nlapiResolveURL('SUITELET', 'customscript_trigger_localization_report', 'customdeploy_trigger_localization_report');
+		var suiteletUrl = nlapiResolveURL('SUITELET',
+				'customscript_trigger_localization_report',
+				'customdeploy_trigger_localization_report');
 
 		suiteletUrl += parameters;
 
 		suiteletUrl += String.format("&TYPE={0}", 'SUBLEDGER');
 
-		window.open(suiteletUrl, '', 'height=600,width=1000,scrollbars, resizable');
+		window.open(suiteletUrl, '',
+				'height=600,width=1000,scrollbars, resizable');
 
 	},
 
@@ -352,56 +363,70 @@ trigger.local.printform.prototype = {
 
 		var parameters = this.returnParameters();
 
-		if (!parameters) {return;}
+		if (!parameters) {
+			return;
+		}
 
-		var suiteletUrl = nlapiResolveURL('SUITELET', 'customscript_trigger_localization_report', 'customdeploy_trigger_localization_report');
+		var suiteletUrl = nlapiResolveURL('SUITELET',
+				'customscript_trigger_localization_report',
+				'customdeploy_trigger_localization_report');
 
 		suiteletUrl += parameters;
 
 		suiteletUrl += String.format("&TYPE={0}", 'PROFIT');
 
-		window.open(suiteletUrl, '', 'height=600,width=1000,scrollbars, resizable');
+		window.open(suiteletUrl, '',
+				'height=600,width=1000,scrollbars, resizable');
 
 	},
 
 	/** ************************************利润表结束******************************************** */
 
-	/** ************************************VOUCHER BEGIN******************************************** */
+	/**
+	 * ************************************VOUCHER
+	 * BEGIN********************************************
+	 */
 
 	redirectToVoucherPrinting : function() {
 
 		var parameters = this.returnParameters();
 
-		if (!parameters) {return;}
+		if (!parameters) {
+			return;
+		}
 
-		var suiteletUrl = nlapiResolveURL('SUITELET', 'customscript_trigger_localization_report', 'customdeploy_trigger_localization_report');
+		var suiteletUrl = nlapiResolveURL('SUITELET',
+				'customscript_trigger_localization_report',
+				'customdeploy_trigger_localization_report');
 
 		suiteletUrl += parameters;
-
 		suiteletUrl += String.format("&TYPE={0}", 'VOUCHER');
+		suiteletUrl = suiteletUrl.replace(/\#/g, "%23");
 
-		window.open(suiteletUrl, '', 'height=600,width=1000,scrollbars, resizable');
+		window.open(suiteletUrl, '',
+				'height=600,width=1000,scrollbars, resizable');
 
 	},
 
-	/** ************************************VOUCHER END******************************************** */
+	/**
+	 * ************************************VOUCHER
+	 * END********************************************
+	 */
 
+	/***************************************************************************
+	 * 
+	 * ******************************************UI BEGIN
+	 **************************************************************************/
 
+	/***************************************************************************
+	 * 
+	 * ******************************************YEARBEGIN
+	 **************************************************************************/
 
 	/**
-
-	 * ******************************************UI BEGIN**********************************************/
-
-
-
-	/**
-
-	 * ******************************************YEARBEGIN******************************************/
-
-	/**
-
+	 * 
 	 * 年
-
+	 * 
 	 */
 
 	GetYearPeriodHTML : function(label_name) {
@@ -416,7 +441,9 @@ trigger.local.printform.prototype = {
 
 		html += '<div class="ym_top"><span class="smallgraytextnolink uir-label">';
 
-		html += String.format('<a class="smallgraytextnolink">{0}</a></span></div>', label_name);
+		html += String.format(
+				'<a class="smallgraytextnolink">{0}</a></span></div>',
+				label_name);
 
 		html += '<div><select name="_yearperiod" id="_yearperiod" onchange="new trigger.local.printform().OnSelectYearPeriodChange()">';
 
@@ -424,7 +451,7 @@ trigger.local.printform.prototype = {
 
 		var returnYM = this.GetYearsBySubsidiary('');
 
-		for (var key in returnYM) {
+		for ( var key in returnYM) {
 
 			html += String.format('<option value="{0}">{1}</option>', key, key);
 
@@ -454,9 +481,7 @@ trigger.local.printform.prototype = {
 
 			o.text = n1.options[i].text;
 
-			var str = o.text.substring(0,4);
-
-
+			var str = o.text.substring(0, 4);
 
 			if (str == year.value) {
 
@@ -469,20 +494,21 @@ trigger.local.printform.prototype = {
 	},
 
 	/**
-
-	 * 返回不重复日期数据，只包括年
-
 	 * 
-
+	 * 返回不重复日期数据，只包括年
+	 * 
+	 * 
+	 * 
 	 * @param subsidiaryid
-
+	 * 
 	 * @returns {Array}
-
+	 * 
 	 */
 
 	GetYearsBySubsidiary : function(subsidiaryid) {
 
-		var savedsearch = nlapiLoadSearch('accountingperiod', 'customsearch_trigger_accounting_period');
+		var savedsearch = nlapiLoadSearch('accountingperiod',
+				'customsearch_trigger_accounting_period');
 
 		var resultset = savedsearch.runSearch();
 
@@ -490,19 +516,19 @@ trigger.local.printform.prototype = {
 
 		var map = {};
 
-		for (var i = 0;resultslice != null && i < resultslice.length; i++) {
+		for (var i = 0; resultslice != null && i < resultslice.length; i++) {
 
-			//var name = resultslice[i].getValue('formulatext', null, null);
+			// var name = resultslice[i].getValue('formulatext', null, null);
 
-			var date = resultslice[i].getValue('startdate',null,'GROUP');
+			var date = resultslice[i].getValue('startdate', null, 'GROUP');
 
 			date = nlapiStringToDate(date);
 
 			var name = date.getFullYear();
 
-			//var n = name.indexOf("-");
+			// var n = name.indexOf("-");
 
-			//name = name.substring(0,n);
+			// name = name.substring(0,n);
 
 			if (!map.hasOwnProperty(name)) {
 
@@ -516,21 +542,21 @@ trigger.local.printform.prototype = {
 
 	},
 
+	/***************************************************************************
+	 * 
+	 * ******************************************YEAR END
+	 **************************************************************************/
 
+	/***************************************************************************
+	 * 
+	 * ******************************************MONTH BEGIN
+	 **************************************************************************/
 
 	/**
-
-	 * ******************************************YEAR END************************************/
-
-	/**
-
-	 * ******************************************MONTH  BEGIN*****************************/
-
-	/**
-
-	 * Populates the HTML list of existing Accounting Periods
-	 * Uses formulatext from accountingperiod saved search as a name on the list
-	 * Uses id of corresponding accounting period as id for this name
+	 * 
+	 * Populates the HTML list of existing Accounting Periods Uses formulatext
+	 * from accountingperiod saved search as a name on the list Uses id of
+	 * corresponding accounting period as id for this name
 	 * 
 	 * @returns {String}
 	 */
@@ -539,13 +565,14 @@ trigger.local.printform.prototype = {
 
 		var html = '<div style="display:none;"><select name="allmonthperiod" id="allmonthperiod">';
 
-		var savedsearch = nlapiLoadSearch('accountingperiod', 'customsearch_trigger_accounting_period');
+		var savedsearch = nlapiLoadSearch('accountingperiod',
+				'customsearch_trigger_accounting_period');
 
 		var resultset = savedsearch.runSearch();
 
 		var resultslice = resultset.getResults(0, 1000);
 
-		var arr=[];
+		var arr = [];
 
 		for (var i = 0; i < resultslice.length; i++) {
 
@@ -553,23 +580,24 @@ trigger.local.printform.prototype = {
 
 			var name = resultslice[i].getValue('formulatext', null, 'GROUP');
 
-//			var date = resultslice[i].getValue('startdate',null,'GROUP');
-//
-//			date = nlapiStringToDate(date);
-//
-//			var year = date.getFullYear();
-//
-//			var month = date.getMonth() + 1;
-//
-//			var name = year+'-'+month;
+			// var date = resultslice[i].getValue('startdate',null,'GROUP');
+			//
+			// date = nlapiStringToDate(date);
+			//
+			// var year = date.getFullYear();
+			//
+			// var month = date.getMonth() + 1;
+			//
+			// var name = year+'-'+month;
 
-			if(arr.indexOf(name)==-1){
+			if (arr.indexOf(name) == -1) {
 
-			//nlapiLogExecution('debug', 'MAP',   id+ name);
+				// nlapiLogExecution('debug', 'MAP', id+ name);
 
-			    html += String.format('<option value="{0}">{1}</option>', id, name);
+				html += String.format('<option value="{0}">{1}</option>', id,
+						name);
 
-			    arr.push(name);
+				arr.push(name);
 
 			}
 
@@ -580,8 +608,6 @@ trigger.local.printform.prototype = {
 		return html;
 
 	},
-
-
 
 	GetMonthPeriodHTML : function(label_name) {
 
@@ -595,7 +621,9 @@ trigger.local.printform.prototype = {
 
 		html += '<div class="ym_top"><span class="smallgraytextnolink uir-label">';
 
-		html += String.format('<a class="smallgraytextnolink">{0}</a></span></div>', label_name);
+		html += String.format(
+				'<a class="smallgraytextnolink">{0}</a></span></div>',
+				label_name);
 
 		html += '<div><select name="monthperiod" id="monthperiod">';
 
@@ -607,17 +635,15 @@ trigger.local.printform.prototype = {
 
 	},
 
-
+	/***************************************************************************
+	 * 
+	 * ******************************************MONTH END
+	 **************************************************************************/
 
 	/**
-
-	 * ******************************************MONTH END***************************************/
-
-
-
-	/*******************************************CHART OF ACCOUNT BEGIN********************/
-
-
+	 * *****************************************CHART OF ACCOUNT
+	 * BEGIN*******************
+	 */
 
 	HTMLForAllAccountLists : function() {
 
@@ -632,15 +658,15 @@ trigger.local.printform.prototype = {
 	},
 
 	/**
-
-	 * 生成科目数据
-
 	 * 
-
+	 * 生成科目数据
+	 * 
+	 * 
+	 * 
 	 * @param level
-
+	 * 
 	 * @returns {String}
-
+	 * 
 	 */
 
 	CreateChartOfAccount : function(level) {
@@ -665,15 +691,14 @@ trigger.local.printform.prototype = {
 
 			temp = accountid + ' ' + accountname;
 
-			html += String.format('<option value="{0}">{1}</option>', accountid, temp);
+			html += String.format('<option value="{0}">{1}</option>',
+					accountid, temp);
 
 		}
 
 		return html;
 
 	},
-
-
 
 	GetCNCOAListByLevel : function(internalids) {
 
@@ -685,11 +710,14 @@ trigger.local.printform.prototype = {
 
 		var map = new trigger.local.HashTable();
 
-		var savedsearch = nlapiLoadSearch('customrecord_trigger_cn_coa', 'customsearch_trigger_level_23_cn_coa');
+		var savedsearch = nlapiLoadSearch('customrecord_trigger_cn_coa',
+				'customsearch_trigger_level_23_cn_coa');
 
 		if (internalids) {
 
-			filters[0] = new nlobjSearchFilter('custrecord_trigger_level_cn_coa', null, 'anyof', [ internalids ]);
+			filters[0] = new nlobjSearchFilter(
+					'custrecord_trigger_level_cn_coa', null, 'anyof',
+					[ internalids ]);
 
 		}
 
@@ -703,7 +731,8 @@ trigger.local.printform.prototype = {
 
 			cnnumber = resultslice[i].getValue('name', null, null);
 
-			cnname = resultslice[i].getValue('custrecord_trigger_name_coa_cn', null, null);
+			cnname = resultslice[i].getValue('custrecord_trigger_name_coa_cn',
+					null, null);
 
 			// nlapiLogExecution('debug', 'MAP', cnnumber+cnname);
 
@@ -714,8 +743,6 @@ trigger.local.printform.prototype = {
 		return map;
 
 	},
-
-
 
 	HTMLForAccountList : function() {
 
@@ -736,8 +763,6 @@ trigger.local.printform.prototype = {
 		return html;
 
 	},
-
-
 
 	HTMLForAccountListOption : function() {
 
@@ -773,37 +798,37 @@ trigger.local.printform.prototype = {
 
 	},
 
+	/**
+	 * ****************************************CHART OF ACCOUNT
+	 * END************************
+	 */
 
-
-	 /******************************************CHART OF ACCOUNT END*************************/
-
-	/******************************************TYPE SELECT BEGIN****************************/
+	/**
+	 * ****************************************TYPE SELECT
+	 * BEGIN***************************
+	 */
 
 	OnSlectItemChange : function() {
 
 		var o = document.getElementById("reporttype");
 
-		
-
-		var voucherDateFromFld = nlapiGetField('voucherdatefrom');		
+		var voucherDateFromFld = nlapiGetField('voucherdatefrom');
 
 		var voucherDateToFld = nlapiGetField('voucherdateto');
 
-		if(o.value==0){//only when type is voucher, show the fields
+		if (o.value == 0) {// only when type is voucher, show the fields
 
-			voucherDateFromFld.setDisplayType('normal');			
+			voucherDateFromFld.setDisplayType('normal');
 
 			voucherDateToFld.setDisplayType('normal');
 
-		}else{
+		} else {
 
 			voucherDateFromFld.setDisplayType('hidden');
 
 			voucherDateToFld.setDisplayType('hidden');
 
 		}
-
-		
 
 		if (o.value == 0 || o.value == 2 || o.value == 3 || o.value == 4) {
 
@@ -821,8 +846,6 @@ trigger.local.printform.prototype = {
 
 	},
 
-
-
 	GetSomeOfAccountByID : function(val) {
 
 		var n1 = document.getElementById("allaccountlist");
@@ -838,8 +861,6 @@ trigger.local.printform.prototype = {
 			o.text = n1.options[i].text;
 
 			var str = o.value.substring(0, 4);
-
-
 
 			// 日记账
 
@@ -875,8 +896,6 @@ trigger.local.printform.prototype = {
 
 	},
 
-
-
 	MoveAllOfAccounts : function() {
 
 		var n1 = document.getElementById("accountlist_old");
@@ -894,8 +913,6 @@ trigger.local.printform.prototype = {
 		// }
 
 	},
-
-
 
 	DisabledButtonsByID : function(id) {
 
@@ -918,8 +935,6 @@ trigger.local.printform.prototype = {
 		for (var i = 0; i < arr.length; i++) {
 
 			var traget = document.getElementById(arr[i]);
-
-
 
 			if (i.toString() == id) {
 
@@ -947,19 +962,20 @@ trigger.local.printform.prototype = {
 
 	},
 
+	/**
+	 * ****************************************TYPE SELECT
+	 * END***************************
+	 */
 
+	/**
+	 * ***********************************UI
+	 * END********************************************
+	 */
 
-	/******************************************TYPE SELECT END****************************/
-
-
-
-	/*************************************UI END*********************************************/
-
-
-
-	/************************************operation multiple select begin***************/
-
-
+	/**
+	 * **********************************operation multiple select
+	 * begin**************
+	 */
 
 	sortItem : function(sel) {
 
@@ -989,8 +1005,6 @@ trigger.local.printform.prototype = {
 
 		// }
 
-
-
 		for (i = 0; i < arrLength; i++) {
 
 			sel.options.add(new Option(arr[i].text, arr[i].value));
@@ -1000,17 +1014,17 @@ trigger.local.printform.prototype = {
 	},
 
 	/**
-
-	 * sort by value
-
 	 * 
-
+	 * sort by value
+	 * 
+	 * 
+	 * 
 	 * @param a
-
+	 * 
 	 * @param b
-
+	 * 
 	 * @returns {Number}
-
+	 * 
 	 */
 
 	fnSortByValue : function(a, b) {
@@ -1030,8 +1044,6 @@ trigger.local.printform.prototype = {
 		return 0;
 
 	},
-
-
 
 	AddItemsByOption : function() {
 
@@ -1081,8 +1093,6 @@ trigger.local.printform.prototype = {
 
 	},
 
-
-
 	DisplayElement : function(id) {
 
 		var traget = document.getElementById(id);
@@ -1098,8 +1108,6 @@ trigger.local.printform.prototype = {
 		}
 
 	},
-
-
 
 	DisabledElement : function(id) {
 
@@ -1121,25 +1129,28 @@ trigger.local.printform.prototype = {
 
 	},
 
-
-
-	/*************************************operation multiple select end*********************/
-
-
-
-	/*****************************************SUBSIDIARY BEGIN****************************/
+	/**
+	 * ***********************************operation multiple select
+	 * end********************
+	 */
 
 	/**
+	 * ***************************************SUBSIDIARY
+	 * BEGIN***************************
+	 */
 
+	/**
+	 * 
 	 * Get subsidiary list from saved search
-
+	 * 
 	 */
 
 	GetSubsidiary : function() {
 
-		try{
+		try {
 
-			var search = nlapiLoadSearch('subsidiary', 'customsearch_trigger_subsidiary');
+			var search = nlapiLoadSearch('subsidiary',
+					'customsearch_trigger_subsidiary');
 
 			var resultset = search.runSearch();
 
@@ -1149,21 +1160,23 @@ trigger.local.printform.prototype = {
 
 		}
 
-		catch(e){
+		catch (e) {
 
-			var rts={};
+			var rts = {};
 
-			var resultslice=[rts];
+			var resultslice = [ rts ];
 
-			rts.getValue=function(str){
+			rts.getValue = function(str) {
 
-				if(str=='formulatext'){
+				if (str == 'formulatext') {
 
-					return nlapiLoadConfiguration( 'companyinformation' ).getFieldValue('companyname');
+					return nlapiLoadConfiguration('companyinformation')
+							.getFieldValue('companyname');
 
 				}
 
-				if(str=='internalid') return '-1';
+				if (str == 'internalid')
+					return '-1';
 
 			};
 
@@ -1173,15 +1186,16 @@ trigger.local.printform.prototype = {
 
 	},
 
-
-
-	/** ******************************************SUBSIDIARY END****************************/
+	/**
+	 * ******************************************SUBSIDIARY
+	 * END***************************
+	 */
 
 	returnParameters : function() {
 
 		var lang = nlapiGetContext().getPreference('language');
 
-		var classlang =new trigger.local.language();
+		var classlang = new trigger.local.language();
 
 		// type
 
@@ -1197,9 +1211,7 @@ trigger.local.printform.prototype = {
 
 		}
 
-		//var typevalue = type.options[nn].value;
-
-
+		// var typevalue = type.options[nn].value;
 
 		// for subsidiary
 
@@ -1215,35 +1227,32 @@ trigger.local.printform.prototype = {
 
 		}
 
-       
-
-		//voucher dates
+		// voucher dates
 
 		var voucherDateFrom = nlapiGetFieldValue('voucherdatefrom');
 
 		var voucherDateTo = nlapiGetFieldValue('voucherdateto');
 
-				
+		var period, periodid;
 
-		var period, periodid;		
+		// when type==Voucher and therte are two values for voucherDateFrom and
+		// voucherDateTo
 
-		//when type==Voucher and therte are two values for voucherDateFrom and voucherDateTo
+		// don't use period and periodid for calculations
 
-		//don't use period and periodid for calculations		
-
-		if((type.value==0) && voucherDateFrom && voucherDateTo){
+		if ((type.value == 0) && voucherDateFrom && voucherDateTo) {
 
 			period = null;
 
 			periodid = null;
 
-		}else{
+		} else {
 
 			// 期间
 
 			var o = document.getElementById("monthperiod");
 
-			var index = o.selectedIndex;			
+			var index = o.selectedIndex;
 
 			var periodData = o.options[index];
 
@@ -1257,9 +1266,9 @@ trigger.local.printform.prototype = {
 
 			period = periodData.text;
 
-//			if (type.value != 0 && !period) {
+			// if (type.value != 0 && !period) {
 
-			if (!period) {//don't generate any report when there is no dates
+			if (!period) {// don't generate any report when there is no dates
 
 				alert(classlang.GetMsgByPeriodTime(lang));
 
@@ -1272,10 +1281,6 @@ trigger.local.printform.prototype = {
 			periodid = periodData.value;
 
 		}
-
-		
-
-
 
 		// 科目
 
@@ -1297,15 +1302,15 @@ trigger.local.printform.prototype = {
 
 		var accountname = escape(names.join(","));
 
-		if ((type.value == 2 || type.value == 3 || type.value == 4) && !accountid) {// for subLedger(2), diaryLedger(3) and generalLedger when COA is not selected 
+		if ((type.value == 2 || type.value == 3 || type.value == 4)
+				&& !accountid) {// for subLedger(2), diaryLedger(3) and
+								// generalLedger when COA is not selected
 
 			alert(classlang.GetMsgByCOA(lang));
 
 			return;
 
 		}
-
-
 
 		var temp = '';
 
@@ -1317,7 +1322,8 @@ trigger.local.printform.prototype = {
 
 		if (subsidiaryname) {
 
-			temp += String.format("&SUBSIDIARYNAME={0}",encodeURI(encodeURI(subsidiaryname)));
+			temp += String.format("&SUBSIDIARYNAME={0}",
+					encodeURI(encodeURI(subsidiaryname)));
 
 		}
 
@@ -1345,13 +1351,13 @@ trigger.local.printform.prototype = {
 
 		}
 
-		if(voucherDateFrom){
+		if (voucherDateFrom) {
 
 			temp += String.format("&VOUCHERFROM={0}", voucherDateFrom);
 
 		}
 
-		if(voucherDateTo){
+		if (voucherDateTo) {
 
 			temp += String.format("&VOUCHERTO={0}", voucherDateTo);
 
@@ -1361,20 +1367,18 @@ trigger.local.printform.prototype = {
 
 	},
 
-	
-
 	/**
-
-	 * Description:format date.
-
 	 * 
-
+	 * Description:format date.
+	 * 
+	 * 
+	 * 
 	 * @param {nlobj}
-
-	 *            the field id by date
-
+	 * 
+	 * the field id by date
+	 * 
 	 * @returns {string} style is 'yyyymmdd'.
-
+	 * 
 	 */
 
 	formatdate : function(datefld) {
@@ -1409,13 +1413,14 @@ trigger.local.printform.prototype = {
 
 };
 
-//format string
+// format string
 
-String.format = function () {
+String.format = function() {
 
-  var args = arguments;
+	var args = arguments;
 
-  return args[0].replace(/\{(\d+)\}/g, function (m, i) { return args[i * 1 + 1]; });
+	return args[0].replace(/\{(\d+)\}/g, function(m, i) {
+		return args[i * 1 + 1];
+	});
 
 };
-

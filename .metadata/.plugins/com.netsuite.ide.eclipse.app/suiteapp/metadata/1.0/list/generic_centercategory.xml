@@ -2,7 +2,7 @@
 This file lists all standard center categories that can be associated with custom record and suitelet task links.
 All categories belonging to sections which have a 'Custom' category.
 -->
-<list id='generic_centercategory'>
+<list id="generic_centercategory">
 	<value>ACCOUNTCENTERCUSTOMERSACCOUNTSRECEIVABLE</value>
 	<value>ACCOUNTCENTERCUSTOMERSCREDITSANDRETURNS</value>
 	<value>ACCOUNTCENTERCUSTOMERSCUSTOM</value>
@@ -50,6 +50,7 @@ All categories belonging to sections which have a 'Custom' category.
 	<value>ACCOUNTCENTERSETUPPERFORMANCEMANAGEMENT</value>
 	<value>ACCOUNTCENTERSETUPUSERPREFERENCES</value>
 	<value>ACCOUNTCENTERSETUPUSERSROLES</value>
+	<value>ACCOUNTCENTERTBDYEARENDJE</value>
 	<value>ACCOUNTCENTERVENDORSACCOUNTSPAYABLE</value>
 	<value>ACCOUNTCENTERVENDORSCUSTOM</value>
 	<value>ACCOUNTCENTERVENDORSLISTS</value>
@@ -110,6 +111,7 @@ All categories belonging to sections which have a 'Custom' category.
 	<value>BASICREPORTSSUBSCRIPTIONS</value>
 	<value>BASICREPORTSTAX</value>
 	<value>BASICREPORTSTAXAUDITFILES</value>
+	<value>BASICREPORTSTBDYEARENDJE</value>
 	<value>BASICREPORTSTIMEBILLABLES</value>
 	<value>BASICREPORTSVAT</value>
 	<value>BASICREPORTSVATGST</value>
@@ -125,6 +127,7 @@ All categories belonging to sections which have a 'Custom' category.
 	<value>BASICSETUPINTEGRATION</value>
 	<value>BASICSETUPISSUES</value>
 	<value>BASICSETUPMARKETING</value>
+	<value>BASICSETUPMERCHANDISEHIERARCHY</value>
 	<value>BASICSETUPORDERMANAGEMENT</value>
 	<value>BASICSETUPPAYROLL</value>
 	<value>BASICSETUPPERFORMANCEMANAGEMENT</value>
@@ -225,6 +228,7 @@ All categories belonging to sections which have a 'Custom' category.
 	<value>EXECUTIVESETUPOTHERSETUP</value>
 	<value>EXECUTIVESETUPUSERPREFERENCES</value>
 	<value>EXECUTIVESETUPUSERSROLES</value>
+	<value>EXECUTIVETBDYEARENDJE</value>
 	<value>MARKETCENTERCAMPAIGNSCUSTOM</value>
 	<value>MARKETCENTERCAMPAIGNSCUSTOMERSERVICE</value>
 	<value>MARKETCENTERCAMPAIGNSMARKETING</value>

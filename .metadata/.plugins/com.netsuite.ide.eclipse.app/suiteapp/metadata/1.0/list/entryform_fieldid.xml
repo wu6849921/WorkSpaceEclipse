@@ -1,4 +1,4 @@
-<list id='entryform_fieldid'>
+<list id="entryform_fieldid">
 	<value>ACCESSLEVEL</value>
 	<value>ACCESSROLE</value>
 	<value>ACCOUNT</value>
@@ -21,6 +21,8 @@
 	<value>ALCOHOLRECIPIENTTYPE</value>
 	<value>ALIENNUMBER</value>
 	<value>ALLDAYEVENT</value>
+	<value>ALLLOCATIONSCUSTOMERRETURN</value>
+	<value>ALLLOCATIONSFULFILLMENT</value>
 	<value>ALLOCATEDCONTRACTCOSTAMOUNT</value>
 	<value>ALLOCATEDTIME</value>
 	<value>ALLOCATEDWORK</value>
@@ -30,6 +32,8 @@
 	<value>ALLOCATIONTYPE</value>
 	<value>ALLOWALLRESOURCESFORTASKS</value>
 	<value>ALLOWANCE</value>
+	<value>ALLOWCROSSSUBCUSTOMERRETURN</value>
+	<value>ALLOWCROSSSUBFULFILLMENT</value>
 	<value>ALLOWEDSUBSIDIARIES</value>
 	<value>ALLOWEXPENSES</value>
 	<value>ALLOWTASKTIMEFORRSRCALLOC</value>
@@ -59,6 +63,7 @@
 	<value>ARRANGEMENTLEVELRECLASS</value>
 	<value>ASSETACCOUNT</value>
 	<value>ASSIGNED</value>
+	<value>ASSIGNEDWEBSITE</value>
 	<value>ASSIGNTASKS</value>
 	<value>ASSISTANT</value>
 	<value>ASSISTANTPHONE</value>
@@ -110,6 +115,7 @@
 	<value>BILLQTYVARIANCEACCT</value>
 	<value>BILLTO</value>
 	<value>BIRTHDATE</value>
+	<value>BOMQUANTITY</value>
 	<value>BUILDBROKEN</value>
 	<value>BUILDENTIREASSEMBLY</value>
 	<value>BUILDFIXED</value>
@@ -160,6 +166,7 @@
 	<value>COMPANYNAME</value>
 	<value>COMPLETEDDATE</value>
 	<value>COMPLETEDQUANTITY</value>
+	<value>COMPONENTYIELD</value>
 	<value>CONCURRENTWEBSERVICESUSER</value>
 	<value>CONFIGID</value>
 	<value>CONSOLAGING</value>
@@ -174,6 +181,7 @@
 	<value>CONTACTSOURCE</value>
 	<value>CONTACTSOURCECAMPAIGNCATEGORY</value>
 	<value>CONTINGENTREVENUEHANDLING</value>
+	<value>CONTRAACCOUNT</value>
 	<value>CONTRACTCOSTALLOCATIONPCT</value>
 	<value>CONTRACTEXPENSEACCT</value>
 	<value>CONTRACTEXPENSEOFFSETACCT</value>
@@ -196,6 +204,7 @@
 	<value>CREATEDBY</value>
 	<value>CREATEDDATE</value>
 	<value>CREATEDFROM</value>
+	<value>CREATEEXPENSEPLANSON</value>
 	<value>CREATEREVENUEPLANSON</value>
 	<value>CREATIONTRIGGEREDBY</value>
 	<value>CREDITHOLDOVERRIDE</value>
@@ -212,6 +221,7 @@
 	<value>CUSTRETURNVARIANCEACCOUNT</value>
 	<value>DATECONVERTEDTOINV</value>
 	<value>DATECREATED</value>
+	<value>DATERUN</value>
 	<value>DAYSBEFOREEXPIRATION</value>
 	<value>DAYSOVERDUE</value>
 	<value>DECLAREDVALUE</value>
@@ -331,6 +341,7 @@
 	<value>EXPECTEDREVENUE</value>
 	<value>EXPECTEDSHIPPINGDATE</value>
 	<value>EXPENSEACCOUNT</value>
+	<value>EXPENSEAMORTIZATIONRULE</value>
 	<value>EXPENSELIMIT</value>
 	<value>EXPENSEMIGRATEADJACCOUNT</value>
 	<value>EXPRBUILDER</value>
@@ -364,6 +375,8 @@
 	<value>FREESHIPMETHOD</value>
 	<value>FREQUENCY</value>
 	<value>FULFILLMENTPRIORITYLEVEL</value>
+	<value>FUTUREHORIZON</value>
+	<value>FUTUREHORIZONDATE</value>
 	<value>FXACCOUNT</value>
 	<value>FXRATE</value>
 	<value>GAINLOSSACCOUNT</value>
@@ -413,6 +426,7 @@
 	<value>INVENTORYAVAILABLE</value>
 	<value>INVENTORYCOSTTEMPLATE</value>
 	<value>INVENTORYSTANDARDCOST</value>
+	<value>INVENTORYSUBSIDIARY</value>
 	<value>INVOICE</value>
 	<value>INVOICEFORM</value>
 	<value>INVOICELINE</value>
@@ -477,6 +491,7 @@
 	<value>ITEMRESALECOSTAMOUNT</value>
 	<value>ITEMREVENUECATEGORY</value>
 	<value>ITEMSHIPMETHOD</value>
+	<value>ITEMSOURCE</value>
 	<value>JOB</value>
 	<value>JOBBILLINGTYPE</value>
 	<value>JOBDESCRIPTION</value>
@@ -543,6 +558,7 @@
 	<value>MATERIALIZETIME</value>
 	<value>MATRIXITEMNAMETEMPLATE</value>
 	<value>MAXDONATIONAMOUNT</value>
+	<value>MAXIMUMQUANTITY</value>
 	<value>MAXLOCATIONS</value>
 	<value>MEDICARE</value>
 	<value>MEMO</value>
@@ -596,10 +612,9 @@
 	<value>ORIGIN</value>
 	<value>ORIGINALCHANGEORDERDISCAMOUNT</value>
 	<value>ORIGINALCHANGEORDERQUANTITY</value>
-	<value>ORIGINALENDDATE</value>
 	<value>ORIGINALITEMSUBTYPE</value>
 	<value>ORIGINALITEMTYPE</value>
-	<value>ORIGINALSTARTDATE</value>
+	<value>ORIGINATINGSUBSIDIARY</value>
 	<value>OTHERRELATIONSHIPS</value>
 	<value>OUTGOINGMESSAGE</value>
 	<value>OUTOFSTOCKBEHAVIOR</value>
@@ -621,6 +636,8 @@
 	<value>PASSPORTNUMBER</value>
 	<value>PASSWORD</value>
 	<value>PASSWORD2</value>
+	<value>PASTHORIZON</value>
+	<value>PASTHORIZONDATE</value>
 	<value>PAYABLESACCOUNT</value>
 	<value>PAYFREQUENCY</value>
 	<value>PAYMENTMETHOD</value>
@@ -651,6 +668,7 @@
 	<value>PREFERREDSTOCKLEVELDAYS</value>
 	<value>PRICE</value>
 	<value>PRICEBOOK</value>
+	<value>PRICEINTERVALFREQUENCY</value>
 	<value>PRICELEVEL</value>
 	<value>PRICINGGROUP</value>
 	<value>PRINTITEMS</value>
@@ -708,9 +726,6 @@
 	<value>QUICKNOTE</value>
 	<value>RATE</value>
 	<value>RATEMULTIPLIER</value>
-	<value>RATEPLAN</value>
-	<value>RATEPLANFREQUENCY</value>
-	<value>RATEPLANTYPE</value>
 	<value>RATEROUNDINGTYPE</value>
 	<value>RATESOURCETYPE</value>
 	<value>REACTIVATIONOPTION</value>
@@ -733,6 +748,8 @@
 	<value>REFORECASTMETHOD</value>
 	<value>REJECTIONNOTE</value>
 	<value>RELATEDITEMSDESCRIPTION</value>
+	<value>RELATEDREVENUEARRANGEMENT</value>
+	<value>RELATEDREVENUEELEMENT</value>
 	<value>RELATEDTRANSACTIONS</value>
 	<value>RELEASEDATE</value>
 	<value>REMAININGDEFERREDBALANCE</value>
@@ -751,6 +768,7 @@
 	<value>RENEWALTRANTYPE</value>
 	<value>REORDERMULTIPLE</value>
 	<value>REORDERPOINT</value>
+	<value>REPLENISHMENTMETHOD</value>
 	<value>REPORTEDBY</value>
 	<value>REPRESENTINGSUBSIDIARY</value>
 	<value>REPRODUCE</value>
@@ -827,10 +845,13 @@
 	<value>SHIPADDRESSLIST</value>
 	<value>SHIPCOMPLETE</value>
 	<value>SHIPINDIVIDUALLY</value>
+	<value>SHIPMENTBASECURRENCY</value>
 	<value>SHIPMENTCREATEDDATE</value>
 	<value>SHIPMENTITEM</value>
 	<value>SHIPMENTITEMAMOUNT</value>
 	<value>SHIPMENTITEMDESCRIPTION</value>
+	<value>SHIPMENTITEMEFFECTIVEDATE</value>
+	<value>SHIPMENTITEMEXCHANGERATE</value>
 	<value>SHIPMENTMEMO</value>
 	<value>SHIPMENTNUMBER</value>
 	<value>SHIPMENTSTATUS</value>
@@ -853,6 +874,7 @@
 	<value>SOURCEDEPARTMENT</value>
 	<value>SOURCELOCATION</value>
 	<value>SOURCETYPE</value>
+	<value>SOURCEWEBSITE</value>
 	<value>SPAMLOCK</value>
 	<value>SPECIALSDESCRIPTION</value>
 	<value>STAGE</value>
@@ -865,6 +887,7 @@
 	<value>STATE</value>
 	<value>STATUS</value>
 	<value>STOCKDESCRIPTION</value>
+	<value>STOCKUNIT</value>
 	<value>STOPIFCAPPED</value>
 	<value>STOREDESCRIPTION</value>
 	<value>STOREDETAILEDDESCRIPTION</value>
@@ -880,6 +903,7 @@
 	<value>SUBSCRIPTIONLINEDISCOUNT</value>
 	<value>SUBSCRIPTIONLINEQUANTITY</value>
 	<value>SUBSCRIPTIONLINESTATUS</value>
+	<value>SUBSCRIPTIONLINETYPE</value>
 	<value>SUBSCRIPTIONPLAN</value>
 	<value>SUBSCRIPTIONPLANLINE</value>
 	<value>SUBSIDIARY</value>
@@ -932,6 +956,7 @@
 	<value>TOTALQUANTITYONHAND</value>
 	<value>TOTALRECOGNIZED</value>
 	<value>TOTALREVENUE</value>
+	<value>TOTALUNITCOST</value>
 	<value>TOTALVALUE</value>
 	<value>TRACKCODE</value>
 	<value>TRACKLANDEDCOST</value>
@@ -949,6 +974,7 @@
 	<value>UNBUILDVARIANCEACCOUNT</value>
 	<value>UNIQUEVISITORS</value>
 	<value>UNIT</value>
+	<value>UNITLANDEDCOST</value>
 	<value>UNITS</value>
 	<value>UNITSTYPE</value>
 	<value>UPCCODE</value>

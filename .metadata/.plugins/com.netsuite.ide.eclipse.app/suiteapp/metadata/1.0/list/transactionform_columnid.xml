@@ -21,6 +21,7 @@
 	<value>COSTESTIMATERATE</value>
 	<value>COSTESTIMATETYPE</value>
 	<value>CREATEDFROM</value>
+	<value>CREATEEXPENSEPLANSON</value>
 	<value>CREATEPO</value>
 	<value>CREATEWO</value>
 	<value>CREDIT</value>
@@ -47,6 +48,9 @@
 	<value>EXCLUDEFROMRATEREQUEST</value>
 	<value>EXPECTEDRECEIPTDATE</value>
 	<value>EXPECTEDSHIPDATE</value>
+	<value>EXPENSEAMORTIZATIONRULE</value>
+	<value>EXPENSEPLAN</value>
+	<value>FREEGIFTPROMOTION</value>
 	<value>FROMJOB</value>
 	<value>GENERATEACCRUALS</value>
 	<value>GIFTCERTFIELDS</value>
@@ -54,6 +58,8 @@
 	<value>GLSEQUENCE</value>
 	<value>GROSSAMT</value>
 	<value>INVENTORYDETAIL</value>
+	<value>INVENTORYLOCATION</value>
+	<value>INVENTORYSUBSIDIARY</value>
 	<value>ISBILLABLE</value>
 	<value>ISCLOSED</value>
 	<value>ISESTIMATE</value>
@@ -79,6 +85,8 @@
 	<value>PORATE</value>
 	<value>POVENDOR</value>
 	<value>PRICE</value>
+	<value>PRICEINTERVALFREQUENCYNAME</value>
+	<value>PRICEINTERVALREPEATEVERY</value>
 	<value>PROCESSEDBYREVCOMMIT</value>
 	<value>PROJECTTASK</value>
 	<value>PURCHASECONTRACT</value>
@@ -93,8 +101,6 @@
 	<value>QUANTITYRECEIVED</value>
 	<value>QUANTITYREMAINING</value>
 	<value>RATE</value>
-	<value>RATEPLANFREQUENCYNAME</value>
-	<value>RATEPLANREPEATEVERY</value>
 	<value>RESIDUAL</value>
 	<value>REVENUERECOGNITIONRULE</value>
 	<value>REVRECENDDATE</value>

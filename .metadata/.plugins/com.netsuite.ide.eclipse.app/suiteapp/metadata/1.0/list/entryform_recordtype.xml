@@ -23,6 +23,7 @@
 	<value>EMPLOYEE</value>
 	<value>ENTITYACCOUNTMAPPING</value>
 	<value>EXPENSEITEM</value>
+	<value>EXPENSEPLAN</value>
 	<value>FAIRVALUEFORMULA</value>
 	<value>FAIRVALUEPRICE</value>
 	<value>GENERICRESOURCE</value>
@@ -45,7 +46,7 @@
 	<value>PARTNER</value>
 	<value>PAYMENTITEM</value>
 	<value>PHONECALL</value>
-	<value>PLANNEDREVENUE</value>
+	<value>PLANNEDEXPENSE</value>
 	<value>PLANNEDSTANDARDCOST</value>
 	<value>PROJECTTASK</value>
 	<value>PROJECTTEMPLATE</value>
@@ -59,6 +60,7 @@
 	<value>STANDARDCOSTVERSION</value>
 	<value>SUBSCRIPTION</value>
 	<value>SUBSCRIPTIONLINE</value>
+	<value>SUPPLYCHAINSNAPSHOT</value>
 	<value>SUPPORTCASE</value>
 	<value>TASK</value>
 	<value>TIMEBILL</value>

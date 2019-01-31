@@ -13,6 +13,7 @@
 	<value>CUSTOMERPAYMENTAUTHORIZATION</value>
 	<value>CUSTOMERREFUND</value>
 	<value>DEPOSIT</value>
+	<value>DEPOSITAPPLICATION</value>
 	<value>ESTIMATE</value>
 	<value>EXPENSEREPORT</value>
 	<value>INVENTORYADJUSTMENT</value>

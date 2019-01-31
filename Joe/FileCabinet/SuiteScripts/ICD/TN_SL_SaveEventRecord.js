@@ -201,11 +201,11 @@ function saveEventRecord(request, response) {
 								// SubTab
 							}
 						}
-						
-						//新增上传字段wellPrepared 190107
+
+						// 新增上传字段wellPrepared 190107
 						var wellPrepared = request.getParameter('wellPrepared');
-//						 nlapiLogExecution('DEBUG', 'wellPrepared',
-//								 wellPrepared);
+						// nlapiLogExecution('DEBUG', 'wellPrepared',
+						// wellPrepared);
 						if (wellPrepared) {
 							eventRec.setFieldValue('custevent_well_prepared',
 									wellPrepared);
@@ -304,11 +304,12 @@ function saveEventRecord(request, response) {
 										"supportcase", caseID);
 
 							}
-//							nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
-//									'fileID ' + fileID);
+							// nlapiLogExecution('DEBUG',
+							// 'TN_SL_SaveEventRecord',
+							// 'fileID ' + fileID);
 						}
 					}
-					
+
 					// 通过API更新RPM add by joe 181205
 				} else if (isCase == 'F') {
 					var fArrivalDate = request.getParameter('fArrivalDate');
@@ -366,8 +367,12 @@ function saveEventRecord(request, response) {
 								nlapiDateToString(new Date(
 										rpmImplementationDate)));
 					}
+//					nlapiLogExecution('DEBUG', 'assigneDengineers',
+//							assigneDengineers);
 					if (assigneDengineers) {
-						assigneDengineers = assigneDengineers.split(',');
+						if (assigneDengineers.indexOf(',') != -1) {
+							assigneDengineers = assigneDengineers.split(',');
+						}
 						caseRcrd.setFieldValue('custevent_assignedengineers',
 								assigneDengineers);
 					}
@@ -407,8 +412,8 @@ function saveEventRecord(request, response) {
 							templateId = 132;// CS - RPM Report Template -
 							// Kyle
 						}
-						// nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
-						// 'templateId: ' + templateId);
+						nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
+								'templateId: ' + templateId);
 						if (templateId) {
 							var emailMerger = nlapiCreateEmailMerger(templateId);
 							// emailMerger.setTransaction(caseID);
@@ -416,9 +421,12 @@ function saveEventRecord(request, response) {
 							nlapiSendEmail(author, recipient, mergeResult
 									.getSubject(), mergeResult.getBody(), null,
 									null, null, fileCreated);
-							// nlapiLogExecution('DEBUG',
-							// 'TN_SL_SaveEventRecord',
-							// 'mergeResult: ' + mergeResult);
+							nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
+									'author: ' + author);
+							nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
+									'recipient: ' + recipient);
+//							nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
+//									'mergeResult: ' + mergeResult);
 						}
 						// ////////////////////////////////////////////////////
 						// 保存文件到系统
@@ -451,6 +459,7 @@ function saveEventRecord(request, response) {
 					'code' : '2',
 					'details' : 'Case Id is missing'
 				};
+				
 
 			}
 			response.write(JSON.stringify(rslt));
@@ -488,7 +497,7 @@ function saveEventRecord(request, response) {
 			var timeTrackDuration = timeTracksArr[i].tcduration;
 			var timeTrackMemo = timeTracksArr[i].tcmemo;
 			var timeTrackClass = timeTracksArr[i].tcclass;
-//			nlapiLogExecution('DEBUG', 'timeTrackDate', timeTrackDate);
+			// nlapiLogExecution('DEBUG', 'timeTrackDate', timeTrackDate);
 			if (timeTrackEmployee && timeTrackDate && timeTrackDuration
 					&& timeTrackClass) {
 
@@ -524,6 +533,6 @@ function saveEventRecord(request, response) {
 
 			}
 		}
-//		nlapiLogExecution('DEBUG', 'caseRcrd', caseRcrd);
+		// nlapiLogExecution('DEBUG', 'caseRcrd', caseRcrd);
 	}
 }

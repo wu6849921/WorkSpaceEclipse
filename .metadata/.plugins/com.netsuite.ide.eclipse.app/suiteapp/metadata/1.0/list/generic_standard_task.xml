@@ -6,7 +6,6 @@
     <value>ADMI_ADP</value>
     <value>ADMI_ADVINVENTORYSETUP</value>
     <value>ADMI_ALLOW_LOGIN</value>
-    <value>ADMI_ALTERNATIVEPAYMENTS</value>
     <value>ADMI_BACKUP</value>
     <value>ADMI_BASSETUP</value>
     <value>ADMI_BILLINGEVENTS</value>
@@ -25,7 +24,6 @@
     <value>ADMI_CONVERTCLASSES</value>
     <value>ADMI_COPYCOA</value>
     <value>ADMI_CREATECONSOLCOMPANY</value>
-    <value>ADMI_CREDCARD</value>
     <value>ADMI_CSVIMPORTPREF</value>
     <value>ADMI_CUSTAPPTEXT</value>
     <value>ADMI_DUPLICATESETUP</value>
@@ -131,7 +129,6 @@
     <value>ADMI_SUITESIGNON</value>
     <value>ADMI_SUPPORTSETUP</value>
     <value>ADMI_SWAPPRICES</value>
-    <value>ADMI_SYNCHRONIZATIONSETUP</value>
     <value>ADMI_TAX</value>
     <value>ADMI_TAXACCTS</value>
     <value>ADMI_TAXTYPES</value>
@@ -479,6 +476,7 @@
     <value>EDIT_TRAN_PAYCHECK</value>
     <value>EDIT_TRAN_PAYCHECK2</value>
     <value>EDIT_TRAN_PCHKJRNL</value>
+	<value>EDIT_TRAN_PEJRNL</value>  <!-- Make Period End Journal Entries -->
     <value>EDIT_TRAN_PURCHCON</value>
     <value>EDIT_TRAN_PURCHORD</value>
     <value>EDIT_TRAN_PURCHORD_REQ</value>
@@ -822,6 +820,7 @@
     <value>LIST_TRAN_PARTNERCOMMISSN</value>
     <value>LIST_TRAN_PAYCHECK</value>
     <value>LIST_TRAN_PCHKJRNL</value>
+	<value>LIST_TRAN_PEJRNL</value> <!-- Period End Journal Entries -->
     <value>LIST_TRAN_PURCHCON</value>
     <value>LIST_TRAN_PURCHORD</value>
     <value>LIST_TRAN_PURCHORD_REQ</value>
@@ -1601,6 +1600,8 @@
     <value>REPO_NEG281</value>
     <value>REPO_NEG284</value>
     <value>REPO_NEG285</value>
+	<value>REPO_NEG322</value> <!-- Period End Balance Sheet -->
+	<value>REPO_NEG324</value> <!-- Period End Income Statement -->
     <value>REPO_NEWFINANCIALREPORT</value>
     <value>REPO_QUICKREPORT</value>
     <value>REPO_RECENT</value>

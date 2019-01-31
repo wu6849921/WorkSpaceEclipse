@@ -12,14 +12,7 @@
 	<value>AGINGBAL</value>
 	<value>ALACONFIGURATION</value>
 	<value>ALTERNATIVEPICKUPCONTACT</value>
-	<value>AMOUNTAUTHORIZED</value>
-	<value>AMOUNTCOVERED</value>
-	<value>AMOUNTDEPOSITED</value>
-	<value>AMOUNTNOTCOVERED</value>
 	<value>AMOUNTPAID</value>
-	<value>AMOUNTPENDINGAUTHORIZATION</value>
-	<value>AMOUNTPENDINGDEPOSIT</value>
-	<value>AMOUNTREQUIRINGCOVERAGE</value>
 	<value>AMOUNTREMAINING</value>
 	<value>APACCT</value>
 	<value>APPROVALSTATUS</value>
@@ -85,7 +78,7 @@
 	<value>ENDDATE</value>
 	<value>ENTITY</value>
 	<value>ENTITYSTATUS</value>
-	<value>ENTITYTAXREG</value>
+	<value>ENTITYTAXREGNUM</value>
 	<value>ESTGROSSPROFIT</value>
 	<value>ESTGROSSPROFITPERCENT</value>
 	<value>EXCHANGERATE</value>
@@ -103,6 +96,7 @@
 	<value>HANDLINGCOST</value>
 	<value>HANDLINGTAX1RATE</value>
 	<value>HANDLINGTAX2RATE</value>
+	<value>HANDLINGTAXAMOUNT</value>
 	<value>HANDLINGTAXCODE</value>
 	<value>IGNOREAVS</value>
 	<value>IGNORECSC</value>
@@ -112,6 +106,7 @@
 	<value>INTERCOTRANSACTION</value>
 	<value>IPADDRESS</value>
 	<value>IPADDRESSCOUNTRY</value>
+	<value>ISCROSSSUBTRANSACTION</value>
 	<value>ISMULTISHIPTO</value>
 	<value>ISRECURRINGPAYMENT</value>
 	<value>ISTAXABLE</value>
@@ -177,13 +172,14 @@
 	<value>SHIPPINGCOST</value>
 	<value>SHIPPINGTAX1RATE</value>
 	<value>SHIPPINGTAX2RATE</value>
+	<value>SHIPPINGTAXAMOUNT</value>
 	<value>SHIPPINGTAXCODE</value>
 	<value>SHIPTO</value>
 	<value>SOFTDESCRIPTOR</value>
 	<value>SOURCE</value>
 	<value>STARTDATE</value>
 	<value>SUBSIDIARY</value>
-	<value>SUBSIDIARYTAXREG</value>
+	<value>SUBSIDIARYTAXREGNUM</value>
 	<value>SUBTOTAL</value>
 	<value>SUPERVISORAPPROVAL</value>
 	<value>TAXDETAILSOVERRIDE</value>

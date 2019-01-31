@@ -46,5 +46,6 @@
 	<value>SUBMITNEW</value>
 	<value>UPDATEREVREC</value>
 	<value>UPDATEVSOE</value>
+	<value>VIEWEXPENSEPLANS</value>
 	<value>VOID</value>
 </list>

@@ -7,10 +7,12 @@
 	<value>CANCEL</value>
 	<value>COPY</value>
 	<value>COPYTIMESHEET</value>
+	<value>CREATE_EMPLOYEE_CHANGE_REQUEST</value>
 	<value>CREATENEWVERSION</value>
 	<value>CREATEPROJECT</value>
 	<value>DECLINE</value>
 	<value>DELETE</value>
+	<value>DELETELASTVERSION</value>
 	<value>EDIT_CHANGE_REASON</value>
 	<value>GENERATEPRICELIST</value>
 	<value>GENERATESTATEMENT</value>
@@ -19,10 +21,10 @@
 	<value>MERGE</value>
 	<value>MODIFY_PRICING</value>
 	<value>NEW</value>
-	<value>NEXTVERSION</value>
 	<value>NEXTBILL</value>
-	<value>PRINT</value>
+	<value>NEXTVERSION</value>
 	<value>PREVIOUSVERSION</value>
+	<value>PRINT</value>
 	<value>QUICKACCEPT</value>
 	<value>REACTIVATE</value>
 	<value>REJECT</value>
