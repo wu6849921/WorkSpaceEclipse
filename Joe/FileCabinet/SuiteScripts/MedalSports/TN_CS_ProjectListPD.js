@@ -767,6 +767,16 @@ define(
 						// alert('1');
 						return;
 					}
+					var salecomm1 = currentRecord.getSublistValue({
+						sublistId : 'item',
+						fieldId : 'custcol_tn_quote_salcommiper',
+						line : 0
+					});
+					// 如果有费率，则说明不需要带值
+					if (salecomm1 !== '') {
+						// alert('itemId');
+						return;
+					}
 					var cusRecord = record.load({
 						type : record.Type.CUSTOMER,
 						id : entity
@@ -851,15 +861,10 @@ define(
 							fieldId : 'item',
 							line : i
 						});
-						var salecomm1 = currentRecord.getSublistValue({
-							sublistId : 'item',
-							fieldId : 'custcol_tn_quote_salcommiper',
-							line : i
-						});
-						// alert(salecomm);
 						// 如果有费率，则说明不需要带值
-						if (!itemId || salecomm1) {
-							break;
+						if (itemId === '') {
+							// alert('itemId');
+							return;
 						}
 						var lineNum = currentRecord.selectLine({
 							sublistId : 'item',

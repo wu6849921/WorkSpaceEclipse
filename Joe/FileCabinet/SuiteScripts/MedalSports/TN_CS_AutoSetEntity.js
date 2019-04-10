@@ -4,8 +4,8 @@
  * @author Joe
  * @appliedtorecord pl so iv
  */
-define([ 'N/record', 'N/search', 'N/currency' ], function(record, search,
-		currency) {
+define([ 'N/record', 'N/search', 'N/currency', 'N/currentRecord' ], function(
+		record, search, currency, _currentRecord) {
 	/**
 	 * Function to be executed when field is changed.
 	 * 
@@ -57,9 +57,19 @@ define([ 'N/record', 'N/search', 'N/currency' ], function(record, search,
 		} catch (e) {
 			alert(e);
 		}
+	}
+	function refresh() {
+		try {
 
+			var suiteletPage = _currentRecord.get();
+			alert(document.getElementById("item").innerText + '|'
+					+ document.getElementById("estimitfCost").innerText);
+		} catch (e) {
+			alert(e);
+		}
 	}
 	return {
-		fieldChanged : fieldChanged
+		fieldChanged : fieldChanged,
+		refresh : refresh
 	};
 });

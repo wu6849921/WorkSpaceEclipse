@@ -1,9 +1,12 @@
-//function beforeLoad(type, form) {
-//	var newId = nlapiGetRecordId();
-//	var newType = nlapiGetRecordType();
-//	nlapiLogExecution('DEBUG', '<Before Load Script> type:' + type
-//			+ ', RecordType: ' + newType + ', Id:' + newId);
-//}
+function beforeLoad(type, form) {
+	var newId = nlapiGetRecordId();
+	var newType = nlapiGetRecordType();
+//	var newRecordNew = nlapiGetNewRecord();
+//	newRecordNew.setFieldValue('title', '555-555-5555');
+	var a=form.addField('custpage_abc', 'text', 'ABC');
+	a.setDefaultValue('awdaw');
+
+}
 function afterSubmit(type) {
 	// if (type !== 'edit') {
 	// return;

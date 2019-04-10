@@ -522,7 +522,7 @@ define(
 				var iLeft = (window.screen.availWidth - 10 - iWidth) / 2;
 				var winProp = 'width=' + iWidth + ', height=' + iHeight
 						+ ', top=' + iTop + ', left=' + iLeft;
-				var popWin = window.open('', '_blank', winProp);
+				var popWin = window.open('', '_blank', winProp);//打开空白页，因为第一个url参数为空
 				var popDocument = popWin.document;
 				popDocument.write(html);
 

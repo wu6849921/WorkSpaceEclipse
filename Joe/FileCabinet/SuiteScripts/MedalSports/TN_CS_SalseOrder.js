@@ -565,25 +565,9 @@ define(
 					alert(ex);
 				}
 			}
-			// /**
-			// * Function to be executed after line is selected.
-			// *
-			// * @param {Object}
-			// * scriptContext
-			// * @param {Record}
-			// * scriptContext.currentRecord - Current form record
-			// * @param {string}
-			// * scriptContext.sublistId - Sublist name
-			// *
-			// * @since 2015.2
-			// */
-			// function lineInit(scriptContext) {
-			// if (condition) {
-			//
-			// }
-			// }
 			return {
 				fieldChanged : fieldChanged,
-				pageInit : pageInit
+				pageInit : pageInit,
+				validateLine : validateLine
 			};
 		});

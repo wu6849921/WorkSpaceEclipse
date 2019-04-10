@@ -50,12 +50,11 @@ function() {
 					}
 				}
 			}
-
 		}
 	}
 
 	return {
 		beforeSubmit : beforeSubmit
-	}
+	};
 
 });

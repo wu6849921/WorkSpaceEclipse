@@ -1,0 +1,83 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+	xmlns:x="urn:schemas-microsoft-com:office:excel"
+	xmlns="http://www.w3.org/TR/REC-html40">
+	<head>
+		<meta name=ProgId content=Excel.Sheet>
+			<meta name=Generator content="Microsoft Excel 11">
+				<meta http-equiv="Content-Type"
+					content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<table>	<?xml version="1.0" encoding="utf-8"?> <!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd"> <!-- FM: 2.3.26-incubating -->
+			<pdf>
+				<head>
+					<style type="text/css"> table.header { border-top: 1px dotted #000;
+						margin-top: 20px; padding-top: 20px; } </style>
+				</head>
+				<body>
+					<div id="cashflow_report">
+						<style type="text/css"> table { font-family: Arial, sans-serif, STSong;
+							font-size: 10pt; table-layout: fixed; border-collapse: collapse;
+							} table.header td { font-size: 10pt; } table.itemtable th {
+							background-color: #999999; border-top: thin solid #000;
+							border-left: thin solid #000; font-weight: bold; align: center;
+							valign: middle; text-align: center; bgcolor: #999999; }
+							table.itemtable { border-right: thin solid #000; border-bottom:
+							thin solid #000; } table.itemtable td { border-left: thin solid
+							#000; border-top: thin solid #000; height: 25px; } </style> <!-- The cash flow report will only take 65% of the screen width, and will 
+							not impact the exported PDF report width -->
+						<table width="65%">
+							<tr>
+								<td>
+									<table id="cashflow_header" class="header"
+										style="width: 100%;">
+										<tr>
+											<td width="100%" colspan="8" align="center"
+												style="font-size: 20pt;">
+												<b>Cash Flow Statement</b>
+											</td>
+										</tr>
+										<tr>
+											<td width="100%" colspan="8" align="right"
+												style="font-size: 8pt;">Form 03</td>
+										</tr>
+										<tr>
+											<td colspan="3" align="left">
+												<b>Prepared by: </b>
+												Honeycomb Holdings Inc.
+											</td>
+											<td colspan="2" align="center">Nov 2018 - Nov 2018</td>
+											<td colspan="3" align="right">
+												<b>Unit: </b>
+												USD/Unit
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table id="cashflow_data" class="itemtable"
+										style="width: 100%; margin-top:10px;" cellspacing="0"
+										cellpadding="6">
+										<tr style="height:40px;">
+											<th width="63%" colspan="5">Items</th>
+											<th width="7%">Lines</th>
+											<th width="15%">Current Period</th>
+											<th width="15%">Prior Period</th>
+										</tr>
+										<tr style="height:30px;">
+											<td align="left" colspan="5">
+												<b>1.Cash flows from operating activities:</b>
+											</td>
+											<td align="center">1</td>
+											<td align="right"></td>
+											<td align="right"></td>
+										</tr>
+										<tr style="height:30px;">
+											<td align="left" colspan="5"> Cash received from sales and
+												services </td>
+											<td align="center">2</td>
+									</table>
+				</body>
+</html>

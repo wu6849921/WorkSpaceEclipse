@@ -100,9 +100,13 @@ function saveEventRecord(request, response) {
 						// company,
 						// hidden field
 						eventRec.setFieldValue('title', caseSubject);
-
-						eventRec.setFieldValue('custevent_assignedengineer',
+						envtAssgnEng = envtAssgnEng.split(',');
+						nlapiLogExecution('DEBUG', 'envtAssgnEng', envtAssgnEng);
+						eventRec.setFieldValues('custevent_assignedengineer',
 								envtAssgnEng);
+						caseRcrd.setFieldValues('custevent_rpmengineers1',
+								envtAssgnEng);// 新增修改case上的Assigned Engineers
+
 						eventRec.setFieldValue('custevent_logfileno', '123456');
 
 						eventRec.setFieldValue('custevent_arrivaldate',
@@ -201,11 +205,11 @@ function saveEventRecord(request, response) {
 								// SubTab
 							}
 						}
-						
-						//新增上传字段wellPrepared 190107
+
+						// 新增上传字段wellPrepared 190107
 						var wellPrepared = request.getParameter('wellPrepared');
-//						 nlapiLogExecution('DEBUG', 'wellPrepared',
-//								 wellPrepared);
+						// nlapiLogExecution('DEBUG', 'wellPrepared',
+						// wellPrepared);
 						if (wellPrepared) {
 							eventRec.setFieldValue('custevent_well_prepared',
 									wellPrepared);
@@ -304,11 +308,12 @@ function saveEventRecord(request, response) {
 										"supportcase", caseID);
 
 							}
-//							nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
-//									'fileID ' + fileID);
+							// nlapiLogExecution('DEBUG',
+							// 'TN_SL_SaveEventRecord',
+							// 'fileID ' + fileID);
 						}
 					}
-					
+
 					// 通过API更新RPM add by joe 181205
 				} else if (isCase == 'F') {
 					var fArrivalDate = request.getParameter('fArrivalDate');
@@ -368,7 +373,9 @@ function saveEventRecord(request, response) {
 					}
 					if (assigneDengineers) {
 						assigneDengineers = assigneDengineers.split(',');
-						caseRcrd.setFieldValue('custevent_assignedengineers',
+						// nlapiLogExecution('DEBUG', 'assigneDengineers',
+						// assigneDengineers);
+						caseRcrd.setFieldValues('custevent_assignedengineers',
 								assigneDengineers);
 					}
 					if (rpmDurationTime) {
@@ -407,18 +414,19 @@ function saveEventRecord(request, response) {
 							templateId = 132;// CS - RPM Report Template -
 							// Kyle
 						}
-						// nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
-						// 'templateId: ' + templateId);
-						if (templateId) {
+						nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
+								'templateId: ' + templateId);
+						if (templateId && recipient) {
 							var emailMerger = nlapiCreateEmailMerger(templateId);
-							// emailMerger.setTransaction(caseID);
+							emailMerger.setSupportCase(caseID);
 							var mergeResult = emailMerger.merge();
 							nlapiSendEmail(author, recipient, mergeResult
 									.getSubject(), mergeResult.getBody(), null,
 									null, null, fileCreated);
-							// nlapiLogExecution('DEBUG',
-							// 'TN_SL_SaveEventRecord',
-							// 'mergeResult: ' + mergeResult);
+							nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
+									'mergeResult: ' + author + '|' + recipient
+											+ '|' + mergeResult.getSubject()
+											+ '|' + mergeResult.getBody());
 						}
 						// ////////////////////////////////////////////////////
 						// 保存文件到系统
@@ -432,8 +440,10 @@ function saveEventRecord(request, response) {
 					}
 					// 4. time tracking能增加多人
 					setTimeTacking(request, caseRcrd);
-					if (status) {
-						caseRcrd.setFieldValue('status', status);
+					// nlapiLogExecution('DEBUG', 'TN_SL_SaveEventRecord',
+					// 'caseStatus: ' + caseStatus);
+					if (caseStatus) {
+						caseRcrd.setFieldValue('status', caseStatus);
 					}
 				}
 				nlapiSubmitRecord(caseRcrd, false, true);
@@ -488,7 +498,7 @@ function saveEventRecord(request, response) {
 			var timeTrackDuration = timeTracksArr[i].tcduration;
 			var timeTrackMemo = timeTracksArr[i].tcmemo;
 			var timeTrackClass = timeTracksArr[i].tcclass;
-//			nlapiLogExecution('DEBUG', 'timeTrackDate', timeTrackDate);
+			// nlapiLogExecution('DEBUG', 'timeTrackDate', timeTrackDate);
 			if (timeTrackEmployee && timeTrackDate && timeTrackDuration
 					&& timeTrackClass) {
 
@@ -524,6 +534,6 @@ function saveEventRecord(request, response) {
 
 			}
 		}
-//		nlapiLogExecution('DEBUG', 'caseRcrd', caseRcrd);
+		// nlapiLogExecution('DEBUG', 'caseRcrd', caseRcrd);
 	}
 }

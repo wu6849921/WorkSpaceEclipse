@@ -11,20 +11,25 @@
  */
 
 function triggernamespace(ns) {
-    if (typeof (ns) != 'string') return;
-    ns = ns.split(".");
-    var o, ni;
-    for (var i = 0, len = ns.length; i < len, ni = ns[i]; i++) {
-        try { o = (o ? (o[ni] = o[ni] || {}) : (eval(ni + '=' + ni + '||{};'))); }
-        catch (e) { o = eval(ni + '={};'); }
-    }
+	if (typeof (ns) != 'string')
+		return;
+	ns = ns.split(".");
+	var o, ni;
+	for (var i = 0, len = ns.length; i < len, ni = ns[i]; i++) {
+		try {
+			o = (o ? (o[ni] = o[ni] || {}) : (eval(ni + '=' + ni + '||{};')));
+		} catch (e) {
+			o = eval(ni + '={};');
+		}
+	}
 }
 
 triggernamespace("trigger.local");
 
-trigger.local.language = function(){}
+trigger.local.language = function() {
+}
 trigger.local.language.prototype = {
-		constructor: trigger.local.language,
+	constructor : trigger.local.language,
 	/**
 	 * User interface language
 	 * 
@@ -36,25 +41,25 @@ trigger.local.language.prototype = {
 		switch (type) {
 		case 'zh_CN':
 			temp = {
-				Voucher : 'å‡­è¯',
-				Profit : 'åˆ©æ¶¦è¡¨',
-				Detail : 'æ˜ç»†è´¦',
-				Journal : 'æ—¥è®°è´¦',
-				Ledger : 'æ€»è´¦',
-				SummaryLedger : 'è¯•ç®—å¹³è¡¡è¡¨',
-				BalanceSheet : 'èµ„äº§è´Ÿå€ºè¡¨',
-				DetailedTrialBalance : 'è¯•ç®—å¹³è¡¡è¡¨ï¼ˆå…¨ï¼‰',
-				Subsidiary : 'å…¬å¸åç§°',
-				DateFrom : 'èµ·å§‹æ—¥æœŸ',
-				DateTo : 'æˆªæ­¢æ—¥æœŸ',
-				VoucherDateFromLbl : 'å‡­è¯å¼€å§‹æ—¥æœŸ',
-				VoucherDateToLbl : 'å‡­è¯ç»“æŸæ—¥æœŸ',
-				ReportYear : 'è´¦åŠ¡å¹´åº¦',
-				BeginMonth : 'æœŸé—´',
-				MonthFrom : 'æœˆä»½å§‹äº',
-				MonthTo : 'æœˆä»½ç»ˆäº',
-				EndMonth : 'ç»“æŸæœŸé—´',
-				COA : 'ç§‘ç›®'
+				Voucher : 'Æ¾Ö¤',
+				Profit : 'ÀûÈó±í',
+				Detail : 'Ã÷Ï¸ÕË',
+				Journal : 'ÈÕ¼ÇÕË',
+				Ledger : '×ÜÕË',
+				SummaryLedger : 'ÊÔËãÆ½ºâ±í',
+				BalanceSheet : '×Ê²ú¸ºÕ®±í',
+				DetailedTrialBalance : 'ÊÔËãÆ½ºâ±í£¨È«£©',
+				Subsidiary : '¹«Ë¾Ãû³Æ',
+				DateFrom : 'ÆğÊ¼ÈÕÆÚ',
+				DateTo : '½ØÖ¹ÈÕÆÚ',
+				VoucherDateFromLbl : 'Æ¾Ö¤¿ªÊ¼ÈÕÆÚ',
+				VoucherDateToLbl : 'Æ¾Ö¤½áÊøÈÕÆÚ',
+				ReportYear : 'ÕËÎñÄê¶È',
+				BeginMonth : 'ÆÚ¼ä',
+				MonthFrom : 'ÔÂ·İÊ¼ÓÚ',
+				MonthTo : 'ÔÂ·İÖÕÓÚ',
+				EndMonth : '½áÊøÆÚ¼ä',
+				COA : '¿ÆÄ¿'
 			};
 			break;
 		default:
@@ -89,38 +94,38 @@ trigger.local.language.prototype = {
 		switch (type) {
 		case 'zh_CN':
 			temp = {
-				formTitle : 'ç§‘ç›®æ˜ å°„è¡¨',
-				createMappings : 'åˆ›å»ºç§‘ç›®æ˜ å°„è¡¨',
-				add : 'åŠ å…¥å¾…æ·»åŠ æ¸…å•',
-				editLbl : 'æ›´æ–°è®°å½•',
-				deleteLbl : 'åˆ é™¤è®°å½•',
-				acntNameLbl : 'ç§‘ç›®åç§°',
-				inactiveLbl : 'åœç”¨',
-				chinaAcntLbl : 'ä¸­æ–¹ä¼šè®¡ç§‘ç›®',
-				chinaAcntNameLbl : 'ä¸­æ–‡ç§‘ç›®åç§°',
-				one2manyChckBoxLbl : 'å°†NetSuiteç³»ç»Ÿç§‘ç›®æ˜ å°„åˆ°å¤šä¸ªä¸­æ–¹ä¼šè®¡ç§‘ç›®',
-				nsAccountLbl : 'NetSuiteç³»ç»Ÿç§‘ç›®',
-				accountIdLbl : 'NetSuiteç³»ç»Ÿç§‘ç›®ID',
-				chinaAcntNumberLbl : 'ä¸­æ–¹ä¼šè®¡ç§‘ç›®ç¼–ç ',
-				departmentLbl : 'éƒ¨é—¨',
-				departmentNameLbl : 'éƒ¨é—¨åç§°',
-				locationLbl : 'åœ°ç‚¹',
-				locationNameLbl : 'åœ°ç‚¹åç§°',
-				classLbl : 'åˆ†ç±»',
-				classNameLbl : 'ç±»åç§°',
-				sbsdryLbl : 'å­å…¬å¸',
-				sbsdryNameLbl : 'å­å…¬å¸åç§°',
-				mappingLbl : 'å¾…ä¿å­˜ç§‘ç›®æ˜ å°„è¡¨',
-				selected : 'å·²é€‰ä¸­',
-				noMapingsToCreateMsg : 'æ— å¯åˆ›å»ºçš„æ˜ å°„è¡¨',
-				missingSubsidiaryValue : 'å­å…¬å¸ä¸ºå¿…å¡«é¡¹ï¼Œè¯·é€‰æ‹©å­å…¬å¸',
-				missingAccountNameValue : 'ç§‘ç›®åç§°ä¸ºå¿…å¡«é¡¹ï¼Œè¯·å¡«å†™ç§‘ç›®åç§°',
-				missingClassificationValuesMsg : 'æ‰€æœ‰åˆ†ç±»ç©ºç™½ã€‚å¯¹äºä¸€å¯¹å¤šç§‘ç›®çš„æ˜ å°„ï¼Œéœ€è‡³å°‘å¡«å†™ä¸€ä¸ªä»¥ä¸‹åˆ†ç±»ä¸­çš„ä¸€ä¸ªï¼šéƒ¨é—¨ï¼Œåœ°ç‚¹æˆ–è€…åˆ†ç±»çš„æ•°å€¼',
-				successRecordEditMsg : 'æ›´æ–°æˆåŠŸ',
-				notEditableRecordMsg : 'ä¸ç°æœ‰ç§‘ç›®æ˜ å°„å†²çªï¼Œæ›´æ–°å¤±è´¥',
-				successRecordDeleteMsg : 'åˆ é™¤æˆåŠŸ',
-				failureRecordDeleteMsg : 'è¯¥è®°å½•æ— æ³•åˆ é™¤',
-				unexpectederror : 'å‡ºç°é”™è¯¯ï¼è¯·ç¨å€™å°è¯•ã€‚å¦‚æœæ­¤é—®é¢˜æŒç»­å‘ç”Ÿï¼Œè¯·è”ç³»ç³»ç»Ÿç®¡ç†å‘˜.'
+				formTitle : '¿ÆÄ¿Ó³Éä±í',
+				createMappings : '´´½¨¿ÆÄ¿Ó³Éä±í',
+				add : '¼ÓÈë´ıÌí¼ÓÇåµ¥',
+				editLbl : '¸üĞÂ¼ÇÂ¼',
+				deleteLbl : 'É¾³ı¼ÇÂ¼',
+				acntNameLbl : '¿ÆÄ¿Ãû³Æ',
+				inactiveLbl : 'Í£ÓÃ',
+				chinaAcntLbl : 'ÖĞ·½»á¼Æ¿ÆÄ¿',
+				chinaAcntNameLbl : 'ÖĞÎÄ¿ÆÄ¿Ãû³Æ',
+				one2manyChckBoxLbl : '½«NetSuiteÏµÍ³¿ÆÄ¿Ó³Éäµ½¶à¸öÖĞ·½»á¼Æ¿ÆÄ¿',
+				nsAccountLbl : 'NetSuiteÏµÍ³¿ÆÄ¿',
+				accountIdLbl : 'NetSuiteÏµÍ³¿ÆÄ¿ID',
+				chinaAcntNumberLbl : 'ÖĞ·½»á¼Æ¿ÆÄ¿±àÂë',
+				departmentLbl : '²¿ÃÅ',
+				departmentNameLbl : '²¿ÃÅÃû³Æ',
+				locationLbl : 'µØµã',
+				locationNameLbl : 'µØµãÃû³Æ',
+				classLbl : '·ÖÀà',
+				classNameLbl : 'ÀàÃû³Æ',
+				sbsdryLbl : '×Ó¹«Ë¾',
+				sbsdryNameLbl : '×Ó¹«Ë¾Ãû³Æ',
+				mappingLbl : '´ı±£´æ¿ÆÄ¿Ó³Éä±í',
+				selected : 'ÒÑÑ¡ÖĞ',
+				noMapingsToCreateMsg : 'ÎŞ¿É´´½¨µÄÓ³Éä±í',
+				missingSubsidiaryValue : '×Ó¹«Ë¾Îª±ØÌîÏî£¬ÇëÑ¡Ôñ×Ó¹«Ë¾',
+				missingAccountNameValue : '¿ÆÄ¿Ãû³ÆÎª±ØÌîÏî£¬ÇëÌîĞ´¿ÆÄ¿Ãû³Æ',
+				missingClassificationValuesMsg : 'ËùÓĞ·ÖÀà¿Õ°×¡£¶ÔÓÚÒ»¶Ô¶à¿ÆÄ¿µÄÓ³Éä£¬ĞèÖÁÉÙÌîĞ´Ò»¸öÒÔÏÂ·ÖÀàÖĞµÄÒ»¸ö£º²¿ÃÅ£¬µØµã»òÕß·ÖÀàµÄÊıÖµ',
+				successRecordEditMsg : '¸üĞÂ³É¹¦',
+				notEditableRecordMsg : 'ÓëÏÖÓĞ¿ÆÄ¿Ó³Éä³åÍ»£¬¸üĞÂÊ§°Ü',
+				successRecordDeleteMsg : 'É¾³ı³É¹¦',
+				failureRecordDeleteMsg : '¸Ã¼ÇÂ¼ÎŞ·¨É¾³ı',
+				unexpectederror : '³öÏÖ´íÎó£¡ÇëÉÔºò³¢ÊÔ¡£Èç¹û´ËÎÊÌâ³ÖĞø·¢Éú£¬ÇëÁªÏµÏµÍ³¹ÜÀíÔ±.'
 			};
 			break;
 		default:
@@ -156,13 +161,13 @@ trigger.local.language.prototype = {
 				notEditableRecordMsg : 'The record will not be updated since it conflicts with existing mapping definitions.',
 				successRecordDeleteMsg : 'The record was deleted successfully.',
 				failureRecordDeleteMsg : 'The record could not be deleted.',
-				unexpectederror : 'An unexpected error occurred! Please try again later. If problem still persists, please contact the systemâ€™s Administrator.'
+				unexpectederror : 'An unexpected error occurred! Please try again later. If problem still persists, please contact the system¡¯s Administrator.'
 			};
 			break;
 		}
 		return temp;
 	},
-	
+
 	UIType : function(type) {
 		var temp;
 		switch (type) {
@@ -182,17 +187,19 @@ trigger.local.language.prototype = {
 		html += '.m_top{margin-top:5px;}';
 		html += '</style>';
 		html += '<div class="m_top"><span class="smallgraytextnolink uir-label">';
-		html += '<a class="smallgraytextnolink">æŠ¥è¡¨ç±»å‹</a></span></div>';//Report type
+		html += '<a class="smallgraytextnolink">±¨±íÀàĞÍ</a></span></div>';// Report
+																		// type
 		html += '<div><select name="reporttype" id="reporttype" onchange="new trigger.local.printform().OnSlectItemChange()">';
 		html += '<option selected value=-1></option>';
-		html += '<option value=6 >-- èµ„äº§è´Ÿå€ºè¡¨</option>';//balance sheet
-		html += '<option value=1 >-- åˆ©æ¶¦è¡¨</option>';//P&L
-		html += '<option value=5 >-- è¯•ç®—å¹³è¡¡è¡¨</option>';//Trial Balance
-		html += '<option value=4 >-- æ€»åˆ†ç±»è´¦</option>';//General Ledger
-		html += '<option value=0 >-- å‡­è¯</option>';//Voucher
-		html += '<option value=2 >-- æ˜ç»†è´¦</option>';//SubLedger
-		html += '<option value=3 >-- æ—¥è®°è´¦</option>';//Diary Ledger
-		html += '<option value=7 >-- è¯•ç®—å¹³è¡¡è¡¨ï¼ˆå…¨ï¼‰</option>';//Detailed Trial Balance
+		html += '<option value=6 >-- ×Ê²ú¸ºÕ®±í</option>';// balance sheet
+		html += '<option value=1 >-- ÀûÈó±í</option>';// P&L
+		html += '<option value=5 >-- ÊÔËãÆ½ºâ±í</option>';// Trial Balance
+		html += '<option value=4 >-- ×Ü·ÖÀàÕË</option>';// General Ledger
+		html += '<option value=0 >-- Æ¾Ö¤</option>';// Voucher
+		html += '<option value=2 >-- Ã÷Ï¸ÕË</option>';// SubLedger
+		html += '<option value=3 >-- ÈÕ¼ÇÕË</option>';// Diary Ledger
+		html += '<option value=7 >-- ÊÔËãÆ½ºâ±í£¨È«£©</option>';// Detailed Trial
+														// Balance
 		html += '</select></div>';
 		return html;
 	},
@@ -217,75 +224,75 @@ trigger.local.language.prototype = {
 		html += '</select></div>';
 		return html;
 	},
-	GetMsgByFormTitle:function(lang){
+	GetMsgByFormTitle : function(lang) {
 		var title = 'CHINA GAAP FINANCIAL REPORTS';
-		if(lang == 'zh_CN'){
-			title = 'è´¢åŠ¡æœ¬åœŸåŒ–';
+		if (lang == 'zh_CN') {
+			title = '²ÆÎñ±¾ÍÁ»¯';
 		}
-	    return title;		
+		return title;
 	},
-	GetMsgByType:function(lang){
+	GetMsgByType : function(lang) {
 		var title = 'PLEASE SELECT THE REPORT TYPE';
-		if(lang == 'zh_CN'){
-			title = 'è¯·é€‰æ‹©æŠ¥è¡¨ç±»å‹';
+		if (lang == 'zh_CN') {
+			title = 'ÇëÑ¡Ôñ±¨±íÀàĞÍ';
 		}
-	    return title;	
+		return title;
 	},
-	GetMsgByParameters:function(lang){
+	GetMsgByParameters : function(lang) {
 		var title = 'PLEASE SELECT PARAMETERS';
-		if(lang == 'zh_CN'){
-			title = 'è¯·é€‰æ‹©æŠ¥è¡¨å‚æ•°';
+		if (lang == 'zh_CN') {
+			title = 'ÇëÑ¡Ôñ±¨±í²ÎÊı';
 		}
-	    return title;	
+		return title;
 	},
-	GetMsgByCOA:function(lang){
+	GetMsgByCOA : function(lang) {
 		var title = 'MAINLAND CHINA CHART OF ACCOUNTS';
-		if(lang == 'zh_CN'){
-			title = 'è¯·é€‰æ‹©ä¸­æ–¹ç§‘ç›®';
+		if (lang == 'zh_CN') {
+			title = 'ÇëÑ¡ÔñÖĞ·½¿ÆÄ¿';
 		}
-	    return title;	
+		return title;
 	},
-	GetMsgBySubsidiary:function(lang){
+	GetMsgBySubsidiary : function(lang) {
 		var title = 'Please select subsidiary!';
-		if(lang == 'zh_CN'){
-			title = 'è¯·é€‰æ‹©å…¬å¸åç§° ';
+		if (lang == 'zh_CN') {
+			title = 'ÇëÑ¡Ôñ¹«Ë¾Ãû³Æ ';
 		}
-	    return title;	
+		return title;
 	},
-	GetMsgByPeriodFromPeriodTo:function(lang){
+	GetMsgByPeriodFromPeriodTo : function(lang) {
 		var title = 'MONTH FROM  should not be later than MONTH TO';
-		if(lang == 'zh_CN'){
-			title = 'å¼€å§‹æœˆä»½å¿…é¡»ä¸æ™šäºç»“æŸæœˆä»½! ';
+		if (lang == 'zh_CN') {
+			title = '¿ªÊ¼ÔÂ·İ±ØĞë²»ÍíÓÚ½áÊøÔÂ·İ! ';
 		}
-	    return title;	
+		return title;
 	},
-	GetMsgByRangeDate:function(lang){
+	GetMsgByRangeDate : function(lang) {
 		var title = 'Please select start date and end date!';
-		if(lang == 'zh_CN'){
-			title = 'è¯·é€‰æ‹©æ­£ç¡®çš„èµ·å§‹æ—¥æœŸï¼ ';
+		if (lang == 'zh_CN') {
+			title = 'ÇëÑ¡ÔñÕıÈ·µÄÆğÊ¼ÈÕÆÚ£¡ ';
 		}
-	    return title;	
+		return title;
 	},
-	GetMsgSuccesfullMaping:function(lang){
+	GetMsgSuccesfullMaping : function(lang) {
 		var msg = 'All accounts have been mapped successfully.';
-		if(lang == 'zh_CN'){
-			msg = 'å·²å…¨éƒ¨æ˜ å°„ ';
+		if (lang == 'zh_CN') {
+			msg = 'ÒÑÈ«²¿Ó³Éä ';
 		}
-	    return msg;	
+		return msg;
 	},
-	GetMsgMissingMaping:function(lang){
+	GetMsgMissingMaping : function(lang) {
 		var msg = 'Mapping is missing for ';
-		if(lang == 'zh_CN'){
-			msg = 'è¯¥ç§‘ç›®æ— æ˜ å°„ ';
+		if (lang == 'zh_CN') {
+			msg = '¸Ã¿ÆÄ¿ÎŞÓ³Éä ';
 		}
-	    return msg;	
-	},	
-	GetMsgByPeriodTime:function(lang){
+		return msg;
+	},
+	GetMsgByPeriodTime : function(lang) {
 		var title = 'Please select time period! (year and month)';
-		if(lang == 'zh_CN'){
-			title = 'è¯·é€‰æ‹©æ­£ç¡®çš„èµ·å§‹æ—¥æœŸï¼ ';
+		if (lang == 'zh_CN') {
+			title = 'ÇëÑ¡ÔñÕıÈ·µÄÆğÊ¼ÈÕÆÚ£¡ ';
 		}
-	    return title;	
+		return title;
 	}
-	
+
 };

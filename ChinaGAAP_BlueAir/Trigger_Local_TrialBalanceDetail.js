@@ -33,12 +33,12 @@ trigger.local.trialbalancedetail.prototype = {
 			// get the first day of monthFomID period
 			var accPeriodFrom = nlapiLoadRecord('accountingperiod', monthFromID);
 			var accPeriodStartDate = accPeriodFrom.getFieldValue('startdate'); // format
-			// of
-			// date
-			// M/D/YYYY,
-			// no
-			// leading
-			// zeros
+																				// of
+																				// date
+																				// M/D/YYYY,
+																				// no
+																				// leading
+																				// zeros
 			var firstSlash = accPeriodStartDate.indexOf('/');
 			var lastSlash = accPeriodStartDate.lastIndexOf('/');
 
@@ -61,13 +61,13 @@ trigger.local.trialbalancedetail.prototype = {
 			// add the created filters to the common list
 			for (var t = 0; t < periodFromToFilters.length; t++) {
 				filter[filter.length] = periodFromToFilters[t]; // this month
-				// amount
+																// amount
 			}
 
 			filters[filters.length] = new nlobjSearchFilter('startdate',
 					'accountingperiod', 'before', periodtimeStart); // opening
-			// balance
-			// filter
+																	// balance
+																	// filter
 
 			incomeAccountsFilters[incomeAccountsFilters.length] = new nlobjSearchFilter(
 					'startdate', 'accountingperiod', 'onorafter',
@@ -75,17 +75,17 @@ trigger.local.trialbalancedetail.prototype = {
 			incomeAccountsFilters[incomeAccountsFilters.length] = new nlobjSearchFilter(
 					'startdate', 'accountingperiod', 'before', periodtimeStart);
 
-			fromToPeriodLbl = monthFromText + ' 鑷� ' + monthToText;
+			fromToPeriodLbl = monthFromText + ' 至 ' + monthToText;
 
 		} else if (periodid && period) {
 			var accPeriod = nlapiLoadRecord('accountingperiod', periodid);
 			var accPeriodStartDate = accPeriod.getFieldValue('startdate'); // format
-			// of
-			// date
-			// M/D/YYYY,
-			// no
-			// leading
-			// zeros
+																			// of
+																			// date
+																			// M/D/YYYY,
+																			// no
+																			// leading
+																			// zeros
 			var firstSlash = accPeriodStartDate.indexOf('/');
 			var lastSlash = accPeriodStartDate.lastIndexOf('/');
 
@@ -129,15 +129,15 @@ trigger.local.trialbalancedetail.prototype = {
 				incomeAccountsTempmap[m] = rule
 						.GetSummaryLedgerRecordsForIncomeAccounts(
 								incomeAccountsFilters, column); // starting from
-				// new year
-				// opening
-				// Balance
+																// new year
+																// opening
+																// Balance
 			}
 
 			tempmap[m] = rule.GetSummaryLedgerRecordsByAllOfNumber(filters,
-					column); // Opening Balance, 鏈熷垵鏁版嵁
+					column); // Opening Balance, 期初数据
 			tempmonthmap[m] = rule.GetSummaryLedgerRecordsByAllOfNumber(filter,
-					column); // Occuring amount this period, 鏈湀鏁版嵁
+					column); // Occuring amount this period, 本月数据
 		}
 		var incomeMap = incomeAccountsTempmap[0];
 		var map = rule.GetMergeObject(tempmap[0], tempmap[1]);
@@ -149,10 +149,10 @@ trigger.local.trialbalancedetail.prototype = {
 		var currPageNumber = 1;
 
 		var incomeAccountsBeginBalance = []; // at the beginning of the
-		// period for income (P&L)
-		// accounts
-		var beginbalance = []; // At the beginning of the period, 鏈熷垵
-		var currentbalance = []; // In the current period, 鏈湡
+												// period for income (P&L)
+												// accounts
+		var beginbalance = []; // At the beginning of the period, 期初
+		var currentbalance = []; // In the current period, 本期
 		var begbalance = 0;
 		var endbalance = 0;
 		var xml = template.GetTrialBalanceXMLHead; // form header
@@ -167,6 +167,14 @@ trigger.local.trialbalancedetail.prototype = {
 
 		var savedsearch = nlapiLoadSearch('customrecord_trigger_cn_coa',
 				'customsearch_tn_lvl_23_cn_coa_no_lvl1');
+		//新增subsidiaryid筛选条件 add by joe 20190215
+		var filters = [];
+		if (subsidiaryid) {
+			filters[0] = new nlobjSearchFilter(
+					'custrecord_trigger_subsidiary_cn', null, 'anyof',
+					subsidiaryid);
+		}
+		savedsearch.addFilters(filters);
 		var resultset = savedsearch.runSearch();
 		var resultslice = resultset.getResults(0, 1000);
 		for (var i = 0; i < resultslice.length; i++) {
@@ -187,15 +195,14 @@ trigger.local.trialbalancedetail.prototype = {
 			currentbalance = endmap.GetValue(cnnumber).name;
 
 			if (incomeAccountsMap.Contains(cnnumber)) {// if it's P&L account
-				// collect data from
-				// befinning of this
-				// year untill now (not
-				// including current
-				// period)
-				// nlapiLogExecution('DEBUG', 'checking if P&L account',
-				// cnnumber +
-				// ' account is P&L account <-- IT IS P&L account,
-				// incomeAccountsBeginBalance=' + incomeAccountsBeginBalance);
+														// collect data from
+														// befinning of this
+														// year untill now (not
+														// including current
+														// period)
+			// nlapiLogExecution('DEBUG', 'checking if P&L account', cnnumber +
+			// ' account is P&L account <-- IT IS P&L account,
+			// incomeAccountsBeginBalance=' + incomeAccountsBeginBalance);
 				if (incomeAccountsBeginBalance) {
 					sum.beginCredit = parseFloat(incomeAccountsBeginBalance[0]);
 					sum.beginDebit = parseFloat(incomeAccountsBeginBalance[1]);
@@ -287,14 +294,14 @@ trigger.local.trialbalancedetail.prototype = {
 		var incomeAccountsSearchResults = nlapiSearchRecord(
 				'customrecord_trigger_cn_coa',
 				'customsearch_trigger_coa_incomeaccounts', null, null);// bring
-		// P&L
-		// account
-		// numbers
-		// (income
-		// accounts)
+																		// P&L
+																		// account
+																		// numbers
+																		// (income
+																		// accounts)
 		var cnnAcntNumber;
 		var map = new trigger.local.HashTable(); // map to hold numbers of
-		// P&L accounts
+													// P&L accounts
 		if (incomeAccountsSearchResults
 				&& incomeAccountsSearchResults.length > 0) {
 			for (var j = 0; j < incomeAccountsSearchResults.length; j++) {

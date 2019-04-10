@@ -87,13 +87,13 @@ trigger.local.common.prototype = {
 		var Y = d.getFullYear();
 		var M = d.getMonth() + 1;
 		var D = d.getDate();
-		return Y + 'å¹´' + M + 'æœˆ' + D + 'æ—¥';
+		return Y + 'Äê' + M + 'ÔÂ' + D + 'ÈÕ';
 	},
 
 	GetCurrentYear : function _GetCurrentYear() {
 		var d = new Date();
 		var Y = d.getFullYear();
-		return Y + 'å¹´';
+		return Y + 'Äê';
 	},
 
 	GetCurrentYearAndMonth : function(date) {
@@ -105,7 +105,7 @@ trigger.local.common.prototype = {
 		}
 		var Y = d.getFullYear();
 		var M = d.getMonth() + 1;
-		return Y + 'å¹´' + M + 'æœˆ';
+		return Y + 'Äê' + M + 'ÔÂ';
 	},
 
 	formatCNDate : function(date, format) {
@@ -113,10 +113,10 @@ trigger.local.common.prototype = {
 			format = date;
 			date = new Date();
 		}
-		typeof format != 'string' && (format = 'YYYYå¹´MMæœˆDDæ—¥ hhæ—¶mmåˆ†ssç§’');
-		var week = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'æ—¥', 'ä¸€', 'äºŒ', 'ä¸‰', 'å››', 'äº”',
-				'å…­' ];
-		return format.replace(/YYYY|YY|MM|DD|hh|mm|ss|æ˜ŸæœŸ|å‘¨|www|week/g, function(a) {
+		typeof format != 'string' && (format = 'YYYYÄêMMÔÂDDÈÕ hhÊ±mm·ÖssÃë');
+		var week = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'ÈÕ', 'Ò»', '¶þ', 'Èý', 'ËÄ', 'Îå',
+				'Áù' ];
+		return format.replace(/YYYY|YY|MM|DD|hh|mm|ss|ÐÇÆÚ|ÖÜ|www|week/g, function(a) {
 			switch (a) {
 			case "YYYY":
 				return date.getFullYear();
@@ -132,10 +132,10 @@ trigger.local.common.prototype = {
 				return date.getMinutes();
 			case "ss":
 				return date.getSeconds();
-			case "æ˜ŸæœŸ":
-				return "æ˜ŸæœŸ" + week[date.getDay() + 7];
-			case "å‘¨":
-				return "å‘¨" + week[date.getDay() + 7];
+			case "ÐÇÆÚ":
+				return "ÐÇÆÚ" + week[date.getDay() + 7];
+			case "ÖÜ":
+				return "ÖÜ" + week[date.getDay() + 7];
 			case "week":
 				return week[date.getDay()];
 			case "www":
@@ -175,10 +175,10 @@ trigger.local.common.prototype = {
 		if(memo.length<=20){return memo;}
 		  var usern = /^[a-zA-Z0-9]{1,}$/;
 		  if (!memo.match(usern)) {
-			  //var re = /ï¼Œ/g;
-			  //memo = memo.replace(re,"ï¼Œ ");
-			  //re = /ã€/g;
-			  //memo = memo.replace(re,"ã€ ");
+			  //var re = /£¬/g;
+			  //memo = memo.replace(re,"£¬ ");
+			  //re = /¡¢/g;
+			  //memo = memo.replace(re,"¡¢ ");
 		      var n = memo.substring(19,1);
 		      memo = memo.replace(n,n+' ');
 		  }

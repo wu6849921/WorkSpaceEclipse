@@ -1,0 +1,385 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>可编辑表格</title>
+<style type='text/css'>
+#left_div {
+	width: 400px;
+	float: left;
+}
+
+#left_div1 {
+	width: 100%;
+}
+
+#left_div2 {
+	width: 100%;
+	height: 100px;/* 左2表格外div高度定死以便表格高度大于div的时候出现上下滚动条 */
+	overflow: hidden;
+}
+
+#right_div {
+	width: 900px; /* 控制右边两个table外层div宽度，必须小于内层table宽度才会出现左右滚动条*/
+	float: left;
+}
+
+#right_div1 {
+	width: 100%;
+	overflow: hidden;
+}
+
+#right_divx {
+	width: 3220px; /* 为了补充right_table2下拉框的距离 要比right_table2大20px*/
+}
+
+#right_div2 {
+	width: 100%;
+	height: 120px;/* 右2表格外div高度定必须大于left_div2高度20，因为有左右滚动条*/
+	overflow: auto;/* 右2表格外的div会出现上下及左右滚动条 */
+}
+
+#left_table1 {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+#left_table2 {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+#left_table1 td {
+	border: 1px solid;
+	width: 200px;
+	height: 50px;/* 定死左1表格tb的高度，为了和右1的表格高度保持一致 */
+}
+
+#left_table2 td {
+	border: 1px solid;
+	width: 200px;
+}
+
+#right_table1 {
+	width: 3200px; /* 控制右边上方table宽度，必须大于外层div宽度才会出现左右滚动条*/
+	border: 1px solid;
+	border-collapse: collapse
+}
+
+#right_table2 {
+	width: 3200px; /* 控制右边下方table宽度，必须大于外层div宽度才会出现左右滚动条*/
+	border: 1px solid;
+	border-collapse: collapse
+}
+
+#right_table1 td {
+	border: 1px solid;
+	width: 100px;
+	height: 50px;/* 定死右1表格tb的高度，为了和左1的表格高度保持一致 */
+}
+
+#right_table2 td {
+	border: 1px solid;
+	width: 100px;
+}
+</style>
+</head>
+<body>
+	<div id="left_div">
+		<div id="left_div1">
+			<table id="left_table1">
+				<tr>
+					<td>Item</td>
+					<td>Display Name</td>
+				</tr>
+			</table>
+		</div>
+		<div id="left_div2">
+			<table id="left_table2">
+				<tr>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="right_div">
+		<div id="right_div1">
+			<div id="right_divx">
+				<table id="right_table1">
+					<tr>
+						<td>Factory ID/Name for Short</td>
+						<td>Factory Cost</td>
+						<td>MD Estimate Factory Cost</td>
+						<td>Sales Comm. %</td>
+						<td>PLI %</td>
+						<td>After Service %</td>
+						<td>Defective Allowance%</td>
+						<td>Testing Fee %</td>
+						<td>Reserve%</td>
+						<td>Brand</td>
+						<td>Royalty%</td>
+						<td>Markdown%</td>
+						<td>Total Cost</td>
+						<td>N. FOB Price</td>
+						<td>MD Net Margin</td>
+						<td>MD Gross Margin</td>
+						<td>Whse Location</td>
+						<td>Inbound Charge</td>
+						<td>Storage Period(Month)</td>
+						<td>Storage Cost</td>
+						<td>Outbound Charge</td>
+						<td>Whse Handling Charge %</td>
+						<td>Pallet Cost</td>
+						<td>Freight to customer</td>
+						<td>Landed Cost</td>
+						<td>Program%</td>
+						<td>Payment Term%</td>
+						<td>Store Defective Allowance%</td>
+						<td>Price Quote</td>
+						<td>Total Store Cost</td>
+						<td>MSRP(Retail Price)</td>
+						<td>Markup %</td><!-- 32行 -->
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="right_div2">
+			<table id="right_table2">
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var right_div2 = document.getElementById("right_div2");
+		right_div2.onscroll = function() {
+			var right_div2_top = this.scrollTop;
+			var right_div2_left = this.scrollLeft;
+			document.getElementById("left_div2").scrollTop = right_div2_top;
+			document.getElementById("right_div1").scrollLeft = right_div2_left;
+		}
+	</script>
+</body>
+</html>

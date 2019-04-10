@@ -1,5 +1,6 @@
 function lineInit(type) {
-	if (nlapiGetFieldValue('customform') !='102' && nlapiGetFieldValue('customform') !='103') {
+	if (nlapiGetFieldValue('customform') != '102'
+			&& nlapiGetFieldValue('customform') != '103') {
 		return;
 	}
 	if (type == 'item') {
@@ -8,10 +9,12 @@ function lineInit(type) {
 }
 
 function postSourcing(type, name) {
-	if (nlapiGetFieldValue('customform') !='102' && nlapiGetFieldValue('customform') !='103') {
+	if (nlapiGetFieldValue('customform') != '102'
+			&& nlapiGetFieldValue('customform') != '103') {
 		return;
 	}
 	if (type == 'item' && name == 'item') {
+		// alert(1);
 		this.setDisable();
 	}
 
@@ -22,8 +25,10 @@ function setDisable() {
 	if (nlapiGetRecordType() == 'purchaseorder') {
 		isBargain = this.isBargain();
 	}
+	// alert(isBargain);
 	nlapiDisableLineItemField('item', 'custcol_including_tax_unit_price',
 			isBargain);
+	nlapiDisableLineItemField('item', 'rate', isBargain);
 	nlapiDisableLineItemField('item', 'taxcode', isBargain);
 }
 
@@ -38,7 +43,7 @@ function isBargain() {
 		if (!item) {
 			return true;
 		}
-		isBargain = nlapiLookupField('item', item, 'custitem1');
+		isBargain = nlapiLookupField('item', item, 'custitem_bargaining');
 		// alert(isBargain);
 	}
 	return isBargain == 'F';

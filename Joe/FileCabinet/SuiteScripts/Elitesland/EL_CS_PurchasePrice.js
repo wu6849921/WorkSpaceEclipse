@@ -39,10 +39,10 @@ define([ 'N/search', ], function(search) {
 				var subArea = search.lookupFields({
 					type : search.Type.SUBSIDIARY,
 					id : subsidiary,
-					columns : [ 'custrecord2' ]
+					columns : [ 'custrecord_area' ]
 				});
-				if (subArea.custrecord2[0]) {
-					subArea = subArea.custrecord2[0].value;
+				if (subArea.custrecord_area[0]) {
+					subArea = subArea.custrecord_area[0].value;
 					currentRecord.setValue({
 						fieldId : 'custrecord_el_pp_area',
 						value : subArea

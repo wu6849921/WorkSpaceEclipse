@@ -177,11 +177,6 @@ define([ 'N/search', 'N/record', 'N/currency', 'N/format' ], function(search,
 			});
 
 			for (var i = 0; i < numLines; i++) {
-				var customerPOC = soRecord.getSublistValue({
-					sublistId : 'item',
-					fieldId : 'custcol_tn_line_customerpo',
-					line : i
-				});
 				var createwo = soRecord.getSublistValue({
 					sublistId : 'item',
 					fieldId : 'createwo',

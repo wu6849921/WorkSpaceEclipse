@@ -56,7 +56,7 @@ define(
 							'subsidiary', 'department', 'class', 'location',
 							'custcol_cseg_tn_area', 'currency', 'exchangerate',
 							'type', 'tranid', 'custbody_tn_mpnumber',
-							'fxamount' ];
+							'fxamount', 'custbody_cseg_tn_area' ];
 					if (transactionTypeId) {
 						switch (transactionTypeId) {
 						case '1':// 费用支出申请单
@@ -308,6 +308,8 @@ define(
 													.getValue(result.columns[15]);
 											var fCurrencyAmount = result
 													.getValue(result.columns[16]);
+											var areaBody = result
+													.getValue(result.columns[17]);
 											// alert(2);
 
 											// 如果amount都为0则不显示

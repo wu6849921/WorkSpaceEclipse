@@ -6,9 +6,9 @@
  * @appliedtorecord OPP
  */
 define(
-		[ 'N/record', 'N/file', 'N/search', 'N/format', 'N/currency' ],
+		[ 'N/record', 'N/file', 'N/search', 'N/format', 'N/currency', 'N/url' ],
 
-		function(record, file, search, _format, _currency) {
+		function(record, file, search, _format, _currency, url) {
 
 			/**
 			 * Function definition to be triggered before record is loaded.
@@ -24,9 +24,9 @@ define(
 			 * @Since 2015.2
 			 */
 			function beforeLoad(context) {
-				if (context.type == context.UserEventType.VIEW) {
-					try {
-						var newRecord = context.newRecord;
+				try {
+					var newRecord = context.newRecord;
+					if (context.type == context.UserEventType.VIEW) {
 						var lineCount = newRecord.getLineCount({
 							sublistId : 'item'
 						});
@@ -68,12 +68,31 @@ define(
 
 						}
 
-					} catch (e) {
-						log.debug({
-							title : 'e:',
-							details : e
-						});
 					}
+					// pl新增跳转到project list 页面按钮 190220
+					if (newRecord.type !== record.Type.ESTIMATE) {
+						return;
+					}
+					var form = context.form;
+					var plURL = url.resolveScript({
+						scriptId : 'customscript_tn_projectlist',
+						deploymentId : 'customdeploy_tn_projectlist',
+						params : {
+							plId : newRecord.id
+						}
+					});
+					form.addButton({
+						id : 'custpage_popuppomergeprintwin',
+						label : 'Project List Items',
+						functionName : '(function(){ window.open("' + plURL
+								+ '") })'
+					});
+
+				} catch (e) {
+					log.debug({
+						title : 'e:',
+						details : e
+					});
 				}
 			}
 

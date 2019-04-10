@@ -87,17 +87,17 @@ define(
 								fieldId : 'item',
 								line : i
 							});
-							var poItemLine = newRecord.getSublistValue({
+							var uniqueId = newRecord.getSublistValue({
 								sublistId : 'item',
-								fieldId : 'custcol_tn_sonumber',
+								fieldId : 'custcol_tn_uniqueid',
 								line : i
 							});
-							var poItemLine2 = newRecord.getSublistValue({
+							var itemLine = newRecord.getSublistValue({
 								sublistId : 'item',
 								fieldId : 'line',
 								line : i
 							});
-							poItemLine = poItemLine ? poItemLine : poItemLine2;
+							uniqueId = uniqueId ? uniqueId : itemLine;
 							var description = newRecord.getSublistValue({
 								sublistId : 'item',
 								fieldId : 'description',
@@ -150,7 +150,7 @@ define(
 								// 设置itemLine
 								insRecord.setValue({
 									fieldId : 'custrecord_tn_itemline',
-									value : poItemLine
+									value : uniqueId
 								});
 								// 设置type
 								insRecord

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+	<head>
+		<style type="text/css">
+			table {
+			<#if .locale == "zh_CN">
+			font-family: STSong,
+			sans-serif;
+			<#else>
+			font-family: Arial, sans-serif, STSong;
+			</#if>
+			font-size: 9pt;
+			table-layout: fixed;
+			border-collapse: collapse;
+			}
+
+			table.header td {
+			font-size: 10pt;
+			}
+
+			table.itemtable th {
+			background-color: #999999;
+			border-top: thin solid #000;
+			border-left:
+			thin solid #000;
+			font-weight: bold;
+			align: center;
+			valign: middle;
+			text-align: center;
+			bgcolor: #999999;
+			}
+
+			table.itemtable {
+			border-right:
+			thin solid #000;
+			border-bottom: thin solid #000;
+			}
+
+			table.itemtable td {
+			border-left: thin solid #000;
+			border-top: thin solid #000;
+			height:
+			25px;
+			}
+
+		</style>
+	</head>
+	<body>
+		${divValue.value}
+	</body>
+</pdf>

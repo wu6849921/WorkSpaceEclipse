@@ -298,10 +298,10 @@ define(
 					fileContent = fileContent.replace(/&/g, "&amp;");
 //					fileContent = fileContent.replace(/ => /g, "123");
 //					fileContent = fileContent.replace(/=/g, "_");
-//					 log.debug({
-//					 title : 'fileContent',
-//					 details : fileContent
-//					 });
+					 log.debug({
+					 title : 'fileContent',
+					 details : fileContent
+					 }); 
 					var pdf = render.xmlToPdf({
 						xmlString : fileContent
 					});

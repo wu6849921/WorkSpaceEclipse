@@ -106,7 +106,45 @@ define(
 				}
 
 			}
+			var intLine = 1;
+
+			/**
+			 * Validation function to be executed when sublist line is
+			 * committed.
+			 * 
+			 * @param {Object}
+			 *            scriptContext
+			 * @param {Record}
+			 *            scriptContext.currentRecord - Current form record
+			 * @param {string}
+			 *            scriptContext.sublistId - Sublist name
+			 * 
+			 * @returns {boolean} Return true if sublist line is valid
+			 * 
+			 * @since 2015.2
+			 */
+			function validateLine(scriptContext) {
+				var currentRecord = scriptContext.currentRecord;
+				var sublistName = scriptContext.sublistId;
+				if (sublistName === 'item') {
+					var uniqueId = currentRecord.getCurrentSublistValue({
+						sublistId : 'item',
+						fieldId : 'custcol_tn_uniqueid'
+					});
+					if (uniqueId) {
+						return true;
+					}
+					currentRecord.setCurrentSublistValue({
+						sublistId : 'item',
+						fieldId : 'custcol_tn_uniqueid',
+						value : intLine
+					});
+					intLine += 1;
+				}
+				return true;
+			}
 			return {
-				fieldChanged : fieldChanged
+				fieldChanged : fieldChanged,
+				validateLine : validateLine
 			};
 		});

@@ -96,7 +96,7 @@ function(search, format) {
                        return;
                    }
                     var priceAndCode = getTaxPriceAndCode(currentRecord, format, search, item, vendor);
-//                   alert(priceAndCode);
+// alert(priceAndCode);
                     if (priceAndCode.length > 0) { // 如果有结果
                         currentRecord.setCurrentSublistValue({
                             sublistId: sublistName,
@@ -142,7 +142,7 @@ function(search, format) {
                     	entity = result.getValue(result.columns[0]);
                         return true;
                     });
-                    // alert(JSON.stringify(subArea.custrecord2));
+                    // alert(JSON.stringify(subArea.custrecord_area));
                     var entityFeild=currentRecord.type == 'salesorder'?'custbody_el_vendorinner':'custbody_el_customerinner';
                     if (entity) {
                         currentRecord.setValue({
@@ -164,11 +164,11 @@ function(search, format) {
                 var subArea = search.lookupFields({
                     type: search.Type.SUBSIDIARY,
                     id: subsidiary,
-                    columns: ['custrecord2']
+                    columns: ['custrecord_area']
                 });
-                // alert(JSON.stringify(subArea.custrecord2));
-                if (subArea.custrecord2.length > 0) {
-                    subArea = subArea.custrecord2[0].value;
+                // alert(JSON.stringify(subArea.custrecord_area));
+                if (subArea.custrecord_area.length > 0) {
+                    subArea = subArea.custrecord_area[0].value;
                     currentRecord.setValue({
                         fieldId: 'custbody_el_area',
                         value: subArea
@@ -190,7 +190,7 @@ function(search, format) {
                     subsidiary = result.getValue(result.columns[0]);
                     return true;
                 });
-                // alert(JSON.stringify(subArea.custrecord2));
+                // alert(JSON.stringify(subArea.custrecord_area));
                 if (subsidiary) {
                     currentRecord.setValue({
                         fieldId: 'custbody_el_subsidiaryinner',
@@ -227,7 +227,7 @@ function(search, format) {
         var sublistName = context.sublistId;
         var sublistFieldName = context.fieldId;
         if (sublistName === 'item' && sublistFieldName === 'item') { // 选择item带出对应价格
-//           alert(1);
+// alert(1);
         	var item = currentRecord.getCurrentSublistValue({
                 sublistId: sublistName,
                 fieldId: sublistFieldName
